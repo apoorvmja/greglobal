@@ -33,7 +33,9 @@ export default function UsersPage() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <PlaceholderContent >
+        <></>
+      </PlaceholderContent>
     </ContentLayout>
   );
 }

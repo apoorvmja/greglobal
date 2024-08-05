@@ -39,7 +39,9 @@ export default function NewPostPage() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <PlaceholderContent >
+        <></>
+      </PlaceholderContent>
     </ContentLayout>
   );
 }
