@@ -10,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import MarketingSection from "@/components/dashboard-ui/MarketingSection";
 
 export default function DashboardPage() {
   return (
@@ -27,7 +28,9 @@ export default function DashboardPage() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <PlaceholderContent>
+        <MarketingSection />
+      </PlaceholderContent>
     </ContentLayout>
   );
 }

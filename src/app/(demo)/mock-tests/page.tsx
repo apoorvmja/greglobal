@@ -10,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import TotalTestDisplay from "@/components/mock-tests-ui/TotalTestDisplay";
 
 export default function CategoriesPage() {
   return (
@@ -29,11 +30,13 @@ export default function CategoriesPage() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Categories</BreadcrumbPage>
+            <BreadcrumbPage>Mock tests</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <PlaceholderContent>
+        <TotalTestDisplay />
+      </PlaceholderContent>
     </ContentLayout>
   );
 }

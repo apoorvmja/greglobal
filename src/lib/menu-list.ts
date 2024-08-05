@@ -63,9 +63,9 @@ export function getMenuList(pathname: string): Group[] {
           ]
         },
         {
-          href: "/categories",
-          label: "Categories",
-          active: pathname.includes("/categories"),
+          href: "/mock-tests",
+          label: "Mock tests",
+          active: pathname.includes("/mock-tests"),
           icon: Bookmark,
           submenus: []
         },
