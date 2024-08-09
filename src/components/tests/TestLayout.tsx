@@ -1,25 +1,45 @@
-import Link from 'next/link';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 interface TestLayoutProps {
   children: React.ReactNode;
   currentSection: string;
   onContinue: () => void;
-  showAWAButtons?: boolean; // Add this prop to conditionally show AWA buttons
+  onBack?: () => void;
+  onExitSection?: () => void;
+  showAWAButtons?: boolean;
+  showVerbalButtons?: boolean;
+  verbalSection?: 'verbal1' | 'verbal2'; // Add this prop to specify which verbal section
 }
 
-const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, showAWAButtons = false }) => {
-  const [timeLeft, setTimeLeft] = useState(1800); // 30 minutes in seconds
+const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showAWAButtons = false, showVerbalButtons = false, verbalSection }) => {
+  const getInitialTime = () => {
+    if (showVerbalButtons) {
+      return verbalSection === 'verbal1' ? 1080 : 1380; // 18 minutes for Verbal 1, 23 minutes for Verbal 2
+    }
+    return 1800; // 30 minutes for AWA
+  };
+
+  const [timeLeft, setTimeLeft] = useState(getInitialTime());
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const startCountdown = () => {
-    if (timerRef.current) return; // Prevent multiple intervals
+  useEffect(() => {
+    if (!timerRef.current) {
+      startCountdown();
+    }
 
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    };
+  }, [showAWAButtons, showVerbalButtons, verbalSection]);
+
+  const startCountdown = () => {
     timerRef.current = setInterval(() => {
       setTimeLeft((prevTime) => {
         if (prevTime <= 1) {
           clearInterval(timerRef.current!);
-          timerRef.current = null;
           return 0;
         }
         return prevTime - 1;
@@ -33,16 +53,10 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   };
 
-  // Start countdown for AWA section
-  if (showAWAButtons && !timerRef.current) {
-    startCountdown();
-  }
-
   return (
     <div>
-      <div className="top-bar rounded-t-lg dark:text-black">
+      <div className="top-bar rounded-t-lg dark:text-black w-full">
         <div className="section-info">
-          {/* <h2>{currentSection}</h2> */}
           <h2>MJ Study Abroad</h2>
         </div>
         <div className="nav-buttons">
@@ -50,14 +64,27 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
             <>
               <button>Quit w/Save</button>
               <button>Help</button>
-              <button>Save</button>
+              <button onClick={onContinue}>Continue</button>
             </>
           )}
-          <button onClick={onContinue}>Continue</button>
+          {showVerbalButtons && (
+            <>
+              <button onClick={onExitSection}>Exit Section</button>
+              <button>Quit w/Save</button>
+              <button>Mark</button>
+              <button>Review</button>
+              <button>Help</button>
+              <button onClick={onBack}>Back</button>
+              <button onClick={onContinue}>Next</button>
+            </>
+          )}
+          {!showAWAButtons && !showVerbalButtons && (
+            <button onClick={onContinue}>Continue</button>
+          )}
         </div>
       </div>
 
-      {showAWAButtons && (
+      {(showAWAButtons || showVerbalButtons) && (
         <div className="flex justify-between p-[10px] bg-yellow-100 dark:text-black">
           <div className="section-info">
             <h2>{currentSection}</h2>

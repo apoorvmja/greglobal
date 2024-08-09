@@ -1,4 +1,3 @@
-// src/components/tests/AWA.tsx
 import { useRef } from 'react';
 import TestLayout from './TestLayout';
 
@@ -15,7 +14,7 @@ interface Test {
 
 interface Props {
     test: Test;
-    onContinue: () => void;
+    onContinue: (score: number) => void; // Pass the score to the onContinue function
 }
 
 const AWA: React.FC<Props> = ({ test, onContinue }) => {
@@ -45,9 +44,36 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
         }
     };
 
+    const calculateScore = (wordCount: number): number => {
+        if (wordCount > 200) {
+            return 6;
+        } else if (wordCount >= 180) {
+            return 5;
+        } else if (wordCount >= 150) {
+            return 4;
+        } else if (wordCount >= 100) {
+            return 3;
+        } else if (wordCount >= 50) {
+            return 2;
+        } else if (wordCount >= 20) {
+            return 1;
+        } else {
+            return 0;
+        }
+    };
+
+    const handleContinue = () => {
+        if (textareaRef.current) {
+            const text = textareaRef.current.value.trim();
+            const wordCount = text.split(/\s+/).length; // Split by whitespace to count words
+            const score = calculateScore(wordCount);
+            onContinue(score); // Pass the score to the onContinue function
+        }
+    };
+
     return (
-        <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={onContinue} showAWAButtons={true}>
-            <div className="awa-container">
+        <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={handleContinue} showAWAButtons={true}>
+            <div className="flex flex-row min-w-[85vw]">
                 <div className="prompt-container">
                     <p className='border-2 rounded-md p-2 mb-4 mt-4'>{test.sections.awa.prompt}</p>
                     <p>{test.sections.awa.instructions}</p>
@@ -70,31 +96,26 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
                 </div>
             </div>
             <style jsx>{`
-        .awa-container {
-          display: flex;
-          flex-direction: row;
-          height: 100%;
-        }
-        .prompt-container {
-          flex: 1;
-          padding: 20px;
-          border-right: 1px solid #ccc;
-        }
-        .textarea-container {
-          flex: 1;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-        }
-        .toolbar {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 10px;
-        }
-        .toolbar button {
-          margin-right: 10px;
-        }
-      `}</style>
+                .prompt-container {
+                    flex: 1;
+                    padding: 20px;
+                    border-right: 1px solid #ccc;
+                }
+                .textarea-container {
+                    flex: 1;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .toolbar {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                }
+                .toolbar button {
+                    margin-right: 10px;
+                }
+            `}</style>
         </TestLayout>
     );
 };

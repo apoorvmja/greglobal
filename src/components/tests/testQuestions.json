@@ -1,0 +1,795 @@
+{
+  "tests": [
+    {
+      "id": "test1",
+      "name": "Kaplan GRE Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "All too often, companies hire outside consultants to suggest ways for the company to operate more efficiently...",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with these statements..."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Recent editions of the Chinese classic Tao Te Ching, based on manuscripts more authoritative than those hitherto available, have rendered previous editions _____.",
+            "options": [
+              "incomprehensible",
+              "uninteresting",
+              "inaccessible",
+              "obsolete",
+              "illegible"
+            ],
+            "correctAnswer": "obsolete",
+            "blanks": 1
+          },
+          "question2": {
+            "type": "text_completion",
+            "questionText": "When the most recent earnings report was delivered at the meeting last week, employees hoped to find indications that their company, having been unprofitable the previous fiscal year, was in a state of (i)__________; however, they were disappointed by the (ii)_______ first quarter earnings.",
+            "options": {
+              "blank1": [
+                "resurgence",
+                "decline",
+                "bankruptcy"
+              ],
+              "blank2": [
+                "tepid",
+                "emaciated",
+                "prodigious"
+              ]
+            },
+            "correctAnswer": [
+              "resurgence",
+              "tepid"
+            ],
+            "blanks": 2
+          },
+          "question3": {
+            "type": "text_completion",
+            "questionText": "The college student’s (i)________ remarks to her professor, made in a brazen and misguided attempt to garner (ii)_________ from her peers, met with unintended consequences when she was banished from the classroom for her (iii)________.",
+            "options": {
+              "blank1": [
+                "flippant",
+                "respectful",
+                "flamboyant"
+              ],
+              "blank2": [
+                "aplomb",
+                "esteem",
+                "derision"
+              ],
+              "blank3": [
+                "hilarity",
+                "insolence",
+                "taciturnity"
+              ]
+            },
+            "correctAnswer": [
+              "flippant",
+              "derision",
+              "insolence"
+            ],
+            "blanks": 3
+          },
+          "question4": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The unequal treaties between Japan and several western powers in the middle of the 19th century proved to be the final straw that broke the back of the Tokugawa Japanese government. Two provinces in particular, Satsuma and Choshu, launched rebellions protesting the Shogunate’s acceptance of the unfavorable terms. Already weakened by an increasingly indebted samurai bureaucracy and faltering political power, the Shogunate was unable to quell the revolution and was forced to capitulate. Guided by ideals of equality among all Japanese, one of the first reforms was the abolition of the class system that was the hallmark of Shogunate rule. Under the Shogunate system, most of Japan’s population was sorted into one of four rigidly defined hereditary classes, with the samurai, or warriors, as the highest, ruling class. Below the samurai ranked the farmers, followed by artisans, followed by the merchants, the lowest caste. In an almost unprecedented move, the leaders of the Satsuma and Choshu rebellions, after reinstating the Emperor to supreme power, renounced their samurai status, opening up the entirety of the Japanese population to military service. Consider each of the choices separately and select all that apply. What can be inferred from the passage? The emperor of Japan had no power under Tokugawa governance. It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century. Under Tokugawa governance, only samurai were allowed to serve in the military.",
+            "questionText": "What can be inferred from the passage?",
+            "options": [
+              "The emperor of Japan had no power under Tokugawa governance.",
+              "It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century.",
+              "Under Tokugawa governance, only samurai were allowed to serve in the military."
+            ],
+            "correctAnswer": [
+              "The emperor of Japan had no power under Tokugawa governance.",
+              "It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century."
+            ]
+          },
+          "question5": {
+            "type": "reading_comprehension_select",
+            "passage": "The unequal treaties between Japan and several western powers in the middle of the 19th century proved to be the final straw that broke the back of the Tokugawa Japanese government. Two provinces in particular, Satsuma and Choshu, launched rebellions protesting the Shogunate’s acceptance of the unfavorable terms. Already weakened by an increasingly indebted samurai bureaucracy and faltering political power, the Shogunate was unable to quell the revolution and was forced to capitulate. Guided by ideals of equality among all Japanese, one of the first reforms was the abolition of the class system that was the hallmark of Shogunate rule. Under the Shogunate system, most of Japan’s population was sorted into one of four rigidly defined hereditary classes, with the samurai, or warriors, as the highest, ruling class. Below the samurai ranked the farmers, followed by artisans, followed by the merchants, the lowest caste. In an almost unprecedented move, the leaders of the Satsuma and Choshu rebellions, after reinstating the Emperor to supreme power, renounced their samurai status, opening up the entirety of the Japanese population to military service. Consider each of the choices separately and select all that apply. What can be inferred from the passage? The emperor of Japan had no power under Tokugawa governance. It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century. Under Tokugawa governance, only samurai were allowed to serve in the military.",
+            "questionText": "Select the sentence in the passage in which the author describes the foundation of the post-Tokugawa system of governance.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": "sentence_3"
+          },
+          "question6": {
+            "type": "reading_comprehension_highlighted",
+            "questionText": "In the passage given, the two highlighted portions play which of the following roles?",
+            "passage": "To help promote feline health and welfare, an ongoing research project involves identifying genes that control autosomal dominant traits and causative mutations in cats. This study involves understanding the morphological traits that help define different breeds. If researchers can identify {{highlight1}}, they can then determine why only some breeds have health problems connected to the traits. The lack of tails in {{highlight2}} cats is an autosomal dominant trait, for example, and significant problems can arise when a cat has two copies of this mutation. For this reason, the majority of {{highlight2}} cats are bred with cats that have tails.",
+            "highlighted": [
+              "A) the genes that control autosomal dominant traits",
+              "Manx"
+            ],
+            "options": [
+              "concept and clarification",
+              "hypothesis and defense",
+              "dilemma and choices",
+              "theory and exceptions",
+              "conclusion and evidence"
+            ],
+            "correctAnswer": [
+              "concept and clarification"
+            ]
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "Select the two answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole and produce completed sentences that are alike in meaning. Since her parents were distracted by their guests after dinner, the child ______ escaped to the kitchen and proceeded to devour all of the remaining cookies.",
+            "options": [
+              "stentorian",
+              "expository",
+              "felicitous",
+              "garrulous",
+              "poignant",
+              "vociferous"
+            ],
+            "correctAnswer": [
+              "stentorian",
+              "poignant"
+            ]
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "Select the two answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole and produce completed sentences that are alike in meaning. As she stepped down from the podium, the candidate was lauded by an enthusiastic audience of supporters who were gratified not only by the fervency of her delivery but also by the _______ words of her speechwriter.",
+            "options": [
+              "similar",
+              "alike",
+              "different",
+              "equal",
+              "distinct",
+              "identical"
+            ],
+            "correctAnswer": [
+              "similar",
+              "alike"
+            ]
+          },
+          "question9": {
+            "type": "sentence_equivalence",
+            "questionText": "Select the two answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole and produce completed sentences that are alike in meaning. A number of double-blind lab studies have confirmed that soothing activities such as knitting and cooking can counteract the deleterious effects of ________ on the human body.",
+            "options": [
+              "dispassion",
+              "sedation",
+              "apprehension",
+              "trepidation",
+              "intoxication",
+              "imperturbation"
+            ],
+            "correctAnswer": [
+              "dispassion",
+              "intoxication"
+            ]
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "Phenomenology, an early twentieth-century humanist philosophy inaugurated by Edmund Husserl, is the explicit and rigorous examination and description of consciousness. In the early 1980s, scholars of theater and performance began to employ analysis informed by phenomenology in their writing. These scholars found that phenomenology allowed them to describe their encounters with the performance event in a way unencumbered by the language-centered critical modes of psychoanalysis and deconstruction. Accordingly, phenomenological criticism asserted that a more immediate, visceral experience could be conveyed by suspending the 'haze of secondary associations' that often mediates between the audience and the performance object. Critics of this approach have pointed out that Husserl and other phenomenologists naively thought that language was a transparent system that reflected reality, though this belief has been strongly discredited by linguists and deconstructionist philosophers. This means, they argue, that even if phenomenology gives access to an encounter with the 'essence' of a given art object, this encounter could never be conveyed to others in speech or writing without distortion or filtration of meaning. In response to this criticism, theater and performance scholars have adapted their methodology, citing later phenomenologists like Maurice Merleau-Ponty, whose work focuses on the importance of the body in forming consciousness, and disavowing the reductive formulations of Husserl.",
+            "questionText": "According to the passage, which of the following is true about the author's opinion on the matter?",
+            "options": [
+              "The author agrees",
+              "The author disagrees",
+              "The author is neutral",
+              "The author is unsure"
+            ],
+            "correctAnswer": "The author disagrees"
+          },
+          "question11": {
+            "type": "reading_comprehension",
+            "passage": "Phenomenology, an early twentieth-century humanist philosophy inaugurated by Edmund Husserl, is the explicit and rigorous examination and description of consciousness. In the early 1980s, scholars of theater and performance began to employ analysis informed by phenomenology in their writing. These scholars found that phenomenology allowed them to describe their encounters with the performance event in a way unencumbered by the language-centered critical modes of psychoanalysis and deconstruction. Accordingly, phenomenological criticism asserted that a more immediate, visceral experience could be conveyed by suspending the 'haze of secondary associations' that often mediates between the audience and the performance object. Critics of this approach have pointed out that Husserl and other phenomenologists naively thought that language was a transparent system that reflected reality, though this belief has been strongly discredited by linguists and deconstructionist philosophers. This means, they argue, that even if phenomenology gives access to an encounter with the 'essence' of a given art object, this encounter could never be conveyed to others in speech or writing without distortion or filtration of meaning. In response to this criticism, theater and performance scholars have adapted their methodology, citing later phenomenologists like Maurice Merleau-Ponty, whose work focuses on the importance of the body in forming consciousness, and disavowing the reductive formulations of Husserl.",
+            "questionText": "According to the passage, which of the following is true about the author's opinion on the matter?",
+            "options": [
+              "The author agrees",
+              "The author disagrees",
+              "The author is neutral",
+              "The author is unsure"
+            ],
+            "correctAnswer": "The author disagrees"
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "passage": "Phenomenology, an early twentieth-century humanist philosophy inaugurated by Edmund Husserl, is the explicit and rigorous examination and description of consciousness. In the early 1980s, scholars of theater and performance began to employ analysis informed by phenomenology in their writing. These scholars found that phenomenology allowed them to describe their encounters with the performance event in a way unencumbered by the language-centered critical modes of psychoanalysis and deconstruction. Accordingly, phenomenological criticism asserted that a more immediate, visceral experience could be conveyed by suspending the 'haze of secondary associations' that often mediates between the audience and the performance object. Critics of this approach have pointed out that Husserl and other phenomenologists naively thought that language was a transparent system that reflected reality, though this belief has been strongly discredited by linguists and deconstructionist philosophers. This means, they argue, that even if phenomenology gives access to an encounter with the 'essence' of a given art object, this encounter could never be conveyed to others in speech or writing without distortion or filtration of meaning. In response to this criticism, theater and performance scholars have adapted their methodology, citing later phenomenologists like Maurice Merleau-Ponty, whose work focuses on the importance of the body in forming consciousness, and disavowing the reductive formulations of Husserl.",
+            "questionText": "According to the passage, which of the following is true about the author's opinion on the matter?",
+            "options": [
+              "The author agrees",
+              "The author disagrees",
+              "The author is neutral",
+              "The author is unsure"
+            ],
+            "correctAnswer": "The author disagrees"
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "The effect of the wind in the researchers’ results was not__________; on blustery days, the pollution reading rose substantially.",
+            "options": [
+              "extant",
+              "accessible",
+              "extrapolated",
+              "negligible",
+              "confabulated"
+            ],
+            "correctAnswer": "extrapolated",
+            "blanks": 1
+          },
+          "question2": {
+            "type": "text_completion",
+            "questionText": "The startling finding that variations in the rate of the Earth’s rotation depend to an (i)__________degree on the weather has necessitated a complete (ii)__________of the world’s timekeeping methods.",
+            "options": {
+              "blank1": [
+                "indeterminate",
+                "unexpected",
+                "unobservable"
+              ],
+              "blank2": [
+                "authentication",
+                "overhaul",
+                "rejection"
+              ]
+            },
+            "correctAnswer": [
+              "unexpected",
+              "overhaul"
+            ],
+            "blanks": 2
+          },
+          "question3": {
+            "type": "text_completion",
+            "questionText": "Ideally, the rules of order of the town meeting would have helped to rein in the (i)__________discussions that deviated from the established meeting agenda. Having been cobbled together over many years and several changes in leadership, the rules, instead of providing (ii)__________governing principles and keeping the meeting on point, actually contained some contradictory information, thus (iii)__________the expected method of discourse at meetings.",
+            "options": {
+              "blank1": [
+                "politic",
+                "tangential",
+                "pertinent"
+              ],
+              "blank2": [
+                "noisome",
+                "cohesive",
+                "convoluted"
+              ],
+              "blank3": [
+                "obfuscating",
+                "elucidating",
+                "inveighing"
+              ]
+            },
+            "correctAnswer": [
+              "politic",
+              "cohesive",
+              "inveighing"
+            ],
+            "blanks": 3
+          },
+          "question4": {
+            "type": "text_completion",
+            "questionText": "The company claims that the prominent placement it garners on many search engine pages was generated (i)__________. A deeper investigation reveals, however, that some (ii)__________practices were likely employed. The majority of links to the company’s site, the largest contributor to favorable placement, comes from (iii)__________web pages that provide no relevant content.",
+            "options": {
+              "blank1": [
+                "painstakingly",
+                "organically",
+                "deceptively"
+              ],
+              "blank2": [
+                "malicious",
+                "mundane",
+                "benevolent"
+              ],
+              "blank3": [
+                "sham",
+                "sensational",
+                "partisan"
+              ]
+            },
+            "correctAnswer": [
+              "deceptively",
+              "mundane",
+              "partisan"
+            ],
+            "blanks": 3
+          },
+          "question5": {
+            "type": "reading_comprehension",
+            "passage": "Although the first major and systematic defense of women’s rights appeared as early as 1792 with Mary Wollstonecraft’s Vindication of the Rights of Woman, it would be almost a century before the theme of women’s equality with men was seriously entertained as a result of John Stuart Mill’s The Subjection of Women (1869). Wollstonecraft argued that women appeared different from men in moral character largely due to the deficient opportunities afforded them and the social expectation that they concern themselves with frivolity. She emphasized the importance of educating women consistent with their role as educators and caretakers of children, yet fell short of clearly defending a statement of the equality of the sexes, sometimes seeming to grant a natural superiority to men. In Mill’s work, the belief that women are by nature inferior to men was subjected to a powerful demand for empirical evidence. Echoing Wollstonecraft, he recognized that women appear inferior due to the differential social constraints acting on the sexes, and insisted that equality must be instituted in practice before women’s nature may be seen clearly enough to allow a fair comparison to men’s. He excoriated the then popular notion that social inequality was needed to safeguard the natural roles of women as caretakers and child bearers. No law, he noted, is needed to prevent women from doing what they naturally cannot but do, and if it is indeed in the best interest of society to have women serve as caretakers, such positions must be made appealing enough to be worth holding.",
+            "questionText": "In the context in which it is used in the passage, the word “excoriated” most nearly means",
+            "options": [
+              "relished",
+              "appealed to",
+              "was appalled at",
+              "assailed",
+              "mocked"
+            ],
+            "correctAnswer": "assailed"
+          },
+          "question6": {
+            "type": "reading_comprehension_select",
+            "passage": "Although the first major and systematic defense of women’s rights appeared as early as 1792 with Mary Wollstonecraft’s Vindication of the Rights of Woman, it would be almost a century before the theme of women’s equality with men was seriously entertained as a result of John Stuart Mill’s The Subjection of Women (1869). Wollstonecraft argued that women appeared different from men in moral character largely due to the deficient opportunities afforded them and the social expectation that they concern themselves with frivolity. She emphasized the importance of educating women consistent with their role as educators and caretakers of children, yet fell short of clearly defending a statement of the equality of the sexes, sometimes seeming to grant a natural superiority to men. In Mill’s work, the belief that women are by nature inferior to men was subjected to a powerful demand for empirical evidence. Echoing Wollstonecraft, he recognized that women appear inferior due to the differential social constraints acting on the sexes, and insisted that equality must be instituted in practice before women’s nature may be seen clearly enough to allow a fair comparison to men’s. He excoriated the then popular notion that social inequality was needed to safeguard the natural roles of women as caretakers and child bearers. No law, he noted, is needed to prevent women from doing what they naturally cannot but do, and if it is indeed in the best interest of society to have women serve as caretakers, such positions must be made appealing enough to be worth holding.",
+            "questionText": "Select, by clicking in the passage itself, the sentence that states a claim later reiterated by another thinker.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": "sentence_3"
+          },
+          "question7": {
+            "type": "reading_comprehension",
+            "passage": "Dogs are widely used by the police to detect drug smuggling and drug caches. Yet recent evidence suggests that insects might be used more effectively in this capacity. In the 1950s, German biologist Dietrich Schneider developed the first method that enabled researchers to record activity in insect olfactory nerves and to identify the compounds that trigger a behavioral response. Insect olfactory systems are very similar to those of vertebrates. Insects first detect odors via finger-like protuberances on the antenna, called olfactory sensilla. Odorant molecules pass through pores in the outer cuticle of the sensilla and attach to an odorant-binding protein. This protein carries the hydrophobic molecules through the lymph fluid found inside the cell and attaches them to receptors on the dendritic projections of a sensory nerve cell. Finally, these receptors send signals to the central nervous system, allowing for easy detection by researchers. The position of the insect olfactory organs on the surface of its body allows for direct investigation of the system’s response.",
+            "questionText": "Which of the following best describes the author’s attitude towards the prospect of using insects for drug detection?",
+            "options": [
+              "Reasonably optimistic",
+              "Completely neutral",
+              "Highly enthusiastic",
+              "Largely uninterested",
+              "Mildly pessimistic"
+            ],
+            "correctAnswer": "Mildly pessimistic"
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "Dogs are widely used by the police to detect drug smuggling and drug caches. Yet recent evidence suggests that insects might be used more effectively in this capacity. In the 1950s, German biologist Dietrich Schneider developed the first method that enabled researchers to record activity in insect olfactory nerves and to identify the compounds that trigger a behavioral response. Insect olfactory systems are very similar to those of vertebrates. Insects first detect odors via finger-like protuberances on the antenna, called olfactory sensilla. Odorant molecules pass through pores in the outer cuticle of the sensilla and attach to an odorant-binding protein. This protein carries the hydrophobic molecules through the lymph fluid found inside the cell and attaches them to receptors on the dendritic projections of a sensory nerve cell. Finally, these receptors send signals to the central nervous system, allowing for easy detection by researchers. The position of the insect olfactory organs on the surface of its body allows for direct investigation of the system’s response.",
+            "questionText": "It can be inferred from the passage that insects would be less useful for researchers in detecting drugs if which of the following were true?",
+            "options": [
+              "They were as accurate as, but not more accurate than, dogs in detecting drugs.",
+              "Insect olfactory systems did not deliver odorants to nerve cells, as vertebrate olfactory systems do.",
+              "Dietrich Schneider did not develop the first method that enabled researchers to record the activity in insect olfactory nerves.",
+              "They did not have finger-like protuberances for detecting odors.",
+              "The signal sent to the insect’s central nervous system did not allow researchers to identify the compound that triggered the response."
+            ],
+            "correctAnswer": "The signal sent to the insect’s central nervous system did not allow researchers to identify the compound that triggered the response."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "Dogs are widely used by the police to detect drug smuggling and drug caches. Yet recent evidence suggests that insects might be used more effectively in this capacity. In the 1950s, German biologist Dietrich Schneider developed the first method that enabled researchers to record activity in insect olfactory nerves and to identify the compounds that trigger a behavioral response. Insect olfactory systems are very similar to those of vertebrates. Insects first detect odors via finger-like protuberances on the antenna, called olfactory sensilla. Odorant molecules pass through pores in the outer cuticle of the sensilla and attach to an odorant-binding protein. This protein carries the hydrophobic molecules through the lymph fluid found inside the cell and attaches them to receptors on the dendritic projections of a sensory nerve cell. Finally, these receptors send signals to the central nervous system, allowing for easy detection by researchers. The position of the insect olfactory organs on the surface of its body allows for direct investigation of the system’s response.",
+            "questionText": "Which of the following most accurately describes the primary purpose of the passage?",
+            "options": [
+              "To urge that one animal be used in place of another to perform a certain job",
+              "To explain the advantages and disadvantages of a biological mechanism",
+              "To describe a biological mechanism and indicate how it might be exploited",
+              "To demonstrate the method by which a type of animal gathers sensory information",
+              "To summarize the history of a particular researcher’s contributions"
+            ],
+            "correctAnswer": "Mildly pessimistic"
+          },
+          "question10": {
+            "type": "sentence_equivalence",
+            "questionText": "Select the two answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole and produce completed sentences that are alike in meaning. Why Bob always seemed to seek out the __________for dates was a mystery to all his friends; it seemed obvious to them that the reason was not, as his sister suggested, that he was looking for someone like his first girlfriend, who was rather loquacious.",
+            "options": [
+              "reticent",
+              "flagitious",
+              "insouciant",
+              "flippant",
+              "pleonastic",
+              "taciturn"
+            ],
+            "correctAnswer": [
+              "flagitious",
+              "flippant"
+            ]
+          },
+          "question11": {
+            "type": "sentence_equivalence",
+            "questionText": "The vulnerability of communications infrastructure and the widespread dependence on the power grid make cyber-attacks a particularly__________threat.",
+            "options": [
+              "discerning",
+              "blunt",
+              "dubious",
+              "deleterious",
+              "unobtrusive",
+              "disruptive"
+            ],
+            "correctAnswer": [
+              "deleterious",
+              "disruptive"
+            ]
+          },
+          "question12": {
+            "type": "sentence_equivalence",
+            "questionText": "Although sleeping peacefully when his parents arrived home, the young boy had taken every opportunity to__________his babysitter in their absence.",
+            "options": [
+              "patronize",
+              "peeve",
+              "irk",
+              "vindicate",
+              "oblige",
+              "conform with"
+            ],
+            "correctAnswer": [
+              "irk",
+              "conform with"
+            ]
+          },
+          "question13": {
+            "type": "reading_comprehension",
+            "passage": "Studies have shown that an automobile that runs on a blend of 85% ethanol/15% gasoline gets better mileage than an otherwise similar car equipped with a gasoline engine. Many American legislators have concluded that an increase in tax incentives for ethanol production would lessen our dependence on foreign oil.",
+            "questionText": "Which of the following, if true, casts the most doubt upon the validity of the legislators’ conclusion?",
+            "options": [
+              "It takes 1.5 gallons of oil to produce 1 gallon of ethanol.",
+              "Electric cars are cheaper to operate than cars running on the ethanol fuel mix.",
+              "It costs thousands of dollars to retrofit an automobile to run on the ethanol fuel mix",
+              "The ethanol/gasoline blend emits more pollution that regular gasoline.",
+              "The ethanol/gasoline blend has not been widely adopted in Europe."
+            ],
+            "correctAnswer": "It takes 1.5 gallons of oil to produce 1 gallon of ethanol."
+          },
+          "question14": {
+            "type": "reading_comprehension",
+            "passage": "Items that seem unremarkable today might once have altered the course of history. For centuries, the nutmeg tree grew only in the Banda Islands. Locals harvested and sold the aromatic nuts of the tree and, eventually, a spice made from these nuts became a luxury item in the European market. Seeking a monopoly over this valuable spice, the Dutch attacked the Bandas, subjugating the native people in a mostly successful attempt to control the trade. However, one island in the Banda chain remained in the hands of the British, engendering much conflict between the Netherlands and England. Finally, the British offered to cede control of the island in exchange for New Amsterdam, a Dutch outpost in North America. The Dutch were more interested in the spice trade than in the small outpost of New Amsterdam. In 1667, the Treaty of Breda gave the Dutch complete control of the Banda Islands, and the nutmeg trade, and gave the British New Amsterdam, promptly renamed New York.",
+            "questionText": "Which of the following is mentioned in the passage as a reason for the initial interest of the Netherlands in the Banda Islands?",
+            "options": [
+              "Increased economic competition with Britain",
+              "Subjugation of the native people",
+              "An opportunity to expand to a new geographical market",
+              "A failure to cultivate nutmeg in other locations",
+              "The desire to restrict access to a commodity"
+            ],
+            "correctAnswer": "The desire to restrict access to a commodity"
+          },
+          "question15": {
+            "type": "reading_comprehension",
+            "passage": "Items that seem unremarkable today might once have altered the course of history. For centuries, the nutmeg tree grew only in the Banda Islands. Locals harvested and sold the aromatic nuts of the tree and, eventually, a spice made from these nuts became a luxury item in the European market. Seeking a monopoly over this valuable spice, the Dutch attacked the Bandas, subjugating the native people in a mostly successful attempt to control the trade. However, one island in the Banda chain remained in the hands of the British, engendering much conflict between the Netherlands and England. Finally, the British offered to cede control of the island in exchange for New Amsterdam, a Dutch outpost in North America. The Dutch were more interested in the spice trade than in the small outpost of New Amsterdam. In 1667, the Treaty of Breda gave the Dutch complete control of the Banda Islands, and the nutmeg trade, and gave the British New Amsterdam, promptly renamed New York.",
+            "questionText": "The author mentions that nutmeg became a luxury item in the European market in order to",
+            "options": [
+              "discuss the role of the Dutch in the history of the trade of luxury items",
+              "explain why the Dutch wanted to control the market for nutmeg",
+              "establish that the Dutch obtained a monopoly on the importation of nutmeg into Europe",
+              "demonstrate the importance of spices in Europe",
+              "explain why the British wanted to control the market for nutmeg"
+            ],
+            "correctAnswer": "explain why the British wanted to control the market for nutmeg"
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "List L : 3, 4, 18, 21, 34",
+            "quantityA": "The average (arithmetic mean) of the numbers in list L",
+            "quantityB": "The median of the numbers in list L",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "x < 0 < y + z and z≠ 0",
+            "quantityA": "(y+z)/x",
+            "quantityB": "y/z",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://jasper.kaptest.com/content/media/73/286973.18.q46072a_15.png",
+            "questionText": "The area of rectangle ABCD is 32.",
+            "quantityA": "The area of the circle with center P",
+            "quantityB": "11",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question4": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://jasper.kaptest.com/content/media/74/286974.17.q46104a_15.png",
+            "questionText": "-",
+            "quantityA": "a",
+            "quantityB": "c",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question5": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "Which of the following expressions are equal to 21 ?",
+            "options": [
+              "3 + 7 × 2 + 12 ÷ (2 + 1)",
+              "1 + (3 ÷ 2) × 10 + 1",
+              "7 – 3 × 3 + (5 + 4)",
+              "4 × (3 + 2) – (3 – 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ],
+            "correctAnswer": [
+              "7 – 3 × 3 + (5 + 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ]
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "∛((a^2)^6)",
+            "options": [
+              "a^2",
+              "a^4",
+              "a^5",
+              "a^9",
+              "a^11"
+            ],
+            "correctAnswer": "2"
+          },
+          "question7": {
+            "type": "numeric_entry",
+            "questionText": "At Deb’s Deli, a customer may choose either a sandwich and a salad or a sandwich and a soup for the lunch special. There are 5 choices of sandwich, 4 choices of salad, and 3 choices of soup. How many possible lunch special combinations can be ordered?",
+            "correctAnswer": "30"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Lines u and v form 4 angles that each measure 90 degrees. The points (−4, 7) and (8, 23) are on line u. The points (−68, −16) and (−40, t) are on line v. What is the value of t ?",
+            "options": [
+              "−49",
+              "-37",
+              "-25",
+              "5",
+              "26"
+            ],
+            "correctAnswer": "2"
+          },
+          "question9": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://www.dropbox.com/scl/fi/jcndgtp7jkq6bz92006t2/Quant1_Q9andQ10.png?rlkey=valdpgz1sfhdzba2zh8rtki7z&st=h28z5z3e&raw=1",
+            "questionText": "What is the ratio of number of workers in the blue Collar category in 2005 to the number of such workers in 2011",
+            "options": [
+              "5/7",
+              "5/6",
+              "6/7",
+              "6/5",
+              "7/5"
+            ],
+            "correctAnswer": "5/6"
+          },
+          "question10": {
+            "type": "data_interpretation_multiple_answers",
+            "imgUrl": "https://www.dropbox.com/scl/fi/jcndgtp7jkq6bz92006t2/Quant1_Q9andQ10.png?rlkey=valdpgz1sfhdzba2zh8rtki7z&st=h28z5z3e&raw=1",
+            "questionText": "From 2005 to 2011,there was a decrease in the number of workers in which of the following categories?",
+            "options": [
+              "Sales",
+              "Blue Collar",
+              "Service"
+            ],
+            "correctAnswer": [
+              "7 – 3 × 3 + (5 + 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ]
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many different committees of 7 people can be formed from a group of 10 people?",
+            "options": [
+              "84",
+              "105",
+              "120",
+              "165",
+              "720"
+            ],
+            "correctAnswer": "84"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If p + 2q = 8 and 2p – q = 11, then p =",
+            "options": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "correctAnswer": "10"
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "ab ≠ 0 and a^x = b^x",
+            "quantityA": "a",
+            "quantityB": "b",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "–x^2 + 4x = –12 and y^2 – 6y – 8 = 4 – 2y",
+            "quantityA": "x",
+            "quantityB": "y",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://jasper.kaptest.com/content/media/73/286973.18.q46072a_15.png",
+            "questionText": "The area of rectangle ABCD is 32.",
+            "quantityA": "The area of the circle with center P",
+            "quantityB": "11",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question4": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://jasper.kaptest.com/content/media/74/286974.17.q46104a_15.png",
+            "questionText": "-",
+            "quantityA": "a",
+            "quantityB": "c",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question5": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "Which of the following expressions are equal to 21 ?",
+            "options": [
+              "3 + 7 × 2 + 12 ÷ (2 + 1)",
+              "1 + (3 ÷ 2) × 10 + 1",
+              "7 – 3 × 3 + (5 + 4)",
+              "4 × (3 + 2) – (3 – 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ],
+            "correctAnswer": [
+              "7 – 3 × 3 + (5 + 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ]
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "∛((a^2)^6)",
+            "options": [
+              "a^2",
+              "a^4",
+              "a^5",
+              "a^9",
+              "a^11"
+            ],
+            "correctAnswer": "2"
+          },
+          "question7": {
+            "type": "numeric_entry",
+            "questionText": "At Deb’s Deli, a customer may choose either a sandwich and a salad or a sandwich and a soup for the lunch special. There are 5 choices of sandwich, 4 choices of salad, and 3 choices of soup. How many possible lunch special combinations can be ordered?",
+            "correctAnswer": "30"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Lines u and v form 4 angles that each measure 90 degrees. The points (−4, 7) and (8, 23) are on line u. The points (−68, −16) and (−40, t) are on line v. What is the value of t ?",
+            "options": [
+              "−49",
+              "-37",
+              "-25",
+              "5",
+              "26"
+            ],
+            "correctAnswer": "2"
+          },
+          "question9": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://www.dropbox.com/scl/fi/jcndgtp7jkq6bz92006t2/Quant1_Q9andQ10.png?rlkey=valdpgz1sfhdzba2zh8rtki7z&st=h28z5z3e&raw=1",
+            "questionText": "What is the ratio of number of workers in the blue Collar category in 2005 to the number of such workers in 2011",
+            "options": [
+              "5/7",
+              "5/6",
+              "6/7",
+              "6/5",
+              "7/5"
+            ],
+            "correctAnswer": "5/6"
+          },
+          "question10": {
+            "type": "data_interpretation_multiple_answers",
+            "imgUrl": "https://www.dropbox.com/scl/fi/jcndgtp7jkq6bz92006t2/Quant1_Q9andQ10.png?rlkey=valdpgz1sfhdzba2zh8rtki7z&st=h28z5z3e&raw=1",
+            "questionText": "From 2005 to 2011,there was a decrease in the number of workers in which of the following categories?",
+            "options": [
+              "Sales",
+              "Blue Collar",
+              "Service"
+            ],
+            "correctAnswer": [
+              "7 – 3 × 3 + (5 + 4)",
+              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+            ]
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many different committees of 7 people can be formed from a group of 10 people?",
+            "options": [
+              "84",
+              "105",
+              "120",
+              "165",
+              "720"
+            ],
+            "correctAnswer": "84"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If p + 2q = 8 and 2p – q = 11, then p =",
+            "options": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "correctAnswer": "10"
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If p + 2q = 8 and 2p – q = 11, then p =",
+            "options": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "correctAnswer": "10"
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If p + 2q = 8 and 2p – q = 11, then p =",
+            "options": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "correctAnswer": "10"
+          },
+          "question15": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If p + 2q = 8 and 2p – q = 11, then p =",
+            "options": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "correctAnswer": "10"
+          }
+        }
+      }
+    }
+  ]
+}
