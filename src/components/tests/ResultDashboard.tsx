@@ -3,7 +3,7 @@ import { BarGraph } from '@/components/charts/bar-graph';
 import { PieGraph } from '@/components/charts/pie-graph';
 import { CalendarDateRangePicker } from '@/components/date-range-picker';
 import PageContainer from '@/components/page-container';
-import { RecentSales } from '@/components/recent-sales';
+import RecentSales from '@/components/recent-sales';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -14,7 +14,16 @@ import {
 } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-export default function page() {
+interface ResultDashboardProps {
+    awaScore: number;
+    verbal1Score: number;
+    verbal2Score: number;
+    quant1Score: number;
+    quant2Score: number;
+}
+
+
+const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score }) => {
     return (
         <PageContainer scrollable={true}>
             <div className="space-y-2 mt-5">
@@ -39,7 +48,7 @@ export default function page() {
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium">
-                                        Total Revenue
+                                        Total Score
                                     </CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -55,16 +64,16 @@ export default function page() {
                                     </svg>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="text-2xl font-bold">$45,231.89</div>
+                                    <div className="text-2xl font-bold"> {verbal1Score + verbal2Score + quant1Score + quant2Score} </div>
                                     <p className="text-xs text-muted-foreground">
-                                        +20.1% from last month
+                                        +100% from last attempt
                                     </p>
                                 </CardContent>
                             </Card>
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium">
-                                        Subscriptions
+                                        Analytical Writing
                                     </CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +91,7 @@ export default function page() {
                                     </svg>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="text-2xl font-bold">+2350</div>
+                                    <div className="text-2xl font-bold">{awaScore}/6</div>
                                     <p className="text-xs text-muted-foreground">
                                         +180.1% from last month
                                     </p>
@@ -90,7 +99,7 @@ export default function page() {
                             </Card>
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                                    <CardTitle className="text-sm font-medium">Sales</CardTitle>
+                                    <CardTitle className="text-sm font-medium">Verbal Score</CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -106,7 +115,7 @@ export default function page() {
                                     </svg>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="text-2xl font-bold">+12,234</div>
+                                    <div className="text-2xl font-bold">{130 + verbal1Score + verbal2Score}</div>
                                     <p className="text-xs text-muted-foreground">
                                         +19% from last month
                                     </p>
@@ -115,7 +124,7 @@ export default function page() {
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium">
-                                        Active Now
+                                        Quant Score
                                     </CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +140,7 @@ export default function page() {
                                     </svg>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="text-2xl font-bold">+573</div>
+                                    <div className="text-2xl font-bold">{130 + quant1Score + quant2Score}</div>
                                     <p className="text-xs text-muted-foreground">
                                         +201 since last hour
                                     </p>
@@ -144,13 +153,13 @@ export default function page() {
                             </div>
                             <Card className="col-span-4 md:col-span-3">
                                 <CardHeader>
-                                    <CardTitle>Recent Sales</CardTitle>
+                                    <CardTitle>Section Wise</CardTitle>
                                     <CardDescription>
-                                        You made 265 sales this month.
+                                        Click 'view' to check answers
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    <RecentSales />
+                                    <RecentSales awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />
                                 </CardContent>
                             </Card>
                             <div className="col-span-4">
@@ -166,3 +175,5 @@ export default function page() {
         </PageContainer>
     );
 }
+
+export default ResultDashboard;

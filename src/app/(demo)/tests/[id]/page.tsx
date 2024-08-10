@@ -74,6 +74,11 @@ export default function TagsPage() {
   const [test, setTest] = useState<Test | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [currentSection, setCurrentSection] = useState<'testDetails' | 'awaInstructions' | 'awa' | 'VerbalInstructions' | 'verbal1' | 'verbal2' | 'quantitative1' | 'quantitative2' | 'resultDashboard'>('testDetails');
+  const [awaScore, setAWAScore] = useState<number>(0);
+  const [verbal1Score, setVerbal1Score] = useState<number>(0);
+  const [verbal2Score, setVerbal2Score] = useState<number>(0);
+  const [quant1Score, setQuant1Score] = useState<number>(0);
+  const [quant2Score, setQuant2Score] = useState<number>(0);
 
   useEffect(() => {
     if (id) {
@@ -89,8 +94,8 @@ export default function TagsPage() {
   }, [id]);
 
   const handleContinue = () => {
-    // if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
-    if (currentSection === 'testDetails') setCurrentSection('resultDashboard');
+    if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
+    // if (currentSection === 'testDetails') setCurrentSection('resultDashboard');
     else if (currentSection === 'awaInstructions') setCurrentSection('awa');
     else if (currentSection === 'awa') setCurrentSection('VerbalInstructions');
     else if (currentSection === 'VerbalInstructions') setCurrentSection('verbal1');
@@ -159,13 +164,13 @@ export default function TagsPage() {
         <div className='mt-3 bg-white rounded-lg'>
           {currentSection === 'testDetails' && <TestDetails test={test} onContinue={handleContinue} />}
           {currentSection === 'awaInstructions' && <InitialAWAInstructions onContinue={handleContinue} />}
-          {currentSection === 'awa' && <AWA test={test} onContinue={handleContinue} />}
+          {currentSection === 'awa' && <AWA test={test} onContinue={(score) => { setAWAScore(score); handleContinue(); }} />}
           {currentSection === 'VerbalInstructions' && <InitialVerbalInstructions onContinue={handleContinue} />}
-          {currentSection === 'verbal1' && <Verbal onBack={() => { }} test={test} section="verbal1" onContinue={handleContinue} />}
-          {currentSection === 'verbal2' && <Verbal onBack={() => { }} test={test} section="verbal2" onContinue={handleContinue} />}
-          {currentSection === 'quantitative1' && <Quantitative onBack={() => { }} test={test} section="quantitative1" onContinue={handleContinue} />}
-          {currentSection === 'quantitative2' && <Quantitative onBack={() => { }} test={test} section="quantitative2" onContinue={handleContinue} />}
-          {currentSection === 'resultDashboard' && <ResultDashboard />}
+          {currentSection === 'verbal1' && <Verbal onBack={() => { }} test={test} section="verbal1" onContinue={(score) => { setVerbal1Score(score); handleContinue(); }} />}
+          {currentSection === 'verbal2' && <Verbal onBack={() => { }} test={test} section="verbal2" onContinue={(score) => { setVerbal2Score(score); handleContinue(); }} />}
+          {currentSection === 'quantitative1' && <Quantitative onBack={() => { }} test={test} section="quantitative1" onContinue={(score) => { setQuant1Score(score); handleContinue(); }} />}
+          {currentSection === 'quantitative2' && <Quantitative onBack={() => { }} test={test} section="quantitative2" onContinue={(score) => { setQuant2Score(score); handleContinue(); }} />}
+          {currentSection === 'resultDashboard' && <ResultDashboard awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />}
           {/* </PlaceholderContent> */}
         </div>
       </ContentLayout>

@@ -26,7 +26,7 @@ interface VerbalTest {
 interface Props {
     test: VerbalTest;
     section: 'verbal1' | 'verbal2';
-    onContinue: () => void;
+    onContinue: (score: number) => void;
     onBack: () => void;
 }
 
@@ -37,13 +37,12 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const [selectedSentence, setSelectedSentence] = useState<string | null>(null);
 
     const handleNext = () => {
+        const score = calculateScore();
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
             setSelectedSentence(null);
-            calculateScore();
         } else {
-            calculateScore();
-            onContinue();
+            onContinue(score);
         }
     };
 
@@ -99,6 +98,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
             }
         });
         console.log(`Score for ${section}:`, score);
+        return score;
     };
 
 
@@ -108,7 +108,8 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     };
 
     const handleExitSection = () => {
-        onContinue();
+        const score = calculateScore();
+        onContinue(score);
     };
 
     const renderTextCompletion = (question: VerbalQuestion, index: number) => (

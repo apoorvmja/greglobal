@@ -21,7 +21,7 @@ interface QuantitativeTest {
 interface Props {
     test: QuantitativeTest;
     section: 'quantitative1' | 'quantitative2';
-    onContinue: () => void;
+    onContinue: (score: number) => void;
     onBack: () => void;
 }
 
@@ -31,11 +31,11 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
 
     const handleNext = () => {
-        calculateScore(); // Calculate score when the section ends
+        const score = calculateScore(); // Calculate the score
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
-            onContinue();
+            onContinue(score);
         }
     };
 
@@ -82,6 +82,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
             }
         });
         console.log(`Score for ${section}:`, score);
+        return score;
     };
 
     const renderQuantitativeComparison = (question: QuantitativeQuestion, index: number) => (
