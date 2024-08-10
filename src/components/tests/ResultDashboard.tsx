@@ -64,7 +64,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                     </svg>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="text-2xl font-bold"> {verbal1Score + verbal2Score + quant1Score + quant2Score} </div>
+                                    <div className="text-2xl font-bold"> {260 + verbal1Score + verbal2Score + quant1Score + quant2Score} </div>
                                     <p className="text-xs text-muted-foreground">
                                         +100% from last attempt
                                     </p>

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import Calculator from './Calculator';
 
 interface TestLayoutProps {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ interface TestLayoutProps {
 const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection }) => {
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false); // State to manage modal visibility
   const [activeTab, setActiveTab] = useState<'awa' | 'verbal' | 'quant' | 'tools'>('awa');
+  const [showCalculator, SetShowCalculator] = useState(false)
 
   const getInitialTime = () => {
     if (showVerbalButtons) {
@@ -69,6 +71,14 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
     setIsHelpModalOpen(false);
   };
 
+  const OpenCloseCalculator = () => {
+    if (showCalculator == false) {
+      SetShowCalculator(true)
+    } else {
+      SetShowCalculator(false)
+    }
+  }
+
   return (
     <div>
       <div className="top-bar rounded-t-lg dark:text-black w-full">
@@ -100,7 +110,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
               <button>Quit w/Save</button>
               <button>Mark</button>
               <button>Review</button>
-              <button>Calculator</button>
+              <button onClick={OpenCloseCalculator}>{!showCalculator ? "Open Calculator" : "Close Calculator"}</button>
               <button onClick={showHelp}>Help</button>
               <button onClick={onBack}>Back</button>
               <button onClick={onContinue}>Next</button>
@@ -289,6 +299,13 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
           </div>
         </div>
       )}
+
+      {showCalculator && (
+        <div className='absolute top-0 right-0 flex items-center justify-center z-50'>
+          <Calculator />
+        </div>
+      )
+      }
 
       <style jsx>{`
         .top-bar {
