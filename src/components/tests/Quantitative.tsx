@@ -52,6 +52,11 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
         });
     };
 
+    const handleExitSection = () => {
+        const score = calculateScore();
+        onContinue(score);
+    };
+
     const calculateScore = () => {
         let score = 0;
         questions.forEach((question, index) => {
@@ -248,7 +253,14 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const currentQuestion = questions[currentQuestionIndex];
 
     return (
-        <TestLayout currentSection={`Quantitative Section ${section === 'quantitative1' ? 1 : 2}`} onContinue={handleNext} onBack={handleBack} showVerbalButtons={false}>
+        <TestLayout
+            currentSection={`Quantitative Section ${section === 'quantitative1' ? 1 : 2}`}
+            onExitSection={handleExitSection}
+            onContinue={handleNext}
+            onBack={handleBack}
+            showQuantButtons={true}  // Ensure this is passed as true
+            quantSection={section}  // Ensure the section (quant1 or quant2) is passed
+        >
             <div className="min-h-[50vh] w-full dark:text-black">
                 {currentQuestion && (
                     <>

@@ -9,15 +9,20 @@ interface TestLayoutProps {
   showAWAButtons?: boolean;
   showVerbalButtons?: boolean;
   verbalSection?: 'verbal1' | 'verbal2'; // Add this prop to specify which verbal section
+  showQuantButtons?: boolean;
+  quantSection?: 'quantitative1' | 'quantitative2';
 }
 
-const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showAWAButtons = false, showVerbalButtons = false, verbalSection }) => {
+const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection }) => {
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false); // State to manage modal visibility
   const [activeTab, setActiveTab] = useState<'awa' | 'verbal' | 'quant' | 'tools'>('awa');
 
   const getInitialTime = () => {
     if (showVerbalButtons) {
       return verbalSection === 'verbal1' ? 1080 : 1380; // 18 minutes for Verbal 1, 23 minutes for Verbal 2
+    }
+    if (showQuantButtons) {
+      return quantSection === 'quantitative1' ? 1260 : 1560; // 21 minutes for quant 1, 26 minutes for quant 2
     }
     return 1800; // 30 minutes for AWA
   };
@@ -36,7 +41,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
         timerRef.current = null;
       }
     };
-  }, [showAWAButtons, showVerbalButtons, verbalSection]);
+  }, [showAWAButtons, showVerbalButtons, verbalSection, showQuantButtons]);
 
   const startCountdown = () => {
     timerRef.current = setInterval(() => {
@@ -89,13 +94,25 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
               <button onClick={onContinue}>Next</button>
             </>
           )}
-          {!showAWAButtons && !showVerbalButtons && (
+          {showQuantButtons && (
+            <>
+              <button onClick={onExitSection}>Exit Section</button>
+              <button>Quit w/Save</button>
+              <button>Mark</button>
+              <button>Review</button>
+              <button>Calculator</button>
+              <button onClick={showHelp}>Help</button>
+              <button onClick={onBack}>Back</button>
+              <button onClick={onContinue}>Next</button>
+            </>
+          )}
+          {!showAWAButtons && !showVerbalButtons && !showQuantButtons && (
             <button onClick={onContinue}>Continue</button>
           )}
         </div>
       </div>
 
-      {(showAWAButtons || showVerbalButtons) && (
+      {(showAWAButtons || showVerbalButtons || showQuantButtons) && (
         <div className="flex justify-between p-[10px] bg-yellow-100 dark:text-black">
           <div className="section-info">
             <h2>{currentSection}</h2>
