@@ -73,7 +73,7 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
 
     return (
         <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={handleContinue} showAWAButtons={true}>
-            <div className="flex flex-row min-w-[85vw]">
+            <div className="flex flex-row min-w-[85vw] dark:text-black">
                 <div className="prompt-container">
                     <p className='border-2 rounded-md p-2 mb-4 mt-4'>{test.sections.awa.prompt}</p>
                     <p>{test.sections.awa.instructions}</p>
@@ -91,7 +91,7 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
                         placeholder="Write your essay here..."
                         rows={20}
                         style={{ width: '100%' }}
-                        className='p-2 border-2 rounded-lg'
+                        className='p-2 border-2 rounded-lg dark:text-white'
                     ></textarea>
                 </div>
             </div>

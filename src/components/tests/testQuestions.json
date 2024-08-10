@@ -27,7 +27,9 @@
               "obsolete",
               "illegible"
             ],
-            "correctAnswer": "obsolete",
+            "correctAnswer": [
+              "obsolete"
+            ],
             "blanks": 1
           },
           "question2": {
@@ -88,8 +90,12 @@
               "Under Tokugawa governance, only samurai were allowed to serve in the military."
             ],
             "correctAnswer": [
-              "The emperor of Japan had no power under Tokugawa governance.",
-              "It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century."
+              [
+                [
+                  "The emperor of Japan had no power under Tokugawa governance."
+                ],
+                "It became possible for Japanese businesspeople to rise in social class after the rebellions in the mid-19th century."
+              ]
             ]
           },
           "question5": {
@@ -103,7 +109,9 @@
               "sentence_4",
               "sentence_5"
             ],
-            "correctAnswer": "sentence_3"
+            "correctAnswer": [
+              "Already weakened by an increasingly indebted samurai bureaucracy and faltering political power, the Shogunate was unable to quell the revolution and was forced to capitulate"
+            ]
           },
           "question6": {
             "type": "reading_comprehension_highlighted",
@@ -136,8 +144,12 @@
               "vociferous"
             ],
             "correctAnswer": [
-              "stentorian",
-              "poignant"
+              [
+                [
+                  "stentorian"
+                ],
+                "poignant"
+              ]
             ]
           },
           "question8": {
@@ -152,8 +164,12 @@
               "identical"
             ],
             "correctAnswer": [
-              "similar",
-              "alike"
+              [
+                [
+                  "similar"
+                ],
+                "alike"
+              ]
             ]
           },
           "question9": {
@@ -168,8 +184,12 @@
               "imperturbation"
             ],
             "correctAnswer": [
-              "dispassion",
-              "intoxication"
+              [
+                [
+                  "dispassion"
+                ],
+                "intoxication"
+              ]
             ]
           },
           "question10": {
@@ -182,7 +202,9 @@
               "The author is neutral",
               "The author is unsure"
             ],
-            "correctAnswer": "The author disagrees"
+            "correctAnswer": [
+              "The author disagrees"
+            ]
           },
           "question11": {
             "type": "reading_comprehension",
@@ -194,7 +216,9 @@
               "The author is neutral",
               "The author is unsure"
             ],
-            "correctAnswer": "The author disagrees"
+            "correctAnswer": [
+              "The author disagrees"
+            ]
           },
           "question12": {
             "type": "reading_comprehension",
@@ -206,7 +230,9 @@
               "The author is neutral",
               "The author is unsure"
             ],
-            "correctAnswer": "The author disagrees"
+            "correctAnswer": [
+              "The author disagrees"
+            ]
           }
         },
         "verbal2": {
@@ -531,7 +557,7 @@
               "a^9",
               "a^11"
             ],
-            "correctAnswer": "2"
+            "correctAnswer": "a^2"
           },
           "question7": {
             "type": "numeric_entry",
@@ -548,7 +574,7 @@
               "5",
               "26"
             ],
-            "correctAnswer": "2"
+            "correctAnswer": "-25"
           },
           "question9": {
             "type": "data_interpretation_single_answer",
@@ -573,8 +599,8 @@
               "Service"
             ],
             "correctAnswer": [
-              "7 – 3 × 3 + (5 + 4)",
-              "(2 + 6) × 1 + 3 – 6 × 4 + 1"
+              "Sales",
+              "Service"
             ]
           },
           "question11": {

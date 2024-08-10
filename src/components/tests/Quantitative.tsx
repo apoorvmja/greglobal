@@ -26,11 +26,12 @@ interface Props {
 }
 
 const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
-    // Convert the section object to an array of questions
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
 
     const handleNext = () => {
+        calculateScore(); // Calculate score when the section ends
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
@@ -42,6 +43,45 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
         if (currentQuestionIndex > 0) {
             setCurrentQuestionIndex(currentQuestionIndex - 1);
         }
+    };
+
+    const handleAnswerChange = (questionIndex: number, answer: string | string[]) => {
+        setSelectedAnswers({
+            ...selectedAnswers,
+            [questionIndex]: answer,
+        });
+    };
+
+    const calculateScore = () => {
+        let score = 0;
+        questions.forEach((question, index) => {
+            const userAnswer = selectedAnswers[index];
+            console.log(`Question ${index + 1}:`);
+            console.log('User Answer:', userAnswer);
+            console.log('Correct Answer:', question.correctAnswer);
+
+            if (Array.isArray(question.correctAnswer)) {
+                if (Array.isArray(userAnswer)) {
+                    const correctAnswerString = question.correctAnswer.map(ans => ans.toString().trim()).join('|');
+                    const userAnswerString = userAnswer.map(ans => ans.toString().trim()).join('|');
+
+                    if (correctAnswerString === userAnswerString) {
+                        score++;
+                    } else {
+                        console.log('Mismatch or missing parts in user answer');
+                    }
+                } else {
+                    console.log('User answer is not an array');
+                }
+            } else {
+                if (userAnswer === question.correctAnswer) {
+                    score++;
+                } else {
+                    console.log('Incorrect single-part answer');
+                }
+            }
+        });
+        console.log(`Score for ${section}:`, score);
     };
 
     const renderQuantitativeComparison = (question: QuantitativeQuestion, index: number) => (
@@ -65,13 +105,18 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
             <div className="flex flex-col mt-4">
                 {['Quantity A is greater', 'Quantity B is greater', 'The two quantities are equal', 'The relationship cannot be determined from the information given'].map((option, idx) => (
                     <label key={idx} className="mb-2">
-                        <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                        <input
+                            type="radio"
+                            name={`question-${index}`}
+                            value={option}
+                            className="mr-2"
+                            onChange={() => handleAnswerChange(index, option)}
+                        /> {option}
                     </label>
                 ))}
             </div>
         </div>
     );
-
 
     const renderMultipleChoiceSingleAnswer = (question: QuantitativeQuestion, index: number) => (
         <div key={index} className="mb-4">
@@ -79,7 +124,13 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
             <div className="flex flex-col mt-4">
                 {question.options?.map((option, idx) => (
                     <label key={idx} className="mb-2">
-                        <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                        <input
+                            type="radio"
+                            name={`question-${index}`}
+                            value={option}
+                            className="mr-2"
+                            onChange={() => handleAnswerChange(index, option)}
+                        /> {option}
                     </label>
                 ))}
             </div>
@@ -92,7 +143,19 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
             <div className="flex flex-col mt-4">
                 {question.options?.map((option, idx) => (
                     <label key={idx} className="mb-2">
-                        <input type="checkbox" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                        <input
+                            type="checkbox"
+                            name={`question-${index}`}
+                            value={option}
+                            className="mr-2"
+                            onChange={(e) => {
+                                const currentAnswers = selectedAnswers[index] as string[] || [];
+                                const newAnswers = e.target.checked
+                                    ? [...currentAnswers, option]
+                                    : currentAnswers.filter(ans => ans !== option);
+                                handleAnswerChange(index, newAnswers);
+                            }}
+                        /> {option}
                     </label>
                 ))}
             </div>
@@ -103,7 +166,12 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
         <div key={index} className="mb-4">
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
             <div className="mt-4">
-                <input type="number" name={`question-${index}`} className="border p-2 w-full" />
+                <input
+                    type="number"
+                    name={`question-${index}`}
+                    className="border p-2 w-full dark:text-white rounded-lg"
+                    onChange={(e) => handleAnswerChange(index, e.target.value)}
+                />
             </div>
         </div>
     );
@@ -116,11 +184,16 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                 </div>
             )}
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            {/* Add the chart or table rendering logic here */}
             <div className="flex flex-col mt-4">
                 {question.options?.map((option, idx) => (
                     <label key={idx} className="mb-2">
-                        <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                        <input
+                            type="radio"
+                            name={`question-${index}`}
+                            value={option}
+                            className="mr-2"
+                            onChange={() => handleAnswerChange(index, option)}
+                        /> {option}
                     </label>
                 ))}
             </div>
@@ -135,11 +208,22 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                 </div>
             )}
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            {/* Add the chart or table rendering logic here */}
             <div className="flex flex-col mt-4">
                 {question.options?.map((option, idx) => (
                     <label key={idx} className="mb-2">
-                        <input type="checkbox" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                        <input
+                            type="checkbox"
+                            name={`question-${index}`}
+                            value={option}
+                            className="mr-2"
+                            onChange={(e) => {
+                                const currentAnswers = selectedAnswers[index] as string[] || [];
+                                const newAnswers = e.target.checked
+                                    ? [...currentAnswers, option]
+                                    : currentAnswers.filter(ans => ans !== option);
+                                handleAnswerChange(index, newAnswers);
+                            }}
+                        /> {option}
                     </label>
                 ))}
             </div>
@@ -149,9 +233,13 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const renderDataInterpretationNumericEntry = (question: QuantitativeQuestion, index: number) => (
         <div key={index} className="mb-4">
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            {/* Add the chart or table rendering logic here */}
             <div className="mt-4">
-                <input type="number" name={`question-${index}`} className="border p-2 w-full" />
+                <input
+                    type="number"
+                    name={`question-${index}`}
+                    className="border p-2 w-full"
+                    onChange={(e) => handleAnswerChange(index, e.target.value)}
+                />
             </div>
         </div>
     );
@@ -160,7 +248,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
 
     return (
         <TestLayout currentSection={`Quantitative Section ${section === 'quantitative1' ? 1 : 2}`} onContinue={handleNext} onBack={handleBack} showVerbalButtons={false}>
-            <div className="min-h-[50vh] w-full">
+            <div className="min-h-[50vh] w-full dark:text-black">
                 {currentQuestion && (
                     <>
                         {currentQuestion.type === 'quantitative_comparison' && renderQuantitativeComparison(currentQuestion, currentQuestionIndex)}

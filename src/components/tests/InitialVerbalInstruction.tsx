@@ -7,7 +7,7 @@ interface Props {
 const InitialVerbalInstructions: React.FC<Props> = ({ onContinue }) => {
   return (
     <TestLayout currentSection="Verbal Section Instructions" onContinue={onContinue}>
-      <div className="verbal-instructions">
+      <div className="verbal-instructions dark:text-black">
         <h1>Verbal Section Instructions</h1>
         <p>12 Questions</p>
         <p>18 Minutes</p>

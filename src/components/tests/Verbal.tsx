@@ -32,13 +32,16 @@ interface Props {
 const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
     const [selectedSentence, setSelectedSentence] = useState<string | null>(null);
 
     const handleNext = () => {
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
-            setSelectedSentence(null); // Reset selected sentence
+            setSelectedSentence(null);
+            calculateScore();
         } else {
+            calculateScore();
             onContinue();
         }
     };
@@ -46,16 +49,65 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const handleBack = () => {
         if (currentQuestionIndex > 0) {
             setCurrentQuestionIndex(currentQuestionIndex - 1);
-            setSelectedSentence(null); // Reset selected sentence
+            setSelectedSentence(null);
         }
     };
 
-    const handleExitSection = () => {
-        onContinue(); // Navigate to the next section
+    const handleAnswerChange = (questionIndex: number, blankIndex: number, answer: string) => {
+        const currentAnswers = selectedAnswers[questionIndex] as string[] || [];
+
+        const newAnswers = [...currentAnswers];
+        newAnswers[blankIndex] = answer;
+
+        setSelectedAnswers({
+            ...selectedAnswers,
+            [questionIndex]: newAnswers,
+        });
     };
+
+    const calculateScore = () => {
+        let score = 0;
+        questions.forEach((question, index) => {
+            const userAnswer = selectedAnswers[index];
+
+            console.log(`Question ${index + 1}:`);
+            console.log('User Answer:', userAnswer);
+            console.log('Correct Answer:', question.correctAnswer);
+
+            if (Array.isArray(question.correctAnswer)) {
+                // Handle multi-part answers
+                if (Array.isArray(userAnswer)) {
+                    const correctAnswerString = question.correctAnswer.map(ans => ans.toString().trim()).join('|');
+                    const userAnswerString = userAnswer.map(ans => ans.toString().trim()).join('|');
+
+                    if (correctAnswerString === userAnswerString) {
+                        score++;
+                    } else {
+                        console.log('Mismatch or missing parts in user answer');
+                    }
+                } else {
+                    console.log('User answer is not an array');
+                }
+            } else {
+                // Handle single-part answers
+                if (userAnswer === question.correctAnswer) {
+                    score++;
+                } else {
+                    console.log('Incorrect single-part answer');
+                }
+            }
+        });
+        console.log(`Score for ${section}:`, score);
+    };
+
 
     const handleSentenceClick = (sentence: string) => {
         setSelectedSentence(sentence);
+        // Optionally store the selection in selectedAnswers
+    };
+
+    const handleExitSection = () => {
+        onContinue();
     };
 
     const renderTextCompletion = (question: VerbalQuestion, index: number) => (
@@ -69,7 +121,13 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                             <div className="flex flex-col items-center mt-4">
                                 {(question.options as OptionsMap)?.[`blank${blankIndex + 1}`]?.map((option, optIdx) => (
                                     <label key={optIdx} className="min-w-[200px] p-4 border border-black text-center cursor-pointer bg-white hover:bg-gray-200">
-                                        <input type="radio" name={`question-${index}-blank-${blankIndex}`} value={option} className="mr-2" /> {option}
+                                        <input
+                                            type="radio"
+                                            name={`question-${index}-blank-${blankIndex}`}
+                                            value={option}
+                                            className="mr-2"
+                                            onChange={() => handleAnswerChange(index, blankIndex, option)}
+                                        /> {option}
                                     </label>
                                 ))}
                             </div>
@@ -79,7 +137,13 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                     <div className="flex flex-col items-center mt-4">
                         {(question.options as string[])?.map((option, idx) => (
                             <label key={idx} className="min-w-[200px] p-4 border border-black text-center cursor-pointer bg-white hover:bg-gray-200">
-                                <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                                <input
+                                    type="radio"
+                                    name={`question-${index}`}
+                                    value={option}
+                                    className="mr-2"
+                                    onChange={() => handleAnswerChange(index, 0, option)} // Single blank, so blankIndex is 0
+                                /> {option}
                             </label>
                         ))}
                     </div>
@@ -93,7 +157,19 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
             {(question.options as string[])?.map((option, idx) => (
                 <div key={idx}>
-                    <input type="checkbox" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                    <input
+                        type="checkbox"
+                        name={`question-${index}`}
+                        value={option}
+                        className="mr-2"
+                        onChange={(e) => {
+                            const currentAnswers = selectedAnswers[index] as string[] || [];
+                            const newAnswers = e.target.checked
+                                ? [...currentAnswers, option]
+                                : currentAnswers.filter(ans => ans !== option);
+                            handleAnswerChange(index, 0, newAnswers as any);
+                        }}
+                    /> {option}
                 </div>
             ))}
         </div>
@@ -105,7 +181,13 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
             {(question.options as string[])?.map((option, idx) => (
                 <div key={idx}>
-                    <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                    <input
+                        type="radio"
+                        name={`question-${index}`}
+                        value={option}
+                        className="mr-2"
+                        onChange={() => handleAnswerChange(index, 0, option)}
+                    /> {option}
                 </div>
             ))}
         </div>
@@ -117,7 +199,19 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
             {(question.options as string[])?.map((option, idx) => (
                 <div key={idx}>
-                    <input type="checkbox" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                    <input
+                        type="checkbox"
+                        name={`question-${index}`}
+                        value={option}
+                        className="mr-2"
+                        onChange={(e) => {
+                            const currentAnswers = selectedAnswers[index] as string[] || [];
+                            const newAnswers = e.target.checked
+                                ? [...currentAnswers, option]
+                                : currentAnswers.filter(ans => ans !== option);
+                            handleAnswerChange(index, 0, newAnswers as any);
+                        }}
+                    /> {option}
                 </div>
             ))}
         </div>
@@ -130,7 +224,10 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                     {question.passage.split('. ').map((sentence, idx) => (
                         <span
                             key={idx}
-                            onClick={() => handleSentenceClick(sentence)}
+                            onClick={() => {
+                                handleSentenceClick(sentence);
+                                handleAnswerChange(index, 0, sentence);
+                            }}
                             className={`cursor-pointer ${selectedSentence === sentence ? 'bg-yellow-200' : ''}`}
                         >
                             {sentence}.{' '}
@@ -160,7 +257,13 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                     <div className="w-1/2 p-4">
                         {(question.options as string[])?.map((option, idx) => (
                             <div key={idx}>
-                                <input type="radio" name={`question-${index}`} value={option} className="mr-2" /> {option}
+                                <input
+                                    type="radio"
+                                    name={`question-${index}`}
+                                    value={option}
+                                    className="mr-2"
+                                    onChange={() => handleAnswerChange(index, 0, option)}
+                                /> {option}
                             </div>
                         ))}
                     </div>
@@ -180,7 +283,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
             showVerbalButtons={true}
             verbalSection={section}
         >
-            <div className="min-h-[50vh] w-full">
+            <div className="min-h-[50vh] w-full dark:text-black">
                 {currentQuestion && (
                     <>
                         {currentQuestion.type === 'text_completion' && renderTextCompletion(currentQuestion, currentQuestionIndex)}

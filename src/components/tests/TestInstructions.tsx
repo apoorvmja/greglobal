@@ -1,7 +1,7 @@
 // src/components/TestInstructions.tsx
 
 const TestInstructions = () => (
-    <div>
+    <div className="dark:text-black">
         <h2>Test Instructions</h2>
         <p>
             This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections. Standard timing for the entire test is roughly 2 hours (longer if you have extended time). Standard section lengths are as follows:
