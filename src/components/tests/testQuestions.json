@@ -2,7 +2,7 @@
   "tests": [
     {
       "id": "test1",
-      "name": "Kaplan GRE Practice Test",
+      "name": "MJ Academy Practice Test",
       "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
       "timeLimits": {
         "verbal1": 23,
@@ -13,8 +13,8 @@
       },
       "sections": {
         "awa": {
-          "prompt": "All too often, companies hire outside consultants to suggest ways for the company to operate more efficiently...",
-          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with these statements..."
+          "prompt": "The luxuries and conveniences of contemporary life prevent people from developing into truly strong and independent individuals.",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position"
         },
         "verbal1": {
           "question1": {

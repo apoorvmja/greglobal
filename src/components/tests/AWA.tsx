@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import TestLayout from './TestLayout';
 
 interface AWASection {
@@ -21,14 +21,29 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const handleCut = () => {
-        if (textareaRef.current) {
-            document.execCommand('cut');
+        navigator.clipboard.readText()
+        const textarea = textareaRef.current;
+        if (textarea) {
+            const selectedText = textarea.value.substring(
+                textarea.selectionStart || 0,
+                textarea.selectionEnd || 0
+            );
+            navigator.clipboard.writeText(selectedText).then(() => {
+                const start = textarea.selectionStart || 0;
+                textarea.setRangeText('');
+                textarea.selectionStart = start;
+                textarea.selectionEnd = start;
+            });
         }
     };
 
     const handlePaste = () => {
-        if (textareaRef.current) {
-            document.execCommand('paste');
+        const textarea = textareaRef.current;
+        if (textarea) {
+            navigator.clipboard.readText().then((text) => {
+                const start = textarea.selectionStart || 0;
+                textarea.setRangeText(text, start, start, 'end');
+            });
         }
     };
 

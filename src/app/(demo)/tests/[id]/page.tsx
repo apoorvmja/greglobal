@@ -105,30 +105,7 @@ export default function TagsPage() {
     else if (currentSection === 'quantitative2') setCurrentSection('resultDashboard');
   };
 
-  const enterFullscreen = () => {
-    const elem = document.documentElement;
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if ((elem as any).mozRequestFullScreen) { // Firefox
-      (elem as any).mozRequestFullScreen();
-    } else if ((elem as any).webkitRequestFullscreen) { // Chrome, Safari, and Opera
-      (elem as any).webkitRequestFullscreen();
-    } else if ((elem as any).msRequestFullscreen) { // IE/Edge
-      (elem as any).msRequestFullscreen();
-    }
-  };
 
-  const exitFullscreen = () => {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if ((document as any).mozCancelFullScreen) { // Firefox
-      (document as any).mozCancelFullScreen();
-    } else if ((document as any).webkitExitFullscreen) { // Chrome, Safari, and Opera
-      (document as any).webkitExitFullscreen();
-    } else if ((document as any).msExitFullscreen) { // IE/Edge
-      (document as any).msExitFullscreen();
-    }
-  };
 
   if (error) {
     return <div>Error: {error}</div>;

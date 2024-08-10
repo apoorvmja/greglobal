@@ -23,7 +23,7 @@ const TestInstructions = () => (
             During the test, hit the Continue or Next buttons to advance to the next section. If you hit the Exit Section button before finishing a section, you will advance to the next section. If you hit the Quit w/Save button, you will end your test and receive a score. Don’t select that option unless you want to finish your test.
         </p>
         <p>
-            If you have any questions, reach out to your instructor or email us at kaplanGREfeedback@kaplan.com.
+            If you have any questions, reach out to your instructor or email us at greglobal@gmail.com.
         </p>
     </div>
 );
