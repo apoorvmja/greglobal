@@ -98,7 +98,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                 </div>
             )}
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex justify-around mt-5">
+            <div className="flex flex-col sm:flex-row justify-around mt-5">
                 <div className="border p-4 flex flex-col justify-center items-center">
                     <p>Quantity A</p>
                     <p>{question.quantityA}</p>

@@ -82,7 +82,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
   return (
     <div>
       <div className="top-bar rounded-t-lg dark:text-black w-full">
-        <div className="section-info">
+        <div className="section-info hidden sm:flex">
           <h2>MJ Study Abroad</h2>
         </div>
         <div className="nav-buttons">
@@ -140,8 +140,8 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
       {isHelpModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
           <div className="bg-white rounded-lg p-6 w-[80%] h-[90%]">
-            <h3 className="text-xl font-bold mb-4">Help Section</h3>
-            <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+            <h3 className="text-xl font-bold mb-4 hidden sm:flex">Help Section</h3>
+            <ul className="flex flex-wrap text-xs sm:text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               <li className="me-2">
                 <button
                   onClick={() => setActiveTab('awa')}

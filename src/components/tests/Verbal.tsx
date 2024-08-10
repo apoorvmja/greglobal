@@ -115,7 +115,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const renderTextCompletion = (question: VerbalQuestion, index: number) => (
         <div key={index} className="mb-4">
             <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className='flex flex-row gap-10 justify-center items-center mt-10'>
+            <div className='flex flex-col sm:flex-row gap-10 justify-center items-center mt-10'>
                 {question.blanks && question.blanks > 1 ? (
                     Array.from({ length: question.blanks }, (_, blankIndex) => (
                         <div key={blankIndex} className="mb-2">
@@ -252,11 +252,11 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
         return (
             <div key={index} className="mb-4">
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-                <div className="flex">
-                    <div className="w-1/2 p-4 border-r">
+                <div className="flex flex-col sm:flex-row">
+                    <div className="sm:w-1/2 p-4 border-b sm:border-r">
                         <p dangerouslySetInnerHTML={{ __html: highlightedPassage }}></p>
                     </div>
-                    <div className="w-1/2 p-4">
+                    <div className="sm:w-1/2 p-4">
                         {(question.options as string[])?.map((option, idx) => (
                             <div key={idx}>
                                 <input

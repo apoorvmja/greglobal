@@ -59,11 +59,11 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                     </button>
                 </div>
                 <div className="flex justify-center mb-4 text-center">
-                    <Link href={`tests/test${buttonId}`} className='bg-gradient-to-r w-full from-blue-500 to-purple-500 text-white px-4 py-4 rounded-[2rem]'>
-                        <button onClick={startTest}>
+                    <button onClick={startTest} className='bg-gradient-to-r w-full from-blue-500 to-purple-500 text-white  rounded-[2rem]'>
+                        <Link href={`tests/test${buttonId}`} className='flex text-center justify-center items-center     px-4 py-4 w-full h-full'>
                             Full Test
-                        </button>
-                    </Link>
+                        </Link>
+                    </button>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                     <button className="flex items-center justify-center p-6 bg-blue-100 rounded-[2rem] hover:bg-blue-200 dark:bg-blue-900 dark:hover:bg-blue-800">
