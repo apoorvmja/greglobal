@@ -155,7 +155,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardHeader>
                                     <CardTitle>Section Wise</CardTitle>
                                     <CardDescription>
-                                        Click 'view' to check answers
+                                        Click &apos;view&apos; to check answers
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
