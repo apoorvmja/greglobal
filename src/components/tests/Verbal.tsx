@@ -11,9 +11,10 @@ interface VerbalQuestion {
     passage?: string;
     options?: OptionsMap | string[];
     highlighted?: string[];
-    correctAnswer: string | string[];
+    correctAnswer: string | string[] | (string | string[])[][]; // Update to support complex nested arrays
     blanks?: number;
 }
+
 
 interface VerbalTest {
     sections: {

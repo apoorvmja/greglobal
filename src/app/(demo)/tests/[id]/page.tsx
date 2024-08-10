@@ -32,7 +32,7 @@ interface VerbalQuestion {
   passage?: string;
   options?: string[] | { [key: string]: string[] }; // Supports both array and object with blanks
   highlighted?: string[];
-  correctAnswer: string | string[];
+  correctAnswer: string | string[] | (string | string[])[][]; // Updated to support complex nested arrays
   blanks?: number;
 }
 
@@ -89,8 +89,8 @@ export default function TagsPage() {
   }, [id]);
 
   const handleContinue = () => {
-    if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
-    // if (currentSection === 'testDetails') setCurrentSection('quantitative1');
+    // if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
+    if (currentSection === 'testDetails') setCurrentSection('resultDashboard');
     else if (currentSection === 'awaInstructions') setCurrentSection('awa');
     else if (currentSection === 'awa') setCurrentSection('VerbalInstructions');
     else if (currentSection === 'VerbalInstructions') setCurrentSection('verbal1');

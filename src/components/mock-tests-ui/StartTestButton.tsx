@@ -16,7 +16,9 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
         "bg-gradient-to-r from-yellow-300 to-yellow-500",
         "bg-gradient-to-r from-green-300 to-green-500"
     ];
-
+    const startTest = () => {
+        window.location.href = `tests/test${buttonId}`
+    }
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white rounded-[4rem] p-6 py-12 dark:bg-gray-800 dark:text-white md:w-[50%] xl:w-[40%]">
@@ -29,7 +31,7 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                     </button>
                 </div>
                 <div className="flex justify-center mb-4">
-                    <button className="bg-gradient-to-r w-full from-blue-500 to-purple-500 text-white px-4 py-4 rounded-[2rem]">
+                    <button onClick={startTest} className="bg-gradient-to-r w-full from-blue-500 to-purple-500 text-white px-4 py-4 rounded-[2rem]">
                         Full Test
                     </button>
                 </div>

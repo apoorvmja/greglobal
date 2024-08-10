@@ -39,7 +39,7 @@ const TotalTestDisplay: React.FC = () => {
                                 <PlayCircleIcon />
                             </button>
                             <div>
-                                <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+                                <h2 className="text-lg font-bold">Test Number {buttonId}</h2>
                                 <p className="mt-1 text-sm dark:text-gray-300">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
                                     possimus quisquam reiciendis tempora animi! Quaerat, saepe?
