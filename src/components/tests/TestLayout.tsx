@@ -7,6 +7,8 @@ interface TestLayoutProps {
   onContinue: () => void;
   onBack?: () => void;
   onExitSection?: () => void;
+  showReview?: () => void;
+  onMark?: () => void;
   showAWAButtons?: boolean;
   showVerbalButtons?: boolean;
   verbalSection?: 'verbal1' | 'verbal2'; // Add this prop to specify which verbal section
@@ -14,7 +16,7 @@ interface TestLayoutProps {
   quantSection?: 'quantitative1' | 'quantitative2';
 }
 
-const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection }) => {
+const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showReview, onMark, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection }) => {
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false); // State to manage modal visibility
   const [activeTab, setActiveTab] = useState<'awa' | 'verbal' | 'quant' | 'tools'>('awa');
   const [showCalculator, SetShowCalculator] = useState(false)
@@ -97,8 +99,8 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
             <>
               <button onClick={onExitSection}>Exit Section</button>
               <button>Quit w/Save</button>
-              <button>Mark</button>
-              <button>Review</button>
+              <button onClick={onMark}>Mark</button>
+              <button onClick={showReview}>Review</button>
               <button onClick={showHelp}>Help</button>
               <button onClick={onBack}>Back</button>
               <button onClick={onContinue}>Next</button>
@@ -108,8 +110,8 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
             <>
               <button onClick={onExitSection}>Exit Section</button>
               <button>Quit w/Save</button>
-              <button>Mark</button>
-              <button>Review</button>
+              <button onClick={onMark}>Mark</button>
+              <button onClick={showReview}>Review</button>
               <button onClick={OpenCloseCalculator}>{!showCalculator ? "Open Calculator" : "Close Calculator"}</button>
               <button onClick={showHelp}>Help</button>
               <button onClick={onBack}>Back</button>

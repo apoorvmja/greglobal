@@ -29,6 +29,8 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
+    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false); // State for managing modal visibility
+    const [markedQuestions, setMarkedQuestions] = useState<number[]>([]); // Track marked questions
 
     const handleNext = () => {
         const score = calculateScore(); // Calculate the score
@@ -55,6 +57,18 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const handleExitSection = () => {
         const score = calculateScore();
         onContinue(score);
+    };
+
+    const toggleReviewModal = () => {
+        setIsReviewModalOpen(!isReviewModalOpen); // Toggle the modal visibility
+    };
+
+    const toggleMarkQuestion = () => {
+        setMarkedQuestions((prev) =>
+            prev.includes(currentQuestionIndex)
+                ? prev.filter((qIndex) => qIndex !== currentQuestionIndex)
+                : [...prev, currentQuestionIndex]
+        );
     };
 
     const calculateScore = () => {
@@ -300,28 +314,82 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     const currentQuestion = questions[currentQuestionIndex];
 
     return (
-        <TestLayout
-            currentSection={`Quantitative Section ${section === 'quantitative1' ? 1 : 2}`}
-            onExitSection={handleExitSection}
-            onContinue={handleNext}
-            onBack={handleBack}
-            showQuantButtons={true}  // Ensure this is passed as true
-            quantSection={section}  // Ensure the section (quant1 or quant2) is passed
-        >
-            <div className="min-h-[50vh] w-full dark:text-black">
-                {currentQuestion && (
-                    <>
-                        {currentQuestion.type === 'quantitative_comparison' && renderQuantitativeComparison(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'multiple_choice_single_answer' && renderMultipleChoiceSingleAnswer(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'multiple_choice_multiple_answers' && renderMultipleChoiceMultipleAnswers(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'numeric_entry' && renderNumericEntry(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'data_interpretation_single_answer' && renderDataInterpretationSingleAnswer(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'data_interpretation_multiple_answers' && renderDataInterpretationMultipleAnswers(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'data_interpretation_numeric_entry' && renderDataInterpretationNumericEntry(currentQuestion, currentQuestionIndex)}
-                    </>
-                )}
-            </div>
-        </TestLayout>
+        <>
+            <TestLayout
+                currentSection={`Quantitative Section ${section === 'quantitative1' ? 1 : 2}`}
+                onExitSection={handleExitSection}
+                onContinue={handleNext}
+                onBack={handleBack}
+                showReview={toggleReviewModal}
+                onMark={toggleMarkQuestion}
+                showQuantButtons={true}  // Ensure this is passed as true
+                quantSection={section}  // Ensure the section (quant1 or quant2) is passed
+            >
+                <div className="min-h-[50vh] w-full dark:text-black">
+                    {currentQuestion && (
+                        <>
+                            {currentQuestion.type === 'quantitative_comparison' && renderQuantitativeComparison(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'multiple_choice_single_answer' && renderMultipleChoiceSingleAnswer(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'multiple_choice_multiple_answers' && renderMultipleChoiceMultipleAnswers(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'numeric_entry' && renderNumericEntry(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'data_interpretation_single_answer' && renderDataInterpretationSingleAnswer(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'data_interpretation_multiple_answers' && renderDataInterpretationMultipleAnswers(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'data_interpretation_numeric_entry' && renderDataInterpretationNumericEntry(currentQuestion, currentQuestionIndex)}
+                        </>
+                    )}
+                </div>
+            </TestLayout>
+
+            {isReviewModalOpen && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                    <div className="bg-white rounded-lg p-6 w-[80%] h-[90%] overflow-auto">
+                        <h3 className="text-xl font-bold mb-4">Review Section</h3>
+                        <p className="mb-4">
+                            Below is the list of questions in the current section. The question you were on is highlighted.
+                            Questions you have seen are labeled <strong>Answered</strong>, <strong>Incomplete</strong> or <strong>Not Answered</strong>. A question is labeled <strong>Incomplete</strong> if the question
+                            requires you to select a certain number of answer choices and you have selected more or fewer
+                            than that number. Questions you have marked are indicated with a <span>✔</span>.
+                        </p>
+                        <p className="mb-4">
+                            To return to the question you were on, click <strong>Return</strong>. To go to a different question, click on that question to highlight it, then click <strong>Go To Question</strong>.
+                        </p>
+
+                        <table className="table-auto w-full border-collapse text-xs sm:text-base">
+                            <thead>
+                                <tr>
+                                    <th className="border px-4 py-2">Question Number</th>
+                                    <th className="border px-4 py-2">Status</th>
+                                    <th className="border px-4 py-2">Marked</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {questions.map((_, index) => (
+                                    <tr key={index} className={`${index === currentQuestionIndex ? 'bg-gray-200' : ''}`}>
+                                        <td className="border px-4 py-2 text-center">{index + 1}</td>
+                                        <td className="border px-4 py-2">
+                                            {selectedAnswers[index] ? 'Answered' : 'Not Answered'}
+                                        </td>
+                                        <td className="border px-4 py-2 text-center">
+                                            {/* Assume we have a markedQuestions array */}
+                                            {markedQuestions.includes(index) && <span>✔</span>}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+
+                        <div className="mt-6 flex justify-end">
+                            <button
+                                onClick={toggleReviewModal}
+                                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
     );
 };
 

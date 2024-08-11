@@ -35,6 +35,8 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
     const [selectedSentence, setSelectedSentence] = useState<string | null>(null);
+    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false); // State for managing modal visibility
+    const [markedQuestions, setMarkedQuestions] = useState<number[]>([]); // Track marked questions
 
     const handleNext = () => {
         const score = calculateScore();
@@ -109,6 +111,18 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const handleExitSection = () => {
         const score = calculateScore();
         onContinue(score);
+    };
+
+    const toggleReviewModal = () => {
+        setIsReviewModalOpen(!isReviewModalOpen); // Toggle the modal visibility
+    };
+
+    const toggleMarkQuestion = () => {
+        setMarkedQuestions((prev) =>
+            prev.includes(currentQuestionIndex)
+                ? prev.filter((qIndex) => qIndex !== currentQuestionIndex)
+                : [...prev, currentQuestionIndex]
+        );
     };
 
     const renderTextCompletion = (question: VerbalQuestion, index: number) => {
@@ -337,27 +351,82 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     const currentQuestion = questions[currentQuestionIndex];
 
     return (
-        <TestLayout
-            currentSection={`Verbal Section ${section === 'verbal1' ? 1 : 2}`}
-            onContinue={handleNext}
-            onExitSection={handleExitSection}
-            onBack={handleBack}
-            showVerbalButtons={true}
-            verbalSection={section}
-        >
-            <div className="min-h-[50vh] w-full dark:text-black">
-                {currentQuestion && (
-                    <>
-                        {currentQuestion.type === 'text_completion' && renderTextCompletion(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'sentence_equivalence' && renderSentenceEquivalence(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'reading_comprehension' && renderReadingComprehension(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'reading_comprehension_multiple' && renderReadingComprehensionMultiple(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'reading_comprehension_select' && renderReadingComprehensionSelect(currentQuestion, currentQuestionIndex)}
-                        {currentQuestion.type === 'reading_comprehension_highlighted' && renderReadingComprehensionHighlighted(currentQuestion, currentQuestionIndex)}
-                    </>
-                )}
-            </div>
-        </TestLayout>
+        <>
+            <TestLayout
+                currentSection={`Verbal Section ${section === 'verbal1' ? 1 : 2}`}
+                onContinue={handleNext}
+                onExitSection={handleExitSection}
+                onBack={handleBack}
+                showReview={toggleReviewModal}
+                onMark={toggleMarkQuestion}
+                showVerbalButtons={true}
+                verbalSection={section}
+            >
+                <div className="min-h-[50vh] w-full dark:text-black">
+                    {currentQuestion && (
+                        <>
+                            {currentQuestion.type === 'text_completion' && renderTextCompletion(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'sentence_equivalence' && renderSentenceEquivalence(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'reading_comprehension' && renderReadingComprehension(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'reading_comprehension_multiple' && renderReadingComprehensionMultiple(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'reading_comprehension_select' && renderReadingComprehensionSelect(currentQuestion, currentQuestionIndex)}
+                            {currentQuestion.type === 'reading_comprehension_highlighted' && renderReadingComprehensionHighlighted(currentQuestion, currentQuestionIndex)}
+                        </>
+                    )}
+                </div>
+            </TestLayout>
+
+            {isReviewModalOpen && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                    <div className="bg-white rounded-lg p-6 w-[80%] h-[90%] overflow-auto">
+                        <h3 className="text-xl font-bold mb-4">Review Section</h3>
+                        <p className="mb-4">
+                            Below is the list of questions in the current section. The question you were on is highlighted.
+                            Questions you have seen are labeled <strong>Answered</strong>, <strong>Incomplete</strong> or <strong>Not Answered</strong>. A question is labeled <strong>Incomplete</strong> if the question
+                            requires you to select a certain number of answer choices and you have selected more or fewer
+                            than that number. Questions you have marked are indicated with a <span>✔</span>.
+                        </p>
+                        <p className="mb-4">
+                            To return to the question you were on, click <strong>Return</strong>. To go to a different question, click on that question to highlight it, then click <strong>Go To Question</strong>.
+                        </p>
+
+                        <table className="table-auto w-full border-collapse text-xs sm:text-base">
+                            <thead>
+                                <tr>
+                                    <th className="border px-4 py-2">Question Number</th>
+                                    <th className="border px-4 py-2">Status</th>
+                                    <th className="border px-4 py-2">Marked</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {questions.map((_, index) => (
+                                    <tr key={index} className={`${index === currentQuestionIndex ? 'bg-gray-200' : ''}`}>
+                                        <td className="border px-4 py-2 text-center">{index + 1}</td>
+                                        <td className="border px-4 py-2">
+                                            {selectedAnswers[index] ? 'Answered' : 'Not Answered'}
+                                        </td>
+                                        <td className="border px-4 py-2 text-center">
+                                            {/* Assume we have a markedQuestions array */}
+                                            {markedQuestions.includes(index) && <span>✔</span>}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+
+                        <div className="mt-6 flex justify-end">
+                            <button
+                                onClick={toggleReviewModal}
+                                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+        </>
     );
 };
 
