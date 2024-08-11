@@ -90,165 +90,212 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
         return score;
     };
 
-    const renderQuantitativeComparison = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            {question.imgUrl && (
-                <div className="mb-4">
-                    <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full h-auto" />
+    const renderQuantitativeComparison = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string | undefined;
+
+        return (
+            <div key={index} className="mb-4">
+                {question.imgUrl && (
+                    <div className="mb-4">
+                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full h-auto" />
+                    </div>
+                )}
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="flex flex-col sm:flex-row justify-around mt-5">
+                    <div className="border p-4 flex flex-col justify-center items-center">
+                        <p>Quantity A</p>
+                        <p>{question.quantityA}</p>
+                    </div>
+                    <div className="border p-4 flex flex-col justify-center items-center">
+                        <p>Quantity B</p>
+                        <p>{question.quantityB}</p>
+                    </div>
                 </div>
-            )}
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex flex-col sm:flex-row justify-around mt-5">
-                <div className="border p-4 flex flex-col justify-center items-center">
-                    <p>Quantity A</p>
-                    <p>{question.quantityA}</p>
+                <div className="flex flex-col mt-4">
+                    {['Quantity A is greater', 'Quantity B is greater', 'The two quantities are equal', 'The relationship cannot be determined from the information given'].map((option, idx) => {
+                        const isChecked = selectedAnswer === option;
+
+                        return (
+                            <label key={idx} className="mb-2">
+                                <input
+                                    type="radio"
+                                    name={`question-${index}`}
+                                    value={option}
+                                    className="mr-2"
+                                    onChange={() => handleAnswerChange(index, option)}
+                                    checked={isChecked || false}
+                                /> {option}
+                            </label>
+                        );
+                    })}
                 </div>
-                <div className="border p-4 flex flex-col justify-center items-center">
-                    <p>Quantity B</p>
-                    <p>{question.quantityB}</p>
+            </div>
+        );
+    };
+
+    const renderMultipleChoiceSingleAnswer = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string | undefined;
+
+        return (
+            <div key={index} className="mb-4">
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="flex flex-col mt-4">
+                    {question.options?.map((option, idx) => {
+                        const isChecked = selectedAnswer === option;
+
+                        return (
+                            <label key={idx} className="mb-2">
+                                <input
+                                    type="radio"
+                                    name={`question-${index}`}
+                                    value={option}
+                                    className="mr-2"
+                                    onChange={() => handleAnswerChange(index, option)}
+                                    checked={isChecked}
+                                /> {option}
+                            </label>
+                        );
+                    })}
                 </div>
             </div>
-            <div className="flex flex-col mt-4">
-                {['Quantity A is greater', 'Quantity B is greater', 'The two quantities are equal', 'The relationship cannot be determined from the information given'].map((option, idx) => (
-                    <label key={idx} className="mb-2">
-                        <input
-                            type="radio"
-                            name={`question-${index}`}
-                            value={option}
-                            className="mr-2"
-                            onChange={() => handleAnswerChange(index, option)}
-                        /> {option}
-                    </label>
-                ))}
-            </div>
-        </div>
-    );
+        );
+    };
 
-    const renderMultipleChoiceSingleAnswer = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex flex-col mt-4">
-                {question.options?.map((option, idx) => (
-                    <label key={idx} className="mb-2">
-                        <input
-                            type="radio"
-                            name={`question-${index}`}
-                            value={option}
-                            className="mr-2"
-                            onChange={() => handleAnswerChange(index, option)}
-                        /> {option}
-                    </label>
-                ))}
-            </div>
-        </div>
-    );
+    const renderMultipleChoiceMultipleAnswers = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string[] | undefined;
 
-    const renderMultipleChoiceMultipleAnswers = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex flex-col mt-4">
-                {question.options?.map((option, idx) => (
-                    <label key={idx} className="mb-2">
-                        <input
-                            type="checkbox"
-                            name={`question-${index}`}
-                            value={option}
-                            className="mr-2"
-                            onChange={(e) => {
-                                const currentAnswers = selectedAnswers[index] as string[] || [];
-                                const newAnswers = e.target.checked
-                                    ? [...currentAnswers, option]
-                                    : currentAnswers.filter(ans => ans !== option);
-                                handleAnswerChange(index, newAnswers);
-                            }}
-                        /> {option}
-                    </label>
-                ))}
-            </div>
-        </div>
-    );
+        return (
+            <div key={index} className="mb-4">
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="flex flex-col mt-4">
+                    {question.options?.map((option, idx) => {
+                        const isChecked = selectedAnswer?.includes(option) || false;
 
-    const renderNumericEntry = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="mt-4">
-                <input
-                    type="number"
-                    name={`question-${index}`}
-                    className="border p-2 w-full dark:text-white rounded-lg"
-                    onChange={(e) => handleAnswerChange(index, e.target.value)}
-                />
-            </div>
-        </div>
-    );
-
-    const renderDataInterpretationSingleAnswer = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            {question.imgUrl && (
-                <div className="mb-4">
-                    <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+                        return (
+                            <label key={idx} className="mb-2">
+                                <input
+                                    type="checkbox"
+                                    name={`question-${index}`}
+                                    value={option}
+                                    className="mr-2"
+                                    onChange={(e) => {
+                                        const currentAnswers = selectedAnswer || [];
+                                        const newAnswers = e.target.checked
+                                            ? [...currentAnswers, option]
+                                            : currentAnswers.filter(ans => ans !== option);
+                                        handleAnswerChange(index, newAnswers);
+                                    }}
+                                    checked={isChecked}
+                                /> {option}
+                            </label>
+                        );
+                    })}
                 </div>
-            )}
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex flex-col mt-4">
-                {question.options?.map((option, idx) => (
-                    <label key={idx} className="mb-2">
-                        <input
-                            type="radio"
-                            name={`question-${index}`}
-                            value={option}
-                            className="mr-2"
-                            onChange={() => handleAnswerChange(index, option)}
-                        /> {option}
-                    </label>
-                ))}
             </div>
-        </div>
-    );
+        );
+    };
 
-    const renderDataInterpretationMultipleAnswers = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            {question.imgUrl && (
-                <div className="mb-4">
-                    <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+    const renderNumericEntry = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string | undefined;
+
+        return (
+            <div key={index} className="mb-4">
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="mt-4">
+                    <input
+                        type="number"
+                        name={`question-${index}`}
+                        className="border p-2 w-full dark:text-white rounded-lg"
+                        onChange={(e) => handleAnswerChange(index, e.target.value)}
+                        value={selectedAnswer || ''}
+                    />
                 </div>
-            )}
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="flex flex-col mt-4">
-                {question.options?.map((option, idx) => (
-                    <label key={idx} className="mb-2">
-                        <input
-                            type="checkbox"
-                            name={`question-${index}`}
-                            value={option}
-                            className="mr-2"
-                            onChange={(e) => {
-                                const currentAnswers = selectedAnswers[index] as string[] || [];
-                                const newAnswers = e.target.checked
-                                    ? [...currentAnswers, option]
-                                    : currentAnswers.filter(ans => ans !== option);
-                                handleAnswerChange(index, newAnswers);
-                            }}
-                        /> {option}
-                    </label>
-                ))}
             </div>
-        </div>
-    );
+        );
+    };
 
-    const renderDataInterpretationNumericEntry = (question: QuantitativeQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-            <div className="mt-4">
-                <input
-                    type="number"
-                    name={`question-${index}`}
-                    className="border p-2 w-full"
-                    onChange={(e) => handleAnswerChange(index, e.target.value)}
-                />
+    const renderDataInterpretationSingleAnswer = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string | undefined;
+
+        return (
+            <div key={index} className="mb-4">
+                {question.imgUrl && (
+                    <div className="mb-4">
+                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+                    </div>
+                )}
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="flex flex-col mt-4">
+                    {question.options?.map((option, idx) => (
+                        <label key={idx} className="mb-2">
+                            <input
+                                type="radio"
+                                name={`question-${index}`}
+                                value={option}
+                                className="mr-2"
+                                onChange={() => handleAnswerChange(index, option)}
+                                checked={selectedAnswer === option}
+                            /> {option}
+                        </label>
+                    ))}
+                </div>
             </div>
-        </div>
-    );
+        );
+    };
+
+    const renderDataInterpretationMultipleAnswers = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string[] || [];
+
+        return (
+            <div key={index} className="mb-4">
+                {question.imgUrl && (
+                    <div className="mb-4">
+                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+                    </div>
+                )}
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="flex flex-col mt-4">
+                    {question.options?.map((option, idx) => (
+                        <label key={idx} className="mb-2">
+                            <input
+                                type="checkbox"
+                                name={`question-${index}`}
+                                value={option}
+                                className="mr-2"
+                                onChange={(e) => {
+                                    const newAnswers = e.target.checked
+                                        ? [...selectedAnswer, option]
+                                        : selectedAnswer.filter(ans => ans !== option);
+                                    handleAnswerChange(index, newAnswers);
+                                }}
+                                checked={selectedAnswer.includes(option)}  // Check if the option is part of the selected answers
+                            /> {option}
+                        </label>
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
+    const renderDataInterpretationNumericEntry = (question: QuantitativeQuestion, index: number) => {
+        const selectedAnswer = selectedAnswers[index] as string || ''; // Retrieve the current value or default to an empty string
+
+        return (
+            <div key={index} className="mb-4">
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+                <div className="mt-4">
+                    <input
+                        type="number"
+                        name={`question-${index}`}
+                        className="border p-2 w-full"
+                        value={selectedAnswer}  // Set the value based on the selectedAnswer
+                        onChange={(e) => handleAnswerChange(index, e.target.value)}
+                    />
+                </div>
+            </div>
+        );
+    };
+
 
     const currentQuestion = questions[currentQuestionIndex];
 
