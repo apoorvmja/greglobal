@@ -1,6 +1,6 @@
 import { AreaGraph } from '@/components/charts/area-graph';
 import { BarGraph } from '@/components/charts/bar-graph';
-import { PieGraph } from '@/components/charts/pie-graph';
+import PieGraph from '@/components/charts/pie-graph';
 import { CalendarDateRangePicker } from '@/components/date-range-picker';
 import PageContainer from '@/components/page-container';
 import RecentSales from '@/components/recent-sales';
@@ -21,7 +21,6 @@ interface ResultDashboardProps {
     quant1Score: number;
     quant2Score: number;
 }
-
 
 const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score }) => {
     return (
@@ -166,7 +165,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <AreaGraph />
                             </div>
                             <div className="col-span-4 md:col-span-3">
-                                <PieGraph />
+                                <PieGraph totalScore={260 + verbal1Score + verbal2Score + quant1Score + quant2Score} />
                             </div>
                         </div>
                     </TabsContent>
