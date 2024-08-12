@@ -1,4 +1,4 @@
-import { AreaGraph } from '@/components/charts/area-graph';
+import AreaGraph from '@/components/charts/area-graph';
 import { BarGraph } from '@/components/charts/bar-graph';
 import PieGraph from '@/components/charts/pie-graph';
 import { CalendarDateRangePicker } from '@/components/date-range-picker';
@@ -162,7 +162,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 </CardContent>
                             </Card>
                             <div className="col-span-4">
-                                <AreaGraph />
+                                <AreaGraph awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />
                             </div>
                             <div className="col-span-4 md:col-span-3">
                                 <PieGraph totalScore={260 + verbal1Score + verbal2Score + quant1Score + quant2Score} />
