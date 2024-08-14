@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TestLayout from './TestLayout';
+import { Button } from '../ui/button';
 
 interface QuantitativeQuestion {
     type: 'quantitative_comparison' | 'multiple_choice_single_answer' | 'multiple_choice_multiple_answers' | 'numeric_entry' | 'data_interpretation_single_answer' | 'data_interpretation_multiple_answers' | 'data_interpretation_numeric_entry';
@@ -21,27 +22,60 @@ interface QuantitativeTest {
 interface Props {
     test: QuantitativeTest;
     section: 'quantitative1' | 'quantitative2';
-    onContinue: (score: number) => void;
+    onContinue: (score: number, reviewAnswers: { [key: number]: string | string[] }) => void;
     onBack: () => void;
+    isReviewModeResultDashboard?: boolean;
+    PageToQuantForReviewAnswers?: { [key: number]: string | string[] };
+    showResult?: (showResult: boolean) => void;
 }
 
-const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
+const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewModeResultDashboard, PageToQuantForReviewAnswers, showResult }) => {
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false); // State for managing modal visibility
     const [markedQuestions, setMarkedQuestions] = useState<number[]>([]); // Track marked questions
+    const [isAnswerToggled, setIsAnswerToggled] = useState(false);
+    const [selectedAnswersReviewResultDashboard, setSelectedAnswersReviewResultDashboard] = useState<{ [key: number]: string | string[] }>({});
+    const [showAlertBeforeProceeding, setShowAlertBeforeProceeding] = useState(false)
+
+    useEffect(() => {
+        if (isReviewModeResultDashboard) {
+            setSelectedAnswers(PageToQuantForReviewAnswers || {});
+        }
+    }, [isReviewModeResultDashboard, PageToQuantForReviewAnswers]);
+
+    const toggleAnswer = () => {
+        setIsAnswerToggled(!isAnswerToggled);
+    };
 
     const handleNext = () => {
-        const score = calculateScore(); // Calculate the score
-        if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQuestionIndex(currentQuestionIndex + 1);
+        // console.log("selected answes:", selectedAnswers)
+        if (!isReviewModeResultDashboard) {
+            setSelectedAnswersReviewResultDashboard({ ...selectedAnswersReviewResultDashboard, [currentQuestionIndex]: selectedAnswers[currentQuestionIndex] });
+            const score = calculateScore();
+            if (currentQuestionIndex < questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+            }
+            else if (currentQuestionIndex === questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+                alert("You can check your answers before proceeding to next section")
+                setShowAlertBeforeProceeding(true)
+            }
+            else {
+                onContinue(score, selectedAnswersReviewResultDashboard);
+            }
         } else {
-            onContinue(score);
+            if (isAnswerToggled) toggleAnswer()
+
+            if (currentQuestionIndex < questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+            }
         }
     };
 
     const handleBack = () => {
+        setShowAlertBeforeProceeding(false)
         if (currentQuestionIndex > 0) {
             setCurrentQuestionIndex(currentQuestionIndex - 1);
         }
@@ -55,8 +89,9 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
     };
 
     const handleExitSection = () => {
+        setSelectedAnswersReviewResultDashboard({ ...selectedAnswersReviewResultDashboard, [currentQuestionIndex]: selectedAnswers[currentQuestionIndex] });
         const score = calculateScore();
-        onContinue(score);
+        onContinue(score, selectedAnswersReviewResultDashboard);
     };
 
     const toggleReviewModal = () => {
@@ -324,6 +359,8 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                 onMark={toggleMarkQuestion}
                 showQuantButtons={true}  // Ensure this is passed as true
                 quantSection={section}  // Ensure the section (quant1 or quant2) is passed
+                isReviewModeResultDashboard={isReviewModeResultDashboard || false}
+                showResult={showResult}
             >
                 <div className="min-h-[50vh] w-full dark:text-black">
                     {currentQuestion && (
@@ -335,10 +372,41 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                             {currentQuestion.type === 'data_interpretation_single_answer' && renderDataInterpretationSingleAnswer(currentQuestion, currentQuestionIndex)}
                             {currentQuestion.type === 'data_interpretation_multiple_answers' && renderDataInterpretationMultipleAnswers(currentQuestion, currentQuestionIndex)}
                             {currentQuestion.type === 'data_interpretation_numeric_entry' && renderDataInterpretationNumericEntry(currentQuestion, currentQuestionIndex)}
+
+                            {isReviewModeResultDashboard && (
+                                <div className='mt-5 flex flex-row justify-between'>
+                                    <div className='items-start gap-5 flex flex-col justify-start'>
+                                        <Button onClick={toggleAnswer}>
+                                            Toggle Answer
+                                        </Button>
+                                        {isAnswerToggled &&
+                                            <div className='bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl'>
+                                                Correct Answer: {Array.isArray(currentQuestion.correctAnswer)
+                                                    ? currentQuestion.correctAnswer.join(', ')
+                                                    : currentQuestion.correctAnswer}
+                                            </div>
+                                        }
+                                    </div>
+                                    <Button>Toggle Explanation</Button>
+                                </div>
+                            )}
                         </>
                     )}
+                    {showAlertBeforeProceeding && (
+                        <div>
+                            <div className="p-[20px] border border-gray-300 rounded-md bg-gray-100 mt-[20px] dark:text-black">
+                                <h1 className='mb-[15px]'>Quantitative Section End</h1>
+                                <p className='mb-[20px]'>If you click Exit Section, you WILL NOT be able to return to this section of the test.</p>
+                                <p className='mb-[20px]'>
+                                    If you want to double check your answers you can click REVIEW to check your reamining answers.
+                                    On Test Day, when you exit a section, you will be taken to a screen where you may take an optional 60-second break.
+                                </p>
+                                <p className='mb-[20px]'>Click Next/Exit Section to proceed.</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
-            </TestLayout>
+            </TestLayout >
 
             {isReviewModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
@@ -388,7 +456,9 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack }) =>
                         </div>
                     </div>
                 </div>
-            )}
+            )
+            }
+
         </>
     );
 };

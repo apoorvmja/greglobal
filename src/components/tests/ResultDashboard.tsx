@@ -20,9 +20,13 @@ interface ResultDashboardProps {
     verbal2Score: number;
     quant1Score: number;
     quant2Score: number;
+    onSectionChange: (section: string) => void
 }
 
-const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score }) => {
+const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score, onSectionChange }) => {
+    const handleSectionChange = (section: string) => {
+        onSectionChange(section); // Call the function passed from page.tsx
+    };
     return (
         <PageContainer scrollable={true}>
             <div className="space-y-2 mt-5">
@@ -32,7 +36,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                     </h2>
                     <div className="hidden items-center space-x-2 md:flex">
                         <CalendarDateRangePicker />
-                        <Button>Download</Button>
+                        <Button onClick={() => { alert("Purchase Premium to access this feature") }}>Download</Button>
                     </div>
                 </div>
                 <Tabs defaultValue="overview" className="space-y-4">
@@ -154,11 +158,11 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardHeader>
                                     <CardTitle>Section Wise</CardTitle>
                                     <CardDescription>
-                                        Click &apos;view&apos; to check answers
+                                        DoubleClick &apos;Review&apos; to analyze answers
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    <RecentSales awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />
+                                    <RecentSales awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} onSectionChange={handleSectionChange} />
                                 </CardContent>
                             </Card>
                             <div className="col-span-4">

@@ -16,6 +16,7 @@ import {
     ChartTooltip,
     ChartTooltipContent
 } from '@/components/ui/chart';
+import { Button } from '../ui/button';
 
 export const description = 'An interactive bar chart';
 
@@ -115,7 +116,7 @@ const chartData = [
 
 const chartConfig = {
     views: {
-        label: 'Page Views'
+        label: 'Test taken'
     },
     desktop: {
         label: 'Desktop',
@@ -143,9 +144,9 @@ export function BarGraph() {
         <Card>
             <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
                 <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
-                    <CardTitle>Bar Chart - Interactive</CardTitle>
+                    <CardTitle>Live Test Takers - GreGoGlobal</CardTitle>
                     <CardDescription>
-                        Showing total visitors for the last 3 months
+                        Showing total test takers per day for current month
                     </CardDescription>
                 </div>
                 <div className="flex">

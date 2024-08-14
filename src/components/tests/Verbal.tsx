@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TestLayout from './TestLayout';
+import { Button } from '../ui/button';
 
 interface OptionsMap {
     [key: string]: string[];
@@ -23,32 +24,68 @@ interface VerbalTest {
     };
 }
 
+
 interface Props {
     test: VerbalTest;
     section: 'verbal1' | 'verbal2';
-    onContinue: (score: number) => void;
+    onContinue: (score: number, reviewAnswers: { [key: number]: string | string[] }) => void;
     onBack: () => void;
+    showResult?: () => void;
+    isReviewModeResultDashboard?: boolean;
+    selectedAnswersForVerbalReview?: { [key: number]: string | string[] }
+    PageToVerbalForReviewAnswers?: { [key: number]: string | string[] }
 }
 
-const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
+const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewModeResultDashboard, selectedAnswersForVerbalReview, PageToVerbalForReviewAnswers, showResult }) => {
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string | string[] }>({});
     const [selectedSentence, setSelectedSentence] = useState<string | null>(null);
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false); // State for managing modal visibility
     const [markedQuestions, setMarkedQuestions] = useState<number[]>([]); // Track marked questions
+    const [selectedAnswersReviewResultDashboard, setSelectedAnswersReviewResultDashboard] = useState<{ [key: number]: string | string[] }>({});
+    const [isAnswerToggled, setIsAnswerToggled] = useState(false);
+    const [showAlertBeforeProceeding, setShowAlertBeforeProceeding] = useState(false)
+
+    useEffect(() => {
+        if (isReviewModeResultDashboard) {
+            setSelectedAnswers(PageToVerbalForReviewAnswers || {});
+        }
+    }, [isReviewModeResultDashboard, selectedAnswersForVerbalReview]);
+
+    const toggleAnswer = () => {
+        setIsAnswerToggled(!isAnswerToggled);
+    };
 
     const handleNext = () => {
-        const score = calculateScore();
-        if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQuestionIndex(currentQuestionIndex + 1);
-            // setSelectedSentence(null);
-        } else {
-            onContinue(score);
+        // console.log(PageToVerbalForReviewAnswers)
+        if (!isReviewModeResultDashboard) {
+            setSelectedAnswersReviewResultDashboard({ ...selectedAnswersReviewResultDashboard, [currentQuestionIndex]: selectedAnswers[currentQuestionIndex] });
+            const score = calculateScore();
+            if (currentQuestionIndex < questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+                // setSelectedSentence(null);
+            }
+            else if (currentQuestionIndex === questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+                alert("you can check your answers before proceeding to next section")
+                setShowAlertBeforeProceeding(true)
+            }
+            else {
+                onContinue(score, selectedAnswersReviewResultDashboard);
+            }
+        }
+        else {
+            if (isAnswerToggled) toggleAnswer()
+            // In review mode, just move to the next question without calculating scores or updating answers
+            if (currentQuestionIndex < questions.length - 1) {
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
+            }
         }
     };
 
     const handleBack = () => {
+        setShowAlertBeforeProceeding(false)
         if (currentQuestionIndex > 0) {
             setCurrentQuestionIndex(currentQuestionIndex - 1);
             // setSelectedSentence(null);
@@ -109,8 +146,16 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
     };
 
     const handleExitSection = () => {
-        const score = calculateScore();
-        onContinue(score);
+        if (!isReviewModeResultDashboard) {
+
+            setSelectedAnswersReviewResultDashboard({ ...selectedAnswersReviewResultDashboard, [currentQuestionIndex]: selectedAnswers[currentQuestionIndex] });
+            const score = calculateScore();
+            onContinue(score, selectedAnswersReviewResultDashboard);
+        }
+        else {
+            // In review mode, just continue without calculating scores
+            onContinue(0, selectedAnswersReviewResultDashboard); // Pass a score of 0 or some other placeholder if needed
+        }
     };
 
     const toggleReviewModal = () => {
@@ -361,6 +406,8 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                 onMark={toggleMarkQuestion}
                 showVerbalButtons={true}
                 verbalSection={section}
+                isReviewModeResultDashboard={isReviewModeResultDashboard || false}
+                showResult={showResult}
             >
                 <div className="min-h-[50vh] w-full dark:text-black">
                     {currentQuestion && (
@@ -371,10 +418,42 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                             {currentQuestion.type === 'reading_comprehension_multiple' && renderReadingComprehensionMultiple(currentQuestion, currentQuestionIndex)}
                             {currentQuestion.type === 'reading_comprehension_select' && renderReadingComprehensionSelect(currentQuestion, currentQuestionIndex)}
                             {currentQuestion.type === 'reading_comprehension_highlighted' && renderReadingComprehensionHighlighted(currentQuestion, currentQuestionIndex)}
+
+                            {isReviewModeResultDashboard && (
+                                <div className='mt-5 flex flex-row justify-between'>
+                                    <div className='items-start gap-5 flex flex-col justify-start'>
+                                        <Button onClick={toggleAnswer}>
+                                            Toggle Answer
+                                        </Button>
+                                        {isAnswerToggled &&
+                                            <div className='bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl'>
+                                                Correct Answer: {Array.isArray(currentQuestion.correctAnswer)
+                                                    ? currentQuestion.correctAnswer.join(', ')
+                                                    : currentQuestion.correctAnswer}
+                                            </div>
+                                        }
+                                    </div>
+                                    <Button>Toggle Explanation</Button>
+                                </div>
+                            )}
+
                         </>
                     )}
+                    {showAlertBeforeProceeding && (
+                        <div>
+                            <div className="p-[20px] border border-gray-300 rounded-md bg-gray-100 mt-[20px] dark:text-black">
+                                <h1 className='mb-[15px]'>Verbal Section End</h1>
+                                <p className='mb-[20px]'>If you click Exit Section, you WILL NOT be able to return to this section of the test.</p>
+                                <p className='mb-[20px]'>
+                                    If you want to double check your answers you can click REVIEW to check your reamining answers.
+                                    On Test Day, when you exit a section, you will be taken to a screen where you may take an optional 60-second break.
+                                </p>
+                                <p className='mb-[20px]'>Click Next/Exit Section to proceed.</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
-            </TestLayout>
+            </TestLayout >
 
             {isReviewModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
@@ -424,7 +503,8 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack }) => {
                         </div>
                     </div>
                 </div>
-            )}
+            )
+            }
 
         </>
     );

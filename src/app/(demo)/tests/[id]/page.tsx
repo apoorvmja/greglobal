@@ -73,12 +73,19 @@ export default function TagsPage() {
   const id = pathname.split('/').pop();
   const [test, setTest] = useState<Test | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [currentSection, setCurrentSection] = useState<'testDetails' | 'awaInstructions' | 'awa' | 'VerbalInstructions' | 'verbal1' | 'verbal2' | 'quantitative1' | 'quantitative2' | 'resultDashboard'>('testDetails');
+  const [currentSection, setCurrentSection] = useState<'testDetails' | 'awaInstructions' | 'awa' | 'VerbalInstructions' | 'verbal1' | 'verbal2' | 'quantitative1' | 'quantitative2' | 'resultDashboard' | 'awareview' | 'verbal1review' | 'verbal2review' | 'quantitative1review' | 'quantitative2review'>('testDetails');
   const [awaScore, setAWAScore] = useState<number>(0);
   const [verbal1Score, setVerbal1Score] = useState<number>(0);
   const [verbal2Score, setVerbal2Score] = useState<number>(0);
   const [quant1Score, setQuant1Score] = useState<number>(0);
   const [quant2Score, setQuant2Score] = useState<number>(0);
+  const [verbal1ReviewAnswers, setVerbal1ReviewAnswers] = useState<{ [key: number]: string | string[] }>({});
+  const [verbal2ReviewAnswers, setVerbal2ReviewAnswers] = useState<{ [key: number]: string | string[] }>({});
+  const [quant1ReviewAnswers, setQuant1ReviewAnswers] = useState<{ [key: number]: string | string[] }>({});
+  const [quant2ReviewAnswers, setQuant2ReviewAnswers] = useState<{ [key: number]: string | string[] }>({});
+  const [currentSectionReviewResultDashboard, setCurrentSectionReviewResultDashboard] = useState('overview'); // Default to overview or whatever the starting section is
+  const [showResultDashboard, setShowResultDashboard] = useState(false);
+  const [awaEssayContent, setAwaEssayContent] = useState<string>(''); // New state to hold the AWA essay content
 
   useEffect(() => {
     if (id) {
@@ -95,17 +102,40 @@ export default function TagsPage() {
 
   const handleContinue = () => {
     if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
-    // if (currentSection === 'testDetails') setCurrentSection('resultDashboard');
     else if (currentSection === 'awaInstructions') setCurrentSection('awa');
     else if (currentSection === 'awa') setCurrentSection('VerbalInstructions');
     else if (currentSection === 'VerbalInstructions') setCurrentSection('verbal1');
-    else if (currentSection === 'verbal1') setCurrentSection('verbal2');
+    else if (currentSection === 'verbal1') { setCurrentSection('verbal2'); }
     else if (currentSection === 'verbal2') setCurrentSection('quantitative1');
     else if (currentSection === 'quantitative1') setCurrentSection('quantitative2');
     else if (currentSection === 'quantitative2') setCurrentSection('resultDashboard');
   };
 
+  const handleSectionChangeReviewResultDashboard = (section: string) => {
+    setCurrentSectionReviewResultDashboard(section);
+    if (currentSectionReviewResultDashboard === 'awareview' && currentSection === 'resultDashboard') {
+      setCurrentSection('awareview');
+    }
+    if (currentSectionReviewResultDashboard === 'verbal1review' && currentSection === 'resultDashboard') {
+      setCurrentSection('verbal1review');
+    }
+    if (currentSectionReviewResultDashboard === 'verbal2review' && currentSection === 'resultDashboard') {
+      setCurrentSection('verbal2review');
+    }
+    if (currentSectionReviewResultDashboard === 'quantitative1review' && currentSection === 'resultDashboard') {
+      setCurrentSection('quantitative1review');
+    }
+    if (currentSectionReviewResultDashboard === 'quantitative2review' && currentSection === 'resultDashboard') {
+      setCurrentSection('quantitative2review');
+    }
+  };
 
+  const handleGoBackToResults = (showResult: boolean) => {
+    setShowResultDashboard(showResult);
+    if (showResult) {
+      setCurrentSection('resultDashboard');
+    }
+  };
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -133,7 +163,7 @@ export default function TagsPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Tags</BreadcrumbPage>
+              <BreadcrumbPage>Tests</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -141,14 +171,69 @@ export default function TagsPage() {
         <div className='mt-3 bg-white rounded-lg'>
           {currentSection === 'testDetails' && <TestDetails test={test} onContinue={handleContinue} />}
           {currentSection === 'awaInstructions' && <InitialAWAInstructions onContinue={handleContinue} />}
-          {currentSection === 'awa' && <AWA test={test} onContinue={(score) => { setAWAScore(score); handleContinue(); }} />}
+          {currentSection === 'awa' && <AWA test={test} onContinue={(score, text) => { setAWAScore(score); setAwaEssayContent(text); handleContinue(); }} />}
           {currentSection === 'VerbalInstructions' && <InitialVerbalInstructions onContinue={handleContinue} />}
-          {currentSection === 'verbal1' && <Verbal onBack={() => { }} test={test} section="verbal1" onContinue={(score) => { setVerbal1Score(score); handleContinue(); }} />}
-          {currentSection === 'verbal2' && <Verbal onBack={() => { }} test={test} section="verbal2" onContinue={(score) => { setVerbal2Score(score); handleContinue(); }} />}
-          {currentSection === 'quantitative1' && <Quantitative onBack={() => { }} test={test} section="quantitative1" onContinue={(score) => { setQuant1Score(score); handleContinue(); }} />}
-          {currentSection === 'quantitative2' && <Quantitative onBack={() => { }} test={test} section="quantitative2" onContinue={(score) => { setQuant2Score(score); handleContinue(); }} />}
-          {currentSection === 'resultDashboard' && <ResultDashboard awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />}
-          {/* </PlaceholderContent> */}
+          {currentSection === 'verbal1' && (
+            <Verbal
+              onBack={() => { }}
+              test={test}
+              section="verbal1"
+              onContinue={(score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
+                setVerbal1Score(score);
+                setVerbal1ReviewAnswers(selectedAnswersReviewResultDashboard);
+                handleContinue();
+              }}
+              isReviewModeResultDashboard={false}
+            />
+          )}
+          {currentSection === 'verbal2' && (
+            <Verbal
+              onBack={() => { }}
+              test={test}
+              section="verbal2"
+              onContinue={(score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
+                setVerbal2Score(score);
+                setVerbal2ReviewAnswers(selectedAnswersReviewResultDashboard);
+                handleContinue();
+              }}
+              isReviewModeResultDashboard={false}
+            />
+          )}
+          {currentSection === 'quantitative1' &&
+            <Quantitative
+              onBack={() => { }}
+              test={test} section="quantitative1"
+              onContinue={(score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
+                setQuant1Score(score);
+                setQuant1ReviewAnswers(selectedAnswersReviewResultDashboard);
+                handleContinue();
+              }}
+              isReviewModeResultDashboard={false}
+            />}
+          {currentSection === 'quantitative2' &&
+            <Quantitative
+              onBack={() => { }}
+              test={test}
+              section="quantitative2"
+              onContinue={(score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
+                setQuant2Score(score);
+                setQuant2ReviewAnswers(selectedAnswersReviewResultDashboard);
+                handleContinue();
+              }} />}
+          {currentSection === 'resultDashboard' && <ResultDashboard onSectionChange={handleSectionChangeReviewResultDashboard} awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />}
+          {currentSection === 'verbal1review' && <Verbal onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="verbal1" PageToVerbalForReviewAnswers={verbal1ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
+          {currentSection === 'verbal2review' && <Verbal onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="verbal2" PageToVerbalForReviewAnswers={verbal2ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
+          {currentSection === 'quantitative1review' && <Quantitative onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="quantitative1" PageToQuantForReviewAnswers={quant1ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
+          {currentSection === 'quantitative2review' && <Quantitative onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="quantitative2" PageToQuantForReviewAnswers={quant2ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
+          {currentSection === 'awareview' && (
+            <AWA
+              test={test}
+              onContinue={() => handleGoBackToResults(true)} // No need to calculate score in review mode
+              isReviewModeResultDashboard={true}
+              awaReviewContent={awaEssayContent}
+              showResult={() => handleGoBackToResults(true)}
+            />
+          )}
         </div>
       </ContentLayout>
     </div>

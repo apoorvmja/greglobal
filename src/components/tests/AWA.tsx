@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TestLayout from './TestLayout';
 
 interface AWASection {
@@ -14,11 +14,16 @@ interface Test {
 
 interface Props {
     test: Test;
-    onContinue: (score: number) => void; // Pass the score to the onContinue function
+    onContinue: (score: number, text: string) => void; // Pass the score to the onContinue function
+    isReviewModeResultDashboard?: boolean;
+    showResult?: () => void;
+    awaReviewContent?: string;
 }
 
-const AWA: React.FC<Props> = ({ test, onContinue }) => {
+const AWA: React.FC<Props> = ({ test, onContinue, isReviewModeResultDashboard = false, showResult, awaReviewContent }) => {
     const textareaRef = useRef<HTMLTextAreaElement>(null);
+    const [essayContent, setEssayContent] = useState<string>(awaReviewContent || "");
+
 
     const handleCut = () => {
         navigator.clipboard.readText()
@@ -78,16 +83,18 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
     };
 
     const handleContinue = () => {
-        if (textareaRef.current) {
+        if (!isReviewModeResultDashboard && textareaRef.current) {
             const text = textareaRef.current.value.trim();
             const wordCount = text.split(/\s+/).length; // Split by whitespace to count words
             const score = calculateScore(wordCount);
-            onContinue(score); // Pass the score to the onContinue function
+            onContinue(score, text); // Pass the score to the onContinue function
+        } else if (showResult) {
+            showResult(); // Go back to result dashboard
         }
     };
 
     return (
-        <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={handleContinue} showAWAButtons={true}>
+        <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={handleContinue} showAWAButtons={true} isReviewModeResultDashboard={isReviewModeResultDashboard} showResult={showResult}>
             <div className="flex flex-col sm:flex-row dark:text-black">
                 <div className="prompt-container border-b sm:border-r">
                     <p className='border-2 rounded-md p-2 mb-4 mt-4'>{test.sections.awa.prompt}</p>
@@ -107,6 +114,9 @@ const AWA: React.FC<Props> = ({ test, onContinue }) => {
                         rows={20}
                         style={{ width: '100%' }}
                         className='p-2 border-2 rounded-lg dark:text-white'
+                        disabled={isReviewModeResultDashboard} // Disable textarea in review mode
+                        onChange={(e) => setEssayContent(e.target.value)}
+                        value={essayContent}
                     ></textarea>
                 </div>
             </div>

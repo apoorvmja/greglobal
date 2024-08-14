@@ -14,9 +14,11 @@ interface TestLayoutProps {
   verbalSection?: 'verbal1' | 'verbal2'; // Add this prop to specify which verbal section
   showQuantButtons?: boolean;
   quantSection?: 'quantitative1' | 'quantitative2';
+  isReviewModeResultDashboard?: boolean,
+  showResult?: (showResult: boolean) => void
 }
 
-const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showReview, onMark, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection }) => {
+const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onContinue, onBack, onExitSection, showReview, onMark, showAWAButtons = false, showVerbalButtons = false, verbalSection, showQuantButtons = false, quantSection, isReviewModeResultDashboard, showResult }) => {
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false); // State to manage modal visibility
   const [activeTab, setActiveTab] = useState<'awa' | 'verbal' | 'quant' | 'tools'>('awa');
   const [showCalculator, SetShowCalculator] = useState(false)
@@ -81,6 +83,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
     }
   }
 
+
   return (
     <div>
       <div className="top-bar rounded-t-lg dark:text-black w-full">
@@ -88,14 +91,14 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
           <h2>MJ Study Abroad</h2>
         </div>
         <div className="nav-buttons">
-          {showAWAButtons && (
+          {(showAWAButtons && !isReviewModeResultDashboard) && (
             <>
               <button>Quit w/Save</button>
               <button onClick={showHelp}>Help</button>
               <button onClick={onContinue}>Continue</button>
             </>
           )}
-          {showVerbalButtons && (
+          {(showVerbalButtons && !isReviewModeResultDashboard) && (
             <>
               <button onClick={onExitSection}>Exit Section</button>
               <button>Quit w/Save</button>
@@ -106,7 +109,15 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
               <button onClick={onContinue}>Next</button>
             </>
           )}
-          {showQuantButtons && (
+          {isReviewModeResultDashboard && showResult && (
+            <>
+              <button onClick={() => showResult(true)}>Go to Result Dashboard</button>
+              <button onClick={onBack}>Back</button>
+              <button onClick={onContinue}>Next</button>
+            </>
+          )
+          }
+          {(showQuantButtons && !isReviewModeResultDashboard) && (
             <>
               <button onClick={onExitSection}>Exit Section</button>
               <button>Quit w/Save</button>
@@ -124,7 +135,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
         </div>
       </div>
 
-      {(showAWAButtons || showVerbalButtons || showQuantButtons) && (
+      {((showAWAButtons || showVerbalButtons || showQuantButtons) && !isReviewModeResultDashboard) && (
         <div className="flex justify-between p-[10px] bg-yellow-100 dark:text-black">
           <div className="section-info">
             <h2>{currentSection}</h2>
