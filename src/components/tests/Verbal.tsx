@@ -68,7 +68,6 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
             }
             else if (currentQuestionIndex === questions.length - 1) {
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
-                alert("you can check your answers before proceeding to next section")
                 setShowAlertBeforeProceeding(true)
             }
             else {
@@ -181,7 +180,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
                                 <p>{`Blank ${blankIndex + 1}:`}</p>
                                 <div className="flex flex-col items-center mt-4">
                                     {(question.options as OptionsMap)?.[`blank${blankIndex + 1}`]?.map((option, optIdx) => (
-                                        <label key={optIdx} className="min-w-[200px] p-4 border border-black text-center cursor-pointer bg-white hover:bg-gray-200">
+                                        <label key={optIdx} className="min-w-[200px] p-4 border border-black text-start cursor-pointer bg-white hover:bg-gray-200">
                                             <input
                                                 type="radio"
                                                 name={`question-${index}-blank-${blankIndex}`}
@@ -365,7 +364,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
             <div key={index} className="mb-4">
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 <div className="flex flex-col sm:flex-row">
-                    <div className="sm:w-1/2 p-4 border-b sm:border-r">
+                    <div className="sm:w-1/2 p-4 border-b sm:border-b-0 border-gray-300 border-r">
                         <p dangerouslySetInnerHTML={{ __html: highlightedPassage }}></p>
                     </div>
                     <div className="sm:w-1/2 p-4">
@@ -443,10 +442,10 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
                         <div>
                             <div className="p-[20px] border border-gray-300 rounded-md bg-gray-100 mt-[20px] dark:text-black">
                                 <h1 className='mb-[15px]'>Verbal Section End</h1>
-                                <p className='mb-[20px]'>If you click Exit Section, you WILL NOT be able to return to this section of the test.</p>
+                                <p className='mb-[20px]'>If you click Exit Section or Next Button, you WILL NOT be able to return to this section of the test.</p>
                                 <p className='mb-[20px]'>
                                     If you want to double check your answers you can click REVIEW to check your reamining answers.
-                                    On Test Day, when you exit a section, you will be taken to a screen where you may take an optional 60-second break.
+                                    On Test Day, when you exit a section, you will be taken to a screen where you may take an optional 60-second break (just to take a sip of water or take a sigh of relief!).
                                 </p>
                                 <p className='mb-[20px]'>Click Next/Exit Section to proceed.</p>
                             </div>
@@ -456,7 +455,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
             </TestLayout >
 
             {isReviewModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                <div className="fixed dark:text-black inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
                     <div className="bg-white rounded-lg p-6 w-[80%] h-[90%] overflow-auto">
                         <h3 className="text-xl font-bold mb-4">Review Section</h3>
                         <p className="mb-4">

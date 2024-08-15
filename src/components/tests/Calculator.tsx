@@ -94,10 +94,10 @@ const Calculator: React.FC = () => {
     return (
         <Draggable>
             <div className="calculator bg-gray-100 p-4 rounded-lg shadow-md w-64 cursor-move">
-                <div className="display bg-white p-2 mb-4 text-right text-2xl font-mono border border-gray-300 rounded">
+                <div className="display bg-white dark:text-black p-2 mb-4 text-right text-2xl font-mono border border-gray-300 rounded">
                     {display}
                 </div>
-                <div className="buttons grid grid-cols-4 gap-2">
+                <div className="buttons grid grid-cols-4 gap-2 dark:text-black">
                     <button onClick={() => handleButtonClick('MC')} className="bg-blue-500 text-white p-2 rounded">MC</button>
                     <button onClick={() => handleButtonClick('MR')} className="bg-blue-500 text-white p-2 rounded">MR</button>
                     <button onClick={() => handleButtonClick('M+')} className="bg-blue-500 text-white p-2 rounded">M+</button>

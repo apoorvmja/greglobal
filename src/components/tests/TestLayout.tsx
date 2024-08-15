@@ -152,8 +152,10 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
 
       {isHelpModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg p-6 w-[80%] h-[90%]">
-            <h3 className="text-xl font-bold mb-4 hidden sm:flex">Help Section</h3>
+          <div className="bg-white rounded-lg p-6 w-[80%] h-[90%] flex flex-col">
+
+            <h3 className="text-xl font-bold mb-4 dark:text-black sm:flex">Help Section</h3>
+
             <ul className="flex flex-wrap text-xs sm:text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
               <li className="me-2">
                 <button
@@ -193,9 +195,9 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
               </li>
             </ul>
 
-            <div className="mt-4">
+            <div className="mt-4 h-[70%] relative">
               {activeTab === 'awa' && (
-                <div className="text-gray-700 h-96 overflow-y-scroll p-4 border border-gray-300 rounded-lg">
+                <div className="text-gray-700 h-[100%] absolute overflow-y-scroll p-4 border border-gray-300 rounded-lg">
                   <h2 className="text-xl font-bold">Analytical Writing Assessment (AWA)</h2>
 
                   <p className="mt-4">The AWA section measures your ability to think critically and communicate your ideas effectively. It is composed of one timed tasks:</p>
@@ -220,7 +222,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
                 </div>
               )}
               {activeTab === 'verbal' && (
-                <div className="text-gray-700 h-96 overflow-y-scroll p-4 border border-gray-300 rounded-lg">
+                <div className="text-gray-700 h-[100%] absolute  overflow-y-scroll p-4 border border-gray-300 rounded-lg">
                   <h2 className="text-xl font-bold">Verbal Reasoning</h2>
 
                   <p className="mt-2">27 Questions</p>
@@ -261,7 +263,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
                 </div>
               )}
               {activeTab === 'quant' && (
-                <div className="text-gray-700 h-96 overflow-y-scroll p-4 border border-gray-300 rounded-lg">
+                <div className="text-gray-700 h-[100%] absolute overflow-y-scroll p-4 border border-gray-300 rounded-lg">
 
                   <h2 className="text-xl font-bold">Quantitative Reasoning</h2>
                   <p className="mt-2">27 Questions</p>
@@ -284,7 +286,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
                 </div>
               )}
               {activeTab === 'tools' && (
-                <div className="text-gray-700 h-96 overflow-y-scroll p-4 border border-gray-300 rounded-lg">
+                <div className="text-gray-700 h-[100%] absolute overflow-y-scroll p-4 border border-gray-300 rounded-lg">
                   <p>After you answer a question, click <span className="font-bold">Next</span>. You may still return to the question and change your answer after clicking <span className="font-bold">Next</span>.</p>
 
                   <p className="mt-4">Clicking <span className="font-bold">Back</span> will take you to the previous screen or question.</p>
@@ -301,6 +303,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
                 </div>
               )}
             </div>
+
             <div className="mt-6 flex justify-end">
               <button
                 onClick={closeHelpModal}
@@ -314,7 +317,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
       )}
 
       {showCalculator && (
-        <div className='absolute top-0 right-0 flex items-center justify-center z-50'>
+        <div className='absolute bottom-0 right-0 flex items-center justify-center z-50'>
           <Calculator />
         </div>
       )

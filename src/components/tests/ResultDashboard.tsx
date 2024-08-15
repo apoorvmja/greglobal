@@ -31,12 +31,12 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
         <PageContainer scrollable={true}>
             <div className="space-y-2 mt-5">
                 <div className="flex items-center justify-between space-y-2">
-                    <h2 className="text-2xl font-bold tracking-tight">
+                    <h2 className="text-2xl font-bold tracking-tight dark:text-black">
                         Hi, Welcome back 👋
                     </h2>
                     <div className="hidden items-center space-x-2 md:flex">
                         <CalendarDateRangePicker />
-                        <Button onClick={() => { alert("Purchase Premium to access this feature") }}>Download</Button>
+                        <Button onClick={() => { alert("Purchase Premium to access this feature") }} className='dark:bg-black dark:text-white'>Download</Button>
                     </div>
                 </div>
                 <Tabs defaultValue="overview" className="space-y-4">

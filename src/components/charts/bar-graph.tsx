@@ -182,6 +182,7 @@ export function BarGraph() {
                             left: 12,
                             right: 12
                         }}
+                        className='dark:bg-white dark:p-2 dark:rounded-lg'
                     >
                         <CartesianGrid vertical={false} />
                         <XAxis

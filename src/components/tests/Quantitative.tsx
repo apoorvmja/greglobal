@@ -59,7 +59,6 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
             }
             else if (currentQuestionIndex === questions.length - 1) {
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
-                alert("You can check your answers before proceeding to next section")
                 setShowAlertBeforeProceeding(true)
             }
             else {
@@ -409,7 +408,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
             </TestLayout >
 
             {isReviewModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 dark:text-black">
                     <div className="bg-white rounded-lg p-6 w-[80%] h-[90%] overflow-auto">
                         <h3 className="text-xl font-bold mb-4">Review Section</h3>
                         <p className="mb-4">
