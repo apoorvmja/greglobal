@@ -10,7 +10,7 @@ interface QuantitativeQuestion {
     quantityA?: string;
     quantityB?: string;
     imgUrl?: string;
-    explanation: string
+    explanation?: string
 }
 
 interface QuantitativeTest {
@@ -391,7 +391,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
                                                     : currentQuestion.correctAnswer}
                                             </div>
                                         }
-                                        {isAnswerExplanationToggle &&
+                                        {isAnswerExplanationToggle && currentQuestion.explanation &&
                                             <div className="bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl">
                                                 <div className=''>Explanation:</div>
                                                 <div dangerouslySetInnerHTML={{
@@ -471,8 +471,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
                         </div>
                     </div>
                 </div>
-            )
-            }
+            )}
 
         </>
     );

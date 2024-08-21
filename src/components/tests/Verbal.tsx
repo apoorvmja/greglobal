@@ -14,7 +14,7 @@ interface VerbalQuestion {
     highlighted?: string[];
     correctAnswer: string | string[] | (string | string[])[][]; // Update to support complex nested arrays
     blanks?: number;
-    explanation: string;
+    explanation?: string;
 }
 
 

@@ -34,6 +34,7 @@ interface VerbalQuestion {
   highlighted?: string[];
   correctAnswer: string | string[] | (string | string[])[][]; // Updated to support complex nested arrays
   blanks?: number;
+  explanation?: string
 }
 
 interface QuantitativeQuestion {
@@ -44,6 +45,7 @@ interface QuantitativeQuestion {
   quantityA?: string;
   quantityB?: string;
   imgUrl?: string;
+  explanation?: string
 }
 
 
