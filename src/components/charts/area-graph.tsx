@@ -104,7 +104,7 @@ const AreaGraph: React.FC<Props> = ({
     }, [verbalScore, quantScore]);
 
 
-    console.log(chartData)
+    // console.log(chartData)
 
     const startStoringGREdata = () => {
         localStorage.setItem('StoreGREscore', JSON.stringify(true));

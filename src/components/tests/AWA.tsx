@@ -96,7 +96,7 @@ const AWA: React.FC<Props> = ({ test, onContinue, isReviewModeResultDashboard = 
     return (
         <TestLayout currentSection="Analytical Writing: Issue Essay" onContinue={handleContinue} showAWAButtons={true} isReviewModeResultDashboard={isReviewModeResultDashboard} showResult={showResult}>
             <div className="flex flex-col sm:flex-row dark:text-black">
-                <div className="prompt-container border-b sm:border-r">
+                <div className="prompt-container border-b sm:border-r sm:border-b-0">
                     <p className='border-2 rounded-md p-2 mb-4 mt-4'>{test.sections.awa.prompt}</p>
                     <p>{test.sections.awa.instructions}</p>
                     <p>The standard length for this section is 30 minutes.</p>

@@ -10,6 +10,7 @@ interface QuantitativeQuestion {
     quantityA?: string;
     quantityB?: string;
     imgUrl?: string;
+    explanation: string
 }
 
 interface QuantitativeTest {
@@ -38,6 +39,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
     const [isAnswerToggled, setIsAnswerToggled] = useState(false);
     const [selectedAnswersReviewResultDashboard, setSelectedAnswersReviewResultDashboard] = useState<{ [key: number]: string | string[] }>({});
     const [showAlertBeforeProceeding, setShowAlertBeforeProceeding] = useState(false)
+    const [isAnswerExplanationToggle, setIsAnswerExplanationToggle] = useState(false)
 
     useEffect(() => {
         if (isReviewModeResultDashboard) {
@@ -47,6 +49,10 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
 
     const toggleAnswer = () => {
         setIsAnswerToggled(!isAnswerToggled);
+    };
+
+    const toggleAnswerExplanation = () => {
+        setIsAnswerExplanationToggle(!isAnswerExplanationToggle);
     };
 
     const handleNext = () => {
@@ -65,7 +71,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
                 onContinue(score, selectedAnswersReviewResultDashboard);
             }
         } else {
-            if (isAnswerToggled) toggleAnswer()
+            // if (isAnswerToggled) toggleAnswer()
 
             if (currentQuestionIndex < questions.length - 1) {
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -385,8 +391,18 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
                                                     : currentQuestion.correctAnswer}
                                             </div>
                                         }
+                                        {isAnswerExplanationToggle &&
+                                            <div className="bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl">
+                                                <div className=''>Explanation:</div>
+                                                <div dangerouslySetInnerHTML={{
+                                                    __html: Array.isArray(currentQuestion.explanation)
+                                                        ? currentQuestion.explanation.join(', ').replace(/\n/g, '<br />')
+                                                        : currentQuestion.explanation.replace(/\n/g, '<br />')
+                                                }} />
+                                            </div>
+                                        }
                                     </div>
-                                    <Button>Toggle Explanation</Button>
+                                    <Button onClick={toggleAnswerExplanation}>Toggle Explanation</Button>
                                 </div>
                             )}
                         </>

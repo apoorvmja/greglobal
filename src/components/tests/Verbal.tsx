@@ -14,6 +14,7 @@ interface VerbalQuestion {
     highlighted?: string[];
     correctAnswer: string | string[] | (string | string[])[][]; // Update to support complex nested arrays
     blanks?: number;
+    explanation: string;
 }
 
 
@@ -46,6 +47,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
     const [selectedAnswersReviewResultDashboard, setSelectedAnswersReviewResultDashboard] = useState<{ [key: number]: string | string[] }>({});
     const [isAnswerToggled, setIsAnswerToggled] = useState(false);
     const [showAlertBeforeProceeding, setShowAlertBeforeProceeding] = useState(false)
+    const [isAnswerExplanationToggle, setIsAnswerExplanationToggle] = useState(false)
 
     useEffect(() => {
         if (isReviewModeResultDashboard) {
@@ -55,6 +57,10 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
 
     const toggleAnswer = () => {
         setIsAnswerToggled(!isAnswerToggled);
+    };
+
+    const toggleAnswerExplanation = () => {
+        setIsAnswerExplanationToggle(!isAnswerExplanationToggle);
     };
 
     const handleNext = () => {
@@ -75,7 +81,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
             }
         }
         else {
-            if (isAnswerToggled) toggleAnswer()
+            // if (isAnswerToggled) toggleAnswer()
             // In review mode, just move to the next question without calculating scores or updating answers
             if (currentQuestionIndex < questions.length - 1) {
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -108,9 +114,9 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
         questions.forEach((question, index) => {
             const userAnswer = selectedAnswers[index];
 
-            // console.log(`Question ${index + 1}:`);
-            // console.log('User Answer:', userAnswer);
-            // console.log('Correct Answer:', question.correctAnswer);
+            console.log(`Question ${index + 1}:`);
+            console.log('User Answer:', userAnswer);
+            console.log('Correct Answer:', question.correctAnswer);
 
             if (Array.isArray(question.correctAnswer)) {
                 // Handle multi-part answers
@@ -431,8 +437,15 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
                                                     : currentQuestion.correctAnswer}
                                             </div>
                                         }
+                                        {isAnswerExplanationToggle &&
+                                            <div className='bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl'>
+                                                Explanation: {Array.isArray(currentQuestion.explanation)
+                                                    ? currentQuestion.explanation.join(', ')
+                                                    : currentQuestion.explanation}
+                                            </div>
+                                        }
                                     </div>
-                                    <Button>Toggle Explanation</Button>
+                                    <Button onClick={toggleAnswerExplanation}>Toggle Explanation</Button>
                                 </div>
                             )}
 

@@ -800,6 +800,865 @@
           }
         }
       }
+    },
+    {
+      "id": "test2",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "Some people believe that success in creative fields, such as painting, fiction writing, and filmmaking, primarily requires hard work and perseverance. Others believe that such success mainly requires innate talents that cannot be learned.",
+          "instructions": "Write a response in which you discuss which view more closely aligns with your own position and explain your reasoning for the position you take. In developing and supporting your position, you should address both of the views presented."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "reading_comprehension",
+            "passage": "Although custom prosthetic bone replacements produced through a new computer-aided design process will cost more than twice as much as ordinary replacements, custom replacements should still be cost-effective. Not only will surgery and recovery time be reduced, but custom replacements should last longer, thereby reducing the need for further hospital stays.",
+            "questionText": "Which of the following must be studied in order to evaluate the argument presented above?",
+            "options": [
+              "The amount of time a patient spends in surgery versus the amount of time spent recovering from surgery",
+              "The amount by which the cost of producing custom replacements has declined with the introduction of the new technique for producing them",
+              "The degree to which the use of custom replacements is likely to reduce the need for repeat surgery when compared with the use of ordinary replacements",
+              "The degree to which custom replacements produced with the new technique are more carefully manufactured than are ordinary replacements",
+              "The amount by which custom replacements produced with the new technique will drop in cost as the production procedures become standardized and applicable on a larger scale"
+            ],
+            "correctAnswer": [
+              "The degree to which the use of custom replacements is likely to reduce the need for repeat surgery when compared with the use of ordinary replacements"
+            ],
+            "explanation": "Although costly to produce, custom bone replacements are tentatively projected to be cost-effective because of other savings. To evaluate the argument it must be determined whether these savings will compensate for the increased cost. Thus, study of the expected reduction in the need for further hospital stays is needed, and choice C is the best answer. The argument requires no study of the ratio between surgery and recovery time, so choice A is inappropriate. Past and future changes in cost are irrelevant to evaluating an argument that is based on the currently projected cost, so choices B and E are inappropriate. Finally, since studying the care with which the custom replacements are made does not itself provide information about costs, choice D is also incorrect."
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Even those who disagreed with Carmen's views rarely faulted her for expressing them, for the positions she took were as _____ as they were controversial.",
+            "options": [
+              "complicated",
+              "political",
+              "subjective",
+              "commonplace",
+              "thoughtful",
+              "considered"
+            ],
+            "correctAnswer": [
+              "thoughtful",
+              "considered"
+            ],
+            "explanation": "The sentence indicates that people disagreed with Carmen’s views as the positions she took were controversial but rarely found defects with her views as they were carefully thought about before she expressed them. Thus, Carmen’s views were 'thoughtful' and 'considered'."
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "New research on technology and public policy focuses on how seemingly insignificant design features, generally overlooked in most analyses of public works projects or industrial machinery, actually _____ social choices of profound significance.",
+            "options": [
+              "mask",
+              "deceive",
+              "produce",
+              "cloak",
+              "permit",
+              "hasten"
+            ],
+            "correctAnswer": [
+              "mask",
+              "cloak"
+            ],
+            "explanation": "The word 'actually' indicates that in reality the design features which appear to be insignificant and are neglected, are not irrelevant but hide social choices of profound significance. The words closest in meaning to the word 'hide' are mask and cloak."
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "Paradoxically, Robinson's excessive denials of the worth of early works of science fiction suggest that she has become quite ______ them.",
+            "options": [
+              "reflective about",
+              "enamored of",
+              "infatuated with",
+              "skeptical of",
+              "encouraged by",
+              "offended by"
+            ],
+            "correctAnswer": [
+              "enamored of",
+              "infatuated with"
+            ],
+            "explanation": "The word paradoxically indicates that there should be a contradiction in Robinson's refusal to accept the worth of early works of science fiction as instead of denying their existence, she was fascinated by them. The contradictory fascination is related by the words 'enamored of' and 'infatuated with'."
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "Cezanne's delicate watercolor sketches often served as ______ of a subject, a way of gathering fuller knowledge before the artist's final engagement of the subject in an oil painting.",
+            "options": [
+              "an abstraction",
+              "an enhancement",
+              "a synthesis",
+              "a reconnaissance",
+              "a transcription",
+              "a surveillance"
+            ],
+            "correctAnswer": [
+              "a reconnaissance",
+              "a surveillance"
+            ],
+            "explanation": "The sentence states that Cezanne's watercolor sketches were a way of gathering fuller knowledge, which means that they helped in observation and seeking out information of a subject. Thus, watercolor sketches served as a reconnaissance and a surveillance."
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "During the Second World War, about 375,000 civilians died in the United States and about 408,000 members of the United States armed forces died overseas. On the basis of those figures, it can be concluded that it was not much more dangerous to be overseas in the armed forces during the Second World War than it was to stay at home as a civilian.",
+            "questionText": "Which of the following would reveal most clearly the absurdity of the conclusion drawn above?",
+            "options": [
+              "Counting deaths among members of the armed forces who served in the United State in addition to deaths among members of the armed forces serving overseas",
+              "Expressing the difference between the numbers of deaths among civilians and members of the armed forces as a percentage of the total number of deaths",
+              "Separating deaths caused by accidents during service in the armed forces from deaths caused by combat injuries",
+              "Comparing death rates per thousand members of each group rather than comparing total numbers of deaths",
+              "Comparing deaths caused by accidents in the United States to deaths caused by combat in the armed forces"
+            ],
+            "correctAnswer": [
+              "Comparing death rates per thousand members of each group rather than comparing total numbers of deaths"
+            ],
+            "explanation": "Concluding from the similar numbers of deaths in two groups that the relative danger of death was similar for both groups is absurd if, as here, one group was far smaller. D exposes this absurdity by pointing out the need to compare death rates of the two groups, which would reveal the higher death rate for the smaller group. Therefore, D is the best answer. Since the conclusion acknowledges the difference between the number of civilian and armed forces deaths, expressing this difference as a percentage, as suggested by B, is beside the point. A is inappropriate because it simply adds a third group to the two being compared. Because cause of death is not at issue, C and E are irrelevant."
+          },
+          "question7": {
+            "type": "text_completion",
+            "questionText": "Externally the jollity of old men has much in common with the mirth of children; the intellect, any more than a deep sense of humor, has little to do with this matter as it is. In both cases it is a gleam that plays upon the (i) ______ and imparts a sunny, cheery aspect alike to green branch and grey moldering trunk. In one case however it is real (ii) ______ and in the other it is the (iii) ______ of decaying wood.",
+            "options": {
+              "blank1": [
+                "surface",
+                "vagary",
+                "unpredictability"
+              ],
+              "blank2": [
+                "gloom",
+                "sunshine",
+                "glaze"
+              ],
+              "blank3": [
+                "flotsam & jetsam",
+                "radiant glow",
+                "reeking smell"
+              ]
+            },
+            "correctAnswer": [
+              "surface",
+              "sunshine",
+              "radiant glow"
+            ],
+            "explanation": "The passage has imagery of light and compares the jollity of old men with the mirth of children. Blank 1 can be completed logically with 'surface,' blank 2 with 'sunshine,' and in the final blank, the word is 'radiant glow' in keeping with the imagery of light.",
+            "blanks": 3
+          },
+          "question8": {
+            "type": "text_completion",
+            "questionText": "Religious philosopher that he was, Henry More derived his conception of an infinite universe from the Infinite God in whom he believed; a benevolent God of (i) _______ whose nature was to create (ii) _______.",
+            "options": {
+              "blank1": [
+                "plenitude",
+                "vengeance",
+                "indifference"
+              ],
+              "blank2": [
+                "abundance",
+                "suffering",
+                "temperance"
+              ]
+            },
+            "correctAnswer": [
+              "plenitude",
+              "abundance"
+            ],
+            "explanation": "The key to this one lies in 'benevolent God.' Since the god is benevolent and there is no specific appositional phrase after the ';', we assume it's a support sign and therefore the missing blank has to be a positive word. Therefore, 'plenitude,' which is the only positive word, is the answer. The second blank is dependent on the first and so 'abundance' will be the answer. They are synonyms after all.",
+            "blanks": 2
+          },
+          "question9": {
+            "type": "text_completion",
+            "questionText": "The author did not see the _______ inherent in her scathing criticism of a writing style so similar to her own.",
+            "options": [
+              "disinterest",
+              "incongruity",
+              "pessimism",
+              "compliment",
+              "symbolism"
+            ],
+            "correctAnswer": [
+              "incongruity"
+            ],
+            "explanation": "The first part - 'The author did not see' brings out the discrepancy in 'scathing criticism of a writing style so similar to her own.' She is criticizing a writing style which is similar to her own which is pretty weird. Therefore look for a similar word. In this case it is 'incongruity.'",
+            "blanks": 1
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "Toughened hiring standards have not been the primary cause of the present staffing shortage in public schools. The shortage of teachers is primarily caused by the fact that in recent years teachers have not experienced any improvements in working conditions and their salaries have not kept pace with salaries in other professions.",
+            "questionText": "Which of the following, if true, would most support the claims above?",
+            "options": [
+              "Many teachers already in the profession would not have been hired under the new hiring standards.",
+              "Today more teachers are entering the profession with a higher educational level than in the past.",
+              "Some teachers have cited higher standards for hiring as a reason for the current staffing shortage.",
+              "Many teachers have cited low pay and lack of professional freedom as reasons for their leaving the profession.",
+              "Many prospective teachers have cited the new hiring standards as a reason for not entering the profession."
+            ],
+            "correctAnswer": [
+              "Many teachers have cited low pay and lack of professional freedom as reasons for their leaving the profession."
+            ],
+            "explanation": "The passage rejects one explanation of the shortage of teachers—that it results from toughened hiring standards—and advances an alternative—that it results from deficiencies in pay and working conditions. D provides corroborative evidence for the latter explanation by suggesting that, for many former teachers, poor pay and working conditions were reasons for their quitting the profession. Therefore, D is the best answer. A, C, and E provide evidence that tends to implicate new hiring standards in the staffing shortage and thus support the explanation that the passage rejects. B describes what may be a result of the new hiring standards, but it provides no evidence favoring one explanation of the staffing shortage over the other."
+          },
+          "question11": {
+            "type": "reading_comprehension_multiple",
+            "passage": "It is now established that the Milky Way is far more extended and of much greater mass than was hitherto thought. However, all that is visible of the constituents of the Milky Way's corona (outer edge), where much of the galaxy's mass must be located, is a tiny fraction of the corona's mass. Thus, most of the Milky Way's outlying matter must be dark. Why? Three facts are salient. First, dwarf galaxies and globular clusters, into which most of the stars of the Milky Way's corona are probably bound, consist mainly of old stars. Second, old stars are not highly luminous. Third, no one has detected in the corona the clouds of gaseous matter such as hydrogen and carbon monoxide that are characteristic of the bright parts of a galaxy. At present, therefore, the best explanation—though still quite tentative—for the darkness of the corona is that the corona is composed mainly of old burned-out stars.",
+            "questionText": "According to the passage, a bright part of a galaxy typically includes",
+            "options": [
+              "gases such as hydrogen and carbon monoxide.",
+              "a balanced mixture of old and new stars.",
+              "a large portion of the galaxy's mass."
+            ],
+            "correctAnswer": [
+              "gases such as hydrogen and carbon monoxide."
+            ],
+            "explanation": "As suggested by the passage, the bright parts of the galaxy consist of clouds made up of gases such as hydrogen and carbon monoxide. Thus, it can be concluded that these gases are bright, which constitute a bright part of the galaxy, giving option (A) as the correct answer. Option (B) is incorrect because a bright part of the galaxy cannot have an equal number of old and new stars as old stars are not very luminous (throwing away light) and their presence will not make the galaxy bright but dark. Option (C) is incorrect because the outer edge of the Milky Way called corona is where the galaxy's major mass is located. Due to the maximum amount of mass present in the outer edge, it is dark."
+          },
+          "question12": {
+            "type": "reading_comprehension_select",
+            "passage": "It is now established that the Milky Way is far more extended and of much greater mass than was hitherto thought. However, all that is visible of the constituents of the Milky Way's corona (outer edge), where much of the galaxy's mass must be located, is a tiny fraction of the corona's mass. Thus, most of the Milky Way's outlying matter must be dark. Why? Three facts are salient. First, dwarf galaxies and globular clusters, into which most of the stars of the Milky Way's corona are probably bound, consist mainly of old stars. Second, old stars are not highly luminous. Third, no one has detected in the corona the clouds of gaseous matter such as hydrogen and carbon monoxide that are characteristic of the bright parts of a galaxy. At present, therefore, the best explanation though still quite tentative for the darkness of the corona is that the corona is composed mainly of old burned-out stars.",
+            "questionText": "Select the sentence in the passage which implies that, until fairly recently, astronomers believed that the Milky Way was much smaller.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "It is now established that the Milky Way is far more extended and of much greater mass than was hitherto thought"
+            ],
+            "explanation": "The above-mentioned sentence from the passage applies to the given statement because the sentence shows that in recent years there has been a new discovery about the expanse and weight of the Milky Way which is much greater than what was earlier believed by the astronomers."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "reading_comprehension",
+            "passage": "Airline: Newly developed collision-avoidance systems, although not fully tested to discover potential malfunctions, must be installed immediately in passenger planes. Their mechanical warnings enable pilots to avoid crashes. Pilots: Pilots will not fly in planes with collision-avoidance systems that are not fully tested. Malfunctioning systems could mislead pilots, causing crashes.",
+            "questionText": "The pilots’ objection is most strengthened if which of the following is true?",
+            "options": [
+              "It is always possible for mechanical devices to malfunction.",
+              "Jet engines, although not fully tested when first put into use, have achieved exemplary performance and safety records.",
+              "Although collision-avoidance systems will enable pilots to avoid some crashes, the likely malfunctions of the not-fully-tested systems will cause even more crashes.",
+              "Many airline collisions are caused in part by the exhaustion of overworked pilots.",
+              "Collision-avoidance systems, at this stage of development, appear to have worked better in passenger planes than in cargo planes during experimental flights made over a six-month period."
+            ],
+            "correctAnswer": [
+              "Although collision-avoidance systems will enable pilots to avoid some crashes, the likely malfunctions of the not-fully-tested systems will cause even more crashes."
+            ],
+            "explanation": "Choice C states that what the pilots think could happen is likely to happen. Thus, C is the best choice. Choice A is inappropriate because it says nothing about the malfunctions that most concern the pilots—those that might mislead. Nor does A distinguish tested from not-fully-tested systems. Choice B is inappropriate. The only outcome of using insufficiently tested equipment that might strengthen the pilots' objection is an unfavorable one, but B reports on a favorable outcome. Choice D is inappropriate because it mentions a problem that needs to be addressed whether or not the collision-avoidance systems are installed immediately. Choice E is inappropriate because it provides no evidence that any malfunctions were of a sort to mislead pilots and cause crashes."
+          },
+          "question2": {
+            "type": "reading_comprehension_select",
+            "passage": "The deep sea typically has a sparse fauna dominated by tiny worms and crustaceans, with an even sparser distribution of larger animals. However, near hydrothermal vents, areas of the ocean where warm water emerges from subterranean sources, live remarkable densities of huge clams, blind crabs, and fish. Most deep-sea faunas rely for food on particulate matter, ultimately derived from photosynthesis, falling from above. The food supplies necessary to sustain the large vent communities, however, must be many times the ordinary fallout. The first reports describing vent faunas proposed two possible sources of nutrition: bacterial chemosynthesis, production of food by bacteria using energy derived from chemical changes, and advection, the drifting of food materials from surrounding regions. Later, evidence in support of the idea of intense local chemosynthesis was accumulated: hydrogen sulfide was found in vent water; many vent-site bacteria were found to be capable of chemosynthesis; and extremely large concentrations of bacteria were found in samples of vent water thought to be pure. This final observation seemed decisive. If such astonishing concentrations of bacteria were typical of vent outflow, then food within the vent would dwarf any contribution from advection. Hence, the widely quoted conclusion was reached that bacterial chemosynthesis provides the foundation for hydrothermal-vent food chains—an exciting prospect because no other communities on Earth are independent of photosynthesis.",
+            "questionText": "Select the sentence in the passage which implies that the majority of deep-sea faunas that live in nonvent habitats are smaller than many vent faunas.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "The deep sea typically has a sparse fauna dominated by tiny worms and crustaceans, with an even sparser distribution of larger animals"
+            ],
+            "explanation": "As suggested by the statement deep sea has a fauna which is scattered and very less density of the species of the organisms are found there. These regions have a less density of tiny worms and crustaceans which dominate these regions and even lesser number of species of larger animals. Thus, faunas found in the deep sea region are smaller when compared to the other vent faunas."
+          },
+          "question3": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The deep sea typically has a sparse fauna dominated by tiny worms and crustaceans, with an even sparser distribution of larger animals. However, near hydrothermal vents, areas of the ocean where warm water emerges from subterranean sources, live remarkable densities of huge clams, blind crabs, and fish. Most deep-sea faunas rely for food on particulate matter, ultimately derived from photosynthesis, falling from above. The food supplies necessary to sustain the large vent communities, however, must be many times the ordinary fallout. The first reports describing vent faunas proposed two possible sources of nutrition: bacterial chemosynthesis, production of food by bacteria using energy derived from chemical changes, and advection, the drifting of food materials from surrounding regions. Later, evidence in support of the idea of intense local chemosynthesis was accumulated: hydrogen sulfide was found in vent water; many vent-site bacteria were found to be capable of chemosynthesis; and extremely large concentrations of bacteria were found in samples of vent water thought to be pure. This final observation seemed decisive. If such astonishing concentrations of bacteria were typical of vent outflow, then food within the vent would dwarf any contribution from advection. Hence, the widely quoted conclusion was reached that bacterial chemosynthesis provides the foundation for hydrothermal-vent food chains—an exciting prospect because no other communities on Earth are independent of photosynthesis.",
+            "questionText": "Which of the following is information supplied in the passage that would support the statement that the food supplies necessary to sustain vent communities must be many times that of ordinary fallout?",
+            "options": [
+              "Large vent faunas move from vent to vent in search of food.",
+              "Vent faunas are not able to consume food produced by photosynthesis.",
+              "Vents are more densely populated than are other deep-sea areas."
+            ],
+            "correctAnswer": [
+              "Vents are more densely populated than are other deep-sea areas."
+            ],
+            "explanation": "The passage shows that vents are the regions inside the ocean where large densities of organisms like clams, blind crabs, and fishes are found and this stands in contrast to the number of organisms living in the deep sea, which is very less. Since the number of organisms living in the deep sea is less, they can survive on the particulate food matter falling from the above regions of the sea but the large amount of organisms in the vent area require huge quantities of food when compared to the former. Thus, option (C) is the correct answer."
+          },
+          "question4": {
+            "type": "text_completion",
+            "questionText": "Our biological uniqueness requires that the effects of substance must be verified by _______ experiments, even after thousands of tests of the effects of that substance on animals.",
+            "options": [
+              "controlled",
+              "random",
+              "replicated",
+              "human",
+              "evolutionary"
+            ],
+            "correctAnswer": [
+              "human"
+            ],
+            "explanation": "The answer lies in 'Our biological uniqueness requires' + 'even after thousands of tests of the effects of that substance on animals.' Since we are biologically unique from other animals, the results, even after countless experiments on animals, may not apply to us. So we need to test it on 'humans' as well. That's the answer.",
+            "blanks": 1
+          },
+          "question5": {
+            "type": "text_completion",
+            "questionText": "Our highly (i) _______ vocabulary for street crime contrasts sharply with our (ii) _______ vocabulary for corporate crime, a fact that corresponds to the general public's unawareness of the extent of corporate crime.",
+            "options": {
+              "blank1": [
+                "euphemistic",
+                "technical",
+                "differentiated"
+              ],
+              "blank2": [
+                "limited",
+                "jargon-laden",
+                "misleading"
+              ]
+            },
+            "correctAnswer": [
+              "differentiated",
+              "limited"
+            ],
+            "explanation": "The key to the first blank lies in 'contrasts sharply with our,' implying the difference in vocabulary. Hence 'differentiated' is the answer. For the second blank, the key lies in 'that corresponds to the general public's unawareness to the extent.' It is actually an appositional phrase supported by 'corresponds.' Hence the answer is 'limited.'",
+            "blanks": 2
+          },
+          "question6": {
+            "type": "text_completion",
+            "questionText": "When a person suddenly loses consciousness, a bystander is not expected to (i) _______ the problem but to attempt to (ii) _______ its effects by starting vital functions if they are absent.",
+            "options": {
+              "blank1": [
+                "magnify",
+                "rebuke",
+                "diagnose"
+              ],
+              "blank2": [
+                "predict",
+                "counter",
+                "evaluate"
+              ]
+            },
+            "correctAnswer": [
+              "diagnose",
+              "counter"
+            ],
+            "explanation": "Let's take the first blank first. A bystander cannot be expected to 'diagnose' the problem but the other two are quite possible depending on the bystander's mental ineptitude. So 'diagnose' is the answer. For the second blank, 'evaluate' cannot be an option because, as we discussed earlier, he is also not expected to 'predict' its effects by starting vital functions, if they are absent. So 'counter' is the only option.",
+            "blanks": 2
+          },
+          "question7": {
+            "type": "text_completion",
+            "questionText": "Middlemarch is a difficult novel to discuss. Just as the insensitive Jane Austen reader complains “nothing happens,” so too some readers call Middlemarch a (i) _______ novel, with tiresome repetition. Such readers are the (ii) _______ readers who look for (iii) _______ gratification.",
+            "options": {
+              "blank1": [
+                "eidetic",
+                "vivid",
+                "monochromatic"
+              ],
+              "blank2": [
+                "casual",
+                "discerning",
+                "perspicacious"
+              ],
+              "blank3": [
+                "overnight",
+                "long-term",
+                "presto"
+              ]
+            },
+            "correctAnswer": [
+              "monochromatic",
+              "casual",
+              "presto"
+            ],
+            "explanation": "The passage describes the novel 'Middlemarch' as one in which readers complain 'nothing happens,' so the word in the first blank is 'monochromatic.' Then it is said that this novel is boring 'only to the casual reader' who looks for 'presto' or an 'instant gratification.' It is implied that the novel is not as boring as it seems to be.",
+            "blanks": 3
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "The more that is discovered about the intricate organization of the nervous system, the more it seems remarkable that genes can successfully specify the development of that system. Human genes contain too little information even to specify which hemisphere of the brain each of a human’s 10^11 neurons should occupy, let alone the hundreds of connections that each neuron makes. For such reasons, we can assume that there must be an important random factor in neural development, and in particular, that errors must and do occur in the development of all normal brains.",
+            "questionText": "According to the passage, one of the reasons it has been assumed that there is an important random element in human neural development is that",
+            "options": [
+              "genes cannot specify certain types of developmental processes as well as they can others",
+              "the intricacy of the nervous system allows small developmental errors to occur without harmful effects",
+              "the amount of information contained in the genes is less than the amount necessary to specify the location of the neurons",
+              "the number of neurons in the human brain varies greatly from individual to individual",
+              "it is theoretically impossible for an organism to protect itself completely from gross developmental mistakes"
+            ],
+            "correctAnswer": [
+              "the amount of information contained in the genes is less than the amount necessary to specify the location of the neurons"
+            ],
+            "explanation": "According to the passage, it has been assumed that there is an important random element in human neural development because genes can specify the development of an intricate nervous system and contain even the minutest of the information to specify the location as to which hemisphere of the brain each of a human's 10^11 neurons should occupy."
+          },
+          "question9": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Ragtime is a musical form that synthesizes folk melodies and musical techniques into a brief quadrille-like structure, designed to be played—exactly as written—on the piano. A strong analogy exists between European composers like Ralph Vaughan Williams, Edvard Grieg, and Anton Dvorak who combined folk tunes and their own original materials in larger compositions and the pioneer ragtime composers in the United States. Composers like Scott Joplin and James Scott were in a sense collectors or musicologists, collecting dance and folk music in Black communities and consciously shaping it into brief suites or anthologies called piano rags.",
+            "questionText": "According to the passage, Ralph Vaughan Williams, Anton Dvorak, and Scott Joplin are similar in that they all",
+            "options": [
+              "wrote original compositions based on folk tunes",
+              "collected and recorded abbreviated piano suites",
+              "explored the relations between Black music and continental folk music"
+            ],
+            "correctAnswer": [
+              "wrote original compositions based on folk tunes"
+            ],
+            "explanation": "According to the passage, Ralph Vaughan Williams, Anton Dvorak, and Scott Joplin are similar because they combined folk tunes and their original compositions. However, they all borrowed from folk tunes, their composition material was original. Thus, option (A) is the correct answer. Option (B) is incorrect because it was not the above-mentioned three musicians who collected and recorded abbreviated piano suites but Scott Joplin and James Scott who did that. Option (C) is incorrect because it was Scott Joplin and James Scott who explored the relations between Black music and continental folk music and not the above-mentioned people."
+          },
+          "question10": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The determination of the sources of copper ore used in the manufacture of copper and bronze artifacts of Bronze Age civilizations would add greatly to our knowledge of cultural contacts and trade in that era. Researchers have analyzed artifacts and ores for their concentrations of elements, but for a variety of reasons, these studies have generally failed to provide evidence of the sources of the copper used in the objects. Elemental composition can vary within the same copper-ore lode, usually because of varying admixtures of other elements, especially iron, lead, zinc, and arsenic. And high concentrations of cobalt or zinc, noticed in some artifacts, appear in a variety of copper-ore sources. Moreover, the processing of ores introduced poorly controlled changes in the concentrations of minor and trace elements in the resulting metal. Some elements evaporate during smelting and roasting; different temperatures and processes produce different degrees of loss. Finally, flux, which is sometimes added during smelting to remove waste material from the ore, could add quantities of elements to the final product.",
+            "questionText": "According to the passage, possible sources of the lead found in a copper or bronze artifact include which of the following?",
+            "options": [
+              "The copper ore used to manufacture the artifact",
+              "Flux added during processing of the copper ore",
+              "Other metal added during processing of the copper ore"
+            ],
+            "correctAnswer": [
+              "The copper ore used to manufacture the artifact",
+              "Flux added during processing of the copper ore",
+              "Other metal added during processing of the copper ore"
+            ],
+            "explanation": "According to the passage, one of the sources of lead which is found in the artifacts made of copper or bronze is the copper ore which contains lead in its impure state. Copper ore is processed to extract the pure form of copper devoid of all the impurities which are present in its ore. However, sometimes lead which is present in the ore as an impurity does not separate from the ore after processing and remains a part of the metal. The artifacts made up of this copper definitely have the presence of lead. Thus, option (A) applies to the answer. Flux is a substance which is added during the smelting of the copper ore to remove impurities from the ore and is a part of the process of processing of the ore to derive a pure form of copper. The adding of flux sometimes has its own disadvantages because instead of removing impurities during the process of smelting it could add impurities to copper. Lead could be one of the impurities added to copper by flux and find space in the final product. This copper with lead concentration when used to make artifacts has lead in them. Thus, option (B) applies to the answer. Other metal added during the processing of the copper ore could have some amount of lead in it which would lead to the presence of lead in the final pure copper. Thus, artifacts made up of this copper will have lead in them. Thus, option (C) applies to the answer."
+          },
+          "question11": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Extraordinary creative activity has been characterized as revolutionary, flying in the face of what is established and producing not what is acceptable but what will become accepted. According to this formulation, highly creative activity transcends the limits of an existing form and establishes a new principle of organization. However, the idea that extraordinary creativity transcends established limits is misleading when it is applied to the arts, even though it may be valid for the sciences. Differences between highly creative art and highly creative science arise in part from a difference in their goals. For the sciences, a new theory is the goal and end result of the creative act. Innovative science produces new propositions in terms of which diverse phenomena can be related to one another in more coherent ways. Such phenomena as a brilliant diamond or a nesting bird are relegated to the role of data, serving as the means for formulating or testing a new theory. The goal of highly creative art is very different: the phenomenon itself becomes the direct product of the creative act. Shakespeare's Hamlet is not a tract about the behavior of indecisive princes or the uses of political power; nor is Picasso's painting Guernica primarily a propositional statement about the Spanish Civil War or the evils of fascism. What highly creative artistic activity produces is not a new generalization that transcends established limits, but rather an aesthetic particular. Aesthetic particulars produced by the highly creative artist extend or exploit, in an innovative way, the limits of an existing form, rather than transcend that form.",
+            "questionText": "The author considers a new theory that coherently relates diverse phenomena to one another to be the",
+            "options": [
+              "result of highly creative scientific activity",
+              "byproduct of an aesthetic experience",
+              "synthesis underlying a great work of art"
+            ],
+            "correctAnswer": [
+              "result of highly creative scientific activity"
+            ],
+            "explanation": "According to the passage, sciences produce new propositions by which different phenomena can be related to one another. The passage gives an example that phenomena like a brilliant diamond or a nesting bird are used as data for the formulation or testing of a new theory. Thus, the phenomena lead to a final end result, establishing a relationship between it and the goal achieved. Therefore, option (A) is the correct answer."
+          },
+          "question12": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Extraordinary creative activity has been characterized as revolutionary, flying in the face of what is established and producing not what is acceptable but what will become accepted. According to this formulation, highly creative activity transcends the limits of an existing form and establishes a new principle of organization. However, the idea that extraordinary creativity transcends established limits is misleading when it is applied to the arts, even though it may be valid for the sciences. Differences between highly creative art and highly creative science arise in part from a difference in their goals. For the sciences, a new theory is the goal and end result of the creative act. Innovative science produces new propositions in terms of which diverse phenomena can be related to one another in more coherent ways. Such phenomena as a brilliant diamond or a nesting bird are relegated to the role of data, serving as the means for formulating or testing a new theory. The goal of highly creative art is very different: the phenomenon itself becomes the direct product of the creative act. Shakespeare's Hamlet is not a tract about the behavior of indecisive princes or the uses of political power; nor is Picasso's painting Guernica primarily a propositional statement about the Spanish Civil War or the evils of fascism. What highly creative artistic activity produces is not a new generalization that transcends established limits, but rather an aesthetic particular. Aesthetic particulars produced by the highly creative artist extend or exploit, in an innovative way, the limits of an existing form, rather than transcend that form.",
+            "questionText": "The author implies that an innovative scientific contribution is one that",
+            "options": [
+              "does not relegate particulars to the role of data",
+              "introduces a new valid generalization",
+              "presents the discovery of a new scientific fact"
+            ],
+            "correctAnswer": [
+              "introduces a new valid generalization"
+            ],
+            "explanation": "The author in the passage states that innovative science produces new propositions by which different phenomena can be related for the formation and testing of a new theory, thus producing a general idea obtained by relating together two diverse phenomena. Thus, option (B) is the correct answer."
+          },
+          "question13": {
+            "type": "sentence_equivalence",
+            "questionText": "Aspartame, a new artificial sugar substitute, is only a partial replacement for saccharin because, unlike saccharin, it breaks down and loses its sweetening characteristics at high temperatures, making it _____ for baking.",
+            "options": [
+              "ideal",
+              "excellent",
+              "versatile",
+              "intentional",
+              "unsuitable",
+              "inappropriate"
+            ],
+            "correctAnswer": [
+              "unsuitable",
+              "inappropriate"
+            ],
+            "explanation": "The phrase 'partial replacement' suggests that Aspartame cannot be used like saccharin completely because it does not function like saccharin at high temperatures. Baking is a process that requires a high temperature, and Aspartame loses its sweetening on excessive heating, making the baked product devoid of sweetness. This shows that Aspartame is 'unsuitable' and 'inappropriate' for baking."
+          },
+          "question14": {
+            "type": "sentence_equivalence",
+            "questionText": "Trapped thousands of years ago in Antarctic ice, recently discovered air bubbles are _____ time capsules filled with information for scientists who chart the history of the atmosphere.",
+            "options": [
+              "inconsequential",
+              "broken",
+              "veritable",
+              "resplendent",
+              "utter",
+              "impenetrable"
+            ],
+            "correctAnswer": [
+              "veritable",
+              "utter"
+            ],
+            "explanation": "The air bubbles provide true information about the atmospheric conditions present thousands of years ago as they were trapped in ice at the same time and consist of the same air that was present in the atmosphere at that time. These air bubbles are used for actual information by the scientists who map the history of the atmosphere. The air bubbles are hence true time capsules. The words closest in meaning to true are veritable and utter."
+          },
+          "question15": {
+            "type": "sentence_equivalence",
+            "questionText": "Although often extremely critical of the medical profession as a whole, people are rarely willing to treat their personal doctors with equal _____.",
+            "options": [
+              "hatred",
+              "impetuosity",
+              "sarcasm",
+              "mockery",
+              "contempt",
+              "condescension"
+            ],
+            "correctAnswer": [
+              "hatred",
+              "contempt"
+            ],
+            "explanation": "The word 'although' indicates that the two parts of the sentence are in opposition to each other. The sentence suggests that although people find fault (critical) with the medical profession, in actuality, they do not do so with their personal doctors and therefore do not dislike them. The words which closely describe 'dislike' are 'hatred' and 'contempt.'"
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: The distance a car travels in 60 minutes at 30 mph. Column B: The distance a car travels in 30 minutes at 60 mph.",
+            "quantityA": "The distance a car travels in 60 minutes at 30 mph",
+            "quantityB": "The distance a car travels in 30 minutes at 60 mph",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal",
+              "Relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "The two quantities are equal",
+            "explanation": "Distance = speed * time\n\nCol A: \nTime = 60 min = 1 hr\nDistance = 1 hour * 30 mph = 30 miles\n\nCol B: \nTime = 30 min = 1/2 hr\nDistance = 1/2 * 60 mph = 30 miles\n\nSo the answer is C"
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "What is the sum of all integers x, such that -37 <= x <= 35?",
+            "options": [
+              "-73",
+              "-37",
+              "-36",
+              "36",
+              "37"
+            ],
+            "correctAnswer": "-73",
+            "explanation": "As -37 <= x <= 35, the sum is calculated as follows:\nSum = -37 + (-36) + (-35) + ... + 0 + 1 + 2 + 3 + ... + 35\n\n-1 gets canceled with 1\n-2 gets canceled with 2\nSimilarly, up to -35, all negative numbers are canceled with positive numbers until 35.\nSum = (-37) + (-36) = -73"
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A bus trip of 450 miles would have taken 1 hour less if the average speed S for the trip had been greater by 5 miles per hour. What was the average speed S, in miles per hour, for the trip?",
+            "options": [
+              "10",
+              "40",
+              "45",
+              "50",
+              "55"
+            ],
+            "correctAnswer": "45",
+            "explanation": "Satisfy the equation with options (Best Method)"
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If 7 workers can build 7 cars in 7 days, then how many days would it take 5 workers to build 5 cars?",
+            "options": [
+              "1",
+              "5",
+              "7",
+              "4",
+              "8"
+            ],
+            "correctAnswer": "7",
+            "explanation": "If 7 workers build 7 cars in 7 days:\nAs the number of workers decreases, the days will increase proportionally, but if the number of cars decreases, the days will decrease proportionally.\n\n- 1 worker can build 7 cars in (7 X 7) days\n- 1 worker can build 1 car in (7 X 7)/7 days = 7 days\n\nNow, doing the reverse job to find the answer:\n1 worker can build 5 cars in 7 X 5 days\nBut 5 workers can build 5 cars in (7X5)/5 days = 7 days"
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In △ABC, ∠A = 40°. D is a point on AC, such that BD = BC. If ∠ABD = 30°, find ∠ABC?",
+            "options": [
+              "40",
+              "60",
+              "80",
+              "70",
+              "75"
+            ],
+            "correctAnswer": "70",
+            "explanation": "Given: ∠A = 40° and ∠ABD = 30°\n\nNow, in a triangle, the sum of angles = 180°.\n\n∠ADB = 180° - 40° - 30° = 110°.\n\nHence, ∠BDC = 180° - 110° = 70° (Linear pair).\n\nNow as BD = BC,\n\n∠BDC = ∠BCD = 70°.\n\nHence, in triangle BDC:\n∠CBD = 180° - 70° - 70° = 40°.\n\nTherefore, ∠ABC = 40° + 30° = 70°."
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Marge has n candies, where n is an integer such that 20 < n < 50. If Marge divides the candies equally among 5 children, she will have 2 candies remaining. If she divides the candies among 6 children, she will have 1 candy remaining. How many candies will remain if she divides the candies among 7 children?",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctAnswer": "2",
+            "explanation": "Given: 20 < n < 50\n\nLet the number of candies distributed to each child when there are 5 children = x\n\nAnd, when there are 6 children = y\n\nNow, x = 5x + 2 = 6y + 1 .........1st equation\n\nAlso, as x < 50, x = y + 1 .................2nd equation\n\nSolving equations 1 and 2, we get n = 37\n\nHence, the answer is 2"
+          },
+          "question7": {
+            "type": "quantitative_comparison",
+            "questionText": "a, b, c, and d are positive. \n\nGiven: \n\na/2 + b/6 = c/3 + d/9",
+            "quantityA": "9a + 3b",
+            "quantityB": "6c + 3d",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal",
+              "The Relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Given: \n\na/2 + b/6 = c/3 + d/9\n\nMultiply both sides by 18:\n\n 9a + 3b = 6c + 2d\n\nAs d is positive, the answer is that Quantity B is greater."
+          },
+          "question8": {
+            "type": "quantitative_comparison",
+            "questionText": "Choose from the most suitable option below.",
+            "quantityA": "√(33/175)",
+            "quantityB": "√(10/6)",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal",
+              "The Relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Column A: \n√(33/175) = √0.2\n\nColumn B: \n√(10/6) = √1.66\n\nObviously, B > A (as B > 1 & A < 1)"
+          },
+          "question9": {
+            "type": "quantitative_comparison",
+            "questionText": "There are more boys in each class than girls. There are 40 students in Class A and 30 students in Class B.",
+            "quantityA": "Number of boys in Class A",
+            "quantityB": "Number of boys in Class B",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "Class A (40 students): Boys > Girls\nClass B (30 students): Boys > Girls\n\nFor Class A: 21 <= Boys <= 40\nFor Class B: 16 <= Boys <= 30\n\nCase I: If Boys in A = 21 and Boys in B = 16, then A > B.\nCase II: If Boys in A = 21 and Boys in B = 26, then A < B.\n\nThus, the relationship cannot be determined by the given information."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The sum of the first 20 positive even integers is...",
+            "options": [
+              "40",
+              "360",
+              "400",
+              "420",
+              "450"
+            ],
+            "correctAnswer": "420",
+            "explanation": "Sum1 = 2 + 4 + 6 + 8 + 10 + ... + 40\n\n= 2 * (1 + 2 + 3 + 4 + 5 + ... + 20)\n\nThe sum of the first n natural numbers is given by the formula: n(n + 1) / 2.\n\nHence, Sum1 = 2 * 20(20 + 1) / 2 = 420.\n\nNote: The sum of the first n even numbers is n(n + 1), and the sum of the first n odd numbers is n^2."
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Each of the following is the sum of cube and square of an integer EXCEPT",
+            "options": [
+              "36",
+              "80",
+              "150",
+              "1100",
+              "810"
+            ],
+            "correctAnswer": "810",
+            "explanation": "36 = 3^3 + 3^2\n80 = 4^3 + 4^2\n150 = 5^3 + 5^2\n1100 = 10^3 + 10^2\n810 = 9^3 + 9^2\n\nHence, the answer is option 5."
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A certain grocery purchased x pounds of produce for p dollars per pound. If y pounds of the produce had to be discarded due to spoilage and the grocery sold the rest for s dollars per pound, which of the following represents the gross profit on the sale of the produce?",
+            "options": [
+              "(x - y)s - xp",
+              "(x - y)p - ys",
+              "(s - p)y - xp",
+              "xp - ys",
+              "(x - y)(s - p)"
+            ],
+            "correctAnswer": "(x - y)s - xp",
+            "explanation": "Cost price = x * p dollars\nSelling price = (x - y) * s dollars\nProfit = (x - y) * s - xp"
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/flt1%20Q18-20.jpg",
+            "questionText": "The figures show (i)SALES and (ii)EARNINGS of a consolidated conglomerate(in million dollars). During which year was the company’s earnings is 10 percent of its sales?",
+            "options": [
+              "85",
+              "86",
+              "87",
+              "88",
+              "90"
+            ],
+            "correctAnswer": "85",
+            "explanation": "During 85th year \nSales = 8\nEarnings = 80\nAs 8 is 10% of 80, correct answer is 85."
+          },
+          "question2": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/flt1%20Q18-20.jpg",
+            "questionText": "During the years 1986 through 1988, what are the average earnings per year?",
+            "options": [
+              "6 million",
+              "7.5 million",
+              "9 million",
+              "10 million",
+              "27 million"
+            ],
+            "correctAnswer": "9 million",
+            "explanation": "1986 = 5 million\n1987 = 10 million\n1988 = 12 million\n\nTotal = 27 (5 + 10 + 12)\n\nAverage = 27 / 3 = 9 million dollars."
+          },
+          "question3": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/flt1%20Q18-20.jpg",
+            "questionText": "In which year did sales increase by the greatest percentage over the previous year?",
+            "options": [
+              "86",
+              "87",
+              "88",
+              "89",
+              "90"
+            ],
+            "correctAnswer": "88",
+            "explanation": "Evident from the graph."
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "What percent of 15 is 15 percent of 1?",
+            "options": [
+              "0.001",
+              "0.01",
+              "0.1",
+              "1",
+              "10"
+            ],
+            "correctAnswer": "1",
+            "explanation": "15% of 1 = 0.15\n\n(0.15/15) x 100 = 1%"
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a, b, and c are three different positive integers each less than 15, what is the greatest possible value for the expression (ab)/c?",
+            "options": [
+              "210",
+              "225",
+              "105",
+              "182",
+              "196"
+            ],
+            "correctAnswer": "182",
+            "explanation": "Given 0 < a, b, c < 15\nLet a & b be the largest, i.e., 14 & 13, and c be the smallest, i.e., 1.\n\n(a * b)/c = (14 * 13)/1 = 182"
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Running at the same constant rate, 6 identical machines can produce a total of 270 bottles per minute. At this rate, how many bottles could 10 such machines produce in 4 minutes?",
+            "options": [
+              "648",
+              "1,800",
+              "2,700",
+              "10,800",
+              "64,800"
+            ],
+            "correctAnswer": "1,800",
+            "explanation": "6 machines = 270 bottles/minute\n1 machine = 270/6 = 45 bottles/minute\n10 machines = 45 * 10 = 450 bottles/minute\nSo, 450 * 4 = 1,800 bottles in 4 minutes."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If x is an integer, and k = (x - 1)(x + 2) - (x - 1)(x - 2), then which of the following must be true?",
+            "options": [
+              "k is odd only when x is odd.",
+              "k is odd only when x is even.",
+              "k is even only when x is even.",
+              "k is even only when x is odd.",
+              "None of the above."
+            ],
+            "correctAnswer": "None of the above.",
+            "explanation": "k = (x - 1)(x + 2) - (x - 1)(x - 2)\n\n= (x^2 + x - 2) - (x^2 - 3x + 2)\n\n= 4x - 4\n\n= 4(x - 1)\n\nk is always even. Hence, the answer is the 5th option."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If n is an odd integer, which one of the following is an even integer?",
+            "options": [
+              "(n)^3",
+              "n/4",
+              "2n+3",
+              "n(n+3)",
+              "√n"
+            ],
+            "correctAnswer": "n(n+3)",
+            "explanation": "n = odd\n\n1) (n)^3 = odd\n2) n/4 = Fraction\n3) 2n+3 = odd\n4) n(n+3) = odd * (odd + 3) = odd * even = even\n5) √n = Real number or odd\n\nHence, the answer is the 4th option."
+          },
+          "question9": {
+            "type": "quantitative_comparison",
+            "questionText": "Given |x| > 1, compare the following quantities:",
+            "quantityA": "x^3",
+            "quantityB": "x^2",
+            "options": [
+              "Quantity in A is greater",
+              "Quantity in B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "|x| > 1 implies x < -1 or x > 1.\n\nCase 1 (x < -1):\nx = -2\nx^2 = 4, x^3 = -8\n\nCase 2 (x > 1):\nx = 2\nx^2 = 4, x^3 = 8\n\nThus, the relationship cannot be determined."
+          },
+          "question10": {
+            "type": "quantitative_comparison",
+            "questionText": "Given 0 < x < 1, compare the following quantities:",
+            "quantityA": "∛x",
+            "quantityB": "√x",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "If 0 < x < 1:\nLet x = 1/64\n\nA = ∛(1/64) = 1/4\nB = √(1/64) = 1/8\n\nTherefore, A > B.\nAnswer = Option 1"
+          },
+          "question11": {
+            "type": "quantitative_comparison",
+            "questionText": "Line segments AB and CD are chords of circle O.",
+            "quantityA": "The circumference of circle O",
+            "quantityB": "The length of AB plus twice the length of CD",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "As the largest chord can be the diameter:\n\nSuppose both AB & CD are diameters (d):\n\nA = Circumference = πd = 3.14d\nB = Sum = d + 2d = 3d\n\nHence, A > B.\n\nAnswer = Option 1"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A rectangular box has sides a, b, c, and its diagonal is d. If X = √(a² + b² + c²), which of the following is also equal to x?",
+            "options": [
+              "a√2",
+              "c√2",
+              "d√2",
+              "(d² - c² - b² - a²)√2",
+              "√(a² + b² + c²)"
+            ],
+            "correctAnswer": "√(a² + b² + c²)",
+            "explanation": "Length of diagonal of cuboid = √(l² + b² + h²) = √(a² + b² + c²) = X. Therefore, the answer is the 5th option."
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "On the xy-plane, what is the slope of a line that is perpendicular to the line defined by the equation 3y = (1/2)x + 3?",
+            "options": [
+              "-6",
+              "-2",
+              "-1",
+              "7",
+              "6"
+            ],
+            "correctAnswer": "-6",
+            "explanation": "Equation: x/2 - 3y + 3 = 0.\n\nSlope = -A/B = (-1/2) / -3 = 1/6.\n\nIf perpendicular, slope1 x slope2 = -1.\n\nTherefore, slope2 = -6.\n\nHence, the answer is option 1."
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Fifteen boys, numbered 1 to 15, are positioned equidistantly along a straight path for a sailboat race. The race begins at boy 1, and 3/4 hours into the race the fastest boat reaches boy 10. At the same average speed, how many minutes will it take the boat to race from boy 10 to boy 15?",
+            "options": [
+              "45",
+              "32.5",
+              "25",
+              "22.5",
+              "15"
+            ],
+            "correctAnswer": "25",
+            "explanation": "Boy 1 to boy 10 takes 3/4 hours.\nLet the distance between 2 boys be x.\nTherefore, it takes 3/4 hours for 9x.\nHence, for 5x, the time is 25/60 = 25 minutes."
+          },
+          "question15": {
+            "type": "quantitative_comparison",
+            "questionText": "Set R: {n + 1, 2n + 2, 3n + 3, ...}\nSet S: {n, 2n + 1, 3n + 2, ...} [where n=2]",
+            "quantityA": "The 25th term of Set R",
+            "quantityB": "Two times the 24th term of Set S",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two Quantities are equal",
+              "Relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "A = 25n + 25\nB = (24n + 23) * 2\nHence, B > A.\nAnswer is Option 2."
+          }
+        }
+      }
     }
   ]
 }

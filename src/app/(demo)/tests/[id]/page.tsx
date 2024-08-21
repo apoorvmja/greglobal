@@ -134,6 +134,7 @@ export default function TagsPage() {
     setShowResultDashboard(showResult);
     if (showResult) {
       setCurrentSection('resultDashboard');
+      setCurrentSectionReviewResultDashboard('overview')
     }
   };
 
