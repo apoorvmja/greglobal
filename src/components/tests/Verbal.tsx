@@ -331,27 +331,45 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
         </div>
     );
 
-    const renderReadingComprehensionSelect = (question: VerbalQuestion, index: number) => (
-        <div key={index} className="mb-4">
-            {question.passage && (
-                <div className="border p-4 mb-4">
-                    {question.passage.split('. ').map((sentence, idx) => (
-                        <span
-                            key={idx}
-                            onClick={() => {
-                                handleSentenceClick(sentence);
-                                handleAnswerChange(index, 0, sentence);
-                            }}
-                            className={`cursor-pointer ${selectedSentence === sentence ? 'bg-yellow-200' : ''}`}
-                        >
-                            {sentence}.{' '}
-                        </span>
-                    ))}
-                </div>
-            )}
-            <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
-        </div>
-    );
+    const renderReadingComprehensionSelect = (question: VerbalQuestion, index: number) => {
+        // Get the selected answer for this question, if any
+        const selectedAnswerRaw = isReviewModeResultDashboard
+            ? selectedAnswers[index]
+            : selectedSentence;
+
+        // If selectedAnswerRaw is an array, join it into a string. Otherwise, use it directly.
+        const selectedAnswer = Array.isArray(selectedAnswerRaw)
+            ? selectedAnswerRaw.join('. ')
+            : selectedAnswerRaw;
+
+        // console.log("Selected Answer:", selectedAnswer, "Type:", typeof selectedAnswer);
+
+        return (
+            <div key={index} className="mb-4">
+                {question.passage && (
+                    <div className="border p-4 mb-4">
+                        {question.passage.split('. ').map((sentence, idx) => (
+                            <span
+                                key={idx}
+                                onClick={() => {
+                                    if (!isReviewModeResultDashboard) {
+                                        handleSentenceClick(sentence);
+                                        handleAnswerChange(index, 0, sentence);
+                                    }
+                                }}
+                                className={`cursor-pointer ${selectedAnswer === sentence ? 'bg-yellow-200' : ''}`}
+                            >
+                                {sentence}.{' '}
+                            </span>
+                        ))}
+                    </div>
+                )}
+                <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
+            </div>
+        );
+    };
+
+
 
     const renderReadingComprehensionHighlighted = (question: VerbalQuestion, index: number) => {
         let highlightedPassage = question.passage || "";
