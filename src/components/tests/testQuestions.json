@@ -1659,6 +1659,870 @@
           }
         }
       }
+    },
+    {
+      "id": "test3",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "In most professions and academic fields, imagination is more important than knowledge.",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Aalto, like other modernists, believed that form follows function; consequently, his furniture designs asserted the ______ of human needs, and the furniture’s form was determined by human use.",
+            "options": [
+              "universality",
+              "importance",
+              "primacy",
+              "rationale",
+              "variability"
+            ],
+            "correctAnswer": [
+              "primacy"
+            ],
+            "explanation": "The word \"consequently\" indicates that the furniture designs of Aalto are the result of his belief, in which function is given the first preference, followed by the form. As a result, the function of his designs focused on human needs and placed them first in rank, followed by the form, which was determined by the use by humans. Thus, having placed the needs before use, Aalto asserted the \"primacy\" of human need.",
+            "blanks": 1
+          },
+          "question2": {
+            "type": "text_completion",
+            "questionText": "We understand pain as a sensation, we understand winter through cold. We have to hoist ourselves out of the fundamental and (i) _______ construct of our minds to experience realities that are (ii) _______. It is only when we rise above this (iii) _______ that we can sense true spiritual consciousness.",
+            "options": {
+              "blank1": [
+                "liberating",
+                "enlightening",
+                "circumscribing"
+              ],
+              "blank2": [
+                "non-sensory",
+                "secular",
+                "temporal"
+              ],
+              "blank3": [
+                "obstacle",
+                "paradigm",
+                "hindrance"
+              ]
+            },
+            "correctAnswer": [
+              "circumscribing",
+              "non-sensory",
+              "paradigm"
+            ],
+            "explanation": "The essence of this passage is this: we need to broaden our horizon to understand realities. Hence the word in blank 1 has to be 'circumscribing.' Also, there is a sense that this is critical for understanding 'non-sensory' realities, and for the last blank, the word is 'paradigm.'",
+            "blanks": 3
+          },
+          "question3": {
+            "type": "text_completion",
+            "questionText": "The remark was only slightly (i) ______, inviting a chuckle, perhaps, but certainly not a (ii) ______.",
+            "options": {
+              "blank1": [
+                "audible",
+                "amusing",
+                "coherent"
+              ],
+              "blank2": [
+                "reward",
+                "reaction",
+                "guffaw"
+              ]
+            },
+            "correctAnswer": [
+              "amusing",
+              "guffaw"
+            ],
+            "explanation": "Since the remark invites chuckles, it can't be either 'audible' or 'coherent' but 'amusing.' However, since it is only slightly amusing, it invites only a chuckle. Now, since we have the contrast sign 'but,' we are looking for an antonym to chuckle, which is 'guffaw.'",
+            "blanks": 2
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "A/an _____ acceptance of contemporary forms of social behavior has misled a few into believing that values in conflict with the present age are for all practical purposes superseded.",
+            "options": [
+              "casual",
+              "superficial",
+              "cautious",
+              "complacent",
+              "acquiescent",
+              "plaintive"
+            ],
+            "correctAnswer": [
+              "complacent",
+              "acquiescent"
+            ],
+            "explanation": "The word misled suggests that a few people, who believe that values which are in opposition with those of the present age are discarded (superseded), do not have a correct belief and this belief has been made possible by the acceptance of the present (contemporary) values without protest. Thus, the acceptance of the values is 'complacent' and 'acquiescent.'"
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "After thirty years of television, people have become 'speed watchers'; consequently, if the camera lingers, the interest of the audience ______.",
+            "options": [
+              "palls",
+              "broadens",
+              "begins",
+              "varies",
+              "flags",
+              "clears"
+            ],
+            "correctAnswer": [
+              "palls",
+              "flags"
+            ],
+            "explanation": "The word 'consequently' indicates that as a result of a long history of watching television, people have become used to and developed interest in watching things in rapid action. If something happens contrary to this, such as the slow movement of things, their interest decreases, and they get bored. The words which best describe the interest of the audience after watching slow actions are 'palls' and 'flags.'"
+          },
+          "question6": {
+            "type": "sentence_equivalence",
+            "questionText": "Compared mathematically to smoking and driving, almost everything else seems relatively risk-free, ___ almost nothing seems worth regulating.",
+            "options": [
+              "yet",
+              "since",
+              "so",
+              "ergo",
+              "even though",
+              "as long as"
+            ],
+            "correctAnswer": [
+              "so",
+              "ergo"
+            ],
+            "explanation": "The sentence indicates that other things seem comparatively (relatively) free of danger when accurately compared to smoking and driving because smoking and driving cause maximum danger to human life. As a result of this, nothing seems worth controlling because everything seems to be risk-free. The words closest in meaning to 'as a result' or 'therefore' are 'so' and 'ergo.'"
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "The demise of the rigorous academic curriculum in high school resulted, in part, from the progressive rhetoric that ______ the study of subjects previously thought inappropriate as part of school learning.",
+            "options": [
+              "advocated",
+              "belittled",
+              "restricted",
+              "undermined",
+              "sanctioned",
+              "hindered"
+            ],
+            "correctAnswer": [
+              "advocated",
+              "sanctioned"
+            ],
+            "explanation": "The word 'previously' suggests that the subjects which were earlier not accepted as part of school learning by the rigid academic curriculum were later recommended by progressive rhetoric, which helped in the demise of the rigid curriculum. The words which closely describe 'recommended' are 'advocated' and 'sanctioned.'"
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "A 'scientistic' view of language was dominant among philosophers and linguists who affected to develop a scientific analysis of human thought and behavior in the early part of this century. Under the force of this view, it was perhaps inevitable that the art of rhetoric should pass from the status of being regarded as of questionable worth (because although it might be both a source of pleasure and a means to urge people to right action, it might also be a means to distort truth and a source of misguided action) to the status of being wholly condemned. If people are regarded only as machines guided by logic, as they were by these 'scientistic' thinkers, rhetoric is likely to be held in low regard; for the most obvious truth about rhetoric is that it speaks to the whole person. It presents its arguments first to the person as a rational being, because persuasive discourse, if honestly conceived, always has a basis in reasoning. Logical argument is the plot, as it were, of any speech or essay that is respectfully intended to persuade people. Yet it is a characterizing feature of rhetoric that it goes beyond this and appeals to the parts of our nature that are involved in feeling, desiring, acting, and suffering. It recalls relevant instances of the emotional reactions of people to circumstances—real or fictional—that are similar to our own circumstances. Such is the purpose of both historical accounts and fables in persuasive discourse: they indicate literally or symbolically how people may react emotionally, with hope or fear, to particular circumstances. A speech attempting to persuade people can achieve little unless it takes into account the aspect of their being related to such hopes and fears.",
+            "questionText": "It can be inferred from the passage that in the late nineteenth century rhetoric was regarded as",
+            "options": [
+              "the only necessary element of persuasive discourse",
+              "a dubious art in at least two ways",
+              "an outmoded and tedious amplification of logic",
+              "an open offense to the rational mind",
+              "the most important of the humanistic studies"
+            ],
+            "correctAnswer": [
+              "a dubious art in at least two ways"
+            ],
+            "explanation": "The answer is (B). In the first paragraph, the passage states that the status of rhetoric changed. Earlier it was considered to be of questionable worth (even though it might be a means to distort truth and a source of misguided action). This implies that rhetoric was regarded as a dubious art in at least two ways—as a means to distort truth and as a source of misguided action."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "A 'scientistic' view of language was dominant among philosophers and linguists who affected to develop a scientific analysis of human thought and behavior in the early part of this century. Under the force of this view, it was perhaps inevitable that the art of rhetoric should pass from the status of being regarded as of questionable worth (because although it might be both a source of pleasure and a means to urge people to right action, it might also be a means to distort truth and a source of misguided action) to the status of being wholly condemned. If people are regarded only as machines guided by logic, as they were by these 'scientistic' thinkers, rhetoric is likely to be held in low regard; for the most obvious truth about rhetoric is that it speaks to the whole person. It presents its arguments first to the person as a rational being, because persuasive discourse, if honestly conceived, always has a basis in reasoning. Logical argument is the plot, as it were, of any speech or essay that is respectfully intended to persuade people. Yet it is a characterizing feature of rhetoric that it goes beyond this and appeals to the parts of our nature that are involved in feeling, desiring, acting, and suffering. It recalls relevant instances of the emotional reactions of people to circumstances—real or fictional—that are similar to our own circumstances. Such is the purpose of both historical accounts and fables in persuasive discourse: they indicate literally or symbolically how people may react emotionally, with hope or fear, to particular circumstances. A speech attempting to persuade people can achieve little unless it takes into account the aspect of their being related to such hopes and fears.",
+            "questionText": "The passage suggests that a speech that attempts to persuade people to act is likely to fail if it does NOT",
+            "options": [
+              "distort the truth a little to make it more acceptable to the audience",
+              "appeal to the self-interest as well as the humanitarianism of the audience",
+              "address listeners' emotions as well as their intellects",
+              "concede the logic of other points of view",
+              "show how an immediately desirable action is consistent with timeless principles"
+            ],
+            "correctAnswer": [
+              "address listeners' emotions as well as their intellects"
+            ],
+            "explanation": "The answer is (C). The passage states that 'if people are regarded only as machines guided by logic, as they were by these 'scientistic' thinkers, rhetoric is likely to be held in low regard; for the most obvious truth about rhetoric is that it speaks to the whole person.' The passage further states that rhetoric 'represents its arguments first to the person as a rational being' and 'goes beyond this and appeals to the parts of our nature that are involved in feeling, desiring, acting, and suffering.' The passage ends by stating that 'a speech attempting to persuade people can achieve little unless it takes into account the aspect of their being related to such hopes and fears.' This implies that rhetoric would fail if it did not address listeners' emotions as well as their intellects."
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "A 'scientistic' view of language was dominant among philosophers and linguists who affected to develop a scientific analysis of human thought and behavior in the early part of this century. Under the force of this view, it was perhaps inevitable that the art of rhetoric should pass from the status of being regarded as of questionable worth (because although it might be both a source of pleasure and a means to urge people to right action, it might also be a means to distort truth and a source of misguided action) to the status of being wholly condemned. If people are regarded only as machines guided by logic, as they were by these 'scientistic' thinkers, rhetoric is likely to be held in low regard; for the most obvious truth about rhetoric is that it speaks to the whole person. It presents its arguments first to the person as a rational being, because persuasive discourse, if honestly conceived, always has a basis in reasoning. Logical argument is the plot, as it were, of any speech or essay that is respectfully intended to persuade people. Yet it is a characterizing feature of rhetoric that it goes beyond this and appeals to the parts of our nature that are involved in feeling, desiring, acting, and suffering. It recalls relevant instances of the emotional reactions of people to circumstances—real or fictional—that are similar to our own circumstances. Such is the purpose of both historical accounts and fables in persuasive discourse: they indicate literally or symbolically how people may react emotionally, with hope or fear, to particular circumstances. A speech attempting to persuade people can achieve little unless it takes into account the aspect of their being related to such hopes and fears.",
+            "questionText": "Which of the following best states the author's main point about logical argument?",
+            "options": [
+              "It is a sterile, abstract discipline, of little use in real life.",
+              "It is an essential element of persuasive discourse, but only one such element.",
+              "It is an important means of persuading people to act against their desires.",
+              "It is the lowest order of discourse because it is the least imaginative.",
+              "It is essential to persuasive discourse because it deals with universal truths."
+            ],
+            "correctAnswer": [
+              "It is an essential element of persuasive discourse, but only one such element."
+            ],
+            "explanation": "The answer is (B). The passage suggests that logical argument is necessary but it is very important that rhetoric addresses the emotions as well. Therefore, logical argument is an essential element of persuasive discourse, but only one such element."
+          },
+          "question11": {
+            "type": "reading_comprehension",
+            "passage": "Guitar strings often go 'dead'—become less responsive and bright in tone—after a few weeks of intense use. A researcher whose son is a classical guitarist hypothesized that dirt and oil, rather than changes in the material properties of the string, were responsible.",
+            "questionText": "Which of the following investigations is most likely to yield significant information that would help to evaluate the researcher’s hypothesis?",
+            "options": [
+              "Determining if a metal alloy is used to make the strings used by classical guitarists",
+              "Determining whether classical guitarists make their strings go dead faster than do folk guitarists",
+              "Determining whether identical lengths of string, of the same gauge, go dead at different rates when strung on various brands of guitars",
+              "Determining whether a dead string and a new string produce different qualities of sound",
+              "Determining whether smearing various substances on new guitar strings causes them to go dead"
+            ],
+            "correctAnswer": [
+              "Determining whether smearing various substances on new guitar strings causes them to go dead"
+            ],
+            "explanation": "The hypothesis has two parts: first, that intense use does not bring material changes that cause the string to go dead and, second, that dirt and oil do cause the phenomenon. The experiment suggested in choice E directly tests this hypothesis by contaminating strings that are known to have their original material properties. Thus, E is the best answer. Because factors associated with style of play (choice B) and brand of guitar (Choice C) might affect how the strings become contaminated, no result of the investigations in B and C will allow clear evaluation of the hypothesis. Information about the strings’ material (choice A) will need considerable supplementation before its bearing on the hypothesis is clear. The passage already gives the information promised by investigation D."
+          },
+          "question12": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The quantum world, with its bewildering phenomena, challenges our fundamental understanding of reality. Quantum entanglement, one of its most perplexing features, occurs when two particles become correlated in such a way that the state of one particle instantaneously affects the state of the other, regardless of the distance separating them. This phenomenon, famously described by Einstein as 'spooky action at a distance,' has puzzled physicists for decades.",
+            "questionText": "Which of the following statements is most likely to be used as an argument by someone skeptical of the concept of quantum entanglement?",
+            "options": [
+              "Quantum entanglement is a well-established phenomenon with decades of experimental evidence supporting it.",
+              "Einstein's description of quantum entanglement as 'spooky action at a distance' is a mischaracterization.",
+              "The behavior of particles in the quantum world challenges our classical intuitions, making it difficult to accept entanglement as a valid concept.",
+              "Quantum entanglement contradicts the principles of causality and should be reconsidered in light of our classical understanding of physics.",
+              "Quantum entanglement is a phenomenon that can only be explained through a deeper understanding of non-local interactions and should not be dismissed based on classical intuitions."
+            ],
+            "correctAnswer": [
+              "The behavior of particles in the quantum world challenges our classical intuitions, making it difficult to accept entanglement as a valid concept.",
+              "Quantum entanglement contradicts the principles of causality and should be reconsidered in light of our classical understanding of physics."
+            ],
+            "explanation": "Skeptics of quantum entanglement often argue that the phenomenon challenges classical intuition and contradicts established principles like causality. These points are reflected in the correct answers, which question the validity of quantum entanglement based on its departure from classical physics and logic."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "sentence_equivalence",
+            "questionText": "While some see in practical jokes a wish for mastery in miniature over a world that seems very unruly, others believe that the jokes' purpose is to disrupt, by reducing all transactions to ______.",
+            "options": [
+              "confusion",
+              "symmetry",
+              "dissonance",
+              "chaos",
+              "uniformity",
+              "trappings"
+            ],
+            "correctAnswer": [
+              "confusion",
+              "chaos"
+            ],
+            "explanation": "The presence of the word 'disrupt' indicates that the answer to the blank should be something that leads to disruption. The sentence suggests that disruption is caused when all transactions become disordered and make no sense. The words which relate to the word 'disordered' are 'confusion' and 'chaos.'"
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Though it would be unrealistic to expect Barnard to have worked out all of the limitations of his experiment, he must be ____ for his neglect of quantitative analysis.",
+            "options": [
+              "pardoned",
+              "designed",
+              "criticized",
+              "espoused",
+              "recognized",
+              "censured"
+            ],
+            "correctAnswer": [
+              "criticized",
+              "censured"
+            ],
+            "explanation": "The phrase 'his neglect of quantitative analysis' indicates a negative attitude towards Barnard as he showed disregard for the analysis and thus should be disapproved of his behavior. The words closest in meaning to 'disapproved' are 'criticized' and 'censured.'"
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "In Germany, her startling powers as a novelist are widely ______, but she is almost unknown in the English-speaking world because of the difficulties of translating her eccentric prose.",
+            "options": [
+              "ignored",
+              "admired",
+              "espoused",
+              "obscured",
+              "dispersed",
+              "popular"
+            ],
+            "correctAnswer": [
+              "admired",
+              "popular"
+            ],
+            "explanation": "The word 'but' indicates that the first part of the sentence should be contrary to the second. The second part indicates that the novelist was almost unknown in the English-speaking world, but contrary to that, she was praised in Germany for her powers as a novelist, which surprised the readers. The words which describe the status of the novelist in Germany are 'admired' and 'popular.'"
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "Liberty is not easy, but far better to be an ______ fox, hungry and threatened on its hill, than a well-fed canary, safe and secure in its cage.",
+            "options": [
+              "unfriendly",
+              "aging",
+              "angry",
+              "imperious",
+              "unfettered",
+              "unshackled"
+            ],
+            "correctAnswer": [
+              "unfettered",
+              "unshackled"
+            ],
+            "explanation": "The sentence compares the difference between the living conditions of a fox and a canary and advocates the living conditions of the former. While a canary is kept in a cage and is not free, contrary to that, a fox is free. The freedom of the fox is described by the words 'unfettered' and 'unshackled.'"
+          },
+          "question5": {
+            "type": "reading_comprehension",
+            "passage": "One phase of the business cycle is the expansion phase. This phase is a twofold one, including recovery and prosperity. During the recovery period there is ever growing expansion of existing facilities, and new facilities for production are created. More businesses are created and older ones expanded. Improvements of various kinds are made. There is an ever increasing optimism about the future of economic growth. Much capital is invested in machinery or 'heavy' industry. More labor is employed. More raw materials are required. As one part of the economy develops, other parts are affected. For example, a great expansion in automobiles results in an expansion of the steel, glass, and rubber industries. Roads are required; thus the cement and machinery industries are stimulated. Demand for labor and materials results in greater prosperity for workers and suppliers of raw materials, including farmers. This increases purchasing power and the volume of goods bought and sold. Thus prosperity is diffused among the various segments of the population. This prosperity period may continue to rise and rise without an apparent end. However, a time comes when this phase reaches a peak and stops spiraling upwards. This is the end of the expansion phase.",
+            "questionText": "Which of the following statements is the best example of the 'optimism' mentioned in the passage as being part of the expansion phase?",
+            "options": [
+              "Public funds are designated for the construction of new highways designed to stimulate tourism.",
+              "Industrial firms allocate monies for the purchase of machine tools.",
+              "The prices of agricultural commodities are increased at the producer level.",
+              "Full employment is achieved at all levels of the economy.",
+              "As technology advances, innovative businesses replace antiquated firms."
+            ],
+            "correctAnswer": [
+              "Industrial firms allocate monies for the purchase of machine tools."
+            ],
+            "explanation": "The answer is (B). This is because in the first paragraph the author says that 'There is an ever increasing optimism about the future of economic growth. Much capital is invested in machinery or 'heavy' industry.' This implies that when there is optimism, a lot of money would be invested in machinery or machine tools. None of the other options talk about investing in machinery or heavy industry."
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "One phase of the business cycle is the expansion phase. This phase is a twofold one, including recovery and prosperity. During the recovery period there is ever growing expansion of existing facilities, and new facilities for production are created. More businesses are created and older ones expanded. Improvements of various kinds are made. There is an ever increasing optimism about the future of economic growth. Much capital is invested in machinery or 'heavy' industry. More labor is employed. More raw materials are required. As one part of the economy develops, other parts are affected. For example, a great expansion in automobiles results in an expansion of the steel, glass, and rubber industries. Roads are required; thus the cement and machinery industries are stimulated. Demand for labor and materials results in greater prosperity for workers and suppliers of raw materials, including farmers. This increases purchasing power and the volume of goods bought and sold. Thus prosperity is diffused among the various segments of the population. This prosperity period may continue to rise and rise without an apparent end. However, a time comes when this phase reaches a peak and stops spiraling upwards. This is the end of the expansion phase.",
+            "questionText": "It can be inferred from the passage that the author believes that",
+            "options": [
+              "when consumers lose their confidence in the market, a recession follows",
+              "cyclical ends to business expansion are normal",
+              "luxury goods such as jewelry are unaffected by industrial expansion",
+              "with sound economic policies, prosperity can become a fixed pattern",
+              "the creation of new products is essential for prosperity"
+            ],
+            "correctAnswer": [
+              "cyclical ends to business expansion are normal"
+            ],
+            "explanation": "The answer is (B). The author starts the passage by saying that 'One phase of the business cycle is the expansion phase.' This implies that there are more than one phases of the business cycle. In the present passage, however, the discussion is restricted to the expansion phase. Towards the end of the passage the author mentions that 'a time comes when this phase reaches a peak and stops spiraling upwards. This is the end of the expansion phase.' Nowhere does the author believe that such a phenomenon is strange. Thus implies that the author considers the cyclical ends to business expansion as normal and not something that is very awkward. All the remaining options talk about events that are beyond the scope of the passage or cannot be implied by what is said in the passage."
+          },
+          "question7": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The opposite of adaptive divergence is an interesting and fairly common expression of evolution. Whereas related groups of organisms take on widely different characteristics in becoming adapted to unlike environments in the case of adaptive divergence, we find that unrelated groups of organisms exhibit adaptive convergence when they adopt similar modes of life or become suited for special sorts of environments. For example, invertebrate marine animals living firmly attached to the sea bottom or to some foreign object tend to develop a sub cylindrical or conical form. This is illustrated by coral individuals, by many sponges, and even by the diminutive tubes of bryozoans. Adaptive convergence in taking this coral-like form is shown by some brachiopods and pelecypods that grew in fixed position. More readily appreciated is the streamlined fitness of most fishes for moving swiftly through water; they have no neck, the contour of the body is smoothly curved so as to give minimum resistance, and the chief propelling organ is a powerful tail fin. The fact that some fossil reptiles (ichthyosaurs) and modern mammals (whales, dolphins) are wholly fishlike in form is an expression of adaptive convergence, for these air-breathing reptiles and mammals, which are highly efficient swimmers, are not closely related to fishes. Unrelated or distantly related organisms that develop similarity of form are sometimes designated as homeomorphs (having the same form).",
+            "questionText": "The author mentions ichthyosaurs and dolphins as examples of",
+            "options": [
+              "modern mammalian life forms that are aquatic",
+              "species of slightly greater mobility than brachiopods",
+              "organisms that have evolved into fishlike forms"
+            ],
+            "correctAnswer": [
+              "organisms that have evolved into fishlike forms"
+            ],
+            "explanation": "The answer is (C). This is because the passage explicitly mentions in the second last sentence that 'The fact that some fossil reptiles (ichthyosaurs) and modern mammals (whales, dolphins) are wholly fishlike in form is an expression of adaptive convergence, for these air-breathing reptiles and mammals, which are highly efficient swimmers, are not closely related to fishes.' Option (A) is incorrect because it only talks about 'modern mammalian life forms that are aquatic.' However, the passage states that ichthyosaurs are fossil reptiles and not mammals. Therefore, option (A) only applies to whales, dolphins, etc. and not to ichthyosaurs. Option (B) also is incorrect because it talks about mobility and makes a comparison of ichthyosaurs and dolphins with brachiopods. However, we cannot infer from the passage that ichthyosaurs and dolphins have greater mobility than brachiopods. This is because the passage does not talk about the mobility of brachiopods at all. Hence, option (B) cannot be correct."
+          },
+          "question8": {
+            "type": "reading_comprehension_select",
+            "passage": "The opposite of adaptive divergence is an interesting and fairly common expression of evolution. Whereas related groups of organisms take on widely different characteristics in becoming adapted to unlike environments in the case of adaptive divergence, we find that unrelated groups of organisms exhibit adaptive convergence when they adopt similar modes of life or become suited for special sorts of environments. For example, invertebrate marine animals living firmly attached to the sea bottom or to some foreign object tend to develop a sub cylindrical or conical form. This is illustrated by coral individuals, by many sponges, and even by the diminutive tubes of bryozoans. Adaptive convergence in taking this coral-like form is shown by some brachiopods and pelecypods that grew in fixed position. More readily appreciated is the streamlined fitness of most fishes for moving swiftly through water; they have no neck, the contour of the body is smoothly curved so as to give minimum resistance, and the chief propelling organ is a powerful tail fin. The fact that some fossil reptiles (ichthyosaurs) and modern mammals (whales, dolphins) are wholly fishlike in form is an expression of adaptive convergence, for these air-breathing reptiles and mammals, which are highly efficient swimmers, are not closely related to fishes. Unrelated or distantly related organisms that develop similarity of form are sometimes designated as homeomorphs (having the same form).",
+            "questionText": "Select the sentence in the passage which implies that adaptive convergence and adaptive divergence are manifestations of evolutionary patterns.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "Whereas related groups of organisms take on widely different characteristics in becoming adapted to unlike environments in the case of adaptive divergence, we find that unrelated groups of organisms exhibit adaptive convergence when they adopt similar modes of life or become suited for special sorts of environments"
+            ],
+            "explanation": "The selected sentence from the passage directly contrasts adaptive divergence and adaptive convergence, illustrating that both are evolutionary patterns where organisms adapt to their environments, either by developing different characteristics or by converging towards similar forms despite not being closely related."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "The opposite of adaptive divergence is an interesting and fairly common expression of evolution. Whereas related groups of organisms take on widely different characteristics in becoming adapted to unlike environments in the case of adaptive divergence, we find that unrelated groups of organisms exhibit adaptive convergence when they adopt similar modes of life or become suited for special sorts of environments. For example, invertebrate marine animals living firmly attached to the sea bottom or to some foreign object tend to develop a sub cylindrical or conical form. This is illustrated by coral individuals, by many sponges, and even by the diminutive tubes of bryozoans. Adaptive convergence in taking this coral-like form is shown by some brachiopods and pelecypods that grew in fixed position. More readily appreciated is the streamlined fitness of most fishes for moving swiftly through water; they have no neck, the contour of the body is smoothly curved so as to give minimum resistance, and the chief propelling organ is a powerful tail fin. The fact that some fossil reptiles (ichthyosaurs) and modern mammals (whales, dolphins) are wholly fishlike in form is an expression of adaptive convergence, for these air-breathing reptiles and mammals, which are highly efficient swimmers, are not closely related to fishes. Unrelated or distantly related organisms that develop similarity of form are sometimes designated as homeomorphs (having the same form).",
+            "questionText": "It can be inferred that in the paragraph immediately preceding this passage the author discussed",
+            "options": [
+              "marine intelligence",
+              "adaptive divergence",
+              "air-breathing reptiles",
+              "environmental impacts",
+              "organisms with similar forms"
+            ],
+            "correctAnswer": [
+              "adaptive divergence"
+            ],
+            "explanation": "The answer is (B). This is because the passage starts by stating that 'The opposite of adaptive divergence is an interesting and fairly common expression of evolution.' This implies that the author must have been discussing adaptive divergence before he chose to talk about the opposite of adaptive divergence, i.e., adaptive convergence."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "According to one political theorist, a regime that has as its goal absolute (i)__________ without any (ii)__________ law or principle, has declared war on justice.",
+            "options": {
+              "blank1": [
+                "respectability",
+                "fairness",
+                "autonomy"
+              ],
+              "blank2": [
+                "accountability to",
+                "prioritization of",
+                "deviation from"
+              ]
+            },
+            "correctAnswer": [
+              "autonomy",
+              "accountability to"
+            ],
+            "blanks": 2,
+            "explanation": "The first blank is answered by the phrase 'has declared war on justice,' which suggests a negative implication, thus eliminating options like 'respectability' or 'fairness.' 'Autonomy' fits well in this context as it refers to the goal of absolute self-governance without any constraints. The second blank, 'accountability to,' makes sense in the context of a regime ignoring any external law or principle. 'Without any,' being a contrast signal, confirms that the regime seeks autonomy devoid of accountability, thus leading to the correct choices."
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "It is not age alone that improves the quality of the fiber of the wood in a ship, but the (i) ________ and wrenching of the vessel by the sea, the chemical action of bilge water and the many kinds of cargoes it carries. The same applies to human life. We have to learn in times of (ii) ________ to ride the storm and in times of rest to create new (iii) ________, like the polyps that work to build the coral reef.",
+            "options": {
+              "blank1": [
+                "straining",
+                "restraining",
+                "constraining"
+              ],
+              "blank2": [
+                "tempest",
+                "peace",
+                "geniality"
+              ],
+              "blank3": [
+                "horizons",
+                "dilemmas",
+                "indispositions"
+              ]
+            },
+            "correctAnswer": [
+              "straining",
+              "tempest",
+              "horizons"
+            ],
+            "blanks": 3,
+            "explanation": "The essence of this passage is that it is age and experience that makes something valuable. By this logic, the words that complete the blanks are 'straining,' 'tempest,' and 'horizons.'"
+          },
+          "question12": {
+            "type": "text_completion",
+            "questionText": "Traditional psychotherapy aims at (i) ________ acute human suffering into bearable suffering. As opposed to this, positive psychology promises to turn mild pleasure into a (ii) ________ state of well-being. This is what the Czech writer Milan Kundera called the 'unbearable lightness of being.' Thus, positive psychology is a more realistic form of (iii) ________ healing.",
+            "options": {
+              "blank1": [
+                "intensifying",
+                "converting",
+                "distinguishing"
+              ],
+              "blank2": [
+                "lighter",
+                "profound",
+                "milder"
+              ],
+              "blank3": [
+                "mimetic",
+                "pantheistic",
+                "noetic"
+              ]
+            },
+            "correctAnswer": [
+              "converting",
+              "profound",
+              "noetic"
+            ],
+            "blanks": 3,
+            "explanation": "The passage contrasts the methods adopted by traditional psychotherapy and positive psychology. The word for blank 1 is 'converting.' For blank 2, it is 'profound' as there is a contrast between the techniques of both systems. In the final blank, the word 'noetic' fits as it is the only word that deals with mental thought processes."
+          },
+          "question13": {
+            "type": "text_completion",
+            "questionText": "Certain weeds that flourish among rice crops resist detection until maturity by _______ the seedling stage in the rice plant's life cycle, thereby remaining indistinguishable from the rice crop until the flowering stage.",
+            "options": [
+              "deterring",
+              "imitating",
+              "nurturing",
+              "masking",
+              "concealing"
+            ],
+            "correctAnswer": [
+              "imitating"
+            ],
+            "blank": 1,
+            "explanation": "The first part says that 'Certain weeds that flourish among rice crops resist detection.' How does it resist detection? By hiding or camouflaging or disguising itself obviously. Find a similar word, and you will have the answer. Therefore, 'imitating' is the answer. They camouflage themselves by imitating the seedling stage in the rice plant's life cycle."
+          },
+          "question14": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Abstract expressionism, a mid-20th-century art movement led by figures like Jackson Pollock and Willem de Kooning, defied traditional artistic boundaries. It embraced non-representational forms, marked by spontaneous, colorful brushwork. This innovative approach challenged art's conventions and sparked debates on its meaning and purpose. Critics saw it as either a rejection of traditional aesthetics or a profound reflection on the human condition. Abstract expressionism's legacy endures, influencing contemporary artists in their exploration of art's ever-evolving boundaries.",
+            "questionText": "The passage suggests that abstract expressionism:",
+            "options": [
+              "Emphasized adherence to traditional artistic mediums and techniques.",
+              "Challenged the conventional boundaries of art, particularly through non-representational forms.",
+              "Resulted in unanimous agreement among critics regarding its significance.",
+              "Focused primarily on depicting recognizable subjects and scenes.",
+              "Encouraged artists to conform to established norms and aesthetics."
+            ],
+            "correctAnswer": [
+              "Challenged the conventional boundaries of art, particularly through non-representational forms."
+            ],
+            "explanation": "The passage indicates that abstract expressionism defied traditional artistic boundaries and embraced non-representational forms. This suggests that it challenged the conventional boundaries of art, making option B the correct answer."
+          },
+          "question15": {
+            "type": "reading_comprehension_multiple",
+            "passage": "A recent study on decision-making suggests that emotional states can significantly influence choices. Participants in the experiment, when in a positive emotional state, were more inclined to make riskier decisions, while those in a negative state preferred safer options.",
+            "questionText": "What aspect of the study's design could potentially limit the generalization of its findings, as discussed in the passage?",
+            "options": [
+              "The study's conclusive establishment of a causal relationship between emotional states and decision-making.",
+              "The exclusion of participants with pre-existing medical conditions that could affect their emotional states.",
+              "The primary focus on negative emotions' influence on risk aversion while neglecting positive emotions.",
+              "The study's limited consideration of how cultural factors might interact with emotional states in decision-making.",
+              "The study's emphasis on a large sample size to draw meaningful conclusions about decision-making."
+            ],
+            "correctAnswer": [
+              "The study's limited consideration of how cultural factors might interact with emotional states in decision-making."
+            ],
+            "explanation": "The question evaluates the reader’s ability to identify an aspect of the study’s design that might limit the generalizability of its findings, as discussed in the passage. Option D correctly points out that the study’s limited consideration of how cultural factors might interact with emotional states could impact the generalizability of its findings. The other options either misrepresent the study’s limitations or are not directly related to the issue discussed in the passage. Therefore, the correct answer is option D."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: (9.300s)(.0093t) \nColumn B: (9.3s)(9.3t)",
+            "quantityA": "(9.300s)(.0093t)",
+            "quantityB": "(9.3s)(9.3t)",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal",
+            "explanation": "To compare the two quantities, simplify both expressions. \n\nQuantity A: (9.300s)(.0093t) = (9.3s)(9.3t) \nQuantity B: (9.3s)(9.3t)\n\nWhen simplified, both quantities are equal, making the correct answer option 3: 'The two quantities are equal.'"
+          },
+          "question2": {
+            "type": "numeric_entry",
+            "questionText": "Rovania drove for seven hours at an average rate of 50 miles per hour (mph), two hours at an average rate of 90 kilometers per hour (kph), and for one hour at an average rate of 60 mph. What was her average rate (in mph) for the entire trip? (1 mile = 1.609 km)",
+            "correctAnswer": "52.19",
+            "explanation": "To find the average speed, first calculate the total distance covered:\n\n1. Distance covered in the first 7 hours: 50 mph × 7 hours = 350 miles\n2. Distance covered in the next 2 hours: (90 km/h ÷ 1.609) × 2 hours = 111.87 miles\n3. Distance covered in the next 1 hour: 60 mph × 1 hour = 60 miles\n\nTotal distance = 350 + 111.87 + 60 = 521.87 miles\nTotal time = 10 hours\n\nAverage speed = 521.87 miles ÷ 10 hours = 52.19 mph"
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/gmat%20m1%20q10.png",
+            "questionText": "If a circle has the same area as right triangle PQR shown in the figure above. Which of the following is the closest in value to the radius of the circle?",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "10",
+              "20"
+            ],
+            "correctAnswer": "3",
+            "explanation": "To find the correct answer:\n\n1. Finding PQ: \nIn the right triangle PQR, PQ^2 + QR^2 = PR^2 .\n\n So, ( PQ = √(PR^2 - QR^2) = √(10^2 - 6^2) = 8 units.\n\n2. Finding the Area (A): \n A = 1/2 * PQ * QR = 24 square units.\n\n3. Getting to the answer:\n\n- r = √A/π = √24/π = √(24/22)*7 \n- The value of √(24/22)*7  will be very slightly greater than 1.\n- We know that √4 = 2  and √9 = 3 . Since 7 is slightly greater than the midpoint between 4 and 9 (which is 4 + 9/2 = 13/2 = 6.5 ), the value of √7 will be slightly greater than the midpoint between √4 = 2  and √9 = 3. So, the value of √7 will be slightly greater than 2.5\n- So, the product of √(24/22) and √7 will be slightly greater than 2.5\n- Therefore, the closest integer to the value of r will be 3."
+          },
+          "question4": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://jasper.kaptest.com/content/media/74/286974.17.q46104a_15.png",
+            "questionText": "-",
+            "quantityA": "a",
+            "quantityB": "c",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "The two quantities are equal"
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If 300 jellybeans cost you x dollars. How many jellybeans can you purchase for 50 cents at the same rate?",
+            "options": [
+              "150/x",
+              "120/x",
+              "600/x",
+              "1500/x",
+              "1200/x"
+            ],
+            "correctAnswer": "150/x",
+            "explanation": "To solve this:\n\n- 300 jellybeans cost you x dollars.\n- 1 dollar will get you (300/x) jellybeans.\n- Therefore, 50 cents will get you (300/x)*0.5 = (150/x) jellybeans.\nThus, the correct answer is (150/x)."
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "At present, the ratio of the ages of A to B is 3 : 8; and that of A to C is 1 : 4. Three years ago, the sum of the ages of A, B, and C was 83 years. What is the present age (in years) of C?",
+            "options": [
+              "42",
+              "48",
+              "40",
+              "38",
+              "44"
+            ],
+            "correctAnswer": "48",
+            "explanation": "Let the present ages of A, B, and C be 3x, 8x, and 4x respectively. Three years ago, their ages were (3x - 3), (8x - 3), and (12x - 3) respectively. The sum of their ages three years ago was 83 years, so: \n(3x - 3) + (8x - 3) + (12x - 3) = 83 \n=> 23x - 9 = 83 \n=> 23x = 92 \n=> x = 4 \nThus, the present age of C = 4x = 4 * 12 = 48 years."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "At a stationery shop, maps are sold at one fixed price, and books are sold at a different fixed price. On Monday, the store sold 12 maps and 10 books, totaling $38.00, and on Tuesday, they sold 20 maps and 15 books, totaling $60.00. How much is the difference in price between a map and a book at this store?",
+            "options": [
+              "$0.25",
+              "$0.50",
+              "$0.75",
+              "$1",
+              "$1.25"
+            ],
+            "correctAnswer": "$0.50",
+            "explanation": "Let x be the price of a map and y be the price of a book. From the given information: \n1. 12x + 10y = 38 \n2. 20x + 15y = 60 \n\nMultiply equation 1 by 5 and equation 2 by 3 to eliminate y: \n\n60x + 50y = 190 \n60x + 45y = 180 \n\nSubtract equation 2 from equation 1 to get: \n5y = 10 \ny = 2 \n\nSubstitute y = 2 into equation 1: \n12x + 20 = 38 \n12x = 18 \nx = 1.5 \n\nThus, the difference in price (x - y) = 1.5 - 2 = -0.50, so the absolute difference is $0.50."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A grocer has 400 pounds of coffee in stock, 20 percent of which is decaffeinated. If the grocer buys another 100 pounds of coffee of which 60 percent is decaffeinated, what percent, by weight, of the grocer’s stock of coffee is decaffeinated?",
+            "options": [
+              "28%",
+              "30%",
+              "32%",
+              "34%",
+              "40%"
+            ],
+            "correctAnswer": "28%",
+            "explanation": "In the first stock, 20% of 400 pounds is decaffeinated, which equals 80 pounds.\n\nIn the second stock, 60% of 100 pounds is decaffeinated, which equals 60 pounds.\n\nThe total decaffeinated coffee is 140 pounds out of the total 500 pounds (400 + 100). Therefore, the percentage of decaffeinated coffee is (140/500) * 100 = 28%."
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If x is the product of the positive integers from 1 to 8, inclusive, and if i, k, m, and p are positive integers such that x = 2^i * 3^k * 5^m * 7^p, then (i + k + m + p)=",
+            "options": [
+              "4",
+              "7",
+              "8",
+              "11",
+              "12"
+            ],
+            "correctAnswer": "11",
+            "explanation": "To find the sum of the exponents, x is the product of the numbers 1 to 8: 1 × 2 × 3 × 4 × 5 × 6 × 7 × 8. This can be expressed as x = (2)^7 * (3)^2 * (5)^1 * (7)^1. Summing the exponents gives i + k + m + p = 7 + 2 + 1 + 1 = 11."
+          },
+          "question10": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT1/flt1%20Q%2010-11.jpg",
+            "questionText": "Based on the table, which of the following does NOT describe sales of at least 10,000 automobiles?",
+            "options": [
+              "All U.S. institution sales of the standard and deluxe models",
+              "All consumer sales of the basic and deluxe model",
+              "All foreign institution sales",
+              "All foreign sales of the standard model",
+              "All institution sales of the standard model"
+            ],
+            "correctAnswer": "All foreign institution sales",
+            "explanation": "Based on the table data, all foreign institution sales (1.7 + 4.9 + 2.2 = 8.8 thousand) do not sum to at least 10,000 automobiles, which makes this the correct answer."
+          },
+          "question11": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT1/flt1%20Q%2010-11.jpg",
+            "questionText": "Assume that total revenue from sales of the standard model exceeded total revenue from sales of the basic model by $41 million. The average sales price of a standard model exceeded the average price of a basic model by approximately",
+            "options": [
+              "$2,500",
+              "$3,000",
+              "$3,600",
+              "$4,400",
+              "It cannot be determined from the information given."
+            ],
+            "correctAnswer": "$3,600",
+            "explanation": "The difference in total revenue is $41 million, and you can calculate the price difference per unit by dividing this value by the number of standard model units sold. Based on the given data, the correct answer is approximately $3,600."
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A shopkeeper offers a discount of 20% on the marked price of a product and makes a profit of 25%. To make a profit of 10% on the product, the shopkeeper should offer a discount of",
+            "options": [
+              "25.6%",
+              "26.4%",
+              "29.6%",
+              "32.2%",
+              "42.45%"
+            ],
+            "correctAnswer": "29.6%",
+            "explanation": "To solve this, we use the concept of profit and discount. Initially, the shopkeeper offers a 20% discount and makes a 25% profit. To reduce the profit to 10%, the discount has to be increased. After recalculating the necessary discount to achieve a 10% profit, the required discount is 29.6%."
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "(99999)^2 - (1)^2 =",
+            "options": [
+              "10^10 - 2",
+              "(10^5 - 2)^2",
+              "10^4(10^5 - 2)",
+              "10^5(10^5 - 2)",
+              "10^5(10^5 + 2)"
+            ],
+            "correctAnswer": "10^5(10^5 - 2)",
+            "explanation": "The expression 99999^2 - 1^2 can be factored using the difference of squares formula: a^2 - b^2 = (a + b)(a - b).\n\n Substituting the values, we get (99999 + 1)(99999 - 1),\n\nwhich simplifies to 100000 * 99998 = 10^5(10^5 - 2)."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In a box of 12 pens, a total of 3 are defective. If a customer buys 2 pens selected at random from the box, what is the probability that neither pen will be defective?",
+            "options": [
+              "1/6",
+              "2/9",
+              "6/11",
+              "9/16",
+              "3/4"
+            ],
+            "correctAnswer": "6/11",
+            "explanation": "The probability that neither pen is defective is calculated by considering the number of favorable outcomes over the total possible outcomes. The number of non-defective pens is 9, and the total pens are 12. The probability of selecting 2 non-defective pens is given by (9C2 / 12C2), which simplifies to 6/11."
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "The number 4.2953 is to be rounded to the nearest thousandth.",
+            "quantityA": "The digit in the thousandths place of the rounded number",
+            "quantityB": "The digit in the hundredths place of the rounded number",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two Quantities are equal.",
+              "The Relationship cannot be determined by the given information."
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "When 4.2953 is rounded to the nearest thousandth, it becomes 4.295. The digit in the thousandths place is 5 (for Quantity A), and the digit in the hundredths place is 9 (for Quantity B). Hence, Quantity B is greater."
+          },
+          "question4": {
+            "type": "numeric_entry",
+            "questionText": "The average grade of a class of N students is 80 and the average of a class of P students is 70. When the two classes are combined, the average is 76. What is P/N ratio? (Note: Put the answer in x/y ratio form and only numeric values are allowed eg. 0.23 ..upto 2 decimal places)",
+            "correctAnswer": "0.66",
+            "explanation": "To find the ratio P/N ratio, use the equation for the average of the combined classes: ( 80N + 70P = 76(N + P) ). Solving this equation gives ( P/N = 2/3 )."
+          },
+          "question5": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/flt2sec2q12.jpg",
+            "questionText": "During which of the following months was there a negative aggregate change in the share price of stock in all three companies A, B, and C?",
+            "options": [
+              "September only",
+              "July and September only",
+              "July and October only",
+              "September and October only",
+              "July, September, and October"
+            ],
+            "correctAnswer": "September and October only",
+            "explanation": "To determine the months with a negative aggregate change, sum the changes in stock prices for each company in each of the months mentioned. The months where the total is negative are September and October."
+          },
+          "question6": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/flt2sec2q12.jpg",
+            "questionText": "The investor’s profit upon the sale of the 40 shares amounted to approximately:",
+            "options": [
+              "$850",
+              "$980",
+              "$1,100",
+              "$1,300",
+              "$1,400"
+            ],
+            "correctAnswer": "$1,400",
+            "explanation": "The profit is calculated by multiplying the number of shares (40) by the change in the share price from July to December, which is $35. Therefore, the profit is 40 x $35 = $1,400."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Which of the following statements is true about the graph of 3x − 7y − 4 = 0? I[The x-intercept is (4/3 , 0 )], II[The y-intercept is (0 , 4/7), III[The slope is 3]",
+            "options": [
+              "I only",
+              "II only",
+              "III only",
+              "I and II",
+              "I and III"
+            ],
+            "correctAnswer": "I only",
+            "explanation": "For the equation Ax + By + C = 0:\n- x-intercept = -C/A\n- y-intercept = -C/B\n- Slope = = -A/B\nApplying these formulas, the x-intercept, y-intercept, and slope are calculated. Only statement I is correct."
+          },
+          "question8": {
+            "type": "quantitative_comparison",
+            "questionText": "Q(X = {3, 4, 5})\n, Y = {4, 5, 6}",
+            "quantityA": "The number of distinct products that can be formed multiplying one element of X by one element of Y",
+            "quantityB": "The number of distinct sums that can be formed adding one element of X by one element of Y",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two Quantities are equal.",
+              "The Relationship cannot be determined by the given information."
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Distinct products: {3 × 4, 3 × 5, 3 × 6, 4 × 4, 4 × 5, 4 × 6, 5 × 5, 5 × 6} = 8 distinct products\nDistinct sums: {3 + 4, 3 + 5, 3 + 6, 4 + 4, 4 + 5, 4 + 6, 5 + 5, 5 + 6} = 5 distinct sums\nThus, the number of distinct products (Quantity A) is greater than the number of distinct sums (Quantity B)."
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a and b are positive integers and a*b is odd, which of the following statements must be true?",
+            "options": [
+              "a and b are prime numbers.",
+              "(a + b)^2 is even.",
+              "a - b is odd.",
+              "a + b is even.",
+              "b is a multiple of a."
+            ],
+            "correctAnswer": "a + b is even.",
+            "explanation": "If a times b  is odd, then both a and b must be odd numbers because the product of two odd numbers is odd. The sum of two odd numbers is always even, so the correct answer is a + b is even."
+          },
+          "question10": {
+            "type": "quantitative_comparison",
+            "questionText": "Q. p, q, and r are positive integers. p = 3q and q = 5r.",
+            "quantityA": "The remainder when pq is divided by r.",
+            "quantityB": "The remainder when pr is divided by q.",
+            "options": [
+              "Quantity in A is greater.",
+              "Quantity in B is greater.",
+              "Both are Equal.",
+              "The Relationship cannot be determined by the given information."
+            ],
+            "correctAnswer": "Both are Equal",
+            "explanation": "Since p = 3q and q = 5r, when you multiply these terms and divide by r or q, both operations result in no remainder as the terms are perfectly divisible. Hence, both quantities are equal."
+          },
+          "question11": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Area of an equilateral triangle with side 5",
+            "quantityB": "Area of an equilateral triangle with altitude 5",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two Quantities are equal",
+              "The Relationship cannot be determined by the given information."
+            ],
+            "correctAnswer": "The two Quantities are equal",
+            "explanation": "Column A: Area = (√3/4) x 5^2 = 25√3/4\nColumn B: Altitude = (√3/2) x a = 5, a = 10/√3, Area = (√3/4) x (10/√3)^2 = 25√3/3. Hence, B > A"
+          },
+          "question12": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Slope of line L",
+            "quantityB": "Slope of line M",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two Quantities are equal.",
+              "The Relationship cannot be determined by the given information."
+            ],
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/flt2%20sec2%20q20.jpg",
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Evident from the figure that line M is steeper than line L, so its slope is closer to zero and hence should have a greater value."
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "When positive integer x is divided by positive integer y, the remainder is 9. If x/y = 96.12, what is the value of y?",
+            "options": [
+              "96",
+              "75",
+              "48",
+              "25",
+              "12"
+            ],
+            "correctAnswer": "75",
+            "explanation": "Remainder = 9 = 0.12 * y \nDividing 9 by 0.12 gives y = 75."
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a square S is inscribed in circle T and the perimeter of S is 24, what is the circumference of T?",
+            "options": [
+              "6π",
+              "12π",
+              "3(√2)π",
+              "6(√2)π",
+              "12(√2)π"
+            ],
+            "correctAnswer": "6(√2)π",
+            "explanation": "1. Find the side length of the square:\nPerimeter = 4s = 24 → s = 6\n\n2. Find the diagonal of the square (which is also the diameter of the circle):\nDiagonal of square = s√2 = 6√2\n\n3. Circumference of the circle:\nCircumference = π × Diameter = π × 6√2 = 6(√2)π\n\nAnswer: The circumference of circle T is 6(√2)π."
+          },
+          "question15": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "Based on the table, which of the following does NOT describe sales of at least 10,000 automobiles?",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT1/flt1%20Q%2010-11.jpg",
+            "options": [
+              "All U.S. institution sales of the standard and deluxe models",
+              "All consumer sales of the basic and deluxe model",
+              "All foreign institution sales",
+              "All foreign sales of the standard model",
+              "All institution sales of the standard model"
+            ],
+            "correctAnswer": "All foreign institution sales",
+            "explanation": "To determine which statement does not describe sales of at least 10,000 automobiles, carefully review the data in the table. The total for foreign institution sales (1.7 + 4.9 + 2.2 = 8.8 thousand) is less than 10,000 automobiles, making it the correct answer."
+          }
+        }
+      }
     }
   ]
 }

@@ -192,6 +192,11 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
 
         return (
             <div key={index} className="mb-4">
+                {question.imgUrl && (
+                    <div className="mb-4">
+                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+                    </div>
+                )}
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 <div className="flex flex-col mt-4">
                     {question.options?.map((option, idx) => {
