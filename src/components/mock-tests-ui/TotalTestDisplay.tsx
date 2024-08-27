@@ -18,7 +18,7 @@ const TotalTestDisplay: React.FC = () => {
     };
 
     return (
-        <section className="dark:bg-gray-900 dark:text-white rounded-lg">
+        <section className=" dark:text-white rounded-lg dark:bg-black dark:border-white dark:border-2">
             <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
                 <div className="max-w-xl">
                     <h2 className="text-3xl font-bold sm:text-4xl">Full length practice tests</h2>
