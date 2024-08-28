@@ -20,8 +20,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 
 export function UserNav() {
+  const { user, isSignedIn } = useUser();
+
+  const firstName = user?.firstName || "Guest";
+  const emailAddress = user?.primaryEmailAddress?.emailAddress || "guest@example.com";
+  const profileImageUrl = user?.imageUrl || "#";
+
   return (
     <DropdownMenu>
       <TooltipProvider disableHoverableContent>
@@ -34,7 +41,7 @@ export function UserNav() {
               >
                 <Avatar className="h-8 w-8">
                   <AvatarImage src="#" alt="Avatar" />
-                  <AvatarFallback className="bg-transparent">JD</AvatarFallback>
+                  <AvatarFallback className="bg-transparent">{firstName.charAt(0)}</AvatarFallback>
                 </Avatar>
               </Button>
             </DropdownMenuTrigger>
@@ -46,9 +53,9 @@ export function UserNav() {
       <DropdownMenuContent className="w-56" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
-            <p className="text-sm font-medium leading-none">John Doe</p>
+            <p className="text-sm font-medium leading-none">{firstName}</p>
             <p className="text-xs leading-none text-muted-foreground">
-              johndoe@example.com
+              {emailAddress}
             </p>
           </div>
         </DropdownMenuLabel>
@@ -68,10 +75,17 @@ export function UserNav() {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="hover:cursor-pointer" onClick={() => {}}>
-          <LogOut className="w-4 h-4 mr-3 text-muted-foreground" />
-          Sign out
-        </DropdownMenuItem>
+        {isSignedIn ? (<SignOutButton>
+          <DropdownMenuItem className="hover:cursor-pointer">
+            <LogOut className="w-4 h-4 mr-3 text-muted-foreground" />
+            Sign Out
+          </DropdownMenuItem>
+        </SignOutButton>) : (<SignInButton>
+          <DropdownMenuItem className="hover:cursor-pointer">
+            <LogOut className="w-4 h-4 mr-3 text-muted-foreground" />
+            Sign In
+          </DropdownMenuItem>
+        </SignInButton>)}
       </DropdownMenuContent>
     </DropdownMenu>
   );

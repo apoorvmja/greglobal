@@ -5,6 +5,12 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/providers/theme-provider";
 
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
+
+import './globals.css'
+
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.APP_URL
@@ -40,12 +46,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={GeistSans.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={GeistSans.className}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
+
   );
 }

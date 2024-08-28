@@ -2,19 +2,25 @@
 import { PlayCircleIcon } from "lucide-react";
 import { useState } from "react";
 import StartTestButton from "./StartTestButton";
+import ClerkLoginModal from "../ui/ClerkLoginModal";
+import { useUser } from "@clerk/nextjs"
 
 const TotalTestDisplay: React.FC = () => {
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [selectedButtonId, setSelectedButtonId] = useState<number | null>(null);
+    const { isSignedIn, user } = useUser();
+    const [loginopenModal, setLoginOpenModal] = useState<boolean>(false);
 
     const openTestModal = (buttonId: number) => {
         setSelectedButtonId(buttonId);
-        setOpenModal(true);
+        if (isSignedIn) setOpenModal(true);
+        else setLoginOpenModal(!loginopenModal)
     };
 
     const closeModal = () => {
         setOpenModal(false);
         setSelectedButtonId(null);
+        setLoginOpenModal(false)
     };
 
     return (
@@ -49,6 +55,8 @@ const TotalTestDisplay: React.FC = () => {
             </div>
 
             {openModal && <StartTestButton buttonId={selectedButtonId} onClose={closeModal} />}
+
+            {loginopenModal && <ClerkLoginModal onClose={closeModal} />}
         </section>
     );
 }

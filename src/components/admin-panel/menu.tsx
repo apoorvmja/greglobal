@@ -15,6 +15,7 @@ import {
   TooltipContent,
   TooltipProvider
 } from "@/components/ui/tooltip";
+import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 
 interface MenuProps {
   isOpen: boolean | undefined;
@@ -23,6 +24,7 @@ interface MenuProps {
 export function Menu({ isOpen }: MenuProps) {
   const pathname = usePathname();
   const menuList = getMenuList(pathname);
+  const { user, isSignedIn } = useUser();
 
   return (
     <ScrollArea className="[&>div>div[style]]:!block">
@@ -107,23 +109,47 @@ export function Menu({ isOpen }: MenuProps) {
             <TooltipProvider disableHoverableContent>
               <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
-                  <Button
-                    onClick={() => {}}
-                    variant="outline"
-                    className="w-full justify-center h-10 mt-5"
-                  >
-                    <span className={cn(isOpen === false ? "" : "mr-4")}>
-                      <LogOut size={18} />
-                    </span>
-                    <p
-                      className={cn(
-                        "whitespace-nowrap",
-                        isOpen === false ? "opacity-0 hidden" : "opacity-100"
-                      )}
-                    >
-                      Sign out
-                    </p>
-                  </Button>
+                  {isSignedIn ? (
+                    <SignOutButton>
+                      <Button
+                        variant="outline"
+                        className="w-full justify-center h-10 mt-5"
+                      >
+                        <span className={cn(isOpen === false ? "" : "mr-4")}>
+                          <LogOut size={18} />
+                        </span>
+                        <p
+                          className={cn(
+                            "whitespace-nowrap",
+                            isOpen === false ? "opacity-0 hidden" : "opacity-100"
+                          )}
+                        >
+                          Sign out
+                        </p>
+                      </Button>
+                    </SignOutButton>
+                  ) : (
+                    <SignInButton>
+                      <Button
+                        variant="outline"
+                        className="w-full justify-center h-10 mt-5"
+                      >
+                        <span className={cn(isOpen === false ? "" : "mr-4")}>
+                          <LogOut size={18} />
+                        </span>
+                        <p
+                          className={cn(
+                            "whitespace-nowrap",
+                            isOpen === false ? "opacity-0 hidden" : "opacity-100"
+                          )}
+                        >
+                          Sign In
+                        </p>
+                      </Button>
+                    </SignInButton>
+                  )
+                  }
+
                 </TooltipTrigger>
                 {isOpen === false && (
                   <TooltipContent side="right">Sign out</TooltipContent>
