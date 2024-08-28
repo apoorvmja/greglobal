@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MarketingSection() {
     return (
-        <section className="bg-white  rounded-lg dark:bg-black dark:border-white dark:border-2">
+        <section className="bg-white rounded-lg dark:bg-black sm:dark:border-white sm:dark:border-2">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                 <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
                     <span className="text-xs bg-blue-600 dark:bg-white dark:text-black rounded-full text-white px-4 py-1.5 mr-3">New</span> <span className="text-sm font-medium">Gre Go Global! See what&apos;s new</span>
