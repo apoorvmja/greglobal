@@ -2523,6 +2523,1704 @@
           }
         }
       }
+    },
+    {
+      "id": "test4",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "People's behavior is largely determined by forces not of their own making.",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Gould claimed no _______ knowledge of linguistics, but only a hobbyist’s interest in language.",
+            "options": [
+              "manifest",
+              "plausible",
+              "technical",
+              "rudimentary",
+              "insignificant"
+            ],
+            "correctAnswer": [
+              "technical"
+            ],
+            "explanation": "The second part provides the answer 'but only a hobbyist’s interest in language.' Therefore, we may interpret that Gould is an amateur and not a professional. Find a word related to 'professional' which is an antonym and you have your answer. A professional would have 'technical' knowledge which an amateur lacks.",
+            "blanks": 1
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Remelting old metal cans rather than making primary aluminum from bauxite ore shipped from overseas saves producers millions of dollars in _____ and production costs.",
+            "options": [
+              "distribution",
+              "salvage",
+              "purchase",
+              "storage",
+              "procurement",
+              "research"
+            ],
+            "correctAnswer": [
+              "purchase",
+              "procurement"
+            ],
+            "explanation": "Bauxite when imported from other countries requires huge investment by the producers for buying this ore of aluminum. As a result, this method of aluminum production from its ore bauxite is far more expensive than melting old metal cans for reusing them because in the latter, huge investments are not required in the buying of the old cans. The words closest in meaning to 'buying' are 'purchase' and 'procurement.'",
+            "blanks": 1
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "Johnson never ____ to ignore the standards of decent conduct mandated by company policy if literal compliance with instructions from his superiors enabled him to do so, whatever the effects on his subordinates.",
+            "options": [
+              "deigned",
+              "attempted",
+              "intended",
+              "scrupled",
+              "demurred",
+              "wished"
+            ],
+            "correctAnswer": [
+              "scrupled",
+              "demurred"
+            ],
+            "explanation": "The sentence indicates that Johnson did not care about the effect of his conduct on the people working below him (subordinates) and if his superiors enabled him to ignore the standards of decent conduct made compulsory (mandated) by the company policy, he never hesitated to do so. The words closest in meaning to 'hesitated' are 'scrupled' and 'demurred.'"
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "Wearing the latest fashions was exclusively the ____ of the wealthy until the 1850's, when mass production, aggressive entrepreneurs, and the availability of the sewing machine made them accessible to the middle class.",
+            "options": [
+              "aspiration",
+              "privilege",
+              "vexation",
+              "bane",
+              "prerogative",
+              "obligation"
+            ],
+            "correctAnswer": [
+              "privilege",
+              "prerogative"
+            ],
+            "explanation": "The sentence states that the latest fashions were made available to the middle class only after 1850 with the help of mass production and the availability of the sewing machine. The mass production increased the quantity of the goods and thus decreased the prices, so the middle class was able to afford it. But before this period the middle class had no access to the latest fashions as the production was less and the prices were high, so they only were a priority of the rich. The words closest in meaning to 'priority' are 'privilege' and 'prerogative.'"
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "The influence of the Timaeus among early philosophical thinkers was __, if only because it was the sole dialogue available in Europe for almost 1,000 years.",
+            "options": [
+              "pervasive",
+              "extensive",
+              "inestimable",
+              "unnoteworthy",
+              "underestimated",
+              "circumscribed"
+            ],
+            "correctAnswer": [
+              "pervasive",
+              "extensive"
+            ],
+            "explanation": "As Timaeus was the only one dialogue present in Europe for a huge span of 1,000 years, it did not face competition from other dialogues. Being the only dialogue available, the philosophers had access to it only and its influence on them was huge and far-reaching. Thus, the influence was both 'pervasive' and 'extensive.'"
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "The primary purpose of this passage is to",
+            "options": [
+              "summarize an argument",
+              "resolve a dispute",
+              "trace a word's origin",
+              "prove a hypothesis",
+              "initiate a debate"
+            ],
+            "correctAnswer": [
+              "trace a word's origin"
+            ],
+            "explanation": "The passage primarily talks about the origin of the word 'morality' and what morality initially meant. The author shows how the word 'morality' has originated from the word 'mores,' which originally related to the customs and principles of society for governing every citizen. The author traces the origin of this word to argue about the present-day meaning of morality."
+          },
+          "question7": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "According to the passage, mores in preliterate cultures concerned such skills as warfare and food gathering because these skills were",
+            "options": [
+              "characteristic of an individual's self-fulfillment",
+              "examples of a culture's traditions",
+              "manifestations of an individual's ideals",
+              "demonstrations of an individual's contributions to the community",
+              "examples of a community's governing principles"
+            ],
+            "correctAnswer": [
+              "demonstrations of an individual's contributions to the community"
+            ],
+            "explanation": "As suggested by the passage, 'mores' originally referred to as the customs of the cultures. They included every culture's principles to rule the citizens and were formed because it was a belief in the past that a community's strength depends on the individuals in it and how effectively they contribute to the community with their services. Possession of skills such as food gathering and warfare by individuals, which were used for the benefit of the community, helped satisfy the food needs and protected the community against enemies. These skills are a demonstration of how the individual offered his services for the welfare of the community. Thus, option (D) is the correct answer."
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements regarding sociocentrics and egocentrics?",
+            "options": [
+              "The position of the sociocentrics is stronger than that of the egocentrics",
+              "The positions of the egocentrics and sociocentrics are of equal merit",
+              "There is no merit in the position of the egocentrics",
+              "Neither position contributes very much to an understanding of the definition of morality",
+              "The dispute between the egocentrics and sociocentrics is based on trivial issues"
+            ],
+            "correctAnswer": [
+              "The position of the sociocentrics is stronger than that of the egocentrics"
+            ],
+            "explanation": "The right answer is A, which is clearly evident from the line 'Thus, I submit \"morality\" must be concerned with what is honored by the community at large.' If the author refers to the community at large as the guiding light for the concept of morality, then he believes the socio-centric model of philosophy is more justified."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "paragraph": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "With which of the following statements regarding the relationship between the individual and morality would the author be most likely to agree?",
+            "options": [
+              "Failure in social obligations is the price of success in individual endeavors",
+              "The unfulfilled citizen cannot fulfill his moral obligations to the community.",
+              "Morality is unconcerned with conflicts among citizens.",
+              "The unfulfilled citizen is without virtue."
+            ],
+            "correctAnswer": [
+              "The unfulfilled citizen cannot fulfill his moral obligations to the community."
+            ],
+            "explanation": "Self-fulfillment is very important because a person first looks toward his or her own needs and when he is satisfied, only then he or she turns towards the welfare of the community. According to the passage morality and self-fulfillment go hand in hand. Self-fulfillment is very essential because if a person is not satisfied, he or she cannot offer his services for the welfare of the community and as morality is linked to these services, the individual cannot perform his moral duty towards his community. Thus, (B) is the correct option."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Although frequent air travelers remain unconvinced, researchers have found that, paradoxically, the (i) _____ disorientation inherent in jet lag also may yield some mental health (ii) ______.",
+            "options": {
+              "blank1": [
+                "temporal",
+                "acquired",
+                "random"
+              ],
+              "blank2": [
+                "hazards",
+                "benefits",
+                "standards"
+              ]
+            },
+            "correctAnswer": [
+              "temporal",
+              "benefits"
+            ],
+            "explanation": "Disorientation inherent in jet lag can't be either 'acquired,' as it is inherent, or 'random,' as it is an established fact. Therefore, it has to be 'temporal.' Now, although temporal jet lag is unlikely to have salutary effects on the passengers, 'paradoxically' is the key, it is a contrast sign. Therefore, what it actually states is that although people might not believe it, it does have some 'benefits.'",
+            "blanks": 2
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "The assassin got his first assignment, but the moments before the crime petrified him. He spent much time (i) ________ on the (ii) ________ of his deed. He fell into a reverie and dreamed of the solemn phantom that resembled him. This thought so immobilized him that when the precise moment came, he was gripped by a sense of (iii) ________ and hesitation.",
+            "options": {
+              "blank1": [
+                "procrastinating",
+                "planning",
+                "contemplating"
+              ],
+              "blank2": [
+                "repercussions",
+                "interjections",
+                "merits"
+              ],
+              "blank3": [
+                "alacrity",
+                "inertia",
+                "hebetude"
+              ]
+            },
+            "correctAnswer": [
+              "contemplating",
+              "repercussions",
+              "inertia"
+            ],
+            "explanation": "The assassin gets his assignment but wastes time thinking. Hence the two words to complete blank 1 and 2 are 'contemplating' and 'repercussions.' For the final blank the sense is that he is unable to act, hence the word 'inertia.'",
+            "blanks": 3
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "paragraph": "Most consumers do not get much use out of the sports equipment they purchase. For example, seventeen percent of the adults in the United States own jogging shoes, but only forty-five percent of the owners jog more than once a year, and only seventeen percent jog more than once a week.",
+            "questionText": "Which of the following, if true, casts most doubt on the claim that most consumers get little use out of the sports equipment they purchase?",
+            "options": [
+              "Joggers are most susceptible to sports injuries during the first six months in which they jog.",
+              "Joggers often exaggerate the frequency with which they jog in surveys designed to elicit such information.",
+              "Many consumers purchase jogging shoes for use in activities other than jogging.",
+              "Consumers who take up jogging often purchase an athletic shoe that can be used in other sports.",
+              "Joggers who jog more than once a week are often active participants in other sports as well."
+            ],
+            "correctAnswer": [
+              "Many consumers purchase jogging shoes for use in activities other than jogging."
+            ],
+            "explanation": "The claim that most consumers do not get much use out of the sports equipment they purchase is supported by the infrequency with which jogging shoes are used for jogging. This reasoning overlooks the possibility that jogging shoes are used for other purposes; thus, choice C is the best answer. Because injured joggers are less likely to use their jogging shoes, choice A is inappropriate. If B is true, joggers use their jogging shoes even less than the study cited states. So choice B is inappropriate. Because the consumers and joggers mentioned in D and E respectively are most likely to be among those who frequently use sports equipment and whose existence the argument concedes, D and E are inappropriate."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "reading_comprehension_multiple",
+            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "questionText": "The passage contains information that would answer which of the following questions?",
+            "options": [
+              "What are odontocetes and mysticetes?",
+              "In which part of the body do whales produce sounds?",
+              "In which animals is the auditory center of the brain most developed?"
+            ],
+            "correctAnswer": [
+              "What are odontocetes and mysticetes?",
+              "In which part of the body do whales produce sounds?"
+            ],
+            "explanation": "The answer is (A) and (B). Option (A) can be answered because the passage clearly mentions that odontocetes and mysticetes are whales. Option (B) also can be answered because the passage states that 'Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx.' The word phonation means speech. Therefore, we know that whales use the larynx to produce sound. Option (C) is incorrect because we cannot say, from the information available in the passage, which animal has the most developed auditory center of the brain. The passage only mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.' However, from this information we cannot assume that whales have the most developed auditory center. The sentence only talks about mammals and not all animals. Therefore, we cannot answer the question as to which animal has the most developed auditory center."
+          },
+          "question2": {
+            "type": "reading_comprehension",
+            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "questionText": "Q. It can be inferred from the passage that",
+            "options": [
+              "animals with more highly developed auditory apparatuses tend to produce more sounds",
+              "animals without vocal cords tend to produce as much sound as those with vocal cords",
+              "highly intelligent animals tend to produce more sound than less intelligent species",
+              "the absence of vocal cords has hindered the adaptation of cetaceans",
+              "sound is an important means of communication among whales"
+            ],
+            "correctAnswer": [
+              "animals with more highly developed auditory apparatuses tend to produce more sounds"
+            ],
+            "explanation": "The answer is (A). This is because the passage states that odontocetes are more vociferous than the mysticetes. It also mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes.' This implies that odontocetes are more vociferous because their auditory centers are more developed. Therefore, it can be inferred that animals with more highly developed auditory apparatuses tend to produce more sounds."
+          },
+          "question3": {
+            "type": "reading_comprehension_select",
+            "passage": "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill’s theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was 'really neither single nor anomalous,' but she was also more than a 'register and spokesman for her age.' She was part of a tradition that had its origins before her age, and has carried on through our own. Many literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women’s literature as an international movement, 'apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.' This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.' Patricia Meyer Spacks, in The Female Imagination, finds that 'for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.' Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
+            "questionText": "Select the sentence in the passage in which the author makes use of an extended metaphor.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature"
+            ]
+          },
+          "question4": {
+            "type": "reading_comprehension",
+            "passage": "As the works of dozens of women writers have been rescued from what E. P. Thompson calls \"the enormous condescension of posterity,\" and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill's theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was \"really neither single nor anomalous,\" but she was also more than a \"register and spokesman for her age.\" She was part of a tradition that had its origins before her age, and has carried on through our own.\n\nMany literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women's literature as an international movement, \"apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.\" This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.\" Patricia Meyer Spacks, in The Female Imagination, finds that \"for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.\" Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
+            "questionText": "The passage supplies information for answering which of the following questions?",
+            "options": [
+              "Does the author believe the female literary tradition to be richer in depth than its masculine counterpart?",
+              "Are women psychological as well as sociological chameleons?",
+              "Does Moers share Mill’s concern over the ephemeral nature of female literary renown?",
+              "What patterns, themes, images, and problems recur sufficiently in the work of women writers to belong to the female imaginative continuum?",
+              "Did Mill acknowledge the existence of a separate female literary tradition?"
+            ],
+            "correctAnswer": [
+              "Did Mill acknowledge the existence of a separate female literary tradition?"
+            ],
+            "explanation": "The answer is (E). This question can be answered on the basis of the passage. According to the first paragraph, Mill disbelieved in the idea that women \"have had a literature of their own all along.\""
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "The Gibsons were little given to ___ in any form; not one of them was afraid of singularity, of being and seeming unlike their neighbors.",
+            "options": [
+              "humility",
+              "excellence",
+              "anger",
+              "conformism",
+              "ostentation",
+              "emulation"
+            ],
+            "correctAnswer": [
+              "conformism",
+              "emulation"
+            ],
+            "explanation": "The sentence states that the Gibsons were not afraid to appear different from their neighbors, suggesting that they were little into copying others or appearing similar to others. Thus, the Gibsons were little given to 'conformism' and 'emulation.'"
+          },
+          "question6": {
+            "type": "sentence_equivalence",
+            "questionText": "The kenjogo or humble language used in Japanese to refer to oneself and the sonkeigo or honorific language used to describe the interlocutor are often toned down in English translation, as more accurate renderings might sound __________ to an ear accustomed to more egalitarian phrasings.",
+            "options": [
+              "servile",
+              "garrulous",
+              "obsequious",
+              "circumspect",
+              "querulous",
+              "loquacious"
+            ],
+            "correctAnswer": [
+              "servile",
+              "obsequious"
+            ],
+            "explanation": "This asks what a language with humble and honorific forms of speech might sound like to an ear accustomed to more egalitarian phrasings, one from a culture in which one is generally free to address others as equals. Such self-abasing forms of speech might sound overly deferential or just too polite. This leaves 'servile' and 'obsequious' as the correct answers, both of which connote excessive humility."
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "In the design of medical experiments, the need for ___ assignment of treatments to patients must be reconciled with the difficulty of persuading patients to participate in an experiment in which their treatment is decided by chance.",
+            "options": [
+              "independent",
+              "competent",
+              "mechanical",
+              "swift",
+              "random",
+              "casual"
+            ],
+            "correctAnswer": [
+              "random",
+              "casual"
+            ],
+            "explanation": "The experiment in which the treatment of the patients is brought about 'by chance' is unplanned and a part of an assignment which does not have a careful choice. The assignment thus is 'random' and 'casual.'"
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "Crosby's colleagues have never learned, at least not in time to avoid embarrassing themselves, that her occasional ___ air of befuddlement presages a display of her formidable intelligence.",
+            "options": [
+              "genuine",
+              "alert",
+              "affected",
+              "bogus",
+              "painstaking",
+              "acute"
+            ],
+            "correctAnswer": [
+              "affected",
+              "bogus"
+            ],
+            "explanation": "The word 'presages' suggests that the confused look (air of befuddlement) of Crosby foretells her impressive (formidable) intelligence suggesting that the confused look is false and a pretense on her part. The words which closely describe Crosby's confused look are 'affected' and 'bogus.'"
+          },
+          "question9": {
+            "type": "text_completion",
+            "questionText": "From 'chutney' the Hindi word taken in the sense of a mixture, or (i) ________ of various ingredients. The Indian writer today is open to influences ranging from pop culture of the west to the centuries-old and indigenous Indian culture. He often seems (ii) ________, rootless and confused. At the same time he is very alive and sensitive to changes around his milieu. This gives his (iii) ________ pungency.",
+            "options": {
+              "blank1": [
+                "melee",
+                "melange",
+                "ruction"
+              ],
+              "blank2": [
+                "alienated",
+                "integrated",
+                "addlepated"
+              ],
+              "blank3": [
+                "perceptions",
+                "inceptions",
+                "commiserations"
+              ]
+            },
+            "correctAnswer": [
+              "melange",
+              "alienated",
+              "perceptions"
+            ],
+            "blanks":3,
+            "explanation": "For the first blank the right option is 'melange' which captures the sense of a mixture. For the second blank the right option is 'alienated.' Note that even 'addlepated' makes sense here. However it is not grammatically correct as one of the functions of a comma is to separate two adjectives describing the same thing. Hence the word 'alienated' that matches with rootless is correct here. For the third blank the right option is 'perceptions' as we are speaking of the writer's response to the multiple influences."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Nothing (i) ______ his irresponsibility better than his (ii) ______ delay in sending us the items he promised weeks ago.",
+            "options": {
+              "blank1": [
+                "justifies",
+                "epitomizes",
+                "conceals"
+              ],
+              "blank2": [
+                "conspicuous",
+                "timely",
+                "unnecessary"
+              ]
+            },
+            "correctAnswer": [
+              "epitomizes",
+              "unnecessary"
+            ],
+            "blanks":2,
+            "explanation": "The key lies in 'delay in sending us the items he promised weeks ago.' Since he did delay in sending out the stuff, it cannot justify his irresponsibility. And of course it cannot conceal it either. Hence the answer is 'epitomizes.' And now for the second blank, timely delay will be an oxymoron and therefore not contextually correct, and conspicuous (obvious) is redundant and therefore will not work, which makes 'unnecessary' the only choice."
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "Contrary to the antiquated idea that the eighteenth century was a _______ island of elegant assurance, evidence reveals that life for most people was filled with uncertainty and insecurity.",
+            "options": [
+              "clannish",
+              "declining",
+              "tranquil",
+              "recognized",
+              "sprawling"
+            ],
+            "correctAnswer": [
+              "tranquil"
+            ],
+            "blanks":1,
+            "explanation": "The word 'contrary' points to a contrast to 'filled with uncertainty and insecurity.' Therefore, the antonym to that would be the answer. Hence, the right answer is 'tranquil.'"
+          },
+          "question12": {
+            "type": "reading_comprehension_select",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "Select the sentence in the passage which implies that the work of Meredith is noteworthy for its elements of brilliance and linguistic grandeur.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference"
+            ],
+            "explanation": "The answer should be the following line from the passage: 'That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference.' This is because in this sentence the author cites Meredith’s intelligence (brilliance) and his splendor of language (linguistic grandeur)."
+          },
+          "question13": {
+            "type": "reading_comprehension_multiple",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose 'view of life' wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not 'speak to us,' we might say; his meaning is not a 'meaning for us'; he 'leaves us cold.' But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "Which of the following can be found in the author’s discussion of Meredith?",
+            "options": [
+              "an indication of Meredith’s customary effect on readers",
+              "an enumeration of the admirable qualities in his work",
+              "a refutation of the claim that Meredith evokes no sympathy"
+            ],
+            "correctAnswer": [
+              "an indication of Meredith’s customary effect on readers",
+              "an enumeration of the admirable qualities in his work"
+            ],
+            "explanation": "The passage discusses Meredith's customary effect on readers, where the author mentions how readers feel only a passive appreciation for Meredith's work, which amounts practically to indifference. It also enumerates the admirable qualities in his work, such as 'muscular intelligence' and 'splendor of language.' However, the passage does not provide a refutation of the claim that Meredith evokes no sympathy."
+          },
+          "question14": {
+            "type": "reading_comprehension",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements about the role of criticism?",
+            "options": [
+              "Its prime office should be to make our enjoyment of the things that feed the mind as conscious as possible.",
+              "It should be a disinterested endeavor to learn and propagate the best that is known and thought in the world.",
+              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes.",
+              "It should dwell upon excellencies rather than imperfections, ignoring such deficiencies as irrelevant.",
+              "It should strive both to purify literature and to elevate the literary standards of the reading public."
+            ],
+            "correctAnswer": [
+              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes."
+            ],
+            "explanation": "The answer is (C). This is because the author wishes us to be able to recognize the good qualities of Meredith’s work while at the same time we continue to find it personally unsympathetic. Thus, she would agree that criticism should enable us to appreciate the virtues of works we dislike. Choices (A), (B), and (E) are unsupported by the passage. Choice (D) is also incorrect because while the author wishes the reader to be aware of Meredith’s excellencies, she does not suggest that the reader should ignore those qualities in Meredith that make his work unsympathetic. Rather, she wishes the reader to come to appreciate the very ambivalence of his critical response."
+          },
+          "question15": {
+            "type": "reading_comprehension",
+            "passage": "Two decades after the Emerald River Dam was built, none of the eight fish species native to the Emerald River was still reproducing adequately in the river below the dam. Since the dam reduced the annual range of water temperature in the river below the dam from 50 degrees to 6 degrees, scientists have hypothesized that sharply rising water temperatures must be involved in signaling the native species to begin the reproductive cycle.",
+            "questionText": "Which of the following statements, if true, would most strengthen the scientists’ hypothesis?",
+            "options": [
+              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees.",
+              "Before the dam was built, the Emerald River annually overflowed its banks, creating backwaters that were critical breeding areas for the native species of fish.",
+              "The lowest recorded temperature of the Emerald River before the dam was built was 34 degrees, whereas the lowest recorded temperature of the river after the dam was built has been 43 degrees.",
+              "Nonnative species of fish, introduced into the Emerald River after the dam was built, have begun competing with the declining native fish species for food and space.",
+              "Five of the fish species native to the Emerald River are not native to any other river in North America."
+            ],
+            "correctAnswer": [
+              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees."
+            ],
+            "explanation": "For the hypothesis to be tenable it is important that the fish in streams in the Emerald River area that retain a wide temperature difference have not lost their ability to reproduce. Choice A asserts that these fish could still reproduce and is thus the best answer. Choice B undermines the hypothesis by suggesting a completely different hypothesis; choice C tends to support the claim that the temperature variation has lessened but does not show that this is the right explanation; since D relates a development after the native species began to decline, it does not bear on the hypothesis, which concerns the decline’s original cause; and choice E emphasizes the seriousness of the problem but sheds no light on what causes it."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The operation ⊗ is defined for all nonzero numbers a and b by a ⊗ b = (a/b) - (b/a). If x and y are nonzero numbers, which of the following statements must be true?\n\nI. x ⊗ xy = x(1 ⊗ y)\nII. x ⊗ y = -(y ⊗ x)\nIII. 1/x ⊗ 1/y = y ⊗ x",
+            "options": [
+              "I only",
+              "II only",
+              "III only",
+              "I and II",
+              "II and III"
+            ],
+            "correctAnswer": "II and III",
+            "explanation": "Case 1:\n\nx ⊗ xy = (x/xy) - (xy/x) = 1/y - y ≠ x(1 ⊗ y)\n\nx(1 ⊗ y) = x(1/y - y) ≠ 1/y - y ⇒ Not equal\n\nCase 2:\n\nx ⊗ y = (x/y) - (y/x)\n\n -(y ⊗ x) = -((y/x) - (x/y)) ⇒ Equal\n\nCase 3:\n\n1/x ⊗ 1/y = (1/x) / (1/y) - (1/y) / (1/x) = y/x - x/y\n\ny ⊗ x ⇒ Equal\n\nTherefore, the correct answer is II and III."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If w, x, y, and z are integers such that 1 < w < x < y < z and wxyz = 462, then z = ?",
+            "options": [
+              "7",
+              "11",
+              "14",
+              "21",
+              "42"
+            ],
+            "correctAnswer": "11",
+            "explanation": "The prime factorization of 462 is 462 = 2 × 3 × 7 × 11. Since 1 < w < x < y < z, the integers must be 2, 3, 7, and 11. Therefore, z = 11."
+          },
+          "question3": {
+            "type": "numeric_entry",
+            "questionText": "Last year, 36 houses in a certain development had roof repairs and 48 houses were repainted. If 20 houses in the development had roof repairs but were not repainted last year, how many houses were repainted but did not have roof repairs?",
+            "correctAnswer": "32",
+            "explanation": "Roof repairs = 36\nRepaint = 48\nRoof repairs without paint = 20\nRoof repairs with repaint = 36 - 20 = 16\nRepaint without roof repairs = 48 - 16 = 32"
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Tanks A and B are each in the shape of a right circular cylinder. The interior of tank A has a height of 10 meters and a circumference of 8 meters, and the interior of tank B has a height of 8 meters and a circumference of 10 meters. The capacity of tank A is what percent of the capacity of tank B?",
+            "options": [
+              "75%",
+              "80%",
+              "100%",
+              "120%",
+              "125%"
+            ],
+            "correctAnswer": "80%",
+            "explanation": "For Tank A:\n\n- Height (h) = 10\n- Circumference = 8, so radius (r) = 8/(2π) = 4/π\n- Capacity of Tank A = πr²h = 160/π\n\nFor Tank B:\n\n- Height (h) = 8\n- Circumference = 10, so radius (r) = 10/(2π) = 5/π\n- Capacity of Tank B = πr²h = 200/π\n\nPercentage = (Capacity of Tank A / Capacity of Tank B) * 100 = (160/π) / (200/π) * 100 = 80%"
+          },
+          "question5": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The two pie diagrams given below provide the relative expenses of two families A and B. The miscellaneous expenses of Family A as a percentage of those of Family B is:",
+            "options": [
+              "Less than 75%",
+              "Less than 80%",
+              "More than 80%",
+              "80%",
+              "None of these."
+            ],
+            "correctAnswer": "More than 80%",
+            "explanation": "Family A spends: (48/360) × 4800 = Rs. 640\nFamily B spends: (39/360) × 7200 = Rs. 780\nRequired percentage = (640/780) × 100 = 82%\nThus, the answer is option 3."
+          },
+          "question6": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The item showing the least difference in expenditure between A and B is:",
+            "options": [
+              "Food",
+              "Light",
+              "Clothing",
+              "Miscellaneous",
+              "Education"
+            ],
+            "correctAnswer": "Light",
+            "explanation": "For Family A, Light: (18/360) × 4800 = Rs. 240\nFor Family B, Light: (15/360) × 7200 = Rs. 300\nDifference = 300 - 240 = 60 (least)"
+          },
+          "question7": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The percentage of expenses of A and B on food are in the ratio:",
+            "options": [
+              "55:48",
+              "4:5",
+              "5:4",
+              "48:55",
+              "None of these."
+            ],
+            "correctAnswer": "48:55",
+            "explanation": "Percentage of expenditure of A on food = (96/360) × 100\nPercentage of expenditure of B on food = (110/360) × 100\nRatio = 96:110 = 48:55"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "At a monthly meeting, 2/5 of the attendees were males and 7/8 of the male attendees arrived on time. If 9/10 of the female attendees arrived on time, what fraction of the attendees at the monthly meeting did not arrive on time?",
+            "options": [
+              "11/100",
+              "3/25",
+              "7/50",
+              "3/20",
+              "4/25"
+            ],
+            "correctAnswer": "11/100",
+            "explanation": "Let the total number of attendees be 100.\n\n- Males = 2/5 × 100 = 40\n- Males on time = 7/8 × 40 = 35\n\n- Females = 100 - 40 = 60\n- Females on time = 9/10 × 60 = 54\n\nTotal on time = 35 + 54 = 89\n\nTotal not on time = 100 - 89 = 11\n\nFraction not on time = 11/100"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A store is offering a 25% discount on a jacket that originally costs $80. What is the sale price of the jacket?",
+            "options": [
+              "$60",
+              "$62",
+              "$64",
+              "$65",
+              "$68"
+            ],
+            "correctAnswer": "$60",
+            "explanation": "The discount amount is 25% of $80, which is (25/100) × 80 = $20. Therefore, the sale price is $80 - $20 = $60."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-13.jpg",
+            "questionText": "In the figure shown above, the triangle is inscribed in the semicircle. If the length of line segment AB is 8 and the length of line segment BC is 6, what is the length of arc ABC?",
+            "options": [
+              "15π",
+              "8π",
+              "10π",
+              "7π",
+              "5π"
+            ],
+            "correctAnswer": "5π",
+            "explanation": "Since the triangle is inscribed in the semicircle, ∠ABC is 90°, making AC the diameter of the semicircle. Using the Pythagorean theorem, we find AC = 10. The circumference of the circle is π × d = 10π. Since ABC is a semicircle, the length of arc ABC is half the circumference, which is (10π)/2 = 5π."
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A bag contains six marbles: two red, two blue, and two green. If two marbles are drawn at random, what is the probability that they are the same color?",
+            "options": [
+              "1/3",
+              "1/2",
+              "1/5",
+              "1/6",
+              "1/10"
+            ],
+            "correctAnswer": "1/5",
+            "explanation": "The probability of drawing two marbles of the same color is calculated as:\n\nP(R ∪ B ∪ G) = 2C2/6C2 + 2C2/6C2 + 2C2/6C2 = 1/5.\n\nFavorable outcomes = 3 (2R, 2B, 2G)\n\nTotal outcomes = 6C2 = 15\n\nP = 3/15 = 1/5"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "When 20 is divided by the positive integer k, the remainder is k - 2. Which of the following is a possible value of k?",
+            "options": [
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ],
+            "correctAnswer": "11",
+            "explanation": "Check through the options to find the correct value of k that satisfies the condition 20 divided by k leaves a remainder of k - 2."
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "5/14 + 8/21",
+            "quantityB": "26/35 - 3/14",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Calculate and check:\n\nA = 31/42\nB = 37/70\n\nClearly, A > B."
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "Triangle ABC has two sides with measurements 7 cm and 4 cm.",
+            "quantityA": "Perimeter of ABC",
+            "quantityB": "23",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "The sum of the lengths of any two sides in a triangle is always greater than the length of the third side in the triangle. The difference of the lengths of any two sides is always less than the length of the third side. Given sides of 4 cm and 7 cm, the third side must satisfy the inequality 3 < Third side < 11, so the perimeter must be in the range 14 < Perimeter < 22. Thus, the relationship between the quantities cannot be determined."
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "A committee of 5 is to be selected from a group of 4 girls and 7 boys.",
+            "quantityA": "Number of selections if there is no girl",
+            "quantityB": "Number of selections if there are at least 3 girls",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "A. Number of selections with no girl: 7C5 = 21\nB. Number of selections with at least 3 girls: (4C3 * 7C2) + (4C4 * 7C1) = 91\nClearly, B > A."
+          },
+          "question4": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "(6 + 3) * 5 - 6 ÷ 2 + 3^2",
+            "quantityB": "6 + 3 * 5 - 6 ÷ 2 + 3^2",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Solve using simple BODMAS (Bracket, Order, Division and Multiplication, Addition and Subtraction) to compare both quantities."
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In a certain diving competition, 5 judges score each dive on a scale from 1 to 10. The point value of the dive is obtained by dropping the highest score and the lowest score and multiplying the sum of the remaining scores by the degree of difficulty. If a dive with a degree of difficulty of 3.2 received scores of 7.5, 8.0, 9.0, 6.0, and 8.5, what was the point value of the dive?",
+            "options": [
+              "68.8",
+              "73.6",
+              "75.2",
+              "76.8",
+              "81.6"
+            ],
+            "correctAnswer": "76.8",
+            "explanation": "Point value = (7.5 + 8 + 8.5) * 3.2 = 76.8"
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In the xy-coordinate plane, the points (a, b) and (a + k, b - 3) are on the line defined by y = 2x - 5. What is the value of k?",
+            "options": [
+              "-5/2",
+              "-5/3",
+              "-2/3",
+              "-3/2",
+              "2/5"
+            ],
+            "correctAnswer": "-3/2",
+            "explanation": "b = 2a - 5\n\nb - 3 = 2(a + k) - 5\n\nSimplifying this gives k = -3/2."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The HCF of two numbers is 48, and the HCF of two other numbers is 36. Then HCF of all four numbers is",
+            "options": [
+              "36",
+              "24",
+              "12",
+              "48",
+              "16"
+            ],
+            "correctAnswer": "12",
+            "explanation": "The HCF of all four numbers is the HCF of the two given HCFs (48 and 36). The HCF of 48 and 36 is 12."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In a town, there are 2500 men and 2500 women. If men increased by 20% and women decreased by 20%, women as a percentage of men is",
+            "options": [
+              "60%",
+              "66.67%",
+              "80%",
+              "83.33%",
+              "50%"
+            ],
+            "correctAnswer": "66.67%",
+            "explanation": "Increased men = 2500 + 20% of 2500 = 3000\nDecreased women = 2500 - 20% of 2500 = 2000\nWomen as percentage of men = (2000/3000) * 100 = 66.67%"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A fraction bears the same ratio to 3/7 as 1/27 does to 1/35. Find the fraction.",
+            "options": [
+              "4/9",
+              "1/3",
+              "5/9",
+              "2/3",
+              "6/9"
+            ],
+            "correctAnswer": "5/9",
+            "explanation": "Set up the proportion: x/(3/7) = (1/27)/(1/35). Solving for x gives x = 5/9. Thus, the correct answer is 5/9."
+          },
+          "question10": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Number of three-digit odd numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
+            "quantityB": "Number of three-digit even numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both quantities are equal",
+              "The relationship cannot be determined from the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Repetition is allowed. There are 3 odd digits: 1, 3, and 5\n\nOdd numbers can be formed as 4 * 5 * 3 = 60\n\nThere are only 2 even digits: 0 and 8\n\nEven numbers can be formed as 4 * 5 * 2 = 40\n\nHence, Quantity A is greater."
+          },
+          "question11": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Sum of odd numbers from 1 to 100",
+            "quantityB": "Sum of even numbers from 1 to 100",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both quantities are equal",
+              "The relationship cannot be determined from the given information"
+            ],
+            "correctAnswer": "Quantity in B is greater",
+            "explanation": "Since 1 < 2, 3 < 4, 5 < 6, ..., and 99 < 100, the sum of odd numbers is less than the sum of even numbers. Hence, Quantity B is greater."
+          },
+          "question12": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "The foreign exchange of the year 2007-2008 is how many times that of 2004-2005?",
+            "options": [
+              "0.7",
+              "1.2",
+              "1.4",
+              "1.5",
+              "1.6"
+            ],
+            "correctAnswer": "1.5",
+            "explanation": "Foreign exchange for 2007-2008 is 5040, and for 2004-2005 it is 3360. The ratio is 5040/3360 = 1.5 times."
+          },
+          "question13": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "The foreign exchange reserves in 2006-2007 were approximately what percentage of the average foreign exchange reserves over the period under review?",
+            "options": [
+              "95%",
+              "110%",
+              "100%",
+              "115%",
+              "124%"
+            ],
+            "correctAnswer": "124%",
+            "explanation": "The average foreign exchange reserves over the period is 3480. The foreign exchange reserves for 2006-2007 is 4320. The ratio is 4320/3480 = 1.24, which is approximately 124%."
+          },
+          "question14": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "What was the percentage increase in the foreign exchange reserves in 2007-2008 over 2003-2004?",
+            "options": [
+              "100",
+              "150",
+              "200",
+              "620",
+              "300"
+            ],
+            "correctAnswer": "100",
+            "explanation": "Foreign exchange in 2003-2004 was 2520, and in 2007-2008 it was 5040. The increase is 2520 (5040 - 2520), which is a 100% increase. Percentage increase = (2520/2520) * 100 = 100%."
+          },
+          "question15": {
+            "type": "numeric_entry",
+            "questionText": "A and B can do a job in 20 days and 30 days respectively. If both of them work on the job together, when would they finish 75% of it?",
+            "correctAnswer": "9",
+            "explanation": "Let the job done by A in one day = a, so the total job is 20a. Let the job done by B in one day = b, so the total job is 30b. From the equation 20a = 30b, we get a = 3/2b. Now, to find the number of days to finish 75% of the job, we set up the equation: 75% of 30b = x * (a + b). Solving this gives x = 9 days."
+          }
+        }
+      }
+    },
+    {
+      "id": "test5",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "Governments should offer a free university education to any student who has been admitted to a university but who cannot afford the tuition.",
+          "instructions": "Write a response in which you discuss your views on the policy and explain your reasoning for the position you take. In developing and supporting your position, you should consider the possible consequences of implementing the policy and explain how these consequences shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Gould claimed no _______ knowledge of linguistics, but only a hobbyist’s interest in language.",
+            "options": [
+              "manifest",
+              "plausible",
+              "technical",
+              "rudimentary",
+              "insignificant"
+            ],
+            "correctAnswer": [
+              "technical"
+            ],
+            "explanation": "The second part provides the answer 'but only a hobbyist’s interest in language.' Therefore, we may interpret that Gould is an amateur and not a professional. Find a word related to 'professional' which is an antonym and you have your answer. A professional would have 'technical' knowledge which an amateur lacks.",
+            "blanks": 1
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Remelting old metal cans rather than making primary aluminum from bauxite ore shipped from overseas saves producers millions of dollars in _____ and production costs.",
+            "options": [
+              "distribution",
+              "salvage",
+              "purchase",
+              "storage",
+              "procurement",
+              "research"
+            ],
+            "correctAnswer": [
+              "purchase",
+              "procurement"
+            ],
+            "explanation": "Bauxite when imported from other countries requires huge investment by the producers for buying this ore of aluminum. As a result, this method of aluminum production from its ore bauxite is far more expensive than melting old metal cans for reusing them because in the latter, huge investments are not required in the buying of the old cans. The words closest in meaning to 'buying' are 'purchase' and 'procurement.'",
+            "blanks": 1
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "Johnson never ____ to ignore the standards of decent conduct mandated by company policy if literal compliance with instructions from his superiors enabled him to do so, whatever the effects on his subordinates.",
+            "options": [
+              "deigned",
+              "attempted",
+              "intended",
+              "scrupled",
+              "demurred",
+              "wished"
+            ],
+            "correctAnswer": [
+              "scrupled",
+              "demurred"
+            ],
+            "explanation": "The sentence indicates that Johnson did not care about the effect of his conduct on the people working below him (subordinates) and if his superiors enabled him to ignore the standards of decent conduct made compulsory (mandated) by the company policy, he never hesitated to do so. The words closest in meaning to 'hesitated' are 'scrupled' and 'demurred.'"
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "Wearing the latest fashions was exclusively the ____ of the wealthy until the 1850's, when mass production, aggressive entrepreneurs, and the availability of the sewing machine made them accessible to the middle class.",
+            "options": [
+              "aspiration",
+              "privilege",
+              "vexation",
+              "bane",
+              "prerogative",
+              "obligation"
+            ],
+            "correctAnswer": [
+              "privilege",
+              "prerogative"
+            ],
+            "explanation": "The sentence states that the latest fashions were made available to the middle class only after 1850 with the help of mass production and the availability of the sewing machine. The mass production increased the quantity of the goods and thus decreased the prices, so the middle class was able to afford it. But before this period the middle class had no access to the latest fashions as the production was less and the prices were high, so they only were a priority of the rich. The words closest in meaning to 'priority' are 'privilege' and 'prerogative.'"
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "The influence of the Timaeus among early philosophical thinkers was __, if only because it was the sole dialogue available in Europe for almost 1,000 years.",
+            "options": [
+              "pervasive",
+              "extensive",
+              "inestimable",
+              "unnoteworthy",
+              "underestimated",
+              "circumscribed"
+            ],
+            "correctAnswer": [
+              "pervasive",
+              "extensive"
+            ],
+            "explanation": "As Timaeus was the only one dialogue present in Europe for a huge span of 1,000 years, it did not face competition from other dialogues. Being the only dialogue available, the philosophers had access to it only and its influence on them was huge and far-reaching. Thus, the influence was both 'pervasive' and 'extensive.'"
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "The primary purpose of this passage is to",
+            "options": [
+              "summarize an argument",
+              "resolve a dispute",
+              "trace a word's origin",
+              "prove a hypothesis",
+              "initiate a debate"
+            ],
+            "correctAnswer": [
+              "trace a word's origin"
+            ],
+            "explanation": "The passage primarily talks about the origin of the word 'morality' and what morality initially meant. The author shows how the word 'morality' has originated from the word 'mores,' which originally related to the customs and principles of society for governing every citizen. The author traces the origin of this word to argue about the present-day meaning of morality."
+          },
+          "question7": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "According to the passage, mores in preliterate cultures concerned such skills as warfare and food gathering because these skills were",
+            "options": [
+              "characteristic of an individual's self-fulfillment",
+              "examples of a culture's traditions",
+              "manifestations of an individual's ideals",
+              "demonstrations of an individual's contributions to the community",
+              "examples of a community's governing principles"
+            ],
+            "correctAnswer": [
+              "demonstrations of an individual's contributions to the community"
+            ],
+            "explanation": "As suggested by the passage, 'mores' originally referred to as the customs of the cultures. They included every culture's principles to rule the citizens and were formed because it was a belief in the past that a community's strength depends on the individuals in it and how effectively they contribute to the community with their services. Possession of skills such as food gathering and warfare by individuals, which were used for the benefit of the community, helped satisfy the food needs and protected the community against enemies. These skills are a demonstration of how the individual offered his services for the welfare of the community. Thus, option (D) is the correct answer."
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements regarding sociocentrics and egocentrics?",
+            "options": [
+              "The position of the sociocentrics is stronger than that of the egocentrics",
+              "The positions of the egocentrics and sociocentrics are of equal merit",
+              "There is no merit in the position of the egocentrics",
+              "Neither position contributes very much to an understanding of the definition of morality",
+              "The dispute between the egocentrics and sociocentrics is based on trivial issues"
+            ],
+            "correctAnswer": [
+              "The position of the sociocentrics is stronger than that of the egocentrics"
+            ],
+            "explanation": "The right answer is A, which is clearly evident from the line 'Thus, I submit \"morality\" must be concerned with what is honored by the community at large.' If the author refers to the community at large as the guiding light for the concept of morality, then he believes the socio-centric model of philosophy is more justified."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "paragraph": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "questionText": "With which of the following statements regarding the relationship between the individual and morality would the author be most likely to agree?",
+            "options": [
+              "Failure in social obligations is the price of success in individual endeavors",
+              "The unfulfilled citizen cannot fulfill his moral obligations to the community.",
+              "Morality is unconcerned with conflicts among citizens.",
+              "The unfulfilled citizen is without virtue."
+            ],
+            "correctAnswer": [
+              "The unfulfilled citizen cannot fulfill his moral obligations to the community."
+            ],
+            "explanation": "Self-fulfillment is very important because a person first looks toward his or her own needs and when he is satisfied, only then he or she turns towards the welfare of the community. According to the passage morality and self-fulfillment go hand in hand. Self-fulfillment is very essential because if a person is not satisfied, he or she cannot offer his services for the welfare of the community and as morality is linked to these services, the individual cannot perform his moral duty towards his community. Thus, (B) is the correct option."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Although frequent air travelers remain unconvinced, researchers have found that, paradoxically, the (i) _____ disorientation inherent in jet lag also may yield some mental health (ii) ______.",
+            "options": {
+              "blank1": [
+                "temporal",
+                "acquired",
+                "random"
+              ],
+              "blank2": [
+                "hazards",
+                "benefits",
+                "standards"
+              ]
+            },
+            "correctAnswer": [
+              "temporal",
+              "benefits"
+            ],
+            "explanation": "Disorientation inherent in jet lag can't be either 'acquired,' as it is inherent, or 'random,' as it is an established fact. Therefore, it has to be 'temporal.' Now, although temporal jet lag is unlikely to have salutary effects on the passengers, 'paradoxically' is the key, it is a contrast sign. Therefore, what it actually states is that although people might not believe it, it does have some 'benefits.'",
+            "blanks": 2
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "The assassin got his first assignment, but the moments before the crime petrified him. He spent much time (i) ________ on the (ii) ________ of his deed. He fell into a reverie and dreamed of the solemn phantom that resembled him. This thought so immobilized him that when the precise moment came, he was gripped by a sense of (iii) ________ and hesitation.",
+            "options": {
+              "blank1": [
+                "procrastinating",
+                "planning",
+                "contemplating"
+              ],
+              "blank2": [
+                "repercussions",
+                "interjections",
+                "merits"
+              ],
+              "blank3": [
+                "alacrity",
+                "inertia",
+                "hebetude"
+              ]
+            },
+            "correctAnswer": [
+              "contemplating",
+              "repercussions",
+              "inertia"
+            ],
+            "explanation": "The assassin gets his assignment but wastes time thinking. Hence the two words to complete blank 1 and 2 are 'contemplating' and 'repercussions.' For the final blank the sense is that he is unable to act, hence the word 'inertia.'",
+            "blanks": 3
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "paragraph": "Most consumers do not get much use out of the sports equipment they purchase. For example, seventeen percent of the adults in the United States own jogging shoes, but only forty-five percent of the owners jog more than once a year, and only seventeen percent jog more than once a week.",
+            "questionText": "Which of the following, if true, casts most doubt on the claim that most consumers get little use out of the sports equipment they purchase?",
+            "options": [
+              "Joggers are most susceptible to sports injuries during the first six months in which they jog.",
+              "Joggers often exaggerate the frequency with which they jog in surveys designed to elicit such information.",
+              "Many consumers purchase jogging shoes for use in activities other than jogging.",
+              "Consumers who take up jogging often purchase an athletic shoe that can be used in other sports.",
+              "Joggers who jog more than once a week are often active participants in other sports as well."
+            ],
+            "correctAnswer": [
+              "Many consumers purchase jogging shoes for use in activities other than jogging."
+            ],
+            "explanation": "The claim that most consumers do not get much use out of the sports equipment they purchase is supported by the infrequency with which jogging shoes are used for jogging. This reasoning overlooks the possibility that jogging shoes are used for other purposes; thus, choice C is the best answer. Because injured joggers are less likely to use their jogging shoes, choice A is inappropriate. If B is true, joggers use their jogging shoes even less than the study cited states. So choice B is inappropriate. Because the consumers and joggers mentioned in D and E respectively are most likely to be among those who frequently use sports equipment and whose existence the argument concedes, D and E are inappropriate."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "reading_comprehension_multiple",
+            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "questionText": "The passage contains information that would answer which of the following questions?",
+            "options": [
+              "What are odontocetes and mysticetes?",
+              "In which part of the body do whales produce sounds?",
+              "In which animals is the auditory center of the brain most developed?"
+            ],
+            "correctAnswer": [
+              "What are odontocetes and mysticetes?",
+              "In which part of the body do whales produce sounds?"
+            ],
+            "explanation": "The answer is (A) and (B). Option (A) can be answered because the passage clearly mentions that odontocetes and mysticetes are whales. Option (B) also can be answered because the passage states that 'Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx.' The word phonation means speech. Therefore, we know that whales use the larynx to produce sound. Option (C) is incorrect because we cannot say, from the information available in the passage, which animal has the most developed auditory center of the brain. The passage only mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.' However, from this information we cannot assume that whales have the most developed auditory center. The sentence only talks about mammals and not all animals. Therefore, we cannot answer the question as to which animal has the most developed auditory center."
+          },
+          "question2": {
+            "type": "reading_comprehension",
+            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "questionText": "Q. It can be inferred from the passage that",
+            "options": [
+              "animals with more highly developed auditory apparatuses tend to produce more sounds",
+              "animals without vocal cords tend to produce as much sound as those with vocal cords",
+              "highly intelligent animals tend to produce more sound than less intelligent species",
+              "the absence of vocal cords has hindered the adaptation of cetaceans",
+              "sound is an important means of communication among whales"
+            ],
+            "correctAnswer": [
+              "animals with more highly developed auditory apparatuses tend to produce more sounds"
+            ],
+            "explanation": "The answer is (A). This is because the passage states that odontocetes are more vociferous than the mysticetes. It also mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes.' This implies that odontocetes are more vociferous because their auditory centers are more developed. Therefore, it can be inferred that animals with more highly developed auditory apparatuses tend to produce more sounds."
+          },
+          "question3": {
+            "type": "reading_comprehension_select",
+            "passage": "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill’s theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was 'really neither single nor anomalous,' but she was also more than a 'register and spokesman for her age.' She was part of a tradition that had its origins before her age, and has carried on through our own. Many literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women’s literature as an international movement, 'apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.' This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.' Patricia Meyer Spacks, in The Female Imagination, finds that 'for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.' Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
+            "questionText": "Select the sentence in the passage in which the author makes use of an extended metaphor.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature"
+            ]
+          },
+          "question4": {
+            "type": "reading_comprehension",
+            "passage": "As the works of dozens of women writers have been rescued from what E. P. Thompson calls \"the enormous condescension of posterity,\" and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill's theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was \"really neither single nor anomalous,\" but she was also more than a \"register and spokesman for her age.\" She was part of a tradition that had its origins before her age, and has carried on through our own.\n\nMany literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women's literature as an international movement, \"apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.\" This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.\" Patricia Meyer Spacks, in The Female Imagination, finds that \"for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.\" Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
+            "questionText": "The passage supplies information for answering which of the following questions?",
+            "options": [
+              "Does the author believe the female literary tradition to be richer in depth than its masculine counterpart?",
+              "Are women psychological as well as sociological chameleons?",
+              "Does Moers share Mill’s concern over the ephemeral nature of female literary renown?",
+              "What patterns, themes, images, and problems recur sufficiently in the work of women writers to belong to the female imaginative continuum?",
+              "Did Mill acknowledge the existence of a separate female literary tradition?"
+            ],
+            "correctAnswer": [
+              "Did Mill acknowledge the existence of a separate female literary tradition?"
+            ],
+            "explanation": "The answer is (E). This question can be answered on the basis of the passage. According to the first paragraph, Mill disbelieved in the idea that women \"have had a literature of their own all along.\""
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "The Gibsons were little given to ___ in any form; not one of them was afraid of singularity, of being and seeming unlike their neighbors.",
+            "options": [
+              "humility",
+              "excellence",
+              "anger",
+              "conformism",
+              "ostentation",
+              "emulation"
+            ],
+            "correctAnswer": [
+              "conformism",
+              "emulation"
+            ],
+            "explanation": "The sentence states that the Gibsons were not afraid to appear different from their neighbors, suggesting that they were little into copying others or appearing similar to others. Thus, the Gibsons were little given to 'conformism' and 'emulation.'"
+          },
+          "question6": {
+            "type": "sentence_equivalence",
+            "questionText": "The kenjogo or humble language used in Japanese to refer to oneself and the sonkeigo or honorific language used to describe the interlocutor are often toned down in English translation, as more accurate renderings might sound __________ to an ear accustomed to more egalitarian phrasings.",
+            "options": [
+              "servile",
+              "garrulous",
+              "obsequious",
+              "circumspect",
+              "querulous",
+              "loquacious"
+            ],
+            "correctAnswer": [
+              "servile",
+              "obsequious"
+            ],
+            "explanation": "This asks what a language with humble and honorific forms of speech might sound like to an ear accustomed to more egalitarian phrasings, one from a culture in which one is generally free to address others as equals. Such self-abasing forms of speech might sound overly deferential or just too polite. This leaves 'servile' and 'obsequious' as the correct answers, both of which connote excessive humility."
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "In the design of medical experiments, the need for ___ assignment of treatments to patients must be reconciled with the difficulty of persuading patients to participate in an experiment in which their treatment is decided by chance.",
+            "options": [
+              "independent",
+              "competent",
+              "mechanical",
+              "swift",
+              "random",
+              "casual"
+            ],
+            "correctAnswer": [
+              "random",
+              "casual"
+            ],
+            "explanation": "The experiment in which the treatment of the patients is brought about 'by chance' is unplanned and a part of an assignment which does not have a careful choice. The assignment thus is 'random' and 'casual.'"
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "Crosby's colleagues have never learned, at least not in time to avoid embarrassing themselves, that her occasional ___ air of befuddlement presages a display of her formidable intelligence.",
+            "options": [
+              "genuine",
+              "alert",
+              "affected",
+              "bogus",
+              "painstaking",
+              "acute"
+            ],
+            "correctAnswer": [
+              "affected",
+              "bogus"
+            ],
+            "explanation": "The word 'presages' suggests that the confused look (air of befuddlement) of Crosby foretells her impressive (formidable) intelligence suggesting that the confused look is false and a pretense on her part. The words which closely describe Crosby's confused look are 'affected' and 'bogus.'"
+          },
+          "question9": {
+            "type": "text_completion",
+            "questionText": "From 'chutney' the Hindi word taken in the sense of a mixture, or (i) ________ of various ingredients. The Indian writer today is open to influences ranging from pop culture of the west to the centuries-old and indigenous Indian culture. He often seems (ii) ________, rootless and confused. At the same time he is very alive and sensitive to changes around his milieu. This gives his (iii) ________ pungency.",
+            "options": {
+              "blank1": [
+                "melee",
+                "melange",
+                "ruction"
+              ],
+              "blank2": [
+                "alienated",
+                "integrated",
+                "addlepated"
+              ],
+              "blank3": [
+                "perceptions",
+                "inceptions",
+                "commiserations"
+              ]
+            },
+            "correctAnswer": [
+              "melange",
+              "alienated",
+              "perceptions"
+            ],
+            "blanks":3,
+            "explanation": "For the first blank the right option is 'melange' which captures the sense of a mixture. For the second blank the right option is 'alienated.' Note that even 'addlepated' makes sense here. However it is not grammatically correct as one of the functions of a comma is to separate two adjectives describing the same thing. Hence the word 'alienated' that matches with rootless is correct here. For the third blank the right option is 'perceptions' as we are speaking of the writer's response to the multiple influences."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Nothing (i) ______ his irresponsibility better than his (ii) ______ delay in sending us the items he promised weeks ago.",
+            "options": {
+              "blank1": [
+                "justifies",
+                "epitomizes",
+                "conceals"
+              ],
+              "blank2": [
+                "conspicuous",
+                "timely",
+                "unnecessary"
+              ]
+            },
+            "correctAnswer": [
+              "epitomizes",
+              "unnecessary"
+            ],
+            "blanks":2,
+            "explanation": "The key lies in 'delay in sending us the items he promised weeks ago.' Since he did delay in sending out the stuff, it cannot justify his irresponsibility. And of course it cannot conceal it either. Hence the answer is 'epitomizes.' And now for the second blank, timely delay will be an oxymoron and therefore not contextually correct, and conspicuous (obvious) is redundant and therefore will not work, which makes 'unnecessary' the only choice."
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "Contrary to the antiquated idea that the eighteenth century was a _______ island of elegant assurance, evidence reveals that life for most people was filled with uncertainty and insecurity.",
+            "options": [
+              "clannish",
+              "declining",
+              "tranquil",
+              "recognized",
+              "sprawling"
+            ],
+            "correctAnswer": [
+              "tranquil"
+            ],
+            "blanks":1,
+            "explanation": "The word 'contrary' points to a contrast to 'filled with uncertainty and insecurity.' Therefore, the antonym to that would be the answer. Hence, the right answer is 'tranquil.'"
+          },
+          "question12": {
+            "type": "reading_comprehension_select",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "Select the sentence in the passage which implies that the work of Meredith is noteworthy for its elements of brilliance and linguistic grandeur.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3",
+              "sentence_4",
+              "sentence_5"
+            ],
+            "correctAnswer": [
+              "That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference"
+            ],
+            "explanation": "The answer should be the following line from the passage: 'That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference.' This is because in this sentence the author cites Meredith’s intelligence (brilliance) and his splendor of language (linguistic grandeur)."
+          },
+          "question13": {
+            "type": "reading_comprehension_multiple",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose 'view of life' wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not 'speak to us,' we might say; his meaning is not a 'meaning for us'; he 'leaves us cold.' But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "Which of the following can be found in the author’s discussion of Meredith?",
+            "options": [
+              "an indication of Meredith’s customary effect on readers",
+              "an enumeration of the admirable qualities in his work",
+              "a refutation of the claim that Meredith evokes no sympathy"
+            ],
+            "correctAnswer": [
+              "an indication of Meredith’s customary effect on readers",
+              "an enumeration of the admirable qualities in his work"
+            ],
+            "explanation": "The passage discusses Meredith's customary effect on readers, where the author mentions how readers feel only a passive appreciation for Meredith's work, which amounts practically to indifference. It also enumerates the admirable qualities in his work, such as 'muscular intelligence' and 'splendor of language.' However, the passage does not provide a refutation of the claim that Meredith evokes no sympathy."
+          },
+          "question14": {
+            "type": "reading_comprehension",
+            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
+            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements about the role of criticism?",
+            "options": [
+              "Its prime office should be to make our enjoyment of the things that feed the mind as conscious as possible.",
+              "It should be a disinterested endeavor to learn and propagate the best that is known and thought in the world.",
+              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes.",
+              "It should dwell upon excellencies rather than imperfections, ignoring such deficiencies as irrelevant.",
+              "It should strive both to purify literature and to elevate the literary standards of the reading public."
+            ],
+            "correctAnswer": [
+              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes."
+            ],
+            "explanation": "The answer is (C). This is because the author wishes us to be able to recognize the good qualities of Meredith’s work while at the same time we continue to find it personally unsympathetic. Thus, she would agree that criticism should enable us to appreciate the virtues of works we dislike. Choices (A), (B), and (E) are unsupported by the passage. Choice (D) is also incorrect because while the author wishes the reader to be aware of Meredith’s excellencies, she does not suggest that the reader should ignore those qualities in Meredith that make his work unsympathetic. Rather, she wishes the reader to come to appreciate the very ambivalence of his critical response."
+          },
+          "question15": {
+            "type": "reading_comprehension",
+            "passage": "Two decades after the Emerald River Dam was built, none of the eight fish species native to the Emerald River was still reproducing adequately in the river below the dam. Since the dam reduced the annual range of water temperature in the river below the dam from 50 degrees to 6 degrees, scientists have hypothesized that sharply rising water temperatures must be involved in signaling the native species to begin the reproductive cycle.",
+            "questionText": "Which of the following statements, if true, would most strengthen the scientists’ hypothesis?",
+            "options": [
+              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees.",
+              "Before the dam was built, the Emerald River annually overflowed its banks, creating backwaters that were critical breeding areas for the native species of fish.",
+              "The lowest recorded temperature of the Emerald River before the dam was built was 34 degrees, whereas the lowest recorded temperature of the river after the dam was built has been 43 degrees.",
+              "Nonnative species of fish, introduced into the Emerald River after the dam was built, have begun competing with the declining native fish species for food and space.",
+              "Five of the fish species native to the Emerald River are not native to any other river in North America."
+            ],
+            "correctAnswer": [
+              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees."
+            ],
+            "explanation": "For the hypothesis to be tenable it is important that the fish in streams in the Emerald River area that retain a wide temperature difference have not lost their ability to reproduce. Choice A asserts that these fish could still reproduce and is thus the best answer. Choice B undermines the hypothesis by suggesting a completely different hypothesis; choice C tends to support the claim that the temperature variation has lessened but does not show that this is the right explanation; since D relates a development after the native species began to decline, it does not bear on the hypothesis, which concerns the decline’s original cause; and choice E emphasizes the seriousness of the problem but sheds no light on what causes it."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The operation ⊗ is defined for all nonzero numbers a and b by a ⊗ b = (a/b) - (b/a). If x and y are nonzero numbers, which of the following statements must be true?\n\nI. x ⊗ xy = x(1 ⊗ y)\nII. x ⊗ y = -(y ⊗ x)\nIII. 1/x ⊗ 1/y = y ⊗ x",
+            "options": [
+              "I only",
+              "II only",
+              "III only",
+              "I and II",
+              "II and III"
+            ],
+            "correctAnswer": "II and III",
+            "explanation": "Case 1:\n\nx ⊗ xy = (x/xy) - (xy/x) = 1/y - y ≠ x(1 ⊗ y)\n\nx(1 ⊗ y) = x(1/y - y) ≠ 1/y - y ⇒ Not equal\n\nCase 2:\n\nx ⊗ y = (x/y) - (y/x)\n\n -(y ⊗ x) = -((y/x) - (x/y)) ⇒ Equal\n\nCase 3:\n\n1/x ⊗ 1/y = (1/x) / (1/y) - (1/y) / (1/x) = y/x - x/y\n\ny ⊗ x ⇒ Equal\n\nTherefore, the correct answer is II and III."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If w, x, y, and z are integers such that 1 < w < x < y < z and wxyz = 462, then z = ?",
+            "options": [
+              "7",
+              "11",
+              "14",
+              "21",
+              "42"
+            ],
+            "correctAnswer": "11",
+            "explanation": "The prime factorization of 462 is 462 = 2 × 3 × 7 × 11. Since 1 < w < x < y < z, the integers must be 2, 3, 7, and 11. Therefore, z = 11."
+          },
+          "question3": {
+            "type": "numeric_entry",
+            "questionText": "Last year, 36 houses in a certain development had roof repairs and 48 houses were repainted. If 20 houses in the development had roof repairs but were not repainted last year, how many houses were repainted but did not have roof repairs?",
+            "correctAnswer": "32",
+            "explanation": "Roof repairs = 36\nRepaint = 48\nRoof repairs without paint = 20\nRoof repairs with repaint = 36 - 20 = 16\nRepaint without roof repairs = 48 - 16 = 32"
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Tanks A and B are each in the shape of a right circular cylinder. The interior of tank A has a height of 10 meters and a circumference of 8 meters, and the interior of tank B has a height of 8 meters and a circumference of 10 meters. The capacity of tank A is what percent of the capacity of tank B?",
+            "options": [
+              "75%",
+              "80%",
+              "100%",
+              "120%",
+              "125%"
+            ],
+            "correctAnswer": "80%",
+            "explanation": "For Tank A:\n\n- Height (h) = 10\n- Circumference = 8, so radius (r) = 8/(2π) = 4/π\n- Capacity of Tank A = πr²h = 160/π\n\nFor Tank B:\n\n- Height (h) = 8\n- Circumference = 10, so radius (r) = 10/(2π) = 5/π\n- Capacity of Tank B = πr²h = 200/π\n\nPercentage = (Capacity of Tank A / Capacity of Tank B) * 100 = (160/π) / (200/π) * 100 = 80%"
+          },
+          "question5": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The two pie diagrams given below provide the relative expenses of two families A and B. The miscellaneous expenses of Family A as a percentage of those of Family B is:",
+            "options": [
+              "Less than 75%",
+              "Less than 80%",
+              "More than 80%",
+              "80%",
+              "None of these."
+            ],
+            "correctAnswer": "More than 80%",
+            "explanation": "Family A spends: (48/360) × 4800 = Rs. 640\nFamily B spends: (39/360) × 7200 = Rs. 780\nRequired percentage = (640/780) × 100 = 82%\nThus, the answer is option 3."
+          },
+          "question6": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The item showing the least difference in expenditure between A and B is:",
+            "options": [
+              "Food",
+              "Light",
+              "Clothing",
+              "Miscellaneous",
+              "Education"
+            ],
+            "correctAnswer": "Light",
+            "explanation": "For Family A, Light: (18/360) × 4800 = Rs. 240\nFor Family B, Light: (15/360) × 7200 = Rs. 300\nDifference = 300 - 240 = 60 (least)"
+          },
+          "question7": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
+            "questionText": "The percentage of expenses of A and B on food are in the ratio:",
+            "options": [
+              "55:48",
+              "4:5",
+              "5:4",
+              "48:55",
+              "None of these."
+            ],
+            "correctAnswer": "48:55",
+            "explanation": "Percentage of expenditure of A on food = (96/360) × 100\nPercentage of expenditure of B on food = (110/360) × 100\nRatio = 96:110 = 48:55"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "At a monthly meeting, 2/5 of the attendees were males and 7/8 of the male attendees arrived on time. If 9/10 of the female attendees arrived on time, what fraction of the attendees at the monthly meeting did not arrive on time?",
+            "options": [
+              "11/100",
+              "3/25",
+              "7/50",
+              "3/20",
+              "4/25"
+            ],
+            "correctAnswer": "11/100",
+            "explanation": "Let the total number of attendees be 100.\n\n- Males = 2/5 × 100 = 40\n- Males on time = 7/8 × 40 = 35\n\n- Females = 100 - 40 = 60\n- Females on time = 9/10 × 60 = 54\n\nTotal on time = 35 + 54 = 89\n\nTotal not on time = 100 - 89 = 11\n\nFraction not on time = 11/100"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A store is offering a 25% discount on a jacket that originally costs $80. What is the sale price of the jacket?",
+            "options": [
+              "$60",
+              "$62",
+              "$64",
+              "$65",
+              "$68"
+            ],
+            "correctAnswer": "$60",
+            "explanation": "The discount amount is 25% of $80, which is (25/100) × 80 = $20. Therefore, the sale price is $80 - $20 = $60."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-13.jpg",
+            "questionText": "In the figure shown above, the triangle is inscribed in the semicircle. If the length of line segment AB is 8 and the length of line segment BC is 6, what is the length of arc ABC?",
+            "options": [
+              "15π",
+              "8π",
+              "10π",
+              "7π",
+              "5π"
+            ],
+            "correctAnswer": "5π",
+            "explanation": "Since the triangle is inscribed in the semicircle, ∠ABC is 90°, making AC the diameter of the semicircle. Using the Pythagorean theorem, we find AC = 10. The circumference of the circle is π × d = 10π. Since ABC is a semicircle, the length of arc ABC is half the circumference, which is (10π)/2 = 5π."
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A bag contains six marbles: two red, two blue, and two green. If two marbles are drawn at random, what is the probability that they are the same color?",
+            "options": [
+              "1/3",
+              "1/2",
+              "1/5",
+              "1/6",
+              "1/10"
+            ],
+            "correctAnswer": "1/5",
+            "explanation": "The probability of drawing two marbles of the same color is calculated as:\n\nP(R ∪ B ∪ G) = 2C2/6C2 + 2C2/6C2 + 2C2/6C2 = 1/5.\n\nFavorable outcomes = 3 (2R, 2B, 2G)\n\nTotal outcomes = 6C2 = 15\n\nP = 3/15 = 1/5"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "When 20 is divided by the positive integer k, the remainder is k - 2. Which of the following is a possible value of k?",
+            "options": [
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ],
+            "correctAnswer": "11",
+            "explanation": "Check through the options to find the correct value of k that satisfies the condition 20 divided by k leaves a remainder of k - 2."
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "5/14 + 8/21",
+            "quantityB": "26/35 - 3/14",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Calculate and check:\n\nA = 31/42\nB = 37/70\n\nClearly, A > B."
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "Triangle ABC has two sides with measurements 7 cm and 4 cm.",
+            "quantityA": "Perimeter of ABC",
+            "quantityB": "23",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "The sum of the lengths of any two sides in a triangle is always greater than the length of the third side in the triangle. The difference of the lengths of any two sides is always less than the length of the third side. Given sides of 4 cm and 7 cm, the third side must satisfy the inequality 3 < Third side < 11, so the perimeter must be in the range 14 < Perimeter < 22. Thus, the relationship between the quantities cannot be determined."
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "A committee of 5 is to be selected from a group of 4 girls and 7 boys.",
+            "quantityA": "Number of selections if there is no girl",
+            "quantityB": "Number of selections if there are at least 3 girls",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "A. Number of selections with no girl: 7C5 = 21\nB. Number of selections with at least 3 girls: (4C3 * 7C2) + (4C4 * 7C1) = 91\nClearly, B > A."
+          },
+          "question4": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "(6 + 3) * 5 - 6 ÷ 2 + 3^2",
+            "quantityB": "6 + 3 * 5 - 6 ÷ 2 + 3^2",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Solve using simple BODMAS (Bracket, Order, Division and Multiplication, Addition and Subtraction) to compare both quantities."
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In a certain diving competition, 5 judges score each dive on a scale from 1 to 10. The point value of the dive is obtained by dropping the highest score and the lowest score and multiplying the sum of the remaining scores by the degree of difficulty. If a dive with a degree of difficulty of 3.2 received scores of 7.5, 8.0, 9.0, 6.0, and 8.5, what was the point value of the dive?",
+            "options": [
+              "68.8",
+              "73.6",
+              "75.2",
+              "76.8",
+              "81.6"
+            ],
+            "correctAnswer": "76.8",
+            "explanation": "Point value = (7.5 + 8 + 8.5) * 3.2 = 76.8"
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In the xy-coordinate plane, the points (a, b) and (a + k, b - 3) are on the line defined by y = 2x - 5. What is the value of k?",
+            "options": [
+              "-5/2",
+              "-5/3",
+              "-2/3",
+              "-3/2",
+              "2/5"
+            ],
+            "correctAnswer": "-3/2",
+            "explanation": "b = 2a - 5\n\nb - 3 = 2(a + k) - 5\n\nSimplifying this gives k = -3/2."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The HCF of two numbers is 48, and the HCF of two other numbers is 36. Then HCF of all four numbers is",
+            "options": [
+              "36",
+              "24",
+              "12",
+              "48",
+              "16"
+            ],
+            "correctAnswer": "12",
+            "explanation": "The HCF of all four numbers is the HCF of the two given HCFs (48 and 36). The HCF of 48 and 36 is 12."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In a town, there are 2500 men and 2500 women. If men increased by 20% and women decreased by 20%, women as a percentage of men is",
+            "options": [
+              "60%",
+              "66.67%",
+              "80%",
+              "83.33%",
+              "50%"
+            ],
+            "correctAnswer": "66.67%",
+            "explanation": "Increased men = 2500 + 20% of 2500 = 3000\nDecreased women = 2500 - 20% of 2500 = 2000\nWomen as percentage of men = (2000/3000) * 100 = 66.67%"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A fraction bears the same ratio to 3/7 as 1/27 does to 1/35. Find the fraction.",
+            "options": [
+              "4/9",
+              "1/3",
+              "5/9",
+              "2/3",
+              "6/9"
+            ],
+            "correctAnswer": "5/9",
+            "explanation": "Set up the proportion: x/(3/7) = (1/27)/(1/35). Solving for x gives x = 5/9. Thus, the correct answer is 5/9."
+          },
+          "question10": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Number of three-digit odd numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
+            "quantityB": "Number of three-digit even numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both quantities are equal",
+              "The relationship cannot be determined from the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Repetition is allowed. There are 3 odd digits: 1, 3, and 5\n\nOdd numbers can be formed as 4 * 5 * 3 = 60\n\nThere are only 2 even digits: 0 and 8\n\nEven numbers can be formed as 4 * 5 * 2 = 40\n\nHence, Quantity A is greater."
+          },
+          "question11": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "Sum of odd numbers from 1 to 100",
+            "quantityB": "Sum of even numbers from 1 to 100",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both quantities are equal",
+              "The relationship cannot be determined from the given information"
+            ],
+            "correctAnswer": "Quantity in B is greater",
+            "explanation": "Since 1 < 2, 3 < 4, 5 < 6, ..., and 99 < 100, the sum of odd numbers is less than the sum of even numbers. Hence, Quantity B is greater."
+          },
+          "question12": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "The foreign exchange of the year 2007-2008 is how many times that of 2004-2005?",
+            "options": [
+              "0.7",
+              "1.2",
+              "1.4",
+              "1.5",
+              "1.6"
+            ],
+            "correctAnswer": "1.5",
+            "explanation": "Foreign exchange for 2007-2008 is 5040, and for 2004-2005 it is 3360. The ratio is 5040/3360 = 1.5 times."
+          },
+          "question13": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "The foreign exchange reserves in 2006-2007 were approximately what percentage of the average foreign exchange reserves over the period under review?",
+            "options": [
+              "95%",
+              "110%",
+              "100%",
+              "115%",
+              "124%"
+            ],
+            "correctAnswer": "124%",
+            "explanation": "The average foreign exchange reserves over the period is 3480. The foreign exchange reserves for 2006-2007 is 4320. The ratio is 4320/3480 = 1.24, which is approximately 124%."
+          },
+          "question14": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
+            "questionText": "What was the percentage increase in the foreign exchange reserves in 2007-2008 over 2003-2004?",
+            "options": [
+              "100",
+              "150",
+              "200",
+              "620",
+              "300"
+            ],
+            "correctAnswer": "100",
+            "explanation": "Foreign exchange in 2003-2004 was 2520, and in 2007-2008 it was 5040. The increase is 2520 (5040 - 2520), which is a 100% increase. Percentage increase = (2520/2520) * 100 = 100%."
+          },
+          "question15": {
+            "type": "numeric_entry",
+            "questionText": "A and B can do a job in 20 days and 30 days respectively. If both of them work on the job together, when would they finish 75% of it?",
+            "correctAnswer": "9",
+            "explanation": "Let the job done by A in one day = a, so the total job is 20a. Let the job done by B in one day = b, so the total job is 30b. From the equation 20a = 30b, we get a = 3/2b. Now, to find the number of days to finish 75% of the job, we set up the equation: 75% of 30b = x * (a + b). Solving this gives x = 9 days."
+          }
+        }
+      }
     }
   ]
 }
