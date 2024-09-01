@@ -4233,6 +4233,889 @@
           }
         }
       }
+    },
+    {
+      "id": "test6",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "Governments should offer a free university education to any student who has been admitted to a university but who cannot afford the tuition.",
+          "instructions": "Write a response in which you discuss your views on the policy and explain your reasoning for the position you take. In developing and supporting your position, you should consider the possible consequences of implementing the policy and explain how these consequences shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "In an extensive or varied (i) ________, it becomes difficult to identify a set of linguistic habits. The (ii) ________ details reflecting the mode of expression can lead us to ascertaining the (iii) ___________ of a particular work. In fact, the smaller the detail, the more accurate and precise it becomes. It helps in putting a name to the work.",
+            "options": {
+              "blank1": [
+                "corpus",
+                "inceptions",
+                "consent"
+              ],
+              "blank2": [
+                "small",
+                "incongruous",
+                "equivocal"
+              ],
+              "blank3": [
+                "readership",
+                "viewership",
+                "authorship"
+              ]
+            },
+            "correctAnswer": [
+              "corpus",
+              "small",
+              "authorship"
+            ],
+            "explanation": "In the first blank, the only word that logically fits is 'corpus,' as we are talking about the linguistic habits that can be identified only through analysis of a related body of works. For the second and third blanks, the words 'small' and 'authorship' fit in as we are talking about putting a name to the work.",
+            "blanks": 3
+          },
+          "question2": {
+              "type": "text_completion",
+              "questionText": "Read's apology to Heflin was not exactly abject and did little to (i) ______ their decades-long quarrel, which had been as (ii) ______ as the academic etiquette of scholarly journals permitted.",
+              "options": {
+                "blank1": [
+                  "encourage",
+                  "resolve",
+                  "obscure"
+                ],
+                "blank2": [
+                  "acrimonious",
+                  "courteous",
+                  "ceremonious"
+                ]
+              },
+              "correctAnswer": [
+                "resolve",
+                "acrimonious"
+              ],
+              "explanation": "The first blank is answered by 'not exactly abject and did little to.' Since the apology was not absolute (abject), it's not likely to have a positive effect. Combine that with 'did little to today' and the only thing that makes sense will be 'resolve,' because if we add 'encourage' it logically won't make sense and the quarrel has already been going on for decades. For the second blank, 'courteous' will be redundant as we already have 'etiquette' implying the same thing and 'ceremonious' is absurd as scholarly journals are hardly likely to spell out specified ground rules on how to conduct a dispute. Therefore, 'acrimonious' will be the answer as we are talking about a dispute after all.",
+              "blanks": 2
+          },
+          "question3": {
+            "type": "text_completion",
+            "questionText": "Roman historians who study the period B.C. 30 to A.D. 180 can ________ the 'Augustan peace' only by failing to recognize that this peace in many respects resembled that of death.",
+            "options": [
+              "decry",
+              "applaud",
+              "ridicule",
+              "demand",
+              "disprove"
+            ],
+            "correctAnswer": [
+              "applaud"
+            ],
+            "blanks": 1,
+            "explanation": "The key to this one lies in 'that this peace in many respects resembled that of death,' which implies that whatever the historians are doing is not positive. Instead, they are doing so by failing to recognize the true meaning of 'Augustan peace.' Therefore, the negatives are out. 'Decry,' 'ridicule,' and 'disprove' will not work because if they did, it would imply understanding on the part of historians, and that is not the case. 'Demand' does not fit the context, and therefore we are left with 'applaud.'"
+          },
+          "question4": {
+            "type": "reading_comprehension",
+            "passage": "Students of United States history, seeking to identify the circumstances that encouraged the emergence of feminist movements, have thoroughly investigated the mid-nineteenth-century American economic and social conditions that affected the status of women. These historians, however, have analyzed less fully the development of specifically feminist ideas and activities during the same period. Furthermore, the ideological origins of feminism in the United States have been obscured because, even when historians did take into account those feminist ideas and activities occurring within the United States, they failed to recognize that feminism was then a truly international movement actually centered in Europe. American feminist activists who have been described as 'solitary' and 'individual theorists' were in reality connected to a movement—utopian socialism—which was already popularizing feminist ideas in Europe during the two decades that culminated in the first women’s rights conference held at Seneca Falls, New York, in 1848. Thus, a complete understanding of the origins and development of nineteenth-century feminism in the United States requires that the geographical focus be widened to include Europe and that the detailed study already made of social conditions be expanded to include the ideological development of feminism.",
+            "questionText": "It can be inferred that the author considers those historians who describe early feminists in the United States as 'solitary' to be",
+            "options": [
+              "insufficiently familiar with the international origins of nineteenth-century American feminist thought",
+              "overly concerned with the regional diversity of feminist ideas in the period before 1848",
+              "not focused narrowly enough in their geographical scope",
+              "insufficiently aware of the ideological consequences of the Seneca Falls conference",
+              "insufficiently concerned with the social conditions out of which feminism developed"
+            ],
+            "correctAnswer": [
+              "insufficiently familiar with the international origins of nineteenth-century American feminist thought"
+            ],
+            "explanation": "The author considers those historians who describe early feminism in the United States as 'solitary' to be insufficiently familiar with the international origins of nineteenth-century American feminist thought because the early feminist activists in America were not alone and independent but were closely related to the movements of feminism which were happening in Europe. Thus, option (A) is the correct answer."
+          },
+          "question5": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Students of United States history, seeking to identify the circumstances that encouraged the emergence of feminist movements, have thoroughly investigated the mid-nineteenth-century American economic and social conditions that affected the status of women. These historians, however, have analyzed less fully the development of specifically feminist ideas and activities during the same period. Furthermore, the ideological origins of feminism in the United States have been obscured because, even when historians did take into account those feminist ideas and activities occurring within the United States, they failed to recognize that feminism was then a truly international movement actually centered in Europe. American feminist activists who have been described as 'solitary' and 'individual theorists' were in reality connected to a movement—utopian socialism—which was already popularizing feminist ideas in Europe during the two decades that culminated in the first women’s rights conference held at Seneca Falls, New York, in 1848. Thus, a complete understanding of the origins and development of nineteenth-century feminism in the United States requires that the geographical focus be widened to include Europe and that the detailed study already made of social conditions be expanded to include the ideological development of feminism.",
+            "questionText": "According to the passage, which of the following is true of the Seneca Falls conference on women's rights?",
+            "options": [
+              "It was the culminating achievement of the utopian socialist movement.",
+              "It was a manifestation of an international movement for social change and feminism.",
+              "It was the final manifestation of the women’s rights movement in the United States in the nineteenth century."
+            ],
+            "correctAnswer": [
+              "It was a manifestation of an international movement for social change and feminism."
+            ],
+            "explanation": "The feminist ideas which were popularized by the Utopian Socialism movement in Europe reached their highest state of maturity in the first women's rights conference at Seneca Falls. Feminism in America always had its roots in the feminist movements in Europe, and the First women's rights conference did not initiate social change and feminism only in America but all over Europe. Thus, (B) is the correct option. Option (A) stands incorrect because at the women’s conference held at Seneca Falls, it was not the culmination of the Utopian Socialist Movement which took place but of the feminist ideas which were popularized by the socialized movement in Europe over a period of two decades. As the conference at Seneca Falls did not solely motivate the American feminists into the movement of women's rights but also included the feminists from all over Europe, option (C) is incorrect."
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "Extinction is a process that can depend on a variety of ecological, geographical, and physiological variables. These variables affect different species of organisms in different ways, and should, therefore, yield a random pattern of extinctions. However, the fossil record shows that extinction occurs in a surprisingly definite pattern, with many species vanishing at the same time.",
+            "questionText": "Which of the following, if true, forms the best basis for at least a partial explanation of the patterned extinctions revealed by the fossil record?",
+            "options": [
+              "Major episodes of extinction can result from widespread environmental disturbances that affect numerous different species.",
+              "Certain extinction episodes selectively affect organisms with particular sets of characteristics unique to their species.",
+              "Some species become extinct because of accumulated gradual changes in their local environments.",
+              "In geologically recent times, for which there is no fossil record, human intervention has changed the pattern of extinctions.",
+              "Species that are widely dispersed are the least likely to become extinct."
+            ],
+            "correctAnswer": [
+              "Major episodes of extinction can result from widespread environmental disturbances that affect numerous different species."
+            ],
+            "explanation": "Choice A, the best answer, asserts that some environmental disturbances can be so widespread as to cause the extinction of numerous species. This fact helps to explain why the fossil record frequently shows many species becoming extinct at the same time, despite the variety of factors that can cause a species to become extinct. None of the other choices explain how numerous extinctions could have occurred simultaneously in the past. Choice B explains why sometimes only a very limited range of species become extinct. Choice C explains how some individual species become extinct. Choice D explains why the modern period is unlike the period of the fossil record, and choice E states which species are least likely to become extinct."
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "Their _____ of loyalties is first to oneself, next to kin, then to fellow tribe members, and finally to compatriots.",
+            "options": [
+              "merging",
+              "hierarchy",
+              "definition",
+              "order",
+              "judgment",
+              "cognizance"
+            ],
+            "correctAnswer": [
+              "hierarchy",
+              "order"
+            ],
+            "explanation": "The sentence states that their loyalty is not the same for everyone mentioned and has different priorities depending on the person. The first preference is given to oneself followed by kin (relatives), third to tribe members, and the last is given to compatriots (fellow citizens). This entire chain of loyalty with a first and last preference is suggestive of a specific 'hierarchy' or 'order.'"
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "The belief that science destroys the arts appears to be supported by historical evidence that the arts have ______ only when the sciences have been neglected.",
+            "options": [
+              "declined",
+              "floundered",
+              "reconciled",
+              "flourished",
+              "waned",
+              "succeeded"
+            ],
+            "correctAnswer": [
+              "flourished",
+              "succeeded"
+            ],
+            "explanation": "The word 'supported' suggests that historical proof (evidence) holds up the belief that science puts an end to arts, indicating that if science is present, art cannot gain success. As a result, arts have only gained success in the past when sciences have not been included. The words closest in meaning to gaining success are 'flourished' and 'succeeded.'"
+          },
+          "question9": {
+            "type": "sentence_equivalence",
+            "questionText": "Although in eighteenth-century England an active cultural life accompanied the beginnings of middle-class consumerism, the degree of literacy was ___ with the rise of such consumerism in the different areas of the country.",
+            "options": [
+              "reconciled",
+              "inconsistent",
+              "combined",
+              "compatible",
+              "uncorrelated",
+              "helped"
+            ],
+            "correctAnswer": [
+              "inconsistent",
+              "uncorrelated"
+            ],
+            "explanation": "The word 'although' suggests that the first part of the sentence is contrary to the second part. The sentence indicates that although in eighteenth-century England cultural (educational) life went together with middle-class consumerism, in reality, the degree of literacy (education) did not go along but proved to be contradictory when associated with such consumerism in the different areas of the country. The words closest in meaning to 'contradictory' are 'inconsistent' and 'uncorrelated.'"
+          },
+          "question10": {
+            "type": "sentence_equivalence",
+            "questionText": "The trainees were given copies of a finished manual to see whether they could themselves begin to ___ the inflexible, though tacit, rules for composing more of such instructional materials.",
+            "options": [
+              "design",
+              "revise",
+              "disrupt",
+              "standardize",
+              "derive",
+              "infer"
+            ],
+            "correctAnswer": [
+              "derive",
+              "infer"
+            ],
+            "explanation": "The copies of a finished manual were given to the trainees to see if they could compose more of such information manuals on their own without any outside help and for this, it is required that they should understand the rules for their composition themselves. The words closest in meaning to 'understand' are 'derive' and 'infer.'"
+          },
+          "question11": {
+            "type": "reading_comprehension",
+            "passage": "Neither a rising standard of living nor balanced trade, by itself, establishes a country’s ability to compete in the international marketplace. Both are required simultaneously since standards of living can rise because of growing trade deficits and trade can be balanced by means of a decline in a country’s standard of living.",
+            "questionText": "If the facts stated in the passage above are true, a proper test of a country’s ability to be competitive is its ability to",
+            "options": [
+              "balance its trade while its standard of living rises",
+              "balance its trade while its standard of living falls",
+              "increase trade deficits while its standard of living rises",
+              "decrease trade deficits while its standard of living falls",
+              "keep its standard of living constant while trade deficits rise"
+            ],
+            "correctAnswer": [
+              "balance its trade while its standard of living rises"
+            ],
+            "explanation": "The passage states that a country capable of competing in the international marketplace must balance trade while its standard of living rises. A country's ability to compete in the international marketplace will establish that both of these conditions are met simultaneously. Since neither choice B, nor choice C, nor choice D, nor choice E describes tests that incorporate both of these criteria, these answers are inappropriate. Choice A, which describes a test that does, is the best answer."
+          },
+          "question12": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Globalization has transformed the world's economies and cultures. Proponents argue that it fosters economic growth and cultural exchange, while critics contend that it can lead to cultural homogenization and exploitation. The impact of globalization varies greatly across regions, adding complexity to the ongoing debate.",
+            "questionText": "Which of the following statements summarizes a key point made in the passage regarding the impact of globalization?",
+            "options": [
+              "Globalization universally benefits all regions, leading to cultural diversity and economic equality.",
+              "Critics of globalization prioritize economic growth over cultural preservation.",
+              "The impact of globalization is uniform across all regions, leading to a one-sided debate.",
+              "The complexity of the globalization debate arises from varying regional effects.",
+              "Proponents of globalization universally agree on its benefits for cultural preservation."
+            ],
+            "correctAnswer": [
+              "The complexity of the globalization debate arises from varying regional effects."
+            ],
+            "explanation": "This question evaluates the reader's comprehension of the key point made in the passage regarding the impact of globalization. Option D correctly summarizes that the complexity of the globalization debate is due to the varying regional effects, aligning with the passage's content. The other options misrepresent the passage's perspective or oversimplify the impact of globalization. Therefore, the correct answer is option D."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "sentence_equivalence",
+            "questionText": "Given the existence of so many factions in the field, it was unrealistic of Anna Freud to expect any ______ of opinion.",
+            "options": [
+              "freedom",
+              "reassessment",
+              "uniformity",
+              "expression",
+              "concord",
+              "formation"
+            ],
+            "correctAnswer": [
+              "uniformity",
+              "concord"
+            ],
+            "explanation": "The presence of the phrase 'many factions' suggests that as there were a lot of groups (factions) present, it was not sensible (unrealistic) of Anna Freud to expect evenness and agreement in the opinions of the groups as each group with a different belief is bound to have a different opinion from the other. The words closest in meaning to 'evenness and agreement' are 'uniformity' and 'concord.'"
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Although specific concerns may determine the intent of a research project, its results are often ______.",
+            "options": [
+              "unanticipated",
+              "beneficial",
+              "expensive",
+              "indefinite",
+              "spectacular",
+              "specialized"
+            ],
+            "correctAnswer": [
+              "unanticipated",
+              "indefinite"
+            ],
+            "explanation": "The word 'although' indicates that the first part of the sentence is contrary to the second. The sentence indicates that although specific concerns may help to see the purpose (intent) of a research project, yet contrary to it, the results of the project cannot be seen or predicted. Thus, the results of the project remain 'unanticipated' and 'indefinite.'"
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "To list Reilly’s achievements in a fragmentary way is misleading, for it distracts our attention from the _____ themes of her work.",
+            "options": [
+              "disparate",
+              "integrating",
+              "comprehensive",
+              "important",
+              "unsettling",
+              "infernal"
+            ],
+            "correctAnswer": [
+              "integrating",
+              "comprehensive"
+            ],
+            "explanation": "To refer to Reilly’s achievements as incomplete (in a fragmentary manner) is deceiving because her works were not incomplete and used themes which dealt with all the details in a relevant manner. Thus, the themes of her work are 'integrating' and 'comprehensive.'"
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "People frequently denigrate books about recent catastrophes as morally despicable attempts to profit from misfortune, but in my view our desire for such books, together with the venerable tradition to which they belong, _____ them.",
+            "options": [
+              "disrupts",
+              "submerges",
+              "legitimizes",
+              "generates",
+              "exorcizes",
+              "revokes"
+            ],
+            "correctAnswer": [
+              "legitimizes",
+              "generates"
+            ],
+            "explanation": "The word 'but' indicates that the two parts of the sentence are opposite to each other. The sentence suggests that although the books about recent catastrophes (disasters) are defamed by the people, in reality, our desire for such books, along with the tradition worthy of respect (venerable) to which they belong, does not defame them but justifies them. The words closest in meaning to 'justifies' are 'legitimizes' and 'generates.'"
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "Because they have been so dazzled by the calendars and the knowledge of astronomy possessed by the Mayan civilization, some anthropologists have _______ achievements like the sophisticated carved calendar sticks of the Winnebago people.",
+            "options": [
+              "described",
+              "acknowledged",
+              "overlooked",
+              "defended",
+              "authenticated"
+            ],
+            "correctAnswer": [
+              "overlooked"
+            ],
+            "explanation": "The key lies in 'Because they have been so dazzled.' Here 'because' is obviously a contrast sign, indicating that they couldn't see clearly, which in turn indicates that they were wrong in sidelining or ignoring 'achievements like the sophisticated carved calendar sticks of the Winnebago people.' 'Acknowledged,' 'defended,' and 'authenticated' would not work as they would imply that they did, indeed, give due consideration to the Winnebago. 'Described' is out of context. So we have 'overlooked' which has the same meaning as 'ignored.'"
+          },
+          "question6": {
+            "type": "text_completion",
+            "questionText": "If efficacious new medicines have side effects that are commonly observed and (i) ______, such medicines are too often considered (ii) ______, even when laboratory tests suggest caution.",
+            "options": {
+              "blank1": [
+                "salutary",
+                "unpredictable",
+                "unremarkable"
+              ],
+              "blank2": [
+                "safe",
+                "outdated",
+                "complicated"
+              ]
+            },
+            "correctAnswer": [
+              "unremarkable",
+              "safe"
+            ],
+            "blanks": 2,
+            "explanation": "For the first blank, you can immediately discard 'salutary' because side effects cannot have salutary consequences. 'Unpredictable' also won't work because if they are commonly observed, then how can they be unpredictable? So the answer is 'unremarkable.' To answer the second blank, look at the last part 'even when laboratory tests suggest caution.' 'Even when' is a contrast sign and therefore we are looking for an antonym to caution. Now 'outdated' medicines will suggest caution, so will 'complicated,' but that doesn't even fit in stylistically. So 'safe' is the answer."
+          },
+          "question7": {
+            "type": "text_completion",
+            "questionText": "The excitement died down in time, but the unfortunate Delpis, who was of a fundamentally (i) ________ disposition, found himself in the centre of a controversy. A certain art critic who inspected the work found it to be (ii) ________, Delpis though, claimed his innocence. His introverted nature earned him many enemies who turned (iii) ________ evidence against him by going to such lengths as planting evidence.",
+            "options": {
+              "blank1": [
+                "retiring",
+                "conniving",
+                "conspiring"
+              ],
+              "blank2": [
+                "inveterate",
+                "spurious",
+                "genuine"
+              ],
+              "blank3": [
+                "circumstantial",
+                "sentimental",
+                "pecuniary"
+              ]
+            },
+            "correctAnswer": [
+              "retiring",
+              "spurious",
+              "circumstantial"
+            ],
+            "blanks": 3,
+            "explanation": "In the first blank, the word is 'retiring' as we are told in the passage that Delpis is introverted. For the second blank, we need a negative word as Delpis is accused of something. This sense is conveyed by 'spurious.' And for the last blank, the word is 'circumstantial' as we are talking about evidence that has been planted. The other two options don't make sense."
+          },
+          "question8": {
+            "type": "text_completion",
+            "questionText": "Just as hundreds of terminals connected to a supercomputer (i) ________ work independently, even though their actual control lies with the supercomputer, we as individuals may seem to have (ii) ________ opposite personalities but the seeds of these (iii) ________ spring from the same source.",
+            "options": {
+              "blank1": [
+                "seemingly",
+                "teasingly",
+                "contingently"
+              ],
+              "blank2": [
+                "equally",
+                "presently",
+                "diametrically"
+              ],
+              "blank3": [
+                "traits",
+                "straits",
+                "conjectures"
+              ]
+            },
+            "correctAnswer": [
+              "seemingly",
+              "diametrically",
+              "traits"
+            ],
+            "blanks": 3,
+            "explanation": "The first blank can be completed with 'seemingly' in keeping with the imagery of the lines. The second blank can be logically completed with 'diametrically' as the other two options don't make sense. And the last blank can be completed with 'traits' as we are talking about qualities of human beings."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "The primary purpose of the passage is to present",
+            "options": [
+              "a position on the foundations of human behavior and on what those foundations imply",
+              "a theory outlining the parallel development of human morphology and of human behavior",
+              "a diagnostic test for separating biologically determined behavior patterns from culture-specific detail",
+              "a practical method for resisting the pressures of biologically determined drives",
+              "an overview of those human emotions and motives that impose constraints on human behavior"
+            ],
+            "correctAnswer": [
+              "a position on the foundations of human behavior and on what those foundations imply"
+            ],
+            "explanation": "The passage is about the foundations of human behavior and what they imply, like frailties, emotions, fears, etc."
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "The author implies that control to any extent over the 'frailties' that constrain our behavior is thought to presuppose",
+            "options": [
+              "that those frailties are recognized as currently beneficial and adaptive",
+              "that there is little or no overlay of cultural detail that masks their true nature",
+              "that there are cultures in which those frailties do not 'come naturally' and from which such control can be learned",
+              "a full understanding of why those frailties evolved and of how they function now",
+              "a thorough grasp of the principle that cultural detail in human behavior can differ arbitrarily from society to society"
+            ],
+            "correctAnswer": [
+              "a full understanding of why those frailties evolved and of how they function now"
+            ],
+            "explanation": "The passage clearly states 'We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure,' hence (D) is the answer in which it is suggested that we need to fully understand our frailties to overcome them."
+          },
+          "question11": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "Which of the following most probably provides an appropriate analogy from human morphology for the 'details' versus 'constraints' distinction made in the passage in relation to human behavior?",
+            "options": [
+              "The ability of most people to see all the colors of the visible spectrum as against most people’s inability to name any but the primary colors",
+              "The ability of even the least fortunate people to show compassion as against people’s inability to mask their feelings completely",
+              "The ability of some people to dive to great depths as against most people’s inability to swim long distances",
+              "The psychological profile of those people who are able to delay gratification as against people’s inability to control their lives completely",
+              "The greater lung capacity of mountain peoples that helps them live in oxygen-poor air as against people’s inability to fly without special apparatus"
+            ],
+            "correctAnswer": [
+              "The greater lung capacity of mountain peoples that helps them live in oxygen-poor air as against people’s inability to fly without special apparatus"
+            ],
+            "explanation": "Understand the question and the passage. It asks for an analogy between details and constraints. The passage says that evolution is responsible for the bigger things. How individuals respond is not evolution dependent, and by this logic, the only option that fits is E."
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "It can be inferred that in his discussion of maladaptive frailties the author assumes that",
+            "options": [
+              "evolution does not favor the emergence of adaptive characteristics over the emergence of maladaptive ones",
+              "any structure or behavior not positively adaptive is regarded as transitory in evolutionary theory",
+              "maladaptive characteristics, once fixed, make the emergence of other maladaptive characteristics more likely",
+              "the designation of a characteristic as being maladaptive must always remain highly tentative",
+              "changes in the total human environment can outpace evolutionary change"
+            ],
+            "correctAnswer": [
+              "changes in the total human environment can outpace evolutionary change"
+            ],
+            "explanation": "It is stated in the passage that 'Our frailties—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, in the grip of them. And thus they give us our sense of constraints.' This suggests that we are talking about very strong emotions, the author also says that our frailties are 'maladaptive' which suggests that changes in the total human environment can outpace evolutionary change."
+          },
+          "question13": {
+            "type": "reading_comprehension",
+            "passage": "If the mall shared by the neighboring towns of Georgia and Surrey was relocated from the mall’s current, overcrowded complex in central Georgia to a larger, spacious and available building in central Surrey, the mall would then be within the walking distance of a larger number of shoppers. The reason for this is that there are many more people living in central Surrey than in central Georgia, and shoppers usually walk to the mall if it is located near their homes.",
+            "questionText": "Which one of the following, if true, most strengthens the above argument?",
+            "options": [
+              "Earlier, the mall was located between the towns of Georgia and Surrey and later moved to the present location in central Georgia.",
+              "The area covered by central Georgia is approximately the same as the area covered by central Surrey.",
+              "The building that is available in Georgia is smaller than the alternative building that is available in Surrey.",
+              "Most shoppers who visit this mall do not live in either the town of Georgia or the town of Surrey.",
+              "The distance that shoppers currently cover on foot to get to the mall is much farther than what is usually considered as walking distance."
+            ],
+            "correctAnswer": [
+              "The area covered by central Georgia is approximately the same as the area covered by central Surrey."
+            ],
+            "explanation": "The answer is (B). In the given stimulus, it is proposed that the mall shared by the two towns—Georgia and Surrey—should be relocated to central Surrey. The question stem asks to identify the most strengthening argument. Option (B) suggests that the area covered by both the towns is 'approximately the same.' The argument clearly states that there are more people living in Surrey than in Georgia and if the area covered by both the towns is the same then the mall will be accessible to more shoppers. Also, the distance to the mall can be covered by walking. Option (A) refers to the mall’s earlier location. This has no impact on the present argument. Option (C) is incorrect because the conclusion in the argument is not based on the spaciousness of the building. Option (D) weakens the above argument as it suggests that most shoppers do not live in either town. This shakes the basis of the given argument. Option (E) pertains to what is usually considered as walking distance. This does not strengthen the argument because one does not know if the relocation of the mall will enable shoppers to walk a standard walking distance or not."
+          },
+          "question14": {
+            "type": "reading_comprehension",
+            "passage": "If the mall shared by the neighboring towns of Georgia and Surrey was relocated from the mall’s current, overcrowded complex in central Georgia to a larger, spacious and available building in central Surrey, the mall would then be within the walking distance of a larger number of shoppers. The reason for this is that there are many more people living in central Surrey than in central Georgia, and shoppers usually walk to the mall if it is located near their homes.",
+            "questionText": "Which one of the following, if true, most seriously weakens the argument?",
+            "options": [
+              "Many more regular shoppers, who currently walk to the mall, live in central Georgia than in central Surrey.",
+              "The number of people living in central Surrey who would shop regularly if the mall was located there is smaller than the number of people living in central Georgia who currently shop regularly.",
+              "The number of shoppers going to the mall would continue to increase steadily if the mall was relocated to central Surrey.",
+              "Most people who either drive or take public transport to commute to the mall would continue to do so even if the mall was relocated to central Surrey.",
+              "Most people who currently walk to the mall would remain regular shoppers if the mall was relocated to central Surrey."
+            ],
+            "correctAnswer": [
+              "The number of people living in central Surrey who would shop regularly if the mall was located there is smaller than the number of people living in central Georgia who currently shop regularly."
+            ],
+            "explanation": "The answer is (B). The main point of the argument is the relocation of the mall so that it is more accessible to shoppers who walk to the mall. Option (B) suggests that the number of shoppers in Surrey is smaller than the number of shoppers in Georgia. So, if the mall is relocated to central Surrey, it will reduce the number of shoppers. This clearly weakens the above argument. Option (A) strengthens the argument because it only states that more regular shoppers live in central Georgia. It does not explain the relationship with the relocation of the mall. Option (C) strengthens the given argument because it explains the positive impact of relocating the mall. Option (D) pertains to those shoppers who use private or public transport to access the mall. However, the given argument is about those shoppers who walk to the mall. So, this option has no impact on the given argument. Option (E) also has no impact on the argument because it suggests that relocation of the mall will have no impact on the shopping habits of the shoppers."
+          },
+          "question15": {
+            "type": "reading_comprehension_multiple",
+            "passage": "A classic debate in psychology revolves around the nature vs. nurture question. Researchers continue to study how genes and environmental factors interact to shape human behavior. The consensus is that both play crucial roles, with the relative importance varying depending on the trait or behavior under examination.",
+            "questionText": "Which of the following best summarizes the implications of the nature vs. nurture consensus described in the passage?",
+            "options": [
+              "The debate between nature and nurture has been conclusively resolved in favor of genetics.",
+              "Human behavior is primarily determined by genetic factors, with environment playing a minor role.",
+              "The importance of nature vs. nurture varies depending on the specific trait or behavior being studied.",
+              "Researchers have largely abandoned the study of genetics in favor of environmental factors.",
+              "Human behavior is entirely unpredictable, and no patterns can be discerned regarding its origins."
+            ],
+            "correctAnswer": [
+              "The importance of nature vs. nurture varies depending on the specific trait or behavior being studied."
+            ],
+            "explanation": "This question assesses the reader's ability to infer the implications of the consensus mentioned in the passage. Option C correctly summarizes that the importance of nature vs. nurture varies depending on the specific trait or behavior studied, which aligns with the passage's content. The other options either misrepresent the consensus or provide inaccurate statements. Therefore, the correct answer is option C."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "numeric_entry",
+            "questionText": "How many 8-inch squares will it take to tile a rectangular floor that measures 18 feet by 24 feet? (Note: Put only numeric value and don't enter any text and if the answer in decimals use only up-to two places of decimal)",
+            "correctAnswer": "972",
+            "explanation": "The number of tiles required is calculated by dividing the area of the floor by the area of one tile. The floor measures 18 feet by 24 feet, and an 8-inch square tile is equal to 2/3 foot by 2/3 foot. Therefore, the number of tiles needed is (18 x 24) / (2/3 x 2/3) = 972."
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/GRE%20flt4%20q-8.jpg",
+            "quantityA": "∠ABC",
+            "quantityB": "∠ADC",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "The two quantities are equal.",
+              "The relationship cannot be determined from the information given."
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Evident from the figure itself that ∠ADC > ∠ABC."
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many times 200 million is 1.2 trillion?",
+            "options": [
+              "600",
+              "2400",
+              "6000",
+              "24000",
+              "60000"
+            ],
+            "correctAnswer": "6000",
+            "explanation": "1.2 × 10^12 / 200 × 10^6 = 6000"
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "[(x^3 / y^4)^-2] ÷ [(x^2 / y^3)^4] = ?",
+            "options": [
+              "y^20 / x^14",
+              "y^4 / x^2",
+              "x^2 / y^4",
+              "y^5 / x^4",
+              "y^8 / x^6"
+            ],
+            "correctAnswer": "y^20 / x^14",
+            "explanation": "[(x^3 / y^4)^-2] ÷ [(x^2 / y^3)^4] = (y^8 / x^6) ÷ (x^8 / y^2) = y^20 / x^14"
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Assuming that all cakes are round and equally thick, how many cakes four inches in diameter can be made with the batter of one cake 12 inches in diameter?",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "9",
+              "12"
+            ],
+            "correctAnswer": "9",
+            "explanation": "No. of cakes = Volume of big cake / volume of one small cake\n\nπR²H / πr²h\n\nNow, H = h and R = 12/2 = 6 and r = 4/2 = 2\n\n=> No. of cakes = 6² x H / 2² x h = 9 (as H = h)"
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A series of number plates will be made of two letters followed by four digits. How many different plates can be made for this series?",
+            "options": [
+              "26,000",
+              "260,000",
+              "676,000",
+              "52,00,000",
+              "6,760,000"
+            ],
+            "correctAnswer": "6,760,000",
+            "explanation": "No. of plates = 26 x 26 x 10 x 10 x 10 x 10 = 67,60,000"
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "What is the probability that a point randomly selected in this square will be outside the circle?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/Gre%20flt%20que-13.jpg",
+            "options": [
+              "4 - π",
+              "1 - π/4",
+              "1 - π",
+              "1 - π/8",
+              "π/4"
+            ],
+            "correctAnswer": "1 - π/4",
+            "explanation": "Area of Square = s²\nArea of circle = πr²\nAs S = 2r\n=> Area of circle = πs²/4\n\nNow, P = Favourable outcomes / Total outcomes\n= s² - πs²/4 / s² = 1 - π/4"
+          },
+          "question8": {
+            "type": "data_interpretation_multiple_answers",
+            "questionText": "Over which of the following time periods did character Y's popularity increase?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt%20q14,15.jpg",
+            "options": [
+              "1950s to 1960s",
+              "1960s to 1970s",
+              "1970s to 1980s",
+              "1980s to 1990s",
+              "1990s to 2000s"
+            ],
+            "correctAnswer": [
+              "1950s to 1960s",
+              "1980s to 1990s",
+              "1990s to 2000s"
+            ],
+            "explanation": "Evident from the graph - option 1, 4 & 5"
+          },
+          "question9": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "How popular was character Y in the 1950s, represented as a percentage of Y's popularity in the 1980s?",
+            "options": [
+              "50%",
+              "75%",
+              "120%",
+              "125%",
+              "133.33%"
+            ],
+            "correctAnswer": "125%",
+            "explanation": "1950's Popularity = 0.5\n1980's popularity = 0.4\nRatio = (0.5 / 0.4) = 125%"
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "One hundred wooden sticks have been glued together in a line to make one long stick. Each ruler is one foot long. The overlap between each adjacent pair of rulers is exactly one inch (where they were glued). What is the overall length of the long stick?",
+            "options": [
+              "83 feet, 6 inches",
+              "90 feet, 8 inches",
+              "90 feet, 9 inches",
+              "91 feet, 9 inches",
+              "92 feet, 6 inches"
+            ],
+            "correctAnswer": "91 feet, 9 inches",
+            "explanation": "100 rulers = 100 feet\n99 overlaps = 99 inches = 8 feet 3 inches\nOverall length = 100 feet - 8 feet 3 inches = 91 feet 9 inches"
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "For which of the following values of X does (x + 5) / (x - 2) have the greatest value?",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "4",
+              "5"
+            ],
+            "correctAnswer": "3",
+            "explanation": "Check for each option.\nAnswer is for x = 3."
+          },
+          "question12": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "2/5 of 0.1%",
+            "quantityB": "0.004",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both the Quantities are equal",
+              "The relationship cannot be determined from the given information"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "A: 2/5 of 0.1% = (2/5) × (1/1000) = 0.0004\nB: 0.004\nB > A"
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "City A is 800 miles from city B. City B is 1500 miles from city C. Which of the following could be the distance from city A to city C?",
+            "options": [
+              "600 miles",
+              "1000 miles",
+              "1200 miles",
+              "1500 miles",
+              "2000 miles",
+              "2500 miles"
+            ],
+            "correctAnswer": [
+              "1000 miles",
+              "1200 miles",
+              "1500 miles",
+              "2000 miles"
+            ],
+            "explanation": "Property used - sum of any 2 sides of a triangle should be greater than the third.\n- 800 miles & 1500 miles are 2 sides. Choose the third accordingly.\nAnswer = option 2, 3, 4, 5"
+          },
+          "question2": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "Which of the following could be the value of X if |x + 2| = 7?",
+            "options": [
+              "-9",
+              "-5",
+              "3",
+              "5",
+              "7"
+            ],
+            "correctAnswer": [
+              "-9",
+              "5"
+            ],
+            "explanation": "|x + 2| = 7\n\nx + 2 = 7 or x + 2 = -7\n\n=> x = 5 or x = -9"
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "y = 2 - 3x\nx = -2",
+            "quantityA": "y",
+            "quantityB": "5",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both the quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "y = 2 - 3x, x = -2\nBy solving, y = 8\nHence, A > B"
+          },
+          "question4": {
+            "type": "numeric_entry",
+            "questionText": "A wooden box has a square bottom and is twice as tall as it is wide. The volume of the box is 54. How tall is the box?\n(Note: Put only numeric value and don't enter any text and if the answer is in decimals use only up to two places of decimal)",
+            "correctAnswer": "6",
+            "explanation": "Let the side of the bottom = s\n=> Height = 2s\nVolume = 2s × s × s = s³ = 54\n=> 2s³ = 54\n=> s = 3\nHence, height = 2s = 6"
+          },
+          "question5": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "For which value of m is 0.001 < 1/(3^m) < 0.1?",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "correctAnswer": [
+              "3",
+              "4",
+              "5"
+            ],
+            "explanation": "1/1000 < 1/(3^m) < 1/10\nTrue for m = 3, 4, 5"
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "AB = CD, BC = 6, and AC = 3AB. What is AD?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt%20QA-2%20Q-4.jpg",
+            "options": [
+              "3",
+              "6",
+              "9",
+              "12",
+              "18"
+            ],
+            "correctAnswer": "12",
+            "explanation": "AC = 3AB\nAB + BC = 3AB\n=> BC = 2AB\n=> 6 = 2AB\nHence, AB = 3\n=> AD = AB + BC + CD = 3 + 6 + 3 = 12"
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The probability of event m occurring is 0.4. The probability of event n occurring is 0.25. If events m and n are independent, what is the probability that m occurs but n does not?",
+            "imgUrl": "",
+            "options": [
+              "0.1",
+              "0.3",
+              "0.325",
+              "0.75",
+              "1.15"
+            ],
+            "correctAnswer": "0.3",
+            "explanation": "Probability that 'm' occurs & 'n' doesn't = 0.4 × (1 - 0.25) = 0.3"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Find X.",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt4%20QA2%20q-9.jpg",
+            "options": [
+              "27°",
+              "99°",
+              "108°",
+              "135°",
+              "225°"
+            ],
+            "correctAnswer": "99°",
+            "explanation": "y = 72°(inverse angle theorem)\nz = 180° - 153° = 27(alternate interior angles theorem)°\nx = y + z = 72° + 27° = 99°"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Let a ⊖ b = a² + b². If a = 2, for which one of the following values of b will a ⊖ b have the least value?",
+            "imgUrl": "",
+            "options": [
+              "-5",
+              "-4",
+              "-2",
+              "1",
+              "8"
+            ],
+            "correctAnswer": "1",
+            "explanation": "a ⊖ b = a² + b²\n= 2² + b²\n= 4 + b²\n1. Check for each option, or\n2. a ⊖ b is least for |b| = least"
+          },
+          "question10": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "What is the mean number of flights taken by the students of Ms. X's third grade class, rounded to the nearest tenth?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt4%20QA2%20q-11%2012%2013.jpg",
+            "options": [
+              "3.2",
+              "4.5",
+              "4.8",
+              "5.1",
+              "5.7"
+            ],
+            "correctAnswer": "5.7",
+            "explanation": "Mean = (6 × 2 + 4 × 3 + 5 × 1 + 5 × 6 + 4 × 8 + 4 × 10) / (6 + 4 + 1 + 5 + 4 + 4) = 131 / 23 ≈ 5.7"
+          },
+          "question11": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "What is the median number of flights taken by the children of Ms. X's third grade class?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt4%20QA2%20q-11%2012%2013.jpg",
+            "options": [
+              "4",
+              "4.5",
+              "5",
+              "5.5",
+              "6"
+            ],
+            "correctAnswer": "6",
+            "explanation": "Number of children = 23\nThe graph is in ascending order, hence the 12th child's number of flights is the median.\nOrder = 2, 2, 2, 2, 2, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6...\n12th → 6\nAnswer = 6"
+          },
+          "question12": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "What is the mode number of flights taken by the students of Ms. X's third grade class?",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt4%20QA2%20q-11%2012%2013.jpg",
+            "options": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ],
+            "correctAnswer": "2",
+            "explanation": "Mode = Highest frequency of flights\n= 2"
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The angles of a triangle are in the ratio of 3:4:5. What is the difference of the largest and smallest angles?",
+            "imgUrl": "",
+            "options": [
+              "15°",
+              "20°",
+              "25°",
+              "30°",
+              "60°"
+            ],
+            "correctAnswer": "30°",
+            "explanation": "Let the angles be 3x, 4x, 5x.\n3x + 4x + 5x = 180°\n=> x = 15°\nDifference = 5x - 3x = 2x = 30°"
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Jeff earns $12 per hour and John earns $10 per hour. How much less per hour, as a percentage, does John earn than Jeff?",
+            "imgUrl": "",
+            "options": [
+              "25%",
+              "20%",
+              "16 2/3%",
+              "15%",
+              "12 1/2%"
+            ],
+            "correctAnswer": "16 2/3%",
+            "explanation": "Difference = $12 - $10 = $2\nPercentage = (2 / 12) × 100 = 16 2/3%"
+          },
+          "question15": {
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "Which of the following integers is/are the product of exactly two different prime numbers?",
+            "options": [
+              "21",
+              "22",
+              "23",
+              "24",
+              "25"
+            ],
+            "correctAnswer": [
+              "21",
+              "22"
+            ],
+            "explanation": "21 = 3 × 7\n22 = 2 × 11\n23 = prime\n24 = 2 × 12, 4 × 6...\n25 = 5 × 5 (same)"
+          }
+        }
+      }
     }
   ]
 }
