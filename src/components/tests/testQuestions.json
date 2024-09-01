@@ -2912,7 +2912,7 @@
               "alienated",
               "perceptions"
             ],
-            "blanks":3,
+            "blanks": 3,
             "explanation": "For the first blank the right option is 'melange' which captures the sense of a mixture. For the second blank the right option is 'alienated.' Note that even 'addlepated' makes sense here. However it is not grammatically correct as one of the functions of a comma is to separate two adjectives describing the same thing. Hence the word 'alienated' that matches with rootless is correct here. For the third blank the right option is 'perceptions' as we are speaking of the writer's response to the multiple influences."
           },
           "question10": {
@@ -2934,7 +2934,7 @@
               "epitomizes",
               "unnecessary"
             ],
-            "blanks":2,
+            "blanks": 2,
             "explanation": "The key lies in 'delay in sending us the items he promised weeks ago.' Since he did delay in sending out the stuff, it cannot justify his irresponsibility. And of course it cannot conceal it either. Hence the answer is 'epitomizes.' And now for the second blank, timely delay will be an oxymoron and therefore not contextually correct, and conspicuous (obvious) is redundant and therefore will not work, which makes 'unnecessary' the only choice."
           },
           "question11": {
@@ -2950,7 +2950,7 @@
             "correctAnswer": [
               "tranquil"
             ],
-            "blanks":1,
+            "blanks": 1,
             "explanation": "The word 'contrary' points to a contrast to 'filled with uncertainty and insecurity.' Therefore, the antonym to that would be the answer. Hence, the right answer is 'tranquil.'"
           },
           "question12": {
@@ -3392,420 +3392,460 @@
         "verbal1": {
           "question1": {
             "type": "text_completion",
-            "questionText": "Gould claimed no _______ knowledge of linguistics, but only a hobbyist’s interest in language.",
-            "options": [
-              "manifest",
-              "plausible",
-              "technical",
-              "rudimentary",
-              "insignificant"
-            ],
+            "questionText": "I discovered at that moment I have a strong will to live. It was not something in my life evident till then. Some of us give up life in a (i) ________ way, while some of us keep (ii) ________ and struggling till the very end. I believe it is something (iii) ________, this innate desire to live no matter what.",
+            "options": {
+              "blank1": [
+                "resigned",
+                "consigned",
+                "benign"
+              ],
+              "blank2": [
+                "striving",
+                "contending",
+                "inspiring"
+              ],
+              "blank3": [
+                "constitutional",
+                "institutional",
+                "inimical"
+              ]
+            },
             "correctAnswer": [
-              "technical"
+              "resigned",
+              "contending",
+              "constitutional"
             ],
-            "explanation": "The second part provides the answer 'but only a hobbyist’s interest in language.' Therefore, we may interpret that Gould is an amateur and not a professional. Find a word related to 'professional' which is an antonym and you have your answer. A professional would have 'technical' knowledge which an amateur lacks.",
-            "blanks": 1
+            "blanks": 3,
+            "explanation": "In the first blank the sense conveyed is of 'giving up,' hence the word is 'resigned.' For the second blank the word is 'contending,' which captures the sense of struggling, and for the last blank the word is 'constitutional,' which carries the sense of 'innate.'"
           },
           "question2": {
-            "type": "sentence_equivalence",
-            "questionText": "Remelting old metal cans rather than making primary aluminum from bauxite ore shipped from overseas saves producers millions of dollars in _____ and production costs.",
-            "options": [
-              "distribution",
-              "salvage",
-              "purchase",
-              "storage",
-              "procurement",
-              "research"
-            ],
+            "type": "text_completion",
+            "questionText": "Salazar's presence in the group was so (i) _______ the others that they lost most of their earlier (ii) _______; failure, for them, became all but unthinkable.",
+            "options": {
+              "blank1": [
+                "reassuring to",
+                "unnoticed by",
+                "unexpected by"
+              ],
+              "blank2": [
+                "curiosity",
+                "trepidation",
+                "confidence"
+              ]
+            },
             "correctAnswer": [
-              "purchase",
-              "procurement"
+              "reassuring to",
+              "trepidation"
             ],
-            "explanation": "Bauxite when imported from other countries requires huge investment by the producers for buying this ore of aluminum. As a result, this method of aluminum production from its ore bauxite is far more expensive than melting old metal cans for reusing them because in the latter, huge investments are not required in the buying of the old cans. The words closest in meaning to 'buying' are 'purchase' and 'procurement.'",
-            "blanks": 1
+            "blanks": 2,
+            "explanation": "The last part holds the key: 'failure, for them, became all but unthinkable.' So Salazar's presence did something positive. If, however, it went 'unnoticed by' or 'unexpected by' the group, it wouldn't necessarily have a positive effect. Hence, 'reassuring to' is the answer. Now, since his presence was reassuring to the group, they wouldn't lose their 'confidence' nor necessarily their 'curiosity' but their fear or 'trepidation.'"
           },
           "question3": {
-            "type": "sentence_equivalence",
-            "questionText": "Johnson never ____ to ignore the standards of decent conduct mandated by company policy if literal compliance with instructions from his superiors enabled him to do so, whatever the effects on his subordinates.",
+            "type": "text_completion",
+            "questionText": "From the outset, the concept of freedom of the seas from the proprietary claims of nations was challenged by a contrary notion—that of the _______ of the oceans for reasons of national security and profit.",
             "options": [
-              "deigned",
-              "attempted",
-              "intended",
-              "scrupled",
-              "demurred",
-              "wished"
+              "promotion",
+              "exploration",
+              "surviving",
+              "conservation",
+              "enclosure"
             ],
             "correctAnswer": [
-              "scrupled",
-              "demurred"
+              "conservation"
             ],
-            "explanation": "The sentence indicates that Johnson did not care about the effect of his conduct on the people working below him (subordinates) and if his superiors enabled him to ignore the standards of decent conduct made compulsory (mandated) by the company policy, he never hesitated to do so. The words closest in meaning to 'hesitated' are 'scrupled' and 'demurred.'"
+            "blanks": 1,
+            "explanation": "Find the antonym to 'the concept of freedom' and you have your answer as the first part draws a contrast to the second which is reflected in 'a contrary notion.' The antonym to freedom is restriction, which in turn is a synonym for 'conservation.' So that's the answer."
           },
           "question4": {
-            "type": "sentence_equivalence",
-            "questionText": "Wearing the latest fashions was exclusively the ____ of the wealthy until the 1850's, when mass production, aggressive entrepreneurs, and the availability of the sewing machine made them accessible to the middle class.",
+            "type": "reading_comprehension",
+            "passage": "It is true that it is against international law to sell plutonium to countries that do not yet have nuclear weapons. But if United States companies do not do so, companies in other countries will.",
+            "questionText": "Which of the following is most like the argument above in its logical structure?",
             "options": [
-              "aspiration",
-              "privilege",
-              "vexation",
-              "bane",
-              "prerogative",
-              "obligation"
+              "It is true that it is against the police department's policy to negotiate with kidnappers. But if the police want to prevent loss of life, they must negotiate in some cases.",
+              "It is true that it is illegal to refuse to register for military service. But there is a long tradition in the United States of conscientious objection to serving in the armed forces.",
+              "It is true that it is illegal for a government official to participate in a transaction in which there is an apparent conflict of interest. But if the facts are examined carefully, it will clearly be seen that there was no actual conflict of interest in the defendant’s case.",
+              "It is true that it is against the law to burglarize people’s homes. But someone else certainly would have burglarized that house if the defendant had not done so first.",
+              "It is true that company policy forbids supervisors to fire employees without two written warnings. But there have been many supervisors who have disobeyed this policy."
             ],
             "correctAnswer": [
-              "privilege",
-              "prerogative"
+              "It is true that it is against the law to burglarize people’s homes. But someone else certainly would have burglarized that house if the defendant had not done so first."
             ],
-            "explanation": "The sentence states that the latest fashions were made available to the middle class only after 1850 with the help of mass production and the availability of the sewing machine. The mass production increased the quantity of the goods and thus decreased the prices, so the middle class was able to afford it. But before this period the middle class had no access to the latest fashions as the production was less and the prices were high, so they only were a priority of the rich. The words closest in meaning to 'priority' are 'privilege' and 'prerogative.'"
+            "explanation": "The logical structure of the argument involves justifying an illegal or unethical action by arguing that it would have happened anyway if not done by the specific agent. The correct option mirrors this reasoning by justifying burglary on the grounds that someone else would have committed the crime if the defendant had not."
           },
           "question5": {
-            "type": "sentence_equivalence",
-            "questionText": "The influence of the Timaeus among early philosophical thinkers was __, if only because it was the sole dialogue available in Europe for almost 1,000 years.",
+            "type": "reading_comprehension",
+            "passage": "It is impossible to approach the question of overpopulation apolitically, because, not surprisingly, demographic patterns are dissimilar around the world, and questions of religion, culture, government, and degree of industrial development affect these patterns. In industrialized nations, birthrates are, for the most part, lower than death rates. But in Asia and Africa, many countries have annual growth rates of 2.5 to 3.5 percent. The ability of most of these rapidly increasing populations to find food, water, shelter, and warmth is diminished as the population increases; people are forced to try to grow food and raise livestock on marginal land, which only exacerbates problems of erosion and deforestation. Concerns about air and water pollution are ignored in the scramble for food and fuel, with the result that as the population grows, the land is less able to sustain those already living on it. Pressure on already depleted natural resources could result in fundamental changes to local or even global ecosystems, changes that may be permanent. In order to keep environmental damage from escalating to the point at which it is irreversible, industrialized nations should at least offer support to undeveloped countries in the form of education about sanitation and family planning, and ideally should begin work on the long-range goal of worldwide population stability.",
+            "questionText": "With which of the following statements would the author most likely agree?",
             "options": [
-              "pervasive",
-              "extensive",
-              "inestimable",
-              "unnoteworthy",
-              "underestimated",
-              "circumscribed"
+              "No country’s citizens should be allowed unlimited reproductive freedom.",
+              "Problems of overpopulation might be solved if society was properly managed, but the idea of a properly managed society is politically naive.",
+              "Some of the problems associated with overpopulation may produce effects that are irreversible.",
+              "Industrialized nations should share some of their agricultural abundance with developing nations, thereby relieving some of the pressure on the developing nations' natural resources.",
+              "Overpopulation is the most dangerous threat to world stability, and industrialized nations should consider taking strong action to ensure that every country implements strict land-use guidelines and pollution laws."
             ],
             "correctAnswer": [
-              "pervasive",
-              "extensive"
+              "Some of the problems associated with overpopulation may produce effects that are irreversible."
             ],
-            "explanation": "As Timaeus was the only one dialogue present in Europe for a huge span of 1,000 years, it did not face competition from other dialogues. Being the only dialogue available, the philosophers had access to it only and its influence on them was huge and far-reaching. Thus, the influence was both 'pervasive' and 'extensive.'"
+            "explanation": "The answer is (C). The passage uses the word 'permanent' to describe the changes in the ecosystems. Therefore, (C) is correct. Option (A) and (E) are extreme and, therefore, can be eliminated. Choice (B) is incorrect because there is no discussion of management in the passage. Choice (D) is also incorrect. The passage does say that industrialized nations should help with education, but there was no suggestion of sharing resources."
           },
           "question6": {
             "type": "reading_comprehension",
-            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
-            "questionText": "The primary purpose of this passage is to",
+            "passage": "It is impossible to approach the question of overpopulation apolitically, because, not surprisingly, demographic patterns are dissimilar around the world, and questions of religion, culture, government, and degree of industrial development affect these patterns. In industrialized nations, birthrates are, for the most part, lower than death rates. But in Asia and Africa, many countries have annual growth rates of 2.5 to 3.5 percent. The ability of most of these rapidly increasing populations to find food, water, shelter, and warmth is diminished as the population increases; people are forced to try to grow food and raise livestock on marginal land, which only exacerbates problems of erosion and deforestation. Concerns about air and water pollution are ignored in the scramble for food and fuel, with the result that as the population grows, the land is less able to sustain those already living on it. Pressure on already depleted natural resources could result in fundamental changes to local or even global ecosystems, changes that may be permanent. In order to keep environmental damage from escalating to the point at which it is irreversible, industrialized nations should at least offer support to undeveloped countries in the form of education about sanitation and family planning, and ideally should begin work on the long-range goal of worldwide population stability.",
+            "questionText": "The author mentions which of the following as a factor influencing a country’s demographic patterns?",
             "options": [
-              "summarize an argument",
-              "resolve a dispute",
-              "trace a word's origin",
-              "prove a hypothesis",
-              "initiate a debate"
+              "the level of agricultural production",
+              "the degree to which the climate has changed over time",
+              "high rates of overconsumption",
+              "the religious beliefs held by its citizens",
+              "the quality of its natural resources"
             ],
             "correctAnswer": [
-              "trace a word's origin"
+              "the religious beliefs held by its citizens"
             ],
-            "explanation": "The passage primarily talks about the origin of the word 'morality' and what morality initially meant. The author shows how the word 'morality' has originated from the word 'mores,' which originally related to the customs and principles of society for governing every citizen. The author traces the origin of this word to argue about the present-day meaning of morality."
+            "explanation": "The answer is (D). We must go back into the passage to find this answer, using the lead words 'demographic patterns.' Remember – if it isn’t in the passage, it isn’t the answer. Can we find agricultural production, climate change, or overconsumption in the passage? No, we cannot. Therefore, option (A), (B), and (C) are incorrect. Similarly, the passage never mentions anything about resource quality. Thus, even (E) is incorrect. However, the passage talks about religion affecting demographic patterns. Therefore, the answer is (D)."
           },
           "question7": {
-            "type": "reading_comprehension",
-            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
-            "questionText": "According to the passage, mores in preliterate cultures concerned such skills as warfare and food gathering because these skills were",
+            "type": "reading_comprehension_multiple",
+            "passage": "It is impossible to approach the question of overpopulation apolitically, because, not surprisingly, demographic patterns are dissimilar around the world, and questions of religion, culture, government, and degree of industrial development affect these patterns. In industrialized nations, birthrates are, for the most part, lower than death rates. But in Asia and Africa, many countries have annual growth rates of 2.5 to 3.5 percent. The ability of most of these rapidly increasing populations to find food, water, shelter, and warmth is diminished as the population increases; people are forced to try to grow food and raise livestock on marginal land, which only exacerbates problems of erosion and deforestation. Concerns about air and water pollution are ignored in the scramble for food and fuel, with the result that as the population grows, the land is less able to sustain those already living on it. Pressure on already depleted natural resources could result in fundamental changes to local or even global ecosystems, changes that may be permanent. In order to keep environmental damage from escalating to the point at which it is irreversible, industrialized nations should at least offer support to undeveloped countries in the form of education about sanitation and family planning, and ideally should begin work on the long-range goal of worldwide population stability.",
+            "questionText": "Which of the following is NOT an example of a kind of environmental degradation mentioned specifically by the author?",
             "options": [
-              "characteristic of an individual's self-fulfillment",
-              "examples of a culture's traditions",
-              "manifestations of an individual's ideals",
-              "demonstrations of an individual's contributions to the community",
-              "examples of a community's governing principles"
+              "A livestock owner overgrazes his land, allowing the soil to be adversely affected by wind and rain.",
+              "An old factory does not comply with federal regulations on noise pollution, thereby diminishing the quality of life for those living near the factory.",
+              "When a city expands beyond its sewer lines, outlying residents dispose of waste in a nearby stream."
             ],
             "correctAnswer": [
-              "demonstrations of an individual's contributions to the community"
+              "An old factory does not comply with federal regulations on noise pollution, thereby diminishing the quality of life for those living near the factory."
             ],
-            "explanation": "As suggested by the passage, 'mores' originally referred to as the customs of the cultures. They included every culture's principles to rule the citizens and were formed because it was a belief in the past that a community's strength depends on the individuals in it and how effectively they contribute to the community with their services. Possession of skills such as food gathering and warfare by individuals, which were used for the benefit of the community, helped satisfy the food needs and protected the community against enemies. These skills are a demonstration of how the individual offered his services for the welfare of the community. Thus, option (D) is the correct answer."
+            "explanation": "The answer is (B). Remember that the question says 'NOT.' Option (A) is incorrect because the passage mentions that a livestock owner exacerbates problems of erosion and deforestation. Choice (C) is incorrect because the passage mentions that concerns about air and water pollution are ignored in the scramble for food and fuel. This implies that the city residents will pollute the water by disposing of the waste in the nearby stream. Choice (B) is correct because quality of life is not really a concern in the passage, and noise pollution isn’t mentioned either."
           },
           "question8": {
             "type": "reading_comprehension",
-            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
-            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements regarding sociocentrics and egocentrics?",
+            "passage": "In analyzing the poetry of Mona Devon we are confronted with three different yardsticks by which to measure her work. We could consider the poems as the product of a twentieth-century artist in the tradition of James Joyce, T. S. Eliot, and Wallace Stevens. But to do this would be to ignore a facet of her work which informs every word she writes, and which stems from her identity as a woman. Could Joyce or Eliot have written the line, “the mumbo-jumbo of the stubble-cheeks”? But to characterize her solely as a woman poet is to deny her cultural heritage, for Mona Devon is also the first modern poet of stature who is also Native American. Stanley Wilson, the noted author of literary criticism, has argued compellingly that the huge popularity Devon enjoys among the Native American schoolchildren is creating a whole new generation of poetry enthusiasts in an age when the reading of poetry, to say nothing of reading in general, is on the wane. While this is undoubtedly true, Mr. Wilson’s praise gives the impression that Devon’s readership is limited to those of her own culture – an impression which suggests that Mr. Wilson is himself measuring her by only one yardstick.",
+            "questionText": "The author mentions 'the mumbo-jumbo of the stubble-cheeks' in order to",
             "options": [
-              "The position of the sociocentrics is stronger than that of the egocentrics",
-              "The positions of the egocentrics and sociocentrics are of equal merit",
-              "There is no merit in the position of the egocentrics",
-              "Neither position contributes very much to an understanding of the definition of morality",
-              "The dispute between the egocentrics and sociocentrics is based on trivial issues"
+              "differentiate Devon from her male contemporaries",
+              "prove that Devon is more talented than her contemporaries",
+              "show that Wilson’s critique of Devon’s work is limited",
+              "imply that all literary criticism is just 'mumbo-jumbo'",
+              "indicate the level of influence Devon’s Native American heritage has on her work"
             ],
             "correctAnswer": [
-              "The position of the sociocentrics is stronger than that of the egocentrics"
+              "differentiate Devon from her male contemporaries"
             ],
-            "explanation": "The right answer is A, which is clearly evident from the line 'Thus, I submit \"morality\" must be concerned with what is honored by the community at large.' If the author refers to the community at large as the guiding light for the concept of morality, then he believes the socio-centric model of philosophy is more justified."
+            "explanation": "The answer is (A). The passage says that if you consider Devon as a contemporary of Joyce and friends, you miss that she’s a woman. Stubble 'cheeks' refers to men, and the implication is that male poets wouldn’t use that type of description. Choice (A) is correct because by mentioning 'stubble cheeks,' the author distinguishes Devon as a female poet. (B) is incorrect because no one is judging the level of talent in the passage. (C) looks good because the author does think this, but that’s not why the 'stubble cheeks' are mentioned. Besides, Wilson does not come up until the second paragraph, and this line reference is in the first paragraph. Choice (D) is incorrect because it is extreme and implies that all literary criticism is mumbo-jumbo. Besides, the line is about the 'stubble-cheeks,' not the critics. Similarly, choice (E) is incorrect because 'the mumbo-jumbo of the stubble-cheeks' does not show the influence of Devon’s ethnic heritage. Rather, it shows the influence of her gender."
           },
           "question9": {
             "type": "reading_comprehension",
-            "paragraph": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
-            "questionText": "With which of the following statements regarding the relationship between the individual and morality would the author be most likely to agree?",
+            "passage": "In analyzing the poetry of Mona Devon we are confronted with three different yardsticks by which to measure her work. We could consider the poems as the product of a twentieth-century artist in the tradition of James Joyce, T. S. Eliot, and Wallace Stevens. But to do this would be to ignore a facet of her work which informs every word she writes, and which stems from her identity as a woman. Could Joyce or Eliot have written the line, “the mumbo-jumbo of the stubble-cheeks”? But to characterize her solely as a woman poet is to deny her cultural heritage, for Mona Devon is also the first modern poet of stature who is also Native American. Stanley Wilson, the noted author of literary criticism, has argued compellingly that the huge popularity Devon enjoys among the Native American schoolchildren is creating a whole new generation of poetry enthusiasts in an age when the reading of poetry, to say nothing of reading in general, is on the wane. While this is undoubtedly true, Mr. Wilson’s praise gives the impression that Devon’s readership is limited to those of her own culture – an impression which suggests that Mr. Wilson is himself measuring her by only one yardstick.",
+            "questionText": "It can be inferred from the passage that Stanley Wilson’s praise of Devon is",
             "options": [
-              "Failure in social obligations is the price of success in individual endeavors",
-              "The unfulfilled citizen cannot fulfill his moral obligations to the community.",
-              "Morality is unconcerned with conflicts among citizens.",
-              "The unfulfilled citizen is without virtue."
+              "completely endorsed by the author",
+              "focused too much on her status as a Native American poet",
+              "meant to disguise his opinion of Devon as a poet lacking in talent",
+              "helping to create a whole new generation of poetry enthusiasts",
+              "based on all facets of her poetry"
             ],
             "correctAnswer": [
-              "The unfulfilled citizen cannot fulfill his moral obligations to the community."
+              "focused too much on her status as a Native American poet"
             ],
-            "explanation": "Self-fulfillment is very important because a person first looks toward his or her own needs and when he is satisfied, only then he or she turns towards the welfare of the community. According to the passage morality and self-fulfillment go hand in hand. Self-fulfillment is very essential because if a person is not satisfied, he or she cannot offer his services for the welfare of the community and as morality is linked to these services, the individual cannot perform his moral duty towards his community. Thus, (B) is the correct option."
+            "explanation": "The answer is (B). The answer to this question comes from the second paragraph, where Wilson’s praise of Devon is mentioned. Choice (A) is incorrect because according to the last lines of the passage ('… Mr. Wilson is himself measuring her by only one yardstick'), the author is not sure Wilson’s praise is as open-minded as it should be. And the word 'completely' makes this choice pretty extreme. (B) is correct because when the author says in the last line of the second paragraph that 'Mr. Wilson’s praise gives the impression that Devon’s readership is limited to those of her own culture – an impression which suggests that Mr. Wilson is himself measuring her by only one yardstick,' it implies that Wilson focused too much on her status as a Native American poet. Choice (C) is incorrect because the passage never says that Wilson does not think Devon has talent. Similarly, (D) is incorrect because it is not Wilson’s praise that is creating new poetry readers on the reservation; it is Devon’s work. Choice (E) is also incorrect because the author seems to be saying that Wilson’s praise may be based mostly on ONE facet of her poetry, not ALL. Also, the word 'all' is pretty extreme."
           },
           "question10": {
-            "type": "text_completion",
-            "questionText": "Although frequent air travelers remain unconvinced, researchers have found that, paradoxically, the (i) _____ disorientation inherent in jet lag also may yield some mental health (ii) ______.",
-            "options": {
-              "blank1": [
-                "temporal",
-                "acquired",
-                "random"
-              ],
-              "blank2": [
-                "hazards",
-                "benefits",
-                "standards"
-              ]
-            },
-            "correctAnswer": [
-              "temporal",
-              "benefits"
+            "type": "sentence_equivalence",
+            "questionText": "Although economists have traditionally considered the district to be solely an agricultural one, the ____ of the inhabitant’s occupations makes such a classification obsolete.",
+            "options": [
+              "productivity",
+              "diversity",
+              "predictability",
+              "profitability",
+              "variety",
+              "stability"
             ],
-            "explanation": "Disorientation inherent in jet lag can't be either 'acquired,' as it is inherent, or 'random,' as it is an established fact. Therefore, it has to be 'temporal.' Now, although temporal jet lag is unlikely to have salutary effects on the passengers, 'paradoxically' is the key, it is a contrast sign. Therefore, what it actually states is that although people might not believe it, it does have some 'benefits.'",
-            "blanks": 2
+            "correctAnswer": [
+              "diversity",
+              "variety"
+            ],
+            "explanation": "The presence of the word 'although' indicates that the first part of the sentence is contrary to the second. The sentence indicates that although the economists have usually considered the district to have only one inhabitant occupation, i.e., agriculture, in reality, it does not have one but many inhabitant occupations, making their usual belief outdated (obsolete). The words which closely relate to 'many' are 'diversity' and 'variety.'"
           },
           "question11": {
-            "type": "text_completion",
-            "questionText": "The assassin got his first assignment, but the moments before the crime petrified him. He spent much time (i) ________ on the (ii) ________ of his deed. He fell into a reverie and dreamed of the solemn phantom that resembled him. This thought so immobilized him that when the precise moment came, he was gripped by a sense of (iii) ________ and hesitation.",
-            "options": {
-              "blank1": [
-                "procrastinating",
-                "planning",
-                "contemplating"
-              ],
-              "blank2": [
-                "repercussions",
-                "interjections",
-                "merits"
-              ],
-              "blank3": [
-                "alacrity",
-                "inertia",
-                "hebetude"
-              ]
-            },
-            "correctAnswer": [
-              "contemplating",
-              "repercussions",
-              "inertia"
+            "type": "sentence_equivalence",
+            "questionText": "The author of this book _____ overlooks or minimizes some of the problems and shortcomings in otherwise highly successful foreign industries in order to emphasize the points on which they excel and on which we might try to emulate them.",
+            "options": [
+              "accidentally",
+              "purposely",
+              "occasionally",
+              "intentionally",
+              "reluctantly",
+              "rarely"
             ],
-            "explanation": "The assassin gets his assignment but wastes time thinking. Hence the two words to complete blank 1 and 2 are 'contemplating' and 'repercussions.' For the final blank the sense is that he is unable to act, hence the word 'inertia.'",
-            "blanks": 3
+            "correctAnswer": [
+              "purposely",
+              "intentionally"
+            ],
+            "explanation": "The presence of the word 'overlook' suggests that the author deliberately ignores some of the problems of the foreign industries which are otherwise highly successful to stress the points on which they have exceeded and on which we might try to copy (emulate) them for our own success. The words which closely relate to 'deliberately' are 'purposely' and 'intentionally.'"
           },
           "question12": {
-            "type": "reading_comprehension",
-            "paragraph": "Most consumers do not get much use out of the sports equipment they purchase. For example, seventeen percent of the adults in the United States own jogging shoes, but only forty-five percent of the owners jog more than once a year, and only seventeen percent jog more than once a week.",
-            "questionText": "Which of the following, if true, casts most doubt on the claim that most consumers get little use out of the sports equipment they purchase?",
+            "type": "sentence_equivalence",
+            "questionText": "Some customs travel well; often however, behavior that is considered the epitome of _____ at home is perceived as impossibly rude or, at the least, harmlessly bizarre abroad.",
             "options": [
-              "Joggers are most susceptible to sports injuries during the first six months in which they jog.",
-              "Joggers often exaggerate the frequency with which they jog in surveys designed to elicit such information.",
-              "Many consumers purchase jogging shoes for use in activities other than jogging.",
-              "Consumers who take up jogging often purchase an athletic shoe that can be used in other sports.",
-              "Joggers who jog more than once a week are often active participants in other sports as well."
+              "novelty",
+              "eccentricity",
+              "urbanity",
+              "coarseness",
+              "civility",
+              "tolerance"
             ],
             "correctAnswer": [
-              "Many consumers purchase jogging shoes for use in activities other than jogging."
+              "urbanity",
+              "civility"
             ],
-            "explanation": "The claim that most consumers do not get much use out of the sports equipment they purchase is supported by the infrequency with which jogging shoes are used for jogging. This reasoning overlooks the possibility that jogging shoes are used for other purposes; thus, choice C is the best answer. Because injured joggers are less likely to use their jogging shoes, choice A is inappropriate. If B is true, joggers use their jogging shoes even less than the study cited states. So choice B is inappropriate. Because the consumers and joggers mentioned in D and E respectively are most likely to be among those who frequently use sports equipment and whose existence the argument concedes, D and E are inappropriate."
+            "explanation": "The word 'however' suggests that the two parts of the sentence are in opposition to each other. The sentence indicates that behavior which is considered odd and rude out of the country (abroad) is seen as courteous and polite in one’s own country (at home), making the behaviors contrary in their consideration abroad and at home. Thus, the words which relate to the behavior at home are 'urbanity' and 'civility.'"
           }
         },
         "verbal2": {
           "question1": {
-            "type": "reading_comprehension_multiple",
-            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
-            "questionText": "The passage contains information that would answer which of the following questions?",
+            "type": "sentence_equivalence",
+            "questionText": "Some customs travel well; often however, behavior that is considered the epitome of _____ at home is perceived as impossibly rude or, at the least, harmlessly bizarre abroad.",
             "options": [
-              "What are odontocetes and mysticetes?",
-              "In which part of the body do whales produce sounds?",
-              "In which animals is the auditory center of the brain most developed?"
+              "novelty",
+              "eccentricity",
+              "urbanity",
+              "coarseness",
+              "civility",
+              "tolerance"
             ],
             "correctAnswer": [
-              "What are odontocetes and mysticetes?",
-              "In which part of the body do whales produce sounds?"
+              "urbanity",
+              "civility"
             ],
-            "explanation": "The answer is (A) and (B). Option (A) can be answered because the passage clearly mentions that odontocetes and mysticetes are whales. Option (B) also can be answered because the passage states that 'Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx.' The word phonation means speech. Therefore, we know that whales use the larynx to produce sound. Option (C) is incorrect because we cannot say, from the information available in the passage, which animal has the most developed auditory center of the brain. The passage only mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.' However, from this information we cannot assume that whales have the most developed auditory center. The sentence only talks about mammals and not all animals. Therefore, we cannot answer the question as to which animal has the most developed auditory center."
+            "explanation": "The word 'however' suggests that the two parts of the sentence are in opposition to each other. The sentence indicates that behavior which is considered odd and rude out of the country (abroad) is seen as courteous and polite in one’s own country (at home), making the behaviors contrary in their consideration abroad and at home. Thus, the words which relate to the behavior at home are 'urbanity' and 'civility.'"
           },
           "question2": {
-            "type": "reading_comprehension",
-            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
-            "questionText": "Q. It can be inferred from the passage that",
+            "type": "sentence_equivalence",
+            "questionText": "To ensure the development and exploitation of a new technology, there must be a constant _____ of several nevertheless distinct activities.",
             "options": [
-              "animals with more highly developed auditory apparatuses tend to produce more sounds",
-              "animals without vocal cords tend to produce as much sound as those with vocal cords",
-              "highly intelligent animals tend to produce more sound than less intelligent species",
-              "the absence of vocal cords has hindered the adaptation of cetaceans",
-              "sound is an important means of communication among whales"
+              "interplay",
+              "implementation",
+              "interaction",
+              "comprehending",
+              "improvement",
+              "exploration"
             ],
             "correctAnswer": [
-              "animals with more highly developed auditory apparatuses tend to produce more sounds"
+              "interplay",
+              "interaction"
             ],
-            "explanation": "The answer is (A). This is because the passage states that odontocetes are more vociferous than the mysticetes. It also mentions that 'the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes.' This implies that odontocetes are more vociferous because their auditory centers are more developed. Therefore, it can be inferred that animals with more highly developed auditory apparatuses tend to produce more sounds."
+            "explanation": "The activities which are distinct, i.e., not connected with one another, need to continuously connect or communicate with each other to make sure the development and exploitation of a new technology. The words which best describe 'communicate' are 'interplay' and 'interaction.'"
           },
           "question3": {
-            "type": "reading_comprehension_select",
-            "passage": "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill’s theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was 'really neither single nor anomalous,' but she was also more than a 'register and spokesman for her age.' She was part of a tradition that had its origins before her age, and has carried on through our own. Many literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women’s literature as an international movement, 'apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.' This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.' Patricia Meyer Spacks, in The Female Imagination, finds that 'for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.' Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
-            "questionText": "Select the sentence in the passage in which the author makes use of an extended metaphor.",
+            "type": "sentence_equivalence",
+            "questionText": "The failures of the early Greek philosophers' attempts to explain the operations of the cosmos led certain later thinkers to inquire into the _____ of human reason.",
             "options": [
-              "sentence_1",
-              "sentence_2",
-              "sentence_3",
-              "sentence_4",
-              "sentence_5"
+              "origin",
+              "excess",
+              "independence",
+              "plasticity",
+              "potency",
+              "efficacy"
             ],
             "correctAnswer": [
-              "As the works of dozens of women writers have been rescued from what E-P Thompson calls 'the enormous condescension of posterity,' and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature"
-            ]
+              "potency",
+              "efficacy"
+            ],
+            "explanation": "The sentence states that early Greek philosophers failed in their attempts to explain the workings of the universe, suggesting that their reason did not have the ability or power to explain the above phenomenon, which led the later thinkers to inquire into this failure of the ability of human reason. The words which closely relate to 'ability' are 'potency' and 'efficacy.'"
           },
           "question4": {
-            "type": "reading_comprehension",
-            "passage": "As the works of dozens of women writers have been rescued from what E. P. Thompson calls \"the enormous condescension of posterity,\" and considered in relation to each other, the lost continent of the female tradition has risen like Atlantis from the sea of English literature. It is now becoming clear that, contrary to Mill's theory, women have had a literature of their own all along. The women novelist, according to Vineta Colby, was \"really neither single nor anomalous,\" but she was also more than a \"register and spokesman for her age.\" She was part of a tradition that had its origins before her age, and has carried on through our own.\n\nMany literary historians have begun to reinterpret and revise the study of women writers. Ellen Moers sees women's literature as an international movement, \"apart from, but hardly subordinate to the mainstream: an undercurrent, rapid and powerful.\" This 'movement' began in the late eighteenth century, was multinational, and produced some of the greatest literary works of two centuries, as well as most of the lucrative pot-boilers.\" Patricia Meyer Spacks, in The Female Imagination, finds that \"for readily discernible historical reasons women have characteristically concerned themselves with matters more or less peripheral to male concerns, or at least slightly skewed from them. The differences between traditional female preoccupations and roles and male ones make a difference in female writing.\" Many other critics are beginning to agree that when we look at women writers collectively we can see an imaginative continuum, the recurrence of certain patterns, themes, problems, and images from generation to generation.",
-            "questionText": "The passage supplies information for answering which of the following questions?",
+            "type": "sentence_equivalence",
+            "questionText": "A recent survey shows that, while ninety-four percent of companies conducting management training programs open them to women, women are _____ only seventy-four percent of those programs.",
             "options": [
-              "Does the author believe the female literary tradition to be richer in depth than its masculine counterpart?",
-              "Are women psychological as well as sociological chameleons?",
-              "Does Moers share Mill’s concern over the ephemeral nature of female literary renown?",
-              "What patterns, themes, images, and problems recur sufficiently in the work of women writers to belong to the female imaginative continuum?",
-              "Did Mill acknowledge the existence of a separate female literary tradition?"
+              "protesting against",
+              "participating in",
+              "attending",
+              "displeased by",
+              "allowed in",
+              "refused by"
             ],
             "correctAnswer": [
-              "Did Mill acknowledge the existence of a separate female literary tradition?"
+              "participating in",
+              "attending"
             ],
-            "explanation": "The answer is (E). This question can be answered on the basis of the passage. According to the first paragraph, Mill disbelieved in the idea that women \"have had a literature of their own all along.\""
+            "explanation": "The phrase 'open them to women' suggests that ninety-four percent of the companies conducting management training programs give the opportunity to women to join or be a part of these programs, yet women are a part of only seventy-four percent of those programs. The words closely related to the phrase 'a part of' are 'participating in' and 'attending.'"
           },
           "question5": {
-            "type": "sentence_equivalence",
-            "questionText": "The Gibsons were little given to ___ in any form; not one of them was afraid of singularity, of being and seeming unlike their neighbors.",
+            "type": "text_completion",
+            "questionText": "Though environmentalists have targeted some herbicides as potentially dangerous, the manufacturers, to the environmentalists’ dismay, __________ the use of these herbicides on lawns.",
             "options": [
-              "humility",
-              "excellence",
-              "anger",
-              "conformism",
-              "ostentation",
-              "emulation"
+              "defy",
+              "defer",
+              "defend",
+              "assail",
+              "disparage"
             ],
             "correctAnswer": [
-              "conformism",
-              "emulation"
+              "defend"
             ],
-            "explanation": "The sentence states that the Gibsons were not afraid to appear different from their neighbors, suggesting that they were little into copying others or appearing similar to others. Thus, the Gibsons were little given to 'conformism' and 'emulation.'"
+            "blanks": 1,
+            "explanation": "'Though' being a contrast sign to the oppositional phrase 'some herbicides as potentially dangerous' and coupled with 'to the environmentalists' dismay,' we are looking for a word that is opposite of the logic that 'some herbicides as potentially dangerous.' So the word we are looking for is 'defend' because if the manufacturers either 'assail' or 'disparage,' then they agree with the environmentalists. 'Defer' means to delay, so that can't fit either, and 'defy' is illogical as that means to resist. So that won't work."
           },
           "question6": {
-            "type": "sentence_equivalence",
-            "questionText": "The kenjogo or humble language used in Japanese to refer to oneself and the sonkeigo or honorific language used to describe the interlocutor are often toned down in English translation, as more accurate renderings might sound __________ to an ear accustomed to more egalitarian phrasings.",
-            "options": [
-              "servile",
-              "garrulous",
-              "obsequious",
-              "circumspect",
-              "querulous",
-              "loquacious"
-            ],
+            "type": "text_completion",
+            "questionText": "Whereas biologists must maintain a (i) ______ attitude toward the subjects of their research, social scientists must, paradoxically, combine personal involvement and scholarly (ii) ______.",
+            "options": {
+              "blank1": [
+                "scrupulous",
+                "careful",
+                "disinterested"
+              ],
+              "blank2": [
+                "sympathy",
+                "passion",
+                "detachment"
+              ]
+            },
             "correctAnswer": [
-              "servile",
-              "obsequious"
+              "disinterested",
+              "detachment"
             ],
-            "explanation": "This asks what a language with humble and honorific forms of speech might sound like to an ear accustomed to more egalitarian phrasings, one from a culture in which one is generally free to address others as equals. Such self-abasing forms of speech might sound overly deferential or just too polite. This leaves 'servile' and 'obsequious' as the correct answers, both of which connote excessive humility."
+            "blanks": 2,
+            "explanation": "Let's take the second blank first. The key to it lies in the usage of 'paradoxically, combine personal involvement.' It implies that two opposite things are combined. One of them is personal involvement. So we need to find the other. That's easy; both 'sympathy' and 'passion' can only stem from personal involvement, but then you have 'detachment,' which is the opposite and therefore is the answer. Now for the first blank, 'whereas' is a contrast sign to the second part - 'detachment and personal involvement.' So since the second part is a combination of both, the first has to be an antonym to one and a synonym to the other. The only word that qualifies is 'disinterested,' which is a synonym to detachment and an antonym to personal involvement."
           },
           "question7": {
-            "type": "sentence_equivalence",
-            "questionText": "In the design of medical experiments, the need for ___ assignment of treatments to patients must be reconciled with the difficulty of persuading patients to participate in an experiment in which their treatment is decided by chance.",
-            "options": [
-              "independent",
-              "competent",
-              "mechanical",
-              "swift",
-              "random",
-              "casual"
-            ],
-            "correctAnswer": [
-              "random",
-              "casual"
-            ],
-            "explanation": "The experiment in which the treatment of the patients is brought about 'by chance' is unplanned and a part of an assignment which does not have a careful choice. The assignment thus is 'random' and 'casual.'"
-          },
-          "question8": {
-            "type": "sentence_equivalence",
-            "questionText": "Crosby's colleagues have never learned, at least not in time to avoid embarrassing themselves, that her occasional ___ air of befuddlement presages a display of her formidable intelligence.",
-            "options": [
-              "genuine",
-              "alert",
-              "affected",
-              "bogus",
-              "painstaking",
-              "acute"
-            ],
-            "correctAnswer": [
-              "affected",
-              "bogus"
-            ],
-            "explanation": "The word 'presages' suggests that the confused look (air of befuddlement) of Crosby foretells her impressive (formidable) intelligence suggesting that the confused look is false and a pretense on her part. The words which closely describe Crosby's confused look are 'affected' and 'bogus.'"
-          },
-          "question9": {
             "type": "text_completion",
-            "questionText": "From 'chutney' the Hindi word taken in the sense of a mixture, or (i) ________ of various ingredients. The Indian writer today is open to influences ranging from pop culture of the west to the centuries-old and indigenous Indian culture. He often seems (ii) ________, rootless and confused. At the same time he is very alive and sensitive to changes around his milieu. This gives his (iii) ________ pungency.",
+            "questionText": "I was feeling dejected and disappointed at this gaffe. It seemed like a road in the winter (i) __________ by the annual freeze and thaw cycle. However, the (ii) __________ was not far away. Every shame is a new opportunity to learn in the (iii) __________ that life habitually throws up.",
             "options": {
               "blank1": [
-                "melee",
-                "melange",
-                "ruction"
+                "riven",
+                "driven",
+                "shriven"
               ],
               "blank2": [
-                "alienated",
-                "integrated",
-                "addlepated"
+                "green mile",
+                "silver lining",
+                "underlining"
               ],
               "blank3": [
-                "perceptions",
-                "inceptions",
-                "commiserations"
+                "contretemps",
+                "bêtise",
+                "debridement"
               ]
             },
             "correctAnswer": [
-              "melange",
-              "alienated",
-              "perceptions"
+              "riven",
+              "silver lining",
+              "contretemps"
             ],
-            "blanks":3,
-            "explanation": "For the first blank the right option is 'melange' which captures the sense of a mixture. For the second blank the right option is 'alienated.' Note that even 'addlepated' makes sense here. However it is not grammatically correct as one of the functions of a comma is to separate two adjectives describing the same thing. Hence the word 'alienated' that matches with rootless is correct here. For the third blank the right option is 'perceptions' as we are speaking of the writer's response to the multiple influences."
+            "blanks": 3,
+            "explanation": "For the first blank, the only logically correct option is 'riven' as the sense is of being disjointed, which is conveyed by the term 'freeze and thaw cycle.' The second blank is logically completed with the phrase 'silver lining' in keeping with the sense of optimism in the succeeding lines. For the third blank, the logically correct word is 'contretemps,' which carries a sense of shame resulting from gaffe."
           },
-          "question10": {
+          "question8": {
             "type": "text_completion",
-            "questionText": "Nothing (i) ______ his irresponsibility better than his (ii) ______ delay in sending us the items he promised weeks ago.",
+            "questionText": "Linguistic conventions develop in different social groups and then serve to separate one language from another. However, over the years the social groups have migrated and changed. It is because of this very reason that the spoken language submits to change and (i) ___________, these variations can be both (ii) _________ and (iii) __________ as such changes in the language are both within a time period as well as because of it.",
             "options": {
               "blank1": [
-                "justifies",
-                "epitomizes",
-                "conceals"
+                "riff",
+                "tiff",
+                "plat"
               ],
               "blank2": [
-                "conspicuous",
-                "timely",
-                "unnecessary"
+                "epigonic",
+                "surreal",
+                "synchronic"
+              ],
+              "blank3": [
+                "benthonic",
+                "bubonic",
+                "diachronic"
               ]
             },
             "correctAnswer": [
-              "epitomizes",
-              "unnecessary"
+              "riff",
+              "synchronic",
+              "diachronic"
             ],
-            "blanks":2,
-            "explanation": "The key lies in 'delay in sending us the items he promised weeks ago.' Since he did delay in sending out the stuff, it cannot justify his irresponsibility. And of course it cannot conceal it either. Hence the answer is 'epitomizes.' And now for the second blank, timely delay will be an oxymoron and therefore not contextually correct, and conspicuous (obvious) is redundant and therefore will not work, which makes 'unnecessary' the only choice."
+            "blanks": 3,
+            "explanation": "For the first blank, the right word is 'riff' which conveys the sense of variation. 'Synchronic' and 'diachronic' logically complete blank 2 and 3 as these words match the sense conveyed in the last line."
           },
-          "question11": {
-            "type": "text_completion",
-            "questionText": "Contrary to the antiquated idea that the eighteenth century was a _______ island of elegant assurance, evidence reveals that life for most people was filled with uncertainty and insecurity.",
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "In recent years many cabinetmakers have been winning acclaim as artists. But since furniture must be useful, cabinetmakers must exercise their craft with an eye to the practical utility of their product. For this reason, cabinetmaking is not art.",
+            "questionText": "Which of the following is an assumption that supports drawing the conclusion above from the reason given for that conclusion?",
             "options": [
-              "clannish",
-              "declining",
-              "tranquil",
-              "recognized",
-              "sprawling"
+              "Some furniture is made to be placed in museums, where it will not be used by anyone.",
+              "Some cabinetmakers are more concerned than others with the practical utility of the products they produce.",
+              "Cabinetmakers should be more concerned with the practical utility of their products than they currently are.",
+              "An object is not an art object if its maker pays attention to the object’s practical utility.",
+              "Artists are not concerned with the monetary value of their products."
             ],
             "correctAnswer": [
-              "tranquil"
+              "An object is not an art object if its maker pays attention to the object’s practical utility."
             ],
-            "blanks":1,
-            "explanation": "The word 'contrary' points to a contrast to 'filled with uncertainty and insecurity.' Therefore, the antonym to that would be the answer. Hence, the right answer is 'tranquil.'"
+            "explanation": "The argument concludes that cabinetmaking is not an art because cabinetmakers must consider the practical utility of their products. If it is true that an object is not a work of art if its maker pays attention to the object’s practical utility, as choice D says, the conclusion is supported. Thus, choice D is the best answer. The argument is concerned with whether or not the cabinetmakers must take the practical utility of their products into consideration, not with either their monetary value (choice E) or what actually happens to them (choice A). The argument is not concerned with the precise degree to which individual cabinetmakers take the practical utility of cabinets into consideration. Thus, neither B nor C is appropriate."
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "The transplantation of organs from one individual to another normally involves two major problems: (1) organ rejection is likely unless the transplantation antigens of both individuals are nearly identical, and (2) the introduction of any unmatched transplantation antigens induces the development by the recipient of donor-specific lymphocytes that will produce violent rejection of further transplantations from that donor. However, we have found that among many strains of rats these 'normal' rules of transplantation are not obeyed by liver transplants. Not only are liver transplants never rejected, but they even induce a state of donor-specific unresponsiveness in which subsequent transplants of other organs, such as skin, from that donor are accepted permanently. Our hypothesis is that (1) many strains of rats simply cannot mount a sufficiently vigorous destructive immune-response (using lymphocytes) to outstrip the liver’s relatively great capacity to protect itself from immune-response damage and that (2) the systemic unresponsiveness observed is due to the concentration of the recipient’s donor-specific lymphocytes at the site of the liver transplant.",
+            "questionText": "The primary purpose of the passage is to treat the accepted generalizations about organ transplantation in which of the following ways?",
+            "options": [
+              "Explicate their main features",
+              "Suggest an alternative to them",
+              "Examine their virtues and limitations",
+              "Criticize the major evidence used to support them",
+              "Present findings that qualify them"
+            ],
+            "correctAnswer": [
+              "Present findings that qualify them"
+            ],
+            "explanation": "A close reading of the passage clearly reveals that the passage qualifies or modifies the accepted generalizations about organ transplants. The key lines in the passage in this regard would be where the author talks about the results of organ transplants among rats."
+          },
+          "question11": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The transplantation of organs from one individual to another normally involves two major problems: (1) organ rejection is likely unless the transplantation antigens of both individuals are nearly identical, and (2) the introduction of any unmatched transplantation antigens induces the development by the recipient of donor-specific lymphocytes that will produce violent rejection of further transplantations from that donor. However, we have found that among many strains of rats these 'normal' rules of transplantation are not obeyed by liver transplants. Not only are liver transplants never rejected, but they even induce a state of donor-specific unresponsiveness in which subsequent transplants of other organs, such as skin, from that donor are accepted permanently. Our hypothesis is that (1) many strains of rats simply cannot mount a sufficiently vigorous destructive immune-response (using lymphocytes) to outstrip the liver’s relatively great capacity to protect itself from immune-response damage and that (2) the systemic unresponsiveness observed is due to the concentration of the recipient’s donor-specific lymphocytes at the site of the liver transplant.",
+            "questionText": "It can be inferred from the passage that the author believes that an important difference among strains of rats is the",
+            "options": [
+              "strength of their immune-response reactions",
+              "constitution of their skin",
+              "size of their livers"
+            ],
+            "correctAnswer": [
+              "strength of their immune-response reactions"
+            ],
+            "explanation": "It is clearly stated in the passage that: 'Our hypothesis is that (1) many strains of rats simply cannot mount a sufficiently vigorous destructive immune-response (using lymphocytes) to outstrip the liver’s relatively great capacity to protect itself from immune-response damage.' Hence, it can be inferred that it is the immune system response strength that is an important difference in the strains of rats."
           },
           "question12": {
+            "type": "reading_comprehension",
+            "passage": "The transplantation of organs from one individual to another normally involves two major problems: (1) organ rejection is likely unless the transplantation antigens of both individuals are nearly identical, and (2) the introduction of any unmatched transplantation antigens induces the development by the recipient of donor-specific lymphocytes that will produce violent rejection of further transplantations from that donor. However, we have found that among many strains of rats these 'normal' rules of transplantation are not obeyed by liver transplants. Not only are liver transplants never rejected, but they even induce a state of donor-specific unresponsiveness in which subsequent transplants of other organs, such as skin, from that donor are accepted permanently. Our hypothesis is that (1) many strains of rats simply cannot mount a sufficiently vigorous destructive immune-response (using lymphocytes) to outstrip the liver’s relatively great capacity to protect itself from immune-response damage and that (2) the systemic unresponsiveness observed is due to the concentration of the recipient’s donor-specific lymphocytes at the site of the liver transplant.",
+            "questionText": "According to the hypothesis of the author, after a successful liver transplant, the reason that rats do not reject further transplants of other organs from the same donor is that the",
+            "options": [
+              "transplantation antigens of the donor and the recipient become matched",
+              "lymphocytes of the recipient are weakened by the activity of the transplanted liver",
+              "subsequently transplanted organ is able to repair the damage caused by the recipient's immune-response reaction",
+              "transplanted liver continues to be the primary locus for the recipient’s immune-response reaction"
+            ],
+            "correctAnswer": [
+              "transplanted liver continues to be the primary locus for the recipient’s immune-response reaction"
+            ],
+            "explanation": "It is clearly stated in the passage that 'the systemic unresponsiveness observed is due to the concentration of the recipient’s donor-specific lymphocytes at the site of the liver transplant.' This clearly suggests that the transplanted liver is indeed the locus or site of the recipient’s immune response."
+          },
+          "question13": {
+            "type": "reading_comprehension",
+            "passage": "Throughout human history there have been many stringent taboos concerning watching other people eat or eating in the presence of others. There have been attempts to explain these taboos in terms of inappropriate social relationships either between those who are involved and those who are not simultaneously involved in the satisfaction of a bodily need, or between those already satiated and those who appear to be shamelessly gorging. Undoubtedly such elements exist in the taboos, but there is an additional element with a much more fundamental importance. In prehistoric times, when food was so precious and the on-lookers so hungry, not to offer half of the little food one had was unthinkable, since every glance was a plea for life. Further, during those times, people existed in nuclear or extended family groups, and the sharing of food was quite literally supporting one’s family or, by extension, preserving one’s self.",
+            "questionText": "The author’s hypothesis concerning the origin of taboos against watching other people eat emphasizes the",
+            "options": [
+              "general palatability of food",
+              "religious significance of food",
+              "limited availability of food",
+              "various sources of food",
+              "nutritional value of food"
+            ],
+            "correctAnswer": [
+              "limited availability of food"
+            ],
+            "explanation": "The limited availability of food is the main reason, according to the author, why taboos were imposed on eating. It is clear from these lines 'In prehistoric times, when food was so precious and the on-lookers so hungry, not to offer half of the little food one had was unthinkable, since every glance was a plea for life,' that certain societal taboos were imposed on eating in public primarily because of the unavailability of food."
+          },
+          "question14": {
             "type": "reading_comprehension_select",
-            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
-            "questionText": "Select the sentence in the passage which implies that the work of Meredith is noteworthy for its elements of brilliance and linguistic grandeur.",
+            "passage": "Throughout human history there have been many stringent taboos concerning watching other people eat or eating in the presence of others. There have been attempts to explain these taboos in terms of inappropriate social relationships either between those who are involved and those who are not simultaneously involved in the satisfaction of a bodily need, or between those already satiated and those who appear to be shamelessly gorging. Undoubtedly such elements exist in the taboos, but there is an additional element with a much more fundamental importance. In prehistoric times, when food was so precious and the on-lookers so hungry, not to offer half of the little food one had was unthinkable, since every glance was a plea for life. Further, during those times, people existed in nuclear or extended family groups, and the sharing of food was quite literally supporting one’s family or, by extension, preserving one’s self.",
+            "questionText": "Select the sentence in the passage which suggests that the author considers the past attempts to explain some taboos concerning eating as incomplete.",
             "options": [
               "sentence_1",
               "sentence_2",
@@ -3814,40 +3854,9 @@
               "sentence_5"
             ],
             "correctAnswer": [
-              "That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference"
+              "Undoubtedly such elements exist in the taboos, but there is an additional element with a much more fundamental importance"
             ],
-            "explanation": "The answer should be the following line from the passage: 'That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference.' This is because in this sentence the author cites Meredith’s intelligence (brilliance) and his splendor of language (linguistic grandeur)."
-          },
-          "question13": {
-            "type": "reading_comprehension_multiple",
-            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose 'view of life' wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not 'speak to us,' we might say; his meaning is not a 'meaning for us'; he 'leaves us cold.' But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
-            "questionText": "Which of the following can be found in the author’s discussion of Meredith?",
-            "options": [
-              "an indication of Meredith’s customary effect on readers",
-              "an enumeration of the admirable qualities in his work",
-              "a refutation of the claim that Meredith evokes no sympathy"
-            ],
-            "correctAnswer": [
-              "an indication of Meredith’s customary effect on readers",
-              "an enumeration of the admirable qualities in his work"
-            ],
-            "explanation": "The passage discusses Meredith's customary effect on readers, where the author mentions how readers feel only a passive appreciation for Meredith's work, which amounts practically to indifference. It also enumerates the admirable qualities in his work, such as 'muscular intelligence' and 'splendor of language.' However, the passage does not provide a refutation of the claim that Meredith evokes no sympathy."
-          },
-          "question14": {
-            "type": "reading_comprehension",
-            "passage": "With Meredith’s The Egoist we enter into a critical problem that we have not yet before faced in these studies. That is the problem offered by a writer of recognizably impressive stature, whose work is informed by a muscular intelligence, whose language has splendor, whose “view of life” wins our respect, and yet for whom we are at best able to feel only a passive appreciation which amounts, practically, to indifference. We should be unjust to Meredith and to criticism if we should, giving in to the inertia of indifference, simply avoid dealing with him and thus avoid the problem along with him. He does not “speak to us,” we might say; his meaning is not a “meaning for us”; he “leaves us cold.” But do not the challenge and the excitement of the critical problem as such lie in that ambivalence of attitude which allows us to recognize the intelligence and even the splendor of Meredith’s work, while, at the same time, we experience a lack of sympathy, a failure of any enthusiasm or response?",
-            "questionText": "It can be inferred from the passage that the author would be most likely to agree with which of the following statements about the role of criticism?",
-            "options": [
-              "Its prime office should be to make our enjoyment of the things that feed the mind as conscious as possible.",
-              "It should be a disinterested endeavor to learn and propagate the best that is known and thought in the world.",
-              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes.",
-              "It should dwell upon excellencies rather than imperfections, ignoring such deficiencies as irrelevant.",
-              "It should strive both to purify literature and to elevate the literary standards of the reading public."
-            ],
-            "correctAnswer": [
-              "It should enable us to go beyond personal prejudice to appreciate the virtues of works antipathetic to our own tastes."
-            ],
-            "explanation": "The answer is (C). This is because the author wishes us to be able to recognize the good qualities of Meredith’s work while at the same time we continue to find it personally unsympathetic. Thus, she would agree that criticism should enable us to appreciate the virtues of works we dislike. Choices (A), (B), and (E) are unsupported by the passage. Choice (D) is also incorrect because while the author wishes the reader to be aware of Meredith’s excellencies, she does not suggest that the reader should ignore those qualities in Meredith that make his work unsympathetic. Rather, she wishes the reader to come to appreciate the very ambivalence of his critical response."
+            "explanation": "The sentence 'Undoubtedly such elements exist in the taboos, but there is an additional element with a much more fundamental importance' suggests that while previous explanations for the taboos may have some validity, they are incomplete because they overlook a more fundamental reason."
           },
           "question15": {
             "type": "reading_comprehension",
@@ -3869,355 +3878,358 @@
         "quantitative1": {
           "question1": {
             "type": "multiple_choice_single_answer",
-            "questionText": "The operation ⊗ is defined for all nonzero numbers a and b by a ⊗ b = (a/b) - (b/a). If x and y are nonzero numbers, which of the following statements must be true?\n\nI. x ⊗ xy = x(1 ⊗ y)\nII. x ⊗ y = -(y ⊗ x)\nIII. 1/x ⊗ 1/y = y ⊗ x",
+            "questionText": "The sum of squares of the first 20 natural numbers is:",
             "options": [
-              "I only",
-              "II only",
-              "III only",
-              "I and II",
-              "II and III"
+              "2160",
+              "2870",
+              "2000",
+              "3000",
+              "2550"
             ],
-            "correctAnswer": "II and III",
-            "explanation": "Case 1:\n\nx ⊗ xy = (x/xy) - (xy/x) = 1/y - y ≠ x(1 ⊗ y)\n\nx(1 ⊗ y) = x(1/y - y) ≠ 1/y - y ⇒ Not equal\n\nCase 2:\n\nx ⊗ y = (x/y) - (y/x)\n\n -(y ⊗ x) = -((y/x) - (x/y)) ⇒ Equal\n\nCase 3:\n\n1/x ⊗ 1/y = (1/x) / (1/y) - (1/y) / (1/x) = y/x - x/y\n\ny ⊗ x ⇒ Equal\n\nTherefore, the correct answer is II and III."
+            "correctAnswer": "2870",
+            "explanation": "The sum of the squares of the first n natural numbers is given by the formula: n(n + 1)(2n + 1) / 6. Substituting n = 20, the sum is 2870."
           },
           "question2": {
             "type": "multiple_choice_single_answer",
-            "questionText": "If w, x, y, and z are integers such that 1 < w < x < y < z and wxyz = 462, then z = ?",
+            "questionText": "The diagonal of a square is 50m. Find the area of the square.",
             "options": [
-              "7",
-              "11",
-              "14",
-              "21",
-              "42"
+              "1200 m²",
+              "1300 m²",
+              "1250 m²",
+              "2500 m²",
+              "None of these."
             ],
-            "correctAnswer": "11",
-            "explanation": "The prime factorization of 462 is 462 = 2 × 3 × 7 × 11. Since 1 < w < x < y < z, the integers must be 2, 3, 7, and 11. Therefore, z = 11."
+            "correctAnswer": "1250 m²",
+            "explanation": "The diagonal of a square is given by the formula: Diagonal = √2 * s, where s is the side length. Given that the diagonal is 50m, we have s = 50/√2. The area of the square is then s² = (50/√2)² = 1250 m²."
           },
           "question3": {
-            "type": "numeric_entry",
-            "questionText": "Last year, 36 houses in a certain development had roof repairs and 48 houses were repainted. If 20 houses in the development had roof repairs but were not repainted last year, how many houses were repainted but did not have roof repairs?",
-            "correctAnswer": "32",
-            "explanation": "Roof repairs = 36\nRepaint = 48\nRoof repairs without paint = 20\nRoof repairs with repaint = 36 - 20 = 16\nRepaint without roof repairs = 48 - 16 = 32"
+            "type": "multiple_choice_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/flt%203,%20QA1%20q18.jpg",
+            "questionText": "In the given figure above, AB || MN. Find x?",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "1.5"
+            ],
+            "correctAnswer": "4",
+            "explanation": "Since AB is parallel to MN and using the properties of similar triangles, the corresponding sides are proportional. Therefore, we set up the proportion: \n(x - 3)/x = (x + 2)/(x + 4). Solving this equation leads to x = 4."
           },
           "question4": {
             "type": "multiple_choice_single_answer",
-            "questionText": "Tanks A and B are each in the shape of a right circular cylinder. The interior of tank A has a height of 10 meters and a circumference of 8 meters, and the interior of tank B has a height of 8 meters and a circumference of 10 meters. The capacity of tank A is what percent of the capacity of tank B?",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/flt3%20q-19.jpg",
+            "questionText": "In the given figure, RS is the diameter. Find ∠PQR?",
             "options": [
-              "75%",
-              "80%",
-              "100%",
-              "120%",
-              "125%"
+              "20°",
+              "30°",
+              "50°",
+              "45°",
+              "40°"
             ],
-            "correctAnswer": "80%",
-            "explanation": "For Tank A:\n\n- Height (h) = 10\n- Circumference = 8, so radius (r) = 8/(2π) = 4/π\n- Capacity of Tank A = πr²h = 160/π\n\nFor Tank B:\n\n- Height (h) = 8\n- Circumference = 10, so radius (r) = 10/(2π) = 5/π\n- Capacity of Tank B = πr²h = 200/π\n\nPercentage = (Capacity of Tank A / Capacity of Tank B) * 100 = (160/π) / (200/π) * 100 = 80%"
+            "correctAnswer": "40°",
+            "explanation": "Since RS is the diameter, the quadrilateral is cyclic. The sum of the opposite angles in a cyclic quadrilateral is 180°. Given that ∠QPR is calculated as 110°, ∠PQR can be found by subtracting from 180°: ∠PQR = 180° - 110° - 30° = 40°."
           },
           "question5": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
-            "questionText": "The two pie diagrams given below provide the relative expenses of two families A and B. The miscellaneous expenses of Family A as a percentage of those of Family B is:",
+            "type": "multiple_choice_multiple_answers",
+            "questionText": "Let m be an odd integer and n an even integer. Which of the following must be even?",
             "options": [
-              "Less than 75%",
-              "Less than 80%",
-              "More than 80%",
-              "80%",
-              "None of these."
+              "nm²",
+              "n + m",
+              "3n - 2m",
+              "n - m",
+              "nm"
             ],
-            "correctAnswer": "More than 80%",
-            "explanation": "Family A spends: (48/360) × 4800 = Rs. 640\nFamily B spends: (39/360) × 7200 = Rs. 780\nRequired percentage = (640/780) × 100 = 82%\nThus, the answer is option 3."
+            "correctAnswer": [
+              "nm²",
+              "n + m",
+              "nm"
+            ],
+            "explanation": "Take an example where m = 3 (odd) and n = 4 (even), and solve each option:\n- nm²: Since m² is odd and n is even, the product is even.\n- n + m: The sum of an odd and an even number is odd.\n- 3n - 2m: The product of an even number and an odd number subtracted from an even number is even.\n- n - m: The difference between an even and an odd number is odd.\n- nm: The product of an even number and an odd number is even.\nThe result is the same for every assumed pair."
           },
           "question6": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
-            "questionText": "The item showing the least difference in expenditure between A and B is:",
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a student gets 70% in one subject, 80% in another, then to get an overall 76%, how much should he get in the third subject?",
             "options": [
-              "Food",
-              "Light",
-              "Clothing",
-              "Miscellaneous",
-              "Education"
+              "75%",
+              "76%",
+              "77%",
+              "78%",
+              "79%"
             ],
-            "correctAnswer": "Light",
-            "explanation": "For Family A, Light: (18/360) × 4800 = Rs. 240\nFor Family B, Light: (15/360) × 7200 = Rs. 300\nDifference = 300 - 240 = 60 (least)"
+            "correctAnswer": "78%",
+            "explanation": "Let the percentage marks in the third subject be x. To find x, set up the equation:\n(70 + 80 + x) / 3 = 76. Solving for x gives x = 78%."
           },
           "question7": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-8,9,10(new).jpg",
-            "questionText": "The percentage of expenses of A and B on food are in the ratio:",
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many squares with sides 1/2 inch are needed to cover a rectangle which is 4 feet long and 6 feet wide?",
             "options": [
-              "55:48",
-              "4:5",
-              "5:4",
-              "48:55",
-              "None of these."
+              "24",
+              "96",
+              "3456",
+              "13824",
+              "1152"
             ],
-            "correctAnswer": "48:55",
-            "explanation": "Percentage of expenditure of A on food = (96/360) × 100\nPercentage of expenditure of B on food = (110/360) × 100\nRatio = 96:110 = 48:55"
+            "correctAnswer": "13824",
+            "explanation": "First, convert the dimensions of the rectangle to inches:\n\n4 feet = 48 inches and 6 feet = 72 inches.\n\nThe area of the rectangle is 48 × 72 square inches.\n\nThe area of each square is 1/2 × 1/2 square inches.\n\nThe number of squares required = (Area of the rectangle) / (Area of each square)\n= (48 × 72) / (1/2 × 1/2) = 13824."
           },
           "question8": {
             "type": "multiple_choice_single_answer",
-            "questionText": "At a monthly meeting, 2/5 of the attendees were males and 7/8 of the male attendees arrived on time. If 9/10 of the female attendees arrived on time, what fraction of the attendees at the monthly meeting did not arrive on time?",
+            "questionText": "If a = (2/3) * b, b = (2/3) * c, c = (2/3) * d, then b/d = ?",
             "options": [
-              "11/100",
-              "3/25",
-              "7/50",
-              "3/20",
-              "4/25"
+              "8/27",
+              "4/9",
+              "2/3",
+              "75%",
+              "4/3"
             ],
-            "correctAnswer": "11/100",
-            "explanation": "Let the total number of attendees be 100.\n\n- Males = 2/5 × 100 = 40\n- Males on time = 7/8 × 40 = 35\n\n- Females = 100 - 40 = 60\n- Females on time = 9/10 × 60 = 54\n\nTotal on time = 35 + 54 = 89\n\nTotal not on time = 100 - 89 = 11\n\nFraction not on time = 11/100"
+            "correctAnswer": "4/9",
+            "explanation": "Given that b = 2/3 * c and d = 3/2 * c, we find b/d by dividing the expressions: b/d = (2/3 * c) / (3/2 * c) = 4/9."
           },
           "question9": {
             "type": "multiple_choice_single_answer",
-            "questionText": "A store is offering a 25% discount on a jacket that originally costs $80. What is the sale price of the jacket?",
+            "questionText": "If x/y = 4 and y is not '0', what percentage of x is 2x - y?",
             "options": [
-              "$60",
-              "$62",
-              "$64",
-              "$65",
-              "$68"
+              "150%",
+              "175%",
+              "200%",
+              "250%",
+              "300%"
             ],
-            "correctAnswer": "$60",
-            "explanation": "The discount amount is 25% of $80, which is (25/100) × 80 = $20. Therefore, the sale price is $80 - $20 = $60."
+            "correctAnswer": "175%",
+            "explanation": "Given that x/y = 4, this implies x = 4y. To find what percentage of x is 2x - y, we calculate: \n2x - y = 2(4y) - y = 7y. \nThe percentage is then (7y/4y) * 100% = 175%."
           },
           "question10": {
             "type": "multiple_choice_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT%202/GRE%20flt%202%20QA2%20Q-13.jpg",
-            "questionText": "In the figure shown above, the triangle is inscribed in the semicircle. If the length of line segment AB is 8 and the length of line segment BC is 6, what is the length of arc ABC?",
+            "questionText": "Andy has grades of 84, 65, and 76 on three math tests. What grade must he obtain on the next test to have an average of exactly 80 for the 4 tests?",
             "options": [
-              "15π",
-              "8π",
-              "10π",
-              "7π",
-              "5π"
+              "75",
+              "65",
+              "95",
+              "90",
+              "None of these"
             ],
-            "correctAnswer": "5π",
-            "explanation": "Since the triangle is inscribed in the semicircle, ∠ABC is 90°, making AC the diameter of the semicircle. Using the Pythagorean theorem, we find AC = 10. The circumference of the circle is π × d = 10π. Since ABC is a semicircle, the length of arc ABC is half the circumference, which is (10π)/2 = 5π."
+            "correctAnswer": "95",
+            "explanation": "To find the required grade x on the next test, set up the equation for the average: \n(84 + 65 + 76 + x) / 4 = 80. \nSolve for x: \n84 + 65 + 76 + x = 320, \nx = 95."
           },
           "question11": {
-            "type": "multiple_choice_single_answer",
-            "questionText": "A bag contains six marbles: two red, two blue, and two green. If two marbles are drawn at random, what is the probability that they are the same color?",
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://www.dropbox.com/scl/fi/1i76vqme1rdwqtzdb0ljp/test_5_quant1_question11.jpg?rlkey=fde6yw61dc73uxshxbjecq2yd&st=13p2m1f6&raw=1",
+            "questionText": "Find the mean value of these houses?",
             "options": [
-              "1/3",
-              "1/2",
-              "1/5",
-              "1/6",
-              "1/10"
+              "$200,000",
+              "$250,000",
+              "$225,000",
+              "$300,000",
+              "None of these"
             ],
-            "correctAnswer": "1/5",
-            "explanation": "The probability of drawing two marbles of the same color is calculated as:\n\nP(R ∪ B ∪ G) = 2C2/6C2 + 2C2/6C2 + 2C2/6C2 = 1/5.\n\nFavorable outcomes = 3 (2R, 2B, 2G)\n\nTotal outcomes = 6C2 = 15\n\nP = 3/15 = 1/5"
+            "correctAnswer": "$225,000",
+            "explanation": "To find the mean, sum the total values and divide by the number of houses:\nMean = (100000 * 10 + 175000 * 50 + 200000 * 40 + 700000 * 10) / (10 + 50 + 40 + 10) = 225,000 (use calculator)."
           },
           "question12": {
-            "type": "multiple_choice_single_answer",
-            "questionText": "When 20 is divided by the positive integer k, the remainder is k - 2. Which of the following is a possible value of k?",
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://www.dropbox.com/scl/fi/1i76vqme1rdwqtzdb0ljp/test_5_quant1_question11.jpg?rlkey=fde6yw61dc73uxshxbjecq2yd&st=13p2m1f6&raw=1",
+            "questionText": "Find the median value of these houses in dollars?",
             "options": [
-              "8",
-              "9",
-              "10",
-              "11",
-              "12"
+              "100,000",
+              "175,000",
+              "200,000",
+              "700,000",
+              "None of these"
             ],
-            "correctAnswer": "11",
-            "explanation": "Check through the options to find the correct value of k that satisfies the condition 20 divided by k leaves a remainder of k - 2."
+            "correctAnswer": "175,000",
+            "explanation": "To find the median, first determine the total number of houses, which is 110. The median is the value of the 55th house, as the median is the middle value in an ordered list. Therefore, the median value is $175,000."
           }
         },
         "quantitative2": {
           "question1": {
-            "type": "quantitative_comparison",
-            "questionText": "",
-            "quantityA": "5/14 + 8/21",
-            "quantityB": "26/35 - 3/14",
+            "type": "multiple_choice_single_answer",
+            "questionText": "A father is 30 years older than his son; however, he will be only thrice as old as the son after 5 years. What is the father's present age?",
             "options": [
-              "Quantity A is greater.",
-              "Quantity B is greater.",
-              "Both quantities are equal.",
-              "The relationship cannot be determined from the information given."
+              "40 years",
+              "30 years",
+              "50 years",
+              "55 years",
+              "45 years"
             ],
-            "correctAnswer": "Quantity A is greater",
-            "explanation": "Calculate and check:\n\nA = 31/42\nB = 37/70\n\nClearly, A > B."
+            "correctAnswer": "40 years",
+            "explanation": "Let the father's present age be x years and the son's present age be y years.\n\nAccording to the question:\n\nx = 30 + y\n\nAlso, (x + 5) = 3(y + 5)\n\nSolving these equations gives x = 40 years."
           },
           "question2": {
-            "type": "quantitative_comparison",
-            "questionText": "Triangle ABC has two sides with measurements 7 cm and 4 cm.",
-            "quantityA": "Perimeter of ABC",
-            "quantityB": "23",
+            "type": "multiple_choice_single_answer",
+            "questionText": "A can do a piece of work in 8 days, B can do three times faster than A, C can work five times faster than A. How many days will they take to do the work together?",
             "options": [
-              "Quantity A is greater.",
-              "Quantity B is greater.",
-              "Both quantities are equal.",
-              "The relationship cannot be determined from the information given"
+              "3 days",
+              "8/9 days",
+              "4 days",
+              "2 days",
+              "can't say"
             ],
-            "correctAnswer": "The relationship cannot be determined from the information given",
-            "explanation": "The sum of the lengths of any two sides in a triangle is always greater than the length of the third side in the triangle. The difference of the lengths of any two sides is always less than the length of the third side. Given sides of 4 cm and 7 cm, the third side must satisfy the inequality 3 < Third side < 11, so the perimeter must be in the range 14 < Perimeter < 22. Thus, the relationship between the quantities cannot be determined."
+            "correctAnswer": "8/9 days",
+            "explanation": "Let the work done by A in one day = a. Therefore, total work = 8a.\n\nWork done by B in one day = 3a, and work done by C in one day = 5a.\n\nThe number of days required to complete the work together is given by:\n\nTotal work / (Work done by A, B, C in one day) = 8a / (a + 3a + 5a) = 8/9 days."
           },
           "question3": {
-            "type": "quantitative_comparison",
-            "questionText": "A committee of 5 is to be selected from a group of 4 girls and 7 boys.",
-            "quantityA": "Number of selections if there is no girl",
-            "quantityB": "Number of selections if there are at least 3 girls",
+            "type": "multiple_choice_single_answer",
+            "questionText": "20% of a 6 litres milk solution and 60% of 4 litres milk solution are mixed. What percentage of the resultant milk solution?",
             "options": [
-              "Quantity A is greater.",
-              "Quantity B is greater.",
-              "Both quantities are equal.",
-              "The relationship cannot be determined from the information given."
+              "36%",
+              "30%",
+              "45%",
+              "35%",
+              "90%"
             ],
-            "correctAnswer": "Quantity B is greater",
-            "explanation": "A. Number of selections with no girl: 7C5 = 21\nB. Number of selections with at least 3 girls: (4C3 * 7C2) + (4C4 * 7C1) = 91\nClearly, B > A."
+            "correctAnswer": "36%",
+            "explanation": "The percentage of the resultant milk solution is calculated as follows:\n\n(20% of 6 + 60% of 4) / (6 + 4) = (20 × 6 + 60 × 4) / 10 = 36%."
           },
           "question4": {
-            "type": "quantitative_comparison",
-            "questionText": "",
-            "quantityA": "(6 + 3) * 5 - 6 ÷ 2 + 3^2",
-            "quantityB": "6 + 3 * 5 - 6 ÷ 2 + 3^2",
+            "type": "multiple_choice_single_answer",
+            "questionText": "Find ∠y?",
             "options": [
-              "Quantity A is greater.",
-              "Quantity B is greater.",
-              "Both quantities are equal.",
-              "The relationship cannot be determined from the information given."
+              "40",
+              "50",
+              "60",
+              "100",
+              "120"
             ],
-            "correctAnswer": "Quantity A is greater",
-            "explanation": "Solve using simple BODMAS (Bracket, Order, Division and Multiplication, Addition and Subtraction) to compare both quantities."
+            "correctAnswer": "60",
+            "explanation": "y = 180° - 40° - 80° = 60°",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT3/flt3%20q-12%20QA-2.jpg"
           },
           "question5": {
             "type": "multiple_choice_single_answer",
-            "questionText": "In a certain diving competition, 5 judges score each dive on a scale from 1 to 10. The point value of the dive is obtained by dropping the highest score and the lowest score and multiplying the sum of the remaining scores by the degree of difficulty. If a dive with a degree of difficulty of 3.2 received scores of 7.5, 8.0, 9.0, 6.0, and 8.5, what was the point value of the dive?",
+            "questionText": "The ratio of speeds of two trains is 7:8. If the second train runs 400 kms in 4 hours, then the speed of the first train is:",
             "options": [
-              "68.8",
-              "73.6",
-              "75.2",
-              "76.8",
-              "81.6"
+              "70 km/hr",
+              "75 km/hr",
+              "84 km/hr",
+              "87.5 km/hr",
+              "None of these"
             ],
-            "correctAnswer": "76.8",
-            "explanation": "Point value = (7.5 + 8 + 8.5) * 3.2 = 76.8"
+            "correctAnswer": "87.5 km/hr",
+            "explanation": "Speed of 2nd train = 400 / 4 = 100 km/hour. \nSpeed of 1st train = 7/8 × 100 = 87.5 km/hour"
           },
           "question6": {
-            "type": "multiple_choice_single_answer",
-            "questionText": "In the xy-coordinate plane, the points (a, b) and (a + k, b - 3) are on the line defined by y = 2x - 5. What is the value of k?",
+            "type": "quantitative_comparison",
+            "questionText": "-1 < x < 1",
+            "columns": {
+              "Column A": "x",
+              "Column B": "x^2"
+            },
             "options": [
-              "-5/2",
-              "-5/3",
-              "-2/3",
-              "-3/2",
-              "2/5"
+              "Quantity in A is greater",
+              "Quantity in B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the given information"
             ],
-            "correctAnswer": "-3/2",
-            "explanation": "b = 2a - 5\n\nb - 3 = 2(a + k) - 5\n\nSimplifying this gives k = -3/2."
+            "correctAnswer": "The relationship cannot be determined by the given information",
+            "explanation": "-1 < x < 1\nIf x > -1 but x < 0, then x^2 > x\nIf x < 1 but x > 0, then x^2 < x"
           },
           "question7": {
             "type": "multiple_choice_single_answer",
-            "questionText": "The HCF of two numbers is 48, and the HCF of two other numbers is 36. Then HCF of all four numbers is",
+            "questionText": "Each side of a rectangle is increased by 100%. By what percentage does the area increase?",
             "options": [
-              "36",
-              "24",
-              "12",
-              "48",
-              "16"
+              "100%",
+              "200%",
+              "400%",
+              "500%",
+              "300%"
             ],
-            "correctAnswer": "12",
-            "explanation": "The HCF of all four numbers is the HCF of the two given HCFs (48 and 36). The HCF of 48 and 36 is 12."
+            "correctAnswer": "300%",
+            "explanation": "Area = length x breadth\nIf new length and breadth are 2l and 2b respectively,\nNew Area = 4lb\nIncrease = 4lb - 1lb = 3lb = 300%"
           },
           "question8": {
             "type": "multiple_choice_single_answer",
-            "questionText": "In a town, there are 2500 men and 2500 women. If men increased by 20% and women decreased by 20%, women as a percentage of men is",
+            "questionText": "There are 12 boys and 15 girls. How many different dancing groups can be formed with 2 boys and 2 girls?",
             "options": [
-              "60%",
-              "66.67%",
-              "80%",
-              "83.33%",
-              "50%"
+              "5000",
+              "5445",
+              "6005",
+              "180",
+              "None of these"
             ],
-            "correctAnswer": "66.67%",
-            "explanation": "Increased men = 2500 + 20% of 2500 = 3000\nDecreased women = 2500 - 20% of 2500 = 2000\nWomen as percentage of men = (2000/3000) * 100 = 66.67%"
+            "correctAnswer": "None of these",
+            "explanation": "Number of ways = 12C2 * 15C2 = 6940\nTherefore, the correct answer is 'None of these' (option 5)."
           },
           "question9": {
             "type": "multiple_choice_single_answer",
-            "questionText": "A fraction bears the same ratio to 3/7 as 1/27 does to 1/35. Find the fraction.",
+            "questionText": "There are two circles, one circle is inscribed and another circle is circumscribed over a square. What is the ratio of the area of inner to outer circle?",
             "options": [
-              "4/9",
-              "1/3",
-              "5/9",
-              "2/3",
-              "6/9"
+              "2:1",
+              "3:1",
+              "1:3",
+              "1:2",
+              "None of these"
             ],
-            "correctAnswer": "5/9",
-            "explanation": "Set up the proportion: x/(3/7) = (1/27)/(1/35). Solving for x gives x = 5/9. Thus, the correct answer is 5/9."
+            "correctAnswer": "1:2",
+            "explanation": "Area of inner circle = π * s^2 / 4\n\nArea of outer circle = π * s^2 / 2\n\nRatio = (π * s^2 / 4) / (π * s^2 / 2) = 1:2"
           },
           "question10": {
-            "type": "quantitative_comparison",
-            "questionText": "",
-            "quantityA": "Number of three-digit odd numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
-            "quantityB": "Number of three-digit even numbers that can be formed using digits 0, 1, 3, 5, and 8 only.",
+            "type": "multiple_choice_single_answer",
+            "questionText": "9x - 3y = 12, 3x - 5y = 7, then 6x - 2y =?",
             "options": [
-              "Quantity A is greater",
-              "Quantity B is greater",
-              "Both quantities are equal",
-              "The relationship cannot be determined from the given information"
+              "-5",
+              "4",
+              "2",
+              "8",
+              "None of these"
             ],
-            "correctAnswer": "Quantity A is greater",
-            "explanation": "Repetition is allowed. There are 3 odd digits: 1, 3, and 5\n\nOdd numbers can be formed as 4 * 5 * 3 = 60\n\nThere are only 2 even digits: 0 and 8\n\nEven numbers can be formed as 4 * 5 * 2 = 40\n\nHence, Quantity A is greater."
+            "correctAnswer": "8",
+            "explanation": "By solving the equations 9x - 3y = 12 and 3x - 5y = 7, we get x = 13/12 and y = -3/4.\n\nSubstitute these values into 6x - 2y to find the answer:\n\n6(13/12) - 2(-3/4) = 13/2 + 3/2 = 16/2 = 8."
           },
           "question11": {
             "type": "quantitative_comparison",
-            "questionText": "",
-            "quantityA": "Sum of odd numbers from 1 to 100",
-            "quantityB": "Sum of even numbers from 1 to 100",
+            "questionText": "Column A: the remainder when x is divided by 12\nColumn B: 6",
+            "options": [
+              "Quantity in A is greater",
+              "Quantity in B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "The best method is to check for x = 5, 15, 25, & 35.\nThe remainder varies based on the value of x, so the relationship cannot be determined."
+          },
+          "question12": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: the area of a square with perimeter 20\nColumn B: the area of a circle with radius 3",
+            "options": [
+              "Quantity in A is greater",
+              "Quantity in B is greater",
+              "Both the quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "Quantity in B is greater",
+            "explanation": "For Column A: The perimeter P = 20, so side length s = 5, and the area of the square = s^2 = 25.\nFor Column B: The area of the circle = π × 3^2 ≈ 28.26.\nHence, the area in Column B is greater than that in Column A."
+          },
+          "question13": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: the area of a square with perimeter 20\nColumn B: the area of a circle with radius 3",
+            "imgUrl": "https://testendura.com/userfiles/image/GRE%20flt4/gre%20flt-4%20q-3.jpg",
             "options": [
               "Quantity A is greater",
               "Quantity B is greater",
-              "Both quantities are equal",
-              "The relationship cannot be determined from the given information"
+              "Both the quantities are equal",
+              "The relationship cannot be determined from the information given"
             ],
-            "correctAnswer": "Quantity in B is greater",
-            "explanation": "Since 1 < 2, 3 < 4, 5 < 6, ..., and 99 < 100, the sum of odd numbers is less than the sum of even numbers. Hence, Quantity B is greater."
-          },
-          "question12": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
-            "questionText": "The foreign exchange of the year 2007-2008 is how many times that of 2004-2005?",
-            "options": [
-              "0.7",
-              "1.2",
-              "1.4",
-              "1.5",
-              "1.6"
-            ],
-            "correctAnswer": "1.5",
-            "explanation": "Foreign exchange for 2007-2008 is 5040, and for 2004-2005 it is 3360. The ratio is 5040/3360 = 1.5 times."
-          },
-          "question13": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
-            "questionText": "The foreign exchange reserves in 2006-2007 were approximately what percentage of the average foreign exchange reserves over the period under review?",
-            "options": [
-              "95%",
-              "110%",
-              "100%",
-              "115%",
-              "124%"
-            ],
-            "correctAnswer": "124%",
-            "explanation": "The average foreign exchange reserves over the period is 3480. The foreign exchange reserves for 2006-2007 is 4320. The ratio is 4320/3480 = 1.24, which is approximately 124%."
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "For Column A: The perimeter of the square is 20, so each side is 5 units long. The area is 5 * 5 = 25.\nFor Column B: The area of the circle is approximately 3.14 * 3 * 3 = 28.26.\nSince 28.26 is greater than 25, Quantity B is greater."
           },
           "question14": {
-            "type": "data_interpretation_single_answer",
-            "imgUrl": "https://testendura.com/userfiles/image/FLT3/GRE%20flt-3%20Q-8,9,10.jpg",
-            "questionText": "What was the percentage increase in the foreign exchange reserves in 2007-2008 over 2003-2004?",
+            "type": "quantitative_comparison",
+            "questionText": "Column A: (2xy - x - 2x^2)/(2x - 4x) \nColumn B: x - y",
             "options": [
-              "100",
-              "150",
-              "200",
-              "620",
-              "300"
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both the quantities are equal",
+              "The relationship cannot be determined from the information given"
             ],
-            "correctAnswer": "100",
-            "explanation": "Foreign exchange in 2003-2004 was 2520, and in 2007-2008 it was 5040. The increase is 2520 (5040 - 2520), which is a 100% increase. Percentage increase = (2520/2520) * 100 = 100%."
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "On simplifying Column A: (2xy - x - 2x^2)/(2x - 4x) equals x - y + 1/2.\nThus, A is greater than B."
           },
           "question15": {
             "type": "numeric_entry",
-            "questionText": "A and B can do a job in 20 days and 30 days respectively. If both of them work on the job together, when would they finish 75% of it?",
-            "correctAnswer": "9",
-            "explanation": "Let the job done by A in one day = a, so the total job is 20a. Let the job done by B in one day = b, so the total job is 30b. From the equation 20a = 30b, we get a = 3/2b. Now, to find the number of days to finish 75% of the job, we set up the equation: 75% of 30b = x * (a + b). Solving this gives x = 9 days."
+            "questionText": "A stock portfolio that was originally worth $150,000 has increased in value by $100,000. By what percentage of the original value has the portfolio increased?\n\nGive your answer rounded to the nearest whole percent.\n\n(Note: Put only numeric value and don't enter any text and if the answer is in decimals use only up to two places of decimal)",
+            "correctAnswer": "67",
+            "explanation": "Increased percentage = (100000 / 150000) * 100 = 66.67%"
           }
         }
       }
