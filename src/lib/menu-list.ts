@@ -5,7 +5,10 @@ import {
   Bookmark,
   SquarePen,
   LayoutGrid,
-  LucideIcon
+  LucideIcon,
+  DollarSign,
+  Book,
+  MonitorSpeaker
 } from "lucide-react";
 
 type Submenu = {
@@ -44,24 +47,24 @@ export function getMenuList(pathname: string): Group[] {
     {
       groupLabel: "Contents",
       menus: [
-        {
-          href: "",
-          label: "Posts",
-          active: pathname.includes("/posts"),
-          icon: SquarePen,
-          submenus: [
-            {
-              href: "/posts",
-              label: "All Posts",
-              active: pathname === "/posts"
-            },
-            {
-              href: "/posts/new",
-              label: "New Post",
-              active: pathname === "/posts/new"
-            }
-          ]
-        },
+        // {
+        //   href: "",
+        //   label: "Posts",
+        //   active: pathname.includes("/posts"),
+        //   icon: SquarePen,
+        //   submenus: [
+        //     {
+        //       href: "/posts",
+        //       label: "All Posts",
+        //       active: pathname === "/posts"
+        //     },
+        //     {
+        //       href: "/posts/new",
+        //       label: "New Post",
+        //       active: pathname === "/posts/new"
+        //     }
+        //   ]
+        // },
         {
           href: "/mock-tests",
           label: "Mock tests",
@@ -70,22 +73,29 @@ export function getMenuList(pathname: string): Group[] {
           submenus: []
         },
         {
-          href: "/tags",
-          label: "Tags",
-          active: pathname.includes("/tags"),
+          href: "https://gre-resources.com/gre-books",
+          label: "Resources",
+          active: pathname.includes("/gre-resources"),
+          icon: Book,
+          submenus: []
+        },
+        {
+          href: "/gre-voucher",
+          label: "Exam voucher",
+          active: pathname.includes("/gre-voucher"),
           icon: Tag,
           submenus: []
         }
       ]
     },
     {
-      groupLabel: "Settings",
+      groupLabel: "Additional",
       menus: [
         {
-          href: "/users",
-          label: "Users",
-          active: pathname.includes("/users"),
-          icon: Users,
+          href: "https://www.toeflgoglobal.com/",
+          label: "Toefl site",
+          active: pathname.includes("/toeflgoglobal"),
+          icon: MonitorSpeaker,
           submenus: []
         },
         {

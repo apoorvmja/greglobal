@@ -10,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import { UserProfile } from "@clerk/nextjs";
 
 export default function AccountPage() {
   return (
@@ -33,8 +34,10 @@ export default function AccountPage() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent >
-        <></>
+      <PlaceholderContent>
+        <div className="items-center flex justify-center p-5">
+          <UserProfile />
+        </div>
       </PlaceholderContent>
     </ContentLayout>
   );
