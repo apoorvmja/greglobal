@@ -4280,26 +4280,26 @@
             "blanks": 3
           },
           "question2": {
-              "type": "text_completion",
-              "questionText": "Read's apology to Heflin was not exactly abject and did little to (i) ______ their decades-long quarrel, which had been as (ii) ______ as the academic etiquette of scholarly journals permitted.",
-              "options": {
-                "blank1": [
-                  "encourage",
-                  "resolve",
-                  "obscure"
-                ],
-                "blank2": [
-                  "acrimonious",
-                  "courteous",
-                  "ceremonious"
-                ]
-              },
-              "correctAnswer": [
+            "type": "text_completion",
+            "questionText": "Read's apology to Heflin was not exactly abject and did little to (i) ______ their decades-long quarrel, which had been as (ii) ______ as the academic etiquette of scholarly journals permitted.",
+            "options": {
+              "blank1": [
+                "encourage",
                 "resolve",
-                "acrimonious"
+                "obscure"
               ],
-              "explanation": "The first blank is answered by 'not exactly abject and did little to.' Since the apology was not absolute (abject), it's not likely to have a positive effect. Combine that with 'did little to today' and the only thing that makes sense will be 'resolve,' because if we add 'encourage' it logically won't make sense and the quarrel has already been going on for decades. For the second blank, 'courteous' will be redundant as we already have 'etiquette' implying the same thing and 'ceremonious' is absurd as scholarly journals are hardly likely to spell out specified ground rules on how to conduct a dispute. Therefore, 'acrimonious' will be the answer as we are talking about a dispute after all.",
-              "blanks": 2
+              "blank2": [
+                "acrimonious",
+                "courteous",
+                "ceremonious"
+              ]
+            },
+            "correctAnswer": [
+              "resolve",
+              "acrimonious"
+            ],
+            "explanation": "The first blank is answered by 'not exactly abject and did little to.' Since the apology was not absolute (abject), it's not likely to have a positive effect. Combine that with 'did little to today' and the only thing that makes sense will be 'resolve,' because if we add 'encourage' it logically won't make sense and the quarrel has already been going on for decades. For the second blank, 'courteous' will be redundant as we already have 'etiquette' implying the same thing and 'ceremonious' is absurd as scholarly journals are hardly likely to spell out specified ground rules on how to conduct a dispute. Therefore, 'acrimonious' will be the answer as we are talking about a dispute after all.",
+            "blanks": 2
           },
           "question3": {
             "type": "text_completion",
@@ -5113,6 +5113,868 @@
               "22"
             ],
             "explanation": "21 = 3 × 7\n22 = 2 × 11\n23 = prime\n24 = 2 × 12, 4 × 6...\n25 = 5 × 5 (same)"
+          }
+        }
+      }
+    },
+    {
+      "id": "test7",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "Governments should offer a free university education to any student who has been admitted to a university but who cannot afford the tuition.",
+          "instructions": "Write a response in which you discuss your views on the policy and explain your reasoning for the position you take. In developing and supporting your position, you should consider the possible consequences of implementing the policy and explain how these consequences shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "reading_comprehension",
+            "passage": "Rural households have more purchasing power than do urban or suburban households at the same income level, since some of the income urban and suburban households use for food and shelter can be used by rural households for other needs.",
+            "questionText": "Which of the following inferences is best supported by the statement made above?",
+            "options": [
+              "The average rural household includes more people than does the average urban or suburban household.",
+              "Rural households have lower food and housing costs than do either urban or suburban households.",
+              "Suburban households generally have more purchasing power than do either rural or urban households.",
+              "The median income of urban and suburban households is generally higher than that of rural households.",
+              "All three types of households spend more of their income on food and housing than on all other purchases combined."
+            ],
+            "correctAnswer": [
+              "Rural households have lower food and housing costs than do either urban or suburban households."
+            ],
+            "explanation": "The answer is (B). If the greater purchasing power of rural households results from their having more money left over after meeting basic expenses, it follows, as B says, that those expenses are lower for those households than they are for suburban or urban households at the same income level. Consequently, B is the best answer. A is not a supported inference, since there is no information to suggest that larger households are not more likely to have either more purchasing power or lower food and shelter expenses. C and D are not supported, since the passage compares only households that share the same income level. Because the relative amounts spent on different types of expenditures are not specified for any of the categories of households, E is not supported."
+          },
+          "question2": {
+            "type": "reading_comprehension",
+            "passage": "Upwards of a billion stars in our galaxy have burnt up their internal energy sources, and so can no longer produce the heat a star needs to oppose the inward force of gravity. These stars, of more than a few solar masses, evolve, in general, much more rapidly than does a star like the Sun. Moreover, it is just these more massive stars whose collapse does not halt at intermediate stages (that is, as white dwarfs or neutron stars). Instead, the collapse continues until a singularity (an infinitely dense concentration of matter) is reached. It would be wonderful to observe a singularity and obtain direct evidence of the undoubtedly bizarre phenomena that occur near one. Unfortunately in most cases a distant observer cannot see the singularity; outgoing light rays are dragged back by gravity so forcefully that even if they could start out within a few kilometers of the singularity, they would end up in the singularity itself.",
+            "questionText": "The author’s primary purpose in the passage is to",
+            "options": [
+              "describe the formation and nature of singularities",
+              "explain why large numbers of stars become singularities",
+              "compare the characteristics of singularities with those of stars",
+              "explain what happens during the stages of a singularity’s formation",
+              "imply that singularities could be more easily studied if observers could get closer to them"
+            ],
+            "correctAnswer": [
+              "describe the formation and nature of singularities"
+            ],
+            "explanation": "The passage on the whole deals with singularities and their formation."
+          },
+          "question3": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Upwards of a billion stars in our galaxy have burnt up their internal energy sources, and so can no longer produce the heat a star needs to oppose the inward force of gravity. These stars, of more than a few solar masses, evolve, in general, much more rapidly than does a star like the Sun. Moreover, it is just these more massive stars whose collapse does not halt at intermediate stages (that is, as white dwarfs or neutron stars). Instead, the collapse continues until a singularity (an infinitely dense concentration of matter) is reached. It would be wonderful to observe a singularity and obtain direct evidence of the undoubtedly bizarre phenomena that occur near one. Unfortunately in most cases a distant observer cannot see the singularity; outgoing light rays are dragged back by gravity so forcefully that even if they could start out within a few kilometers of the singularity, they would end up in the singularity itself.",
+            "questionText": "The passage suggests which of the following about the Sun?",
+            "options": [
+              "The Sun could evolve to a stage of collapse that is less dense than a singularity.",
+              "In the Sun, the inward force of gravity is balanced by the generation of heat.",
+              "The Sun emits more observable light than does a white dwarf or a neutron star."
+            ],
+            "correctAnswer": [
+              "The Sun could evolve to a stage of collapse that is less dense than a singularity.",
+              "In the Sun, the inward force of gravity is balanced by the generation of heat."
+            ],
+            "explanation": "The passage clearly states that 'These stars, of more than a few solar masses, evolve, in general, much more rapidly than does a star like the Sun. Moreover, it is just these more massive stars whose collapse does not halt at intermediate stages (that is, as white dwarfs or neutron stars). Instead, the collapse continues until a singularity (an infinitely dense concentration of matter) is reached.'"
+          },
+          "question4": {
+            "type": "reading_comprehension",
+            "passage": "Upwards of a billion stars in our galaxy have burnt up their internal energy sources, and so can no longer produce the heat a star needs to oppose the inward force of gravity. These stars, of more than a few solar masses, evolve, in general, much more rapidly than does a star like the Sun. Moreover, it is just these more massive stars whose collapse does not halt at intermediate stages (that is, as white dwarfs or neutron stars). Instead, the collapse continues until a singularity (an infinitely dense concentration of matter) is reached. It would be wonderful to observe a singularity and obtain direct evidence of the undoubtedly bizarre phenomena that occur near one. Unfortunately in most cases a distant observer cannot see the singularity; outgoing light rays are dragged back by gravity so forcefully that even if they could start out within a few kilometers of the singularity, they would end up in the singularity itself.",
+            "questionText": "Which of the following sentences would most probably follow the last sentence of the passage?",
+            "options": [
+              "Thus, a physicist interested in studying phenomena near singularities would necessarily hope to find a singularity with a measurable gravitational field.",
+              "Accordingly, physicists to date have been unable to observe directly any singularity.",
+              "It is specifically this startling phenomenon that has allowed us to codify the scant information currently available about singularities.",
+              "Moreover, the existence of this extraordinary phenomenon is implied in the extensive reports of several physicists.",
+              "Although unanticipated, phenomena such as these are consistent with the structure of a singularity."
+            ],
+            "correctAnswer": [
+              "Accordingly, physicists to date have been unable to observe directly any singularity."
+            ],
+            "explanation": "The last line of the passage states that: 'Unfortunately in most cases a distant observer cannot see the singularity; outgoing light rays are dragged back by gravity so forcefully that even if they could start out within a few kilometers of the singularity, they would end up in the singularity itself,' hence B would follow."
+          },
+          "question5": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Since 1953, many experimental attempts to synthesize the chemical constituents of life under 'primitive Earth conditions' have been performed, but none of these experiments has produced anything approaching the complexity of the simplest organism. They have demonstrated, however, that a variety of the complex molecules currently making up living organisms could have been present in the early ocean and atmosphere, with only one limitation: such molecules are synthesized far less readily when oxygen-containing compounds dominate the atmosphere. Therefore some scientists postulate that the Earth's earliest atmosphere, unlike that of today, was dominated by hydrogen, methane, and ammonia. From these studies, scientists have concluded that the surface of the primitive Earth was covered with oceans containing the molecules fundamental to life. Although, at present, scientists cannot explain how these relatively small molecules combined to produce larger, more complex molecules, some scientists have precipitously ventured hypotheses that attempt to explain the development, from larger molecules, of the earliest self-duplicating organisms.",
+            "questionText": "According to the passage, which of the following can be inferred about the process by which the chemical constituents of life were synthesized under primitive Earth conditions?",
+            "options": [
+              "The synthesis is unlikely to occur under current atmospheric conditions.",
+              "The synthesis is common in modern laboratories.",
+              "The synthesis occurs more readily in the atmosphere than in the ocean."
+            ],
+            "correctAnswer": [
+              "The synthesis is unlikely to occur under current atmospheric conditions."
+            ],
+            "explanation": "On the basis of these lines: 'such molecules are synthesized far less readily when oxygen-containing compounds dominate the atmosphere. Therefore some scientists postulate that the Earth's earliest atmosphere, unlike that of today, was dominated by hydrogen, methane, and ammonia. It can be inferred that the synthesis is unlikely to occur under current atmospheric conditions.'"
+          },
+          "question6": {
+            "type": "sentence_equivalence",
+            "questionText": "In the early twentieth century, the discovery of radium ______ the popular imagination; not only was its discoverer, Marie Curie, idolized, but its market value exceeded that of the rarest gemstone.",
+            "options": [
+              "stormed",
+              "horrified",
+              "taxed",
+              "escaped",
+              "enflamed",
+              "stirred up"
+            ],
+            "correctAnswer": [
+              "enflamed",
+              "stirred up"
+            ],
+            "explanation": "The idolization of the discoverer of radium and the increase in its market value shows that the discovery of radium was regarded as a great phenomenon which led to the arousal of the popular imagination. The words which best describe 'arousal' are 'enflamed' and 'stirred up'."
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "In the early twentieth century, the discovery of radium ______ the popular imagination; not only was its discoverer, Marie Curie, idolized, but its market value exceeded that of the rarest gemstone.",
+            "options": [
+              "stormed",
+              "horrified",
+              "taxed",
+              "escaped",
+              "enflamed",
+              "stirred up"
+            ],
+            "correctAnswer": [
+              "enflamed",
+              "stirred up"
+            ],
+            "explanation": "The idolization of the discoverer of radium and the increase in its market value shows that the discovery of radium was regarded as a great phenomenon which led to the arousal of the popular imagination. The words which best describe 'arousal' are 'enflamed' and 'stirred up'."
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "Despite claims that his philosophy can be traced to a single source, the philosophy in fact draws liberally on several traditions and methodologies and so could justifiably be termed ______.",
+            "options": [
+              "consistent",
+              "schematic",
+              "cogent",
+              "catholic",
+              "authoritative",
+              "eclectic"
+            ],
+            "correctAnswer": [
+              "catholic",
+              "eclectic"
+            ],
+            "explanation": "The phrase 'draws liberally on several traditions and methodologies' indicates that the philosophy is liberal and all-inclusive, i.e., having extracted things from many traditions and cultures. The words closely related to the phrase 'liberal and all-inclusive' are 'catholic' and 'eclectic'."
+          },
+          "question9": {
+            "type": "sentence_equivalence",
+            "questionText": "Job failure means being fired from a job, being asked to resign, or leaving voluntarily to protect yourself because you had very strong evidence that one of the first two was ______.",
+            "options": [
+              "impending",
+              "approaching",
+              "significant",
+              "abrupt",
+              "pertinent",
+              "intentional"
+            ],
+            "correctAnswer": [
+              "impending",
+              "approaching"
+            ],
+            "explanation": "The sentence indicates that a person leaves a job by one's own choice to avoid the shame of job failure, caused when he is either dismissed (fired) from the job or asked to resign from it. The choice of leaving the job on one's own is made because it is not disgraceful when compared to the other two job failures and also when the person wants to protect himself from the disgrace as he has proof that one of the other two job failures might be coming. The words closest in meaning to 'coming' are 'impending' and 'approaching'."
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Though (i) ______ to some degree, telling a small lie sometimes enables one to avoid (ii) ______ another's feelings.",
+            "options": {
+              "blank1": [
+                "regrettable",
+                "attractive",
+                "difficult"
+              ],
+              "blank2": [
+                "mollifying",
+                "considering",
+                "harming"
+              ]
+            },
+            "blanks": 2,
+            "correctAnswer": [
+              "regrettable",
+              "harming"
+            ],
+            "explanation": "Though is a contrast sign, but telling a lie can't be good no matter what the circumstances. So the first blank has to be 'regrettable' as 'attractive' will not fit the sentence stylistically. Since the second part says 'telling a small lie,' logically it cannot be all that 'difficult.' The second blank is answered by 'harming' but not by 'mollifying' as here it can only be used in the sense of 'make less intense.' You can mollify someone's anger but stylistically you cannot mollify someone's feelings. You can't avoid considering someone's feelings either by telling a small lie."
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "The problem with (i) _______ cinema is this: it gives rise to a new kind of idolatry i.e., idolizing the ridiculous as (ii) _______. The public which (iii) _______ its thirst with inanities and mistakes the bogus for truth will get over this obsession sooner or later, and this is when the problem will begin.",
+            "options": {
+              "blank1": [
+                "kitsch",
+                "puck",
+                "documentary"
+              ],
+              "blank2": [
+                "subliminal",
+                "sublime",
+                "subsumed"
+              ],
+              "blank3": [
+                "sates",
+                "extirpates",
+                "innovates"
+              ]
+            },
+            "blanks": 3,
+            "correctAnswer": [
+              "kitsch",
+              "sublime",
+              "sates"
+            ],
+            "explanation": "The passage talks of some form of art in which you mistake 'bogus for truth.' By this logic, the two words that complete blank 2 and 3 are 'sublime' and 'sates.' This art form, from the given options in blank 1, has to be 'kitsch.'"
+          },
+          "question12": {
+            "type": "text_completion",
+            "questionText": "Doors were closing on our past, and soon the values we had lived by would become so obsolete that we would seem to people of the new age as _____ as travelers from an ancient land.",
+            "options": [
+              "elegant",
+              "ambitious",
+              "interesting",
+              "comfortable",
+              "quaint"
+            ],
+            "correctAnswer": [
+              "quaint"
+            ],
+            "blanks": 1,
+            "explanation": "Here the operative phrase is 'by would become so obsolete that we would seem.' The sentence is based on drawing a parallel between the first and the second part 'as travelers from an ancient land.' Look for any option that signifies past and you find 'quaint' (old fashioned) which complements the sentence beautifully."
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "sentence_equivalence",
+            "questionText": "Given the existence of so many factions in the field, it was unrealistic of Anna Freud to expect any ______ of opinion.",
+            "options": [
+              "freedom",
+              "reassessment",
+              "uniformity",
+              "expression",
+              "concord",
+              "formation"
+            ],
+            "correctAnswer": [
+              "uniformity",
+              "concord"
+            ],
+            "explanation": "The presence of the phrase 'many factions' suggests that as there were a lot of groups (factions) present, it was not sensible (unrealistic) of Anna Freud to expect evenness and agreement in the opinions of the groups as each group with a different belief is bound to have a different opinion from the other. The words closest in meaning to 'evenness and agreement' are 'uniformity' and 'concord.'"
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Although specific concerns may determine the intent of a research project, its results are often ______.",
+            "options": [
+              "unanticipated",
+              "beneficial",
+              "expensive",
+              "indefinite",
+              "spectacular",
+              "specialized"
+            ],
+            "correctAnswer": [
+              "unanticipated",
+              "indefinite"
+            ],
+            "explanation": "The word 'although' indicates that the first part of the sentence is contrary to the second. The sentence indicates that although specific concerns may help to see the purpose (intent) of a research project, yet contrary to it, the results of the project cannot be seen or predicted. Thus, the results of the project remain 'unanticipated' and 'indefinite.'"
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "To list Reilly’s achievements in a fragmentary way is misleading, for it distracts our attention from the _____ themes of her work.",
+            "options": [
+              "disparate",
+              "integrating",
+              "comprehensive",
+              "important",
+              "unsettling",
+              "infernal"
+            ],
+            "correctAnswer": [
+              "integrating",
+              "comprehensive"
+            ],
+            "explanation": "To refer to Reilly’s achievements as incomplete (in a fragmentary manner) is deceiving because her works were not incomplete and used themes which dealt with all the details in a relevant manner. Thus, the themes of her work are 'integrating' and 'comprehensive.'"
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "People frequently denigrate books about recent catastrophes as morally despicable attempts to profit from misfortune, but in my view our desire for such books, together with the venerable tradition to which they belong, _____ them.",
+            "options": [
+              "disrupts",
+              "submerges",
+              "legitimizes",
+              "generates",
+              "exorcizes",
+              "revokes"
+            ],
+            "correctAnswer": [
+              "legitimizes",
+              "generates"
+            ],
+            "explanation": "The word 'but' indicates that the two parts of the sentence are opposite to each other. The sentence suggests that although the books about recent catastrophes (disasters) are defamed by the people, in reality, our desire for such books, along with the tradition worthy of respect (venerable) to which they belong, does not defame them but justifies them. The words closest in meaning to 'justifies' are 'legitimizes' and 'generates.'"
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "Because they have been so dazzled by the calendars and the knowledge of astronomy possessed by the Mayan civilization, some anthropologists have _______ achievements like the sophisticated carved calendar sticks of the Winnebago people.",
+            "options": [
+              "described",
+              "acknowledged",
+              "overlooked",
+              "defended",
+              "authenticated"
+            ],
+            "correctAnswer": [
+              "overlooked"
+            ],
+            "explanation": "The key lies in 'Because they have been so dazzled.' Here 'because' is obviously a contrast sign, indicating that they couldn't see clearly, which in turn indicates that they were wrong in sidelining or ignoring 'achievements like the sophisticated carved calendar sticks of the Winnebago people.' 'Acknowledged,' 'defended,' and 'authenticated' would not work as they would imply that they did, indeed, give due consideration to the Winnebago. 'Described' is out of context. So we have 'overlooked' which has the same meaning as 'ignored.'"
+          },
+          "question6": {
+            "type": "text_completion",
+            "questionText": "If efficacious new medicines have side effects that are commonly observed and (i) ______, such medicines are too often considered (ii) ______, even when laboratory tests suggest caution.",
+            "options": {
+              "blank1": [
+                "salutary",
+                "unpredictable",
+                "unremarkable"
+              ],
+              "blank2": [
+                "safe",
+                "outdated",
+                "complicated"
+              ]
+            },
+            "correctAnswer": [
+              "unremarkable",
+              "safe"
+            ],
+            "blanks": 2,
+            "explanation": "For the first blank, you can immediately discard 'salutary' because side effects cannot have salutary consequences. 'Unpredictable' also won't work because if they are commonly observed, then how can they be unpredictable? So the answer is 'unremarkable.' To answer the second blank, look at the last part 'even when laboratory tests suggest caution.' 'Even when' is a contrast sign and therefore we are looking for an antonym to caution. Now 'outdated' medicines will suggest caution, so will 'complicated,' but that doesn't even fit in stylistically. So 'safe' is the answer."
+          },
+          "question7": {
+            "type": "text_completion",
+            "questionText": "The excitement died down in time, but the unfortunate Delpis, who was of a fundamentally (i) ________ disposition, found himself in the centre of a controversy. A certain art critic who inspected the work found it to be (ii) ________, Delpis though, claimed his innocence. His introverted nature earned him many enemies who turned (iii) ________ evidence against him by going to such lengths as planting evidence.",
+            "options": {
+              "blank1": [
+                "retiring",
+                "conniving",
+                "conspiring"
+              ],
+              "blank2": [
+                "inveterate",
+                "spurious",
+                "genuine"
+              ],
+              "blank3": [
+                "circumstantial",
+                "sentimental",
+                "pecuniary"
+              ]
+            },
+            "correctAnswer": [
+              "retiring",
+              "spurious",
+              "circumstantial"
+            ],
+            "blanks": 3,
+            "explanation": "In the first blank, the word is 'retiring' as we are told in the passage that Delpis is introverted. For the second blank, we need a negative word as Delpis is accused of something. This sense is conveyed by 'spurious.' And for the last blank, the word is 'circumstantial' as we are talking about evidence that has been planted. The other two options don't make sense."
+          },
+          "question8": {
+            "type": "text_completion",
+            "questionText": "Just as hundreds of terminals connected to a supercomputer (i) ________ work independently, even though their actual control lies with the supercomputer, we as individuals may seem to have (ii) ________ opposite personalities but the seeds of these (iii) ________ spring from the same source.",
+            "options": {
+              "blank1": [
+                "seemingly",
+                "teasingly",
+                "contingently"
+              ],
+              "blank2": [
+                "equally",
+                "presently",
+                "diametrically"
+              ],
+              "blank3": [
+                "traits",
+                "straits",
+                "conjectures"
+              ]
+            },
+            "correctAnswer": [
+              "seemingly",
+              "diametrically",
+              "traits"
+            ],
+            "blanks": 3,
+            "explanation": "The first blank can be completed with 'seemingly' in keeping with the imagery of the lines. The second blank can be logically completed with 'diametrically' as the other two options don't make sense. And the last blank can be completed with 'traits' as we are talking about qualities of human beings."
+          },
+          "question9": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "The primary purpose of the passage is to present",
+            "options": [
+              "a position on the foundations of human behavior and on what those foundations imply",
+              "a theory outlining the parallel development of human morphology and of human behavior",
+              "a diagnostic test for separating biologically determined behavior patterns from culture-specific detail",
+              "a practical method for resisting the pressures of biologically determined drives",
+              "an overview of those human emotions and motives that impose constraints on human behavior"
+            ],
+            "correctAnswer": [
+              "a position on the foundations of human behavior and on what those foundations imply"
+            ],
+            "explanation": "The passage is about the foundations of human behavior and what they imply, like frailties, emotions, fears, etc."
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "The author implies that control to any extent over the 'frailties' that constrain our behavior is thought to presuppose",
+            "options": [
+              "that those frailties are recognized as currently beneficial and adaptive",
+              "that there is little or no overlay of cultural detail that masks their true nature",
+              "that there are cultures in which those frailties do not 'come naturally' and from which such control can be learned",
+              "a full understanding of why those frailties evolved and of how they function now",
+              "a thorough grasp of the principle that cultural detail in human behavior can differ arbitrarily from society to society"
+            ],
+            "correctAnswer": [
+              "a full understanding of why those frailties evolved and of how they function now"
+            ],
+            "explanation": "The passage clearly states 'We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure,' hence (D) is the answer in which it is suggested that we need to fully understand our frailties to overcome them."
+          },
+          "question11": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "Which of the following most probably provides an appropriate analogy from human morphology for the 'details' versus 'constraints' distinction made in the passage in relation to human behavior?",
+            "options": [
+              "The ability of most people to see all the colors of the visible spectrum as against most people’s inability to name any but the primary colors",
+              "The ability of even the least fortunate people to show compassion as against people’s inability to mask their feelings completely",
+              "The ability of some people to dive to great depths as against most people’s inability to swim long distances",
+              "The psychological profile of those people who are able to delay gratification as against people’s inability to control their lives completely",
+              "The greater lung capacity of mountain peoples that helps them live in oxygen-poor air as against people’s inability to fly without special apparatus"
+            ],
+            "correctAnswer": [
+              "The greater lung capacity of mountain peoples that helps them live in oxygen-poor air as against people’s inability to fly without special apparatus"
+            ],
+            "explanation": "Understand the question and the passage. It asks for an analogy between details and constraints. The passage says that evolution is responsible for the bigger things. How individuals respond is not evolution dependent, and by this logic, the only option that fits is E."
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "passage": "Some modern anthropologists hold that biological evolution has shaped not only human morphology but also human behavior. The role those anthropologists ascribe to evolution is not of dictating the details of human behavior but one of imposing constraints—ways of feeling, thinking, and acting that 'come naturally' in archetypal situations in any culture. Our 'frailties'—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, 'in the grip' of them. And thus they give us our sense of constraints. Unhappily, some of those frailties—our need for ever-increasing security among them—are presently maladaptive. Yet beneath the overlay of cultural detail, they, too, are said to be biological in direction, and therefore as natural to us as are our appendixes. We would need to comprehend thoroughly their adaptive origins in order to understand how badly they guide us now. And we might then begin to resist their pressure.",
+            "questionText": "It can be inferred that in his discussion of maladaptive frailties the author assumes that",
+            "options": [
+              "evolution does not favor the emergence of adaptive characteristics over the emergence of maladaptive ones",
+              "any structure or behavior not positively adaptive is regarded as transitory in evolutionary theory",
+              "maladaptive characteristics, once fixed, make the emergence of other maladaptive characteristics more likely",
+              "the designation of a characteristic as being maladaptive must always remain highly tentative",
+              "changes in the total human environment can outpace evolutionary change"
+            ],
+            "correctAnswer": [
+              "changes in the total human environment can outpace evolutionary change"
+            ],
+            "explanation": "It is stated in the passage that 'Our frailties—emotions and motives such as rage, fear, greed, gluttony, joy, lust, love—may be a very mixed assortment, but they share at least one immediate quality: we are, as we say, in the grip of them. And thus they give us our sense of constraints.' This suggests that we are talking about very strong emotions, the author also says that our frailties are 'maladaptive' which suggests that changes in the total human environment can outpace evolutionary change."
+          },
+          "question13": {
+            "type": "reading_comprehension",
+            "passage": "If the mall shared by the neighboring towns of Georgia and Surrey was relocated from the mall’s current, overcrowded complex in central Georgia to a larger, spacious and available building in central Surrey, the mall would then be within the walking distance of a larger number of shoppers. The reason for this is that there are many more people living in central Surrey than in central Georgia, and shoppers usually walk to the mall if it is located near their homes.",
+            "questionText": "Which one of the following, if true, most strengthens the above argument?",
+            "options": [
+              "Earlier, the mall was located between the towns of Georgia and Surrey and later moved to the present location in central Georgia.",
+              "The area covered by central Georgia is approximately the same as the area covered by central Surrey.",
+              "The building that is available in Georgia is smaller than the alternative building that is available in Surrey.",
+              "Most shoppers who visit this mall do not live in either the town of Georgia or the town of Surrey.",
+              "The distance that shoppers currently cover on foot to get to the mall is much farther than what is usually considered as walking distance."
+            ],
+            "correctAnswer": [
+              "The area covered by central Georgia is approximately the same as the area covered by central Surrey."
+            ],
+            "explanation": "The answer is (B). In the given stimulus, it is proposed that the mall shared by the two towns—Georgia and Surrey—should be relocated to central Surrey. The question stem asks to identify the most strengthening argument. Option (B) suggests that the area covered by both the towns is 'approximately the same.' The argument clearly states that there are more people living in Surrey than in Georgia and if the area covered by both the towns is the same then the mall will be accessible to more shoppers. Also, the distance to the mall can be covered by walking. Option (A) refers to the mall’s earlier location. This has no impact on the present argument. Option (C) is incorrect because the conclusion in the argument is not based on the spaciousness of the building. Option (D) weakens the above argument as it suggests that most shoppers do not live in either town. This shakes the basis of the given argument. Option (E) pertains to what is usually considered as walking distance. This does not strengthen the argument because one does not know if the relocation of the mall will enable shoppers to walk a standard walking distance or not."
+          },
+          "question14": {
+            "type": "reading_comprehension",
+            "passage": "If the mall shared by the neighboring towns of Georgia and Surrey was relocated from the mall’s current, overcrowded complex in central Georgia to a larger, spacious and available building in central Surrey, the mall would then be within the walking distance of a larger number of shoppers. The reason for this is that there are many more people living in central Surrey than in central Georgia, and shoppers usually walk to the mall if it is located near their homes.",
+            "questionText": "Which one of the following, if true, most seriously weakens the argument?",
+            "options": [
+              "Many more regular shoppers, who currently walk to the mall, live in central Georgia than in central Surrey.",
+              "The number of people living in central Surrey who would shop regularly if the mall was located there is smaller than the number of people living in central Georgia who currently shop regularly.",
+              "The number of shoppers going to the mall would continue to increase steadily if the mall was relocated to central Surrey.",
+              "Most people who either drive or take public transport to commute to the mall would continue to do so even if the mall was relocated to central Surrey.",
+              "Most people who currently walk to the mall would remain regular shoppers if the mall was relocated to central Surrey."
+            ],
+            "correctAnswer": [
+              "The number of people living in central Surrey who would shop regularly if the mall was located there is smaller than the number of people living in central Georgia who currently shop regularly."
+            ],
+            "explanation": "The answer is (B). The main point of the argument is the relocation of the mall so that it is more accessible to shoppers who walk to the mall. Option (B) suggests that the number of shoppers in Surrey is smaller than the number of shoppers in Georgia. So, if the mall is relocated to central Surrey, it will reduce the number of shoppers. This clearly weakens the above argument. Option (A) strengthens the argument because it only states that more regular shoppers live in central Georgia. It does not explain the relationship with the relocation of the mall. Option (C) strengthens the given argument because it explains the positive impact of relocating the mall. Option (D) pertains to those shoppers who use private or public transport to access the mall. However, the given argument is about those shoppers who walk to the mall. So, this option has no impact on the given argument. Option (E) also has no impact on the argument because it suggests that relocation of the mall will have no impact on the shopping habits of the shoppers."
+          },
+          "question15": {
+            "type": "reading_comprehension_multiple",
+            "passage": "A classic debate in psychology revolves around the nature vs. nurture question. Researchers continue to study how genes and environmental factors interact to shape human behavior. The consensus is that both play crucial roles, with the relative importance varying depending on the trait or behavior under examination.",
+            "questionText": "Which of the following best summarizes the implications of the nature vs. nurture consensus described in the passage?",
+            "options": [
+              "The debate between nature and nurture has been conclusively resolved in favor of genetics.",
+              "Human behavior is primarily determined by genetic factors, with environment playing a minor role.",
+              "The importance of nature vs. nurture varies depending on the specific trait or behavior being studied.",
+              "Researchers have largely abandoned the study of genetics in favor of environmental factors.",
+              "Human behavior is entirely unpredictable, and no patterns can be discerned regarding its origins."
+            ],
+            "correctAnswer": [
+              "The importance of nature vs. nurture varies depending on the specific trait or behavior being studied."
+            ],
+            "explanation": "This question assesses the reader's ability to infer the implications of the consensus mentioned in the passage. Option C correctly summarizes that the importance of nature vs. nurture varies depending on the specific trait or behavior studied, which aligns with the passage's content. The other options either misrepresent the consensus or provide inaccurate statements. Therefore, the correct answer is option C."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Frances uses letters a, e, i, o, u, k, l, m, and s to spell four-letter words. The words must have at least one consonant, they cannot have two consonants in a row, they cannot have two same vowels adjacent to each other in a row, and they must end in a vowel. How many words can Frances form?",
+            "imgUrl": "",
+            "options": [
+              "1520",
+              "1600",
+              "1710",
+              "1729",
+              "1800"
+            ],
+            "correctAnswer": "1520",
+            "explanation": "There can be 4 cases, add all:\n1) 4 consonants × 4 different vowels × 4 different vowels × 5 vowels = 320\n2) 4 different vowels × 5 vowels × 4 consonants × 5 vowels = 400\n3) 4 vowels × 4 consonants × 4 different vowels × 5 vowels = 400\n4) 4 consonants × 5 vowels × 4 consonants × 5 vowels = 400\nHence, Answer = 320 + 400 + 400 + 400 = 1520"
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The image above shows an equilateral triangle with a side length of 14, and a square with a side length of x. If the area of the square is three times the area of the triangle, what is x?",
+            "imgUrl": "",
+            "options": [
+              "7(3)^0.5",
+              "7(2)^0.5",
+              "7(27)^0.25",
+              "14(6)^0.5",
+              "14(3)^0.25"
+            ],
+            "correctAnswer": "7(27)^0.25",
+            "explanation": "Area of triangle = (√3)/4 * 14^2 = 49(√3)\nArea of square = 3 * 49(√3)\ns^2 = 147(√3)\ns = 7(27)^0.25"
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In 7 years, Dale will be twice as old as Clive and Clive will be twice as old as Brett. Right now, the product of their ages is 225. How old will Clive be in 10 years?",
+            "options": [
+              "17",
+              "25",
+              "23",
+              "26",
+              "30"
+            ],
+            "correctAnswer": "25",
+            "explanation": "D + 7 = 2(C + 7)\n\n&\n\nC + 7 = 2 (B + 7)\n\nB × C × D = 225\n\n3 eqns, 3 unknowns - solve\n\nB = 1\n\nC = 9\n\n&\n\nD = 25"
+          },
+          "question4": {
+            "type": "numeric_entry",
+            "questionText": "If x and y are positive numbers, what is the smallest value of 5(11 − x)^4 + 4(8 − y)^2+7 ?",
+            "correctAnswer": "7",
+            "explanation": "5(11 − x)^4 + 4(8 − y)^2 + 7\n\nNow, (11 − x)^4 and (8 − y)^2 can never be negative.\n\nHence, for the least value, they must be equal to \"0\"\n\nLeast value = 0 + 7 + 7 = 7"
+          },
+          "question5": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: the area of a circle inscribed in a square whose perimeter is 40\n\nColumn B: the area of a square inscribed in a circle whose circumference is 12π",
+            "quantityA": "the area of a circle inscribed in a square whose perimeter is 40",
+            "quantityB": "the area of a square inscribed in a circle whose circumference is 12π",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both the quantities are equal",
+              "The relationship cannot be determined by the information given"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "circle inscribed in a square\n\nP = 40\n\n=> S = 10\n\nS = D = 10\n\nArea = πd^2/4\n\n= 25π = 78.5\n\nsquare inscribed in a circle\n\nCircumference = πd\n\n12π = πd\n\nd = 12\n\nd = diagonal of square\n\nD = 12\n\nArea = (D/√2)^2 = 72"
+          },
+          "question6": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20q14%2015.jpg",
+            "questionText": "If the government stops the grant and the expenditure pattern remains the same, then what will be the decrease in the money spent for the education of illiterate?\n[INCOME: 1. Money from fund raising programmes, 2. Grant from the government, 3. Contributions from individuals, 4. Contributions from corporations, 5. Contributions as commodities. EXPENDITURE: 1. Education of the illiterate, 2. Food for the poor, 3.Management and salary of staff, Expenses to organise fund-raising programmes. Above charsts show the amounts of an NGO Income for the year 1998-1999 = $ 55]",
+            "options": [
+              "19.37 mn",
+              "22.5 mn",
+              "28.3 mn",
+              "5.43 mn",
+              "3.13 mn"
+            ],
+            "correctAnswer": "3.13 mn",
+            "explanation": "Grant from govt. = 50/360 × 55 = $7.64\n\nMoney spent for education = 150/360 × 54 = $22.5\n\nReduction in expenditure = 7.64/55 × 22.5 = $3.13"
+          },
+          "question7": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20q14%2015.jpg",
+            "questionText": "How much money is raised by fund raising programmes?",
+            "options": [
+              "21.39 mn",
+              "30.13 mn",
+              "14 mn",
+              "28 mn",
+              "28.57 mn"
+            ],
+            "correctAnswer": "21.39 mn",
+            "explanation": "Money raised = 140/360 × 55 = 21.39 mn"
+          },
+          "question8": {
+            "type": "quantitative_comparison",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20q16.jpg",
+            "questionText": "Column A: Area of AOB\n\nColumn B: 10π",
+            "quantityA": "Area of AOB",
+            "quantityB": "10π",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "Both the quantities are equal",
+              "The relationship cannot be determined by the information given"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Area of AOB = (72/360) × π × (7)^2 = 9.8π\n\nHence, Quantity B is greater."
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "At a bakery, customers can either buy a package containing 4 cookies for $3.60, or a package containing 8 cookies for $6.30. If the bakery sold 30 packages and made $140.40, how many cookies did they sell?",
+            "options": [
+              "105",
+              "108",
+              "120",
+              "144",
+              "168"
+            ],
+            "correctAnswer": "168",
+            "explanation": "4 cookies = $3.60\n\n8 cookies = $6.30\n\n- 1 cookie = $3.60/4 = $0.90\n\n- 1 cookie = $6.30/8 = $0.7875\n\nNow,\n\n140.40/0.90 = 156 & 140.40/0.7875 = 178.3\n\nCookies sold must be in the range of 156 to 178.\n\nHence, the answer is 168."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "There are 3 red and 4 green marbles in a bag. If two marbles are drawn at the same time, what is the probability that they are the same color?",
+            "options": [
+              "2/7",
+              "3/7",
+              "4/7",
+              "3/14",
+              "9/14"
+            ],
+            "correctAnswer": "3/7",
+            "explanation": "Probability = (3C2 + 4C2) / 7C2 = (3 + 6) / 21 = 3/7"
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "One of the two buses completes a journey of 300 miles in 7 1/2 hours and the other journey of 450 miles in 10 hours. The ratio of their average speed is:",
+            "options": [
+              "2:3",
+              "4:5",
+              "3:4",
+              "8:9",
+              "5:6"
+            ],
+            "correctAnswer": "8:9",
+            "explanation": "First Bus speed = 300/(15/2) = 40 m/h\n\nSecond Bus speed = 450/10 = 45 m/h\n\nRatio = 40/45 = 8/9"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The cost of shipping a package is $4.50 plus $0.25 per pound plus $0.75 per cubic foot of volume. Matt has a package whose density is 12 pounds per cubic foot, and it costs a total of $7 to ship it. How many pounds does the package weigh?",
+            "options": [
+              "12",
+              "8",
+              "4",
+              "1.5",
+              "0.5"
+            ],
+            "correctAnswer": "8",
+            "explanation": "Total cost = $7\n\nVariable cost = Total cost - Fixed cost = $7 - $4.50 = $2.50\n\nNow, Let the number of pounds = x\n\nVolume in cubic feet = x/12\n\nx * 0.25 + (x/12) * 0.75 = 2.5\n\nSolving, we get x = 8 pounds"
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "numeric_entry",
+            "questionText": "Three coworkers won a prize money in a lottery and divided it as follows: Albert received 2/5 of the money, Brad received 1/3 of it, and Carlos received the remaining $120. What was the amount of the prize money?",
+            "correctAnswer": "450",
+            "explanation": "Let total prize money = x\n\nShare of Carlos = x - 2x/5 - 1x/3\n\n120 = 4x/15\n\nx = 450"
+          },
+          "question2": {
+            "type": "quantitative_comparison",
+            "questionText": "q = −1 and r > 0\n\nColumn A: 5qr^3\n\nColumn B: 3q^3r^2",
+            "quantityA": "5qr^3",
+            "quantityB": "3q^3r^2",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined by the information given",
+            "explanation": "Case 1: If r = 1/10, then A = -5 * 10^3 and B = -3 * 10^2\n\n=> A > B\n\nCase 2: If r = 1, then A = -5 and B = -3\n\n=> B > A\n\nHence, the relationship cannot be determined by the information given."
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "Column A: The number of different sets of 4 pencils you could take from a box containing 10 unique pencils\n\nColumn B: 200",
+            "quantityA": "The number of different sets of 4 pencils you could take from a box containing 10 unique pencils",
+            "quantityB": "200",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the information given"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "Column A: 10C4 = 210\n\n210 > 200\n\nHence, the answer is A."
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a runner in a marathon had the 37th fastest time and the 50th slowest time, how many runners finished the marathon?",
+            "options": [
+              "83",
+              "84",
+              "85",
+              "86",
+              "87"
+            ],
+            "correctAnswer": "86",
+            "explanation": "37th from start and 50th from end\n\nTotal = 37 + 50 - 1 (because the same person is included twice)\n\n= 86"
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A company has 160 employees. 40% of the employees are part-time, and 30% of the employees are female. How many more full-time male employees are there than part-time female employees?",
+            "options": [
+              "48",
+              "40",
+              "32",
+              "30",
+              "Not enough information."
+            ],
+            "correctAnswer": "Not enough information.",
+            "explanation": "160 employees:\n\nPart-time: 40% = 64\n\nFull-time: 60% = 96\n\nMale: 70% = 112\n\nFemale: 30% = 48\n\nSince there is no relation given between the two tables, the answer is option 5."
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If (4x+y)(x+4y) = 25xy + 400, what is the value of |x-y|?",
+            "options": [
+              "10",
+              "12",
+              "20",
+              "24",
+              "25"
+            ],
+            "correctAnswer": "10",
+            "explanation": "(4x + y)(x + 4y) = 25xy + 400\n\n=> 4x^2 + 4y^2 + 17xy = 25xy + 400\n\n=> 4(x^2 + y^2 − 2xy) = 400\n\n=> (x − y)^2 = 100\n\n=> |x − y| = 10"
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The figure above shows three mutually tangent circles. The largest circle has a radius of 3, the medium-sized circle has a radius of 2, and the smallest circle has a radius of 1. If the centers of the circles are connected to form a triangle, what is the area of the triangle?",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20q3.jpg",
+            "options": [
+              "2√6",
+              "3√6",
+              "2√3",
+              "6√2",
+              "6"
+            ],
+            "correctAnswer": "6",
+            "explanation": "Sides of the triangle = 3, 4, 5 (Pythagorean triplet)\n\n=> It is a right triangle with hypotenuse = 5\n\nArea = 1/2 × 3 × 4 = 6"
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "What is (12^36)/(36^12)?",
+            "options": [
+              "12^12",
+              "32^16",
+              "48^12",
+              "16^32",
+              "72^8"
+            ],
+            "correctAnswer": "48^12",
+            "explanation": "12^36 / 36^12 = 12^12 × 12^24 / (12^12 × 3^12) = 3^12 × 16^12 = 48^12"
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The operation Ω is defined by the relation aΩb = √(a^2 + b^2). What is (10Ω1)Ω(4Ω2)?",
+            "options": [
+              "17",
+              "√280",
+              "√250",
+              "11",
+              "√80"
+            ],
+            "correctAnswer": "11",
+            "explanation": "(10Ω1) = √101 and (4Ω2) = √20\n\nNow, (10Ω1)Ω(4Ω2) = √(101 + 20) = 11"
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The figure above shows two circles of the same size inscribed within a 9 by 8 rectangle. What is the diameter of each circle?",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/flt5%20QA1%20q8(exp_).jpg",
+            "options": [
+              "4",
+              "5",
+              "6",
+              "7",
+              "3"
+            ],
+            "correctAnswer": "5",
+            "explanation": "In triangle ABC:\n\n(8 − 2r^2) + (9 − 2r^2) = (2r)^2\n\n=> 4r^2 − 68r + 145 = 0\n\nr = 2.5\n\n=> d = 5"
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A, B, and C are distinct odd digits. ABAC represents a four-digit number that is divisible by 9. What is the difference between the largest possible value of ABAC and the smallest possible value?",
+            "options": [
+              "6264",
+              "5850",
+              "5652",
+              "4746",
+              "There is only one such four-digit number divisible by 9."
+            ],
+            "correctAnswer": "5652",
+            "explanation": "For a number to be divisible by 9, the sum of its digits should be divisible by 9.\n\nHence, 2A + B + C is divisible by 9.\n\nLeast ABAC = 1719 (sum = 18)\n\nHighest ABAC = 7371 (sum = 18)\n\nDifference = 5652\n\nNote: Sum = 27 can't be taken because the sum of 4 odd numbers is always even.\n\n& sum = 36 can't be taken because, then A = B = C = 9."
+          },
+          "question12": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20QA2%20q11,12,13,14.jpg",
+            "questionText": "Which month showed the largest decrease in total imports over the previous month?",
+            "options": [
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun"
+            ],
+            "correctAnswer": "Mar",
+            "explanation": "Total imports in Jan = 30 + 40 + 32 = 102\n\nFeb = 31 + 37 + 34 = 102\n\nMarch = 32 + 36 + 31 = 99\n\nApril = 34 + 36 + 31 = 101\n\nMay = 36 + 34 + 32 = 102\n\nJune = 38 + 34 + 31 = 103\n\nTotal = 202 217 191\n\nEvidently, the largest decrease was in March."
+          },
+          "question13": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20QA2%20q11,12,13,14.jpg",
+            "questionText": "What was the total value of sheet steel (in $) imported over the 6 month period?",
+            "options": [
+              "56,750",
+              "75,300",
+              "55,552",
+              "42,370",
+              "44,750"
+            ],
+            "correctAnswer": "55,552",
+            "explanation": "Total value of sheet steel = 256 × (40 + 37 + 36 + 36 + 34 + 34) = $55,552"
+          },
+          "question14": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20QA2%20q11,12,13,14.jpg",
+            "questionText": "What was the percentage of scrap steel imported in the 6 month period?",
+            "options": [
+              "37.5",
+              "35.2",
+              "36.1",
+              "31.2",
+              "38.3"
+            ],
+            "correctAnswer": "31.2",
+            "explanation": "Total steel = 202 + 217 + 191 = 610\n\n% scrap = (191 / 610) = 31.2%"
+          },
+          "question15": {
+            "type": "data_interpretation_single_answer",
+            "imgUrl": "https://testendura.com/userfiles/image/FLT%205/gre%20flt5%20QA2%20q11,12,13,14.jpg",
+            "questionText": "What was the difference (in thousands of tons) between coil steel and sheet steel imports in the first 3 months of the year?",
+            "options": [
+              "10",
+              "16",
+              "18",
+              "19",
+              "20"
+            ],
+            "correctAnswer": "20",
+            "explanation": "Difference = Sheet - Coil = (40 + 37 + 36) - (30 + 31 + 32) = 20 thousand tonnes"
           }
         }
       }
