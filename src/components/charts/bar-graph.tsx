@@ -146,7 +146,7 @@ export function BarGraph() {
                 <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
                     <CardTitle>Live Test Takers - GreGoGlobal</CardTitle>
                     <CardDescription>
-                        Showing total test takers per day for current month
+                        Showing total test takers per day for Previous month
                     </CardDescription>
                 </div>
                 <div className="flex">

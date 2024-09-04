@@ -24,7 +24,6 @@ const InitialTestDetails: React.FC<Props> = ({ test, onContinue }) => {
     return (
         <TestLayout currentSection="Test Details" onContinue={onContinue}>
             <div>
-                <h1 className='dark:text-black'>{test.name}</h1>
                 <TestInstructions />
             </div>
         </TestLayout>
