@@ -23,6 +23,16 @@ const TotalTestDisplay: React.FC = () => {
         setLoginOpenModal(false)
     };
 
+    const testDescriptions: Record<number, string> = {
+        1: "A medium-level test designed to enhance analytical writing, quantitative reasoning, and verbal skills through diverse, timed questions.",
+        2: "A balanced test with challenging questions aimed at improving problem-solving, reading comprehension, and time management under pressure.",
+        3: "Focuses on sharpening critical thinking and reasoning abilities with a mix of medium-difficulty verbal and quantitative questions.",
+        4: "Designed to simulate real test conditions, it helps improve response accuracy and efficiency across various question types.",
+        5: "Offers a combination of moderately difficult tasks, boosting test-taking stamina, time management, and cognitive reasoning under realistic conditions.",
+        6: "A moderately challenging test, encouraging strategic thinking and problem-solving with a range of verbal and quantitative questions."
+    };
+
+
     return (
         <section className=" dark:text-white rounded-lg dark:bg-black dark:border-white dark:border-2">
             <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -45,8 +55,7 @@ const TotalTestDisplay: React.FC = () => {
                             <div>
                                 <h2 className="text-lg font-bold">Test Number {buttonId}</h2>
                                 <p className="mt-1 text-sm dark:text-gray-300">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
-                                    possimus quisquam reiciendis tempora animi! Quaerat, saepe?
+                                    {testDescriptions[buttonId] || "Test description not available."}
                                 </p>
                             </div>
                         </div>
