@@ -94,7 +94,7 @@ export default function Page() {
                         <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
                             MJ Study Abroad is a Verified ETS Partner Since 1998
                         </h2>
-                        <p className="text-gray-600 dark:text-gray-300">As a trusted partner of ETS since 1998, MJ Study Abroad has been committed to helping students achieve their dreams of studying abroad. We offer comprehensive guidance, resources, and support tailored to each student's needs. Whether you're preparing for TOEFL, GRE, or any other standardized test, our expertise ensures you're on the right path to success. Join the thousands of students who have already benefited from our services and take the next step in your academic journey with confidence.</p>
+                        <p className="text-gray-600 dark:text-gray-300">As a trusted partner of ETS since 1998, MJ Study Abroad has been committed to helping students achieve their dreams of studying abroad. We offer comprehensive guidance, resources, and support tailored to each student&apos;s needs. Whether you&apos;re preparing for TOEFL, GRE, or any other standardized test, our expertise ensures you&apos;re on the right path to success. Join the thousands of students who have already benefited from our services and take the next step in your academic journey with confidence.</p>
                     </div>
                     <div
                         className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
@@ -116,7 +116,7 @@ export default function Page() {
                                         Trusted Since 1998
                                     </h5>
                                     <p className="text-gray-600 dark:text-gray-300">
-                                        Our long-standing partnership with ETS means you're getting authentic vouchers every time.
+                                        Our long-standing partnership with ETS means you&apos;re getting authentic vouchers every time.
                                     </p>
                                 </div>
                                 {/* <a href="#" className="flex items-center justify-between group-hover:text-secondary">
@@ -242,7 +242,7 @@ export default function Page() {
                                 Get GRE Vouchers at 15.5% Off!
                             </h2>
                             <p className="my-8 text-gray-600 dark:text-gray-300">
-                                Save big on your GRE preparation with our exclusive discount codes! Purchase a GRE voucher from us and enjoy a 15.5% discount on the official exam fee. This is a limited-time offer, so grab your voucher now and take the next step toward achieving your academic goals without breaking the bank. <br /> <br /> Our vouchers are verified and easy to use, ensuring a hassle-free experience when you register for the GRE. Plus, with 24/7 customer support, we're here to help you every step of the way.
+                                Save big on your GRE preparation with our exclusive discount codes! Purchase a GRE voucher from us and enjoy a 15.5% discount on the official exam fee. This is a limited-time offer, so grab your voucher now and take the next step toward achieving your academic goals without breaking the bank. <br /> <br /> Our vouchers are verified and easy to use, ensuring a hassle-free experience when you register for the GRE. Plus, with 24/7 customer support, we&apos;re here to help you every step of the way.
                             </p>
                             <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
                                 <div className="mt-8 flex gap-4 md:items-center">
@@ -264,7 +264,7 @@ export default function Page() {
                                     </div>
                                     <div className="w-5/6">
                                         <h3 className="font-semibold text-lg text-gray-700 dark:text-teal-300">24/7 Customer Support</h3>
-                                        <p className="text-gray-500 dark:text-gray-400">We're here to assist you with any questions or concerns at any time.</p>
+                                        <p className="text-gray-500 dark:text-gray-400">We&apos;re here to assist you with any questions or concerns at any time.</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"Thanks to MJ Study Abroad, I was able to save a significant amount on my GRE exam fees with their discount vouchers. The process was smooth, and their customer support was top-notch!"</p>
+                            <p className="mt-8">&apos;Thanks to MJ Study Abroad, I was able to save a significant amount on my GRE exam fees with their discount vouchers. The process was smooth, and their customer support was top-notch!&apos;</p>
                         </div>
                         <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                             <div className="flex gap-4">
@@ -297,7 +297,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Toefl and Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"I highly recommend MJ Study Abroad for anyone looking to take the GRE. Their discount vouchers are genuine, and the savings were incredibly helpful!"</p>
+                            <p className="mt-8">&apos;I highly recommend MJ Study Abroad for anyone looking to take the GRE. Their discount vouchers are genuine, and the savings were incredibly helpful!&apos;</p>
                         </div>
                         <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                             <div className="flex gap-4">
@@ -306,7 +306,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Ielts and Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"The support team at MJ Study Abroad is amazing. They were there to help me every step of the way, and I got my GRE voucher with no issues at all."</p>
+                            <p className="mt-8">&apos;The support team at MJ Study Abroad is amazing. They were there to help me every step of the way, and I got my GRE voucher with no issues at all.&apos;</p>
                         </div>
                         <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                             <div className="flex gap-4">
@@ -315,7 +315,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"The process of getting a GRE discount voucher through MJ Study Abroad was seamless. The savings were great, and the experience was hassle-free."</p>
+                            <p className="mt-8">&apos;The process of getting a GRE discount voucher through MJ Study Abroad was seamless. The savings were great, and the experience was hassle-free.&apos;</p>
                         </div>
                         <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                             <div className="flex gap-4">
@@ -324,7 +324,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"MJ Study Abroad not only helped me with GRE vouchers but also provided excellent support throughout my preparation journey. Highly recommended!"</p>
+                            <p className="mt-8">&apos;MJ Study Abroad not only helped me with GRE vouchers but also provided excellent support throughout my preparation journey. Highly recommended!&apos;</p>
                         </div>
                         <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                             <div className="flex gap-4">
@@ -333,7 +333,7 @@ export default function Page() {
                                     <p className="text-sm text-gray-500 dark:text-gray-300">Duolingo and Gre Student</p>
                                 </div>
                             </div>
-                            <p className="mt-8">"The GRE discount voucher from MJ Study Abroad was a great deal. The process was easy, and their customer service is excellent. I'll definitely recommend them to my friends."</p>
+                            <p className="mt-8">&apos;The GRE discount voucher from MJ Study Abroad was a great deal. The process was easy, and their customer service is excellent. I&apos;ll definitely recommend them to my friends.&apos;</p>
                         </div>
                     </div>
                 </div>
@@ -452,7 +452,7 @@ export default function Page() {
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     How do I use the GRE discount voucher?
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">Once you purchase a GRE discount voucher from us, you'll receive a unique code via email. During the GRE registration process on the ETS website, you can apply this code at checkout to receive a 15.5% discount on your exam fee.</p>
+                                <p className="text-gray-500 dark:text-gray-400">Once you purchase a GRE discount voucher from us, you&apos;ll receive a unique code via email. During the GRE registration process on the ETS website, you can apply this code at checkout to receive a 15.5% discount on your exam fee.</p>
                             </div>
                             <div className="mb-10">
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
