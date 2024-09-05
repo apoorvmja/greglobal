@@ -24,6 +24,11 @@ interface ResultDashboardProps {
 }
 
 const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score, onSectionChange }) => {
+    verbal1Score = Math.floor(verbal1Score * 1.5);
+    verbal2Score = Math.floor(verbal2Score * 1.5);
+    quant1Score = Math.floor(quant1Score * 1.5);
+    quant2Score = Math.floor(quant2Score * 1.5);
+
     const handleSectionChange = (section: string) => {
         onSectionChange(section); // Call the function passed from page.tsx
     };
