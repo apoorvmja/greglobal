@@ -24,7 +24,7 @@ export default function VoucherPage() {
                 <div>
                     <div className="relative pt-20 sm:pt-36 ml-auto">
                         <div className="text-center mx-auto flex flex-col items-center justify-center">
-                            <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Available Discounts <span className="hidden sm:flex">On</span><br /><span className="text-[#9333EA] dark:text-white">GRE Registration</span></h1>
+                            <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Available Discounts <span className="hidden">On</span><br /><span className="text-[#9333EA] dark:text-white">GRE Registration</span></h1>
                             <p className="lg:w-[60%] mt-8 text-gray-700 dark:text-gray-300">Gre Voucher Code: Save @15.5%- on your ETS GRE Registration Fee! With the help of a GRE exam voucher, you can save huge money on exam fees.</p>
                             <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
                                 <a
