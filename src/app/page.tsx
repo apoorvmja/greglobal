@@ -46,7 +46,7 @@ export default function HomePage() {
             <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-6">
               <Button variant="default" asChild>
                 <Link href="/dashboard">
-                  Dive in
+                  Mock tests
                   <ArrowRightIcon className="ml-2" />
                 </Link>
               </Button>
