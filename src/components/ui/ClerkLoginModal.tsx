@@ -21,7 +21,7 @@ const ClerkLoginModal: React.FC<ClerkLoginModalProps> = ({ onClose }) => {
         >
             <div className="relative bg-white rounded-[1rem] dark:bg-gray-800 dark:text-white p-4">
                 {/* <button onClick={onClose} className=" text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-500"><X /></button> */}
-                <SignIn forceRedirectUrl="/mock-tests" />
+                <SignIn fallbackRedirectUrl={"/mock-tests"} />
             </div>
         </div>
     );
