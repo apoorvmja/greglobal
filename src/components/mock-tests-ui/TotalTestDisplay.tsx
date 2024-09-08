@@ -14,7 +14,8 @@ const TotalTestDisplay: React.FC = () => {
     const openTestModal = (buttonId: number) => {
         setSelectedButtonId(buttonId);
         if (isSignedIn) setOpenModal(true);
-        else setLoginOpenModal(!loginopenModal)
+        // else setLoginOpenModal(!loginopenModal)
+        else window.location.href = "https://accounts.gregoglobal.com/sign-in?redirect_url=https%3A%2F%2Fgregoglobal.com%2Fmock-tests"
     };
 
     const closeModal = () => {
