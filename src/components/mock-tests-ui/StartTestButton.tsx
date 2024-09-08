@@ -83,7 +83,7 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                             Writing <span className='hidden sm:flex'>(AWA)</span>
                         </button>
                         <div id="tooltip-writing" role="tooltip" className="w-full text-center absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 group-hover:visible group-hover:opacity-100">
-                            Click "Start Test" to begin
+                            Click &quot;Start Test&quot; to begin
                             <div className="tooltip-arrow" data-popper-arrow></div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                             Verbal
                         </button>
                         <div id="tooltip-verbal" role="tooltip" className="w-full text-center absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 group-hover:visible group-hover:opacity-100">
-                            Click "Start Test" to begin
+                            Click &quot;Start Test&quot; to begin
                             <div className="tooltip-arrow" data-popper-arrow></div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                             <span className='hidden sm:flex'>Quantitative</span><span className='flex sm:hidden'>Quant</span>
                         </button>
                         <div id="tooltip-quantitative" role="tooltip" className="w-full text-center absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 group-hover:visible group-hover:opacity-100">
-                            Click "Start Test" to begin
+                            Click &quot;Start Test&quot; to begin
                             <div className="tooltip-arrow" data-popper-arrow></div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ const StartTestButton: React.FC<StartTestButtonProps> = ({ buttonId, onClose }) 
                             Results
                         </button>
                         <div id="tooltip-results" role="tooltip" className="w-full text-center absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 group-hover:visible group-hover:opacity-100">
-                            Click "Start Test" to begin
+                            Click &quot;Start Test&quot; to begin
                             <div className="tooltip-arrow" data-popper-arrow></div>
                         </div>
                     </div>
