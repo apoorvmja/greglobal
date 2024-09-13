@@ -5978,6 +5978,1671 @@
           }
         }
       }
+    },
+    {
+      "id": "test7",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "No field of study can advance significantly unless it incorporates knowledge and experience from outside that field.",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "sentence_equivalence",
+            "questionText": "The astronomer and feminist Maria Mitchell's own prodigious activity and the vigor of the Association for the Advancement of Women during the 1870's belie any assertion that feminism was ___ in that period.",
+            "options": [
+              "thriving",
+              "prospering",
+              "unrestrained",
+              "dormant",
+              "quiescent",
+              "unfettered"
+            ],
+            "correctAnswer": [
+              "dormant",
+              "quiescent"
+            ],
+            "explanation": "The sentence suggests that assertions about feminism being inactive during the 1870s are belied by the activity of both Maria Mitchell and the association. Therefore, the correct answer choices should mean 'inactive' or 'resting', making 'dormant' and 'quiescent' the best fit."
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Only by ignoring decades of mismanagement and inefficiency could investors conclude that a fresh infusion of cash would provide anything more than a ___ solution to the company's financial woes.",
+            "options": [
+              "fair",
+              "temporary",
+              "genuine",
+              "realistic",
+              "stopgap",
+              "complete"
+            ],
+            "correctAnswer": [
+              "temporary",
+              "stopgap"
+            ],
+            "explanation": "The sentence implies that investors who ignored long-standing issues might believe a cash infusion could provide more than a temporary or stopgap solution, which it actually would not. The best answers, 'temporary' and 'stopgap,' indicate solutions that are short-term and insufficient to fully resolve the problems."
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "Jones was unable to recognize the contradictions in his attitudes that were obvious to everyone else; even the hint of an untruth was ___ to him, but he courted serious trouble by always cheating on his taxes.",
+            "options": [
+              "acceptable",
+              "exciting",
+              "repugnant",
+              "anathema",
+              "tempting",
+              "anachronistic"
+            ],
+            "correctAnswer": [
+              "repugnant",
+              "anathema"
+            ],
+            "explanation": "The sentence describes how Jones was offended by even the hint of untruth. The words closest in meaning to 'offensive' are 'repugnant' and 'anathema,' which make them the correct answers. The contradiction lies in the fact that he still cheated on his taxes despite finding untruths offensive."
+          },
+          "question4": {
+            "type": "sentence_equivalence",
+            "questionText": "The chances that a species will persist are reduced if any vital function is restricted to a single kind of organ; ___ by itself possesses an enormous survival advantage.",
+            "options": [
+              "complexity",
+              "size",
+              "variety",
+              "symmetry",
+              "redundancy",
+              "copiousness"
+            ],
+            "correctAnswer": [
+              "redundancy",
+              "copiousness"
+            ],
+            "explanation": "The sentence suggests that survival is more likely when a vital function is distributed among many organs rather than restricted to one. The words that best capture this sense of abundance and multiplicity are 'redundancy' and 'copiousness.'"
+          },
+          "question5": {
+            "type": "reading_comprehension",
+            "passage": "When the same parameters and quantitative theory are used to analyze both termite colonies and troops of rhesus macaques, we will have a unified science of sociobiology. Can this ever really happen? As my own studies have advanced, I have been increasingly impressed with the functional similarities between insect and vertebrate societies and less so with the structural differences that seem, at first glance, to constitute such an immense gulf between them. Consider for a moment termites and macaques. Both form cooperative groups that occupy territories. In both kinds of society there is a well-marked division of labor. Members of both groups communicate to each other hunger, alarm, hostility, caste status or rank, and reproductive status. From the specialist's point of view, this comparison may at first seem facile—or worse. But it is out of such deliberate oversimplification that the beginnings of a general theory are made.",
+            "questionText": "Which of the following best summarizes the author's main point?",
+            "options": [
+              "Oversimplified comparisons of animal societies could diminish the likelihood of developing a unified science of sociobiology.",
+              "Understanding the ways in which animals as different as termites and rhesus macaques resemble each other requires training in both biology and sociology.",
+              "Most animals organize themselves into societies that exhibit patterns of group behavior similar to those of human societies.",
+              "Animals as different as termites and rhesus macaques follow certain similar and predictable patterns of behavior.",
+              "A study of the similarities between insect and vertebrate societies could provide the basis for a unified science of sociobiology."
+            ],
+            "correctAnswer": [
+              "A study of the similarities between insect and vertebrate societies could provide the basis for a unified science of sociobiology."
+            ],
+            "explanation": "The author's main point in the passage is that a comparison of insect and vertebrate society could lead to the amalgamated or unified science of sociobiology. He goes on to expound on this by doing a comparative analysis of termites and macaques."
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "When the same parameters and quantitative theory are used to analyze both termite colonies and troops of rhesus macaques, we will have a unified science of sociobiology. Can this ever really happen? As my own studies have advanced, I have been increasingly impressed with the functional similarities between insect and vertebrate societies and less so with the structural differences that seem, at first glance, to constitute such an immense gulf between them. Consider for a moment termites and macaques. Both form cooperative groups that occupy territories. In both kinds of society there is a well-marked division of labor. Members of both groups communicate to each other hunger, alarm, hostility, caste status or rank, and reproductive status. From the specialist's point of view, this comparison may at first seem facile—or worse. But it is out of such deliberate oversimplification that the beginnings of a general theory are made.",
+            "questionText": "The author's attitude toward the possibility of a unified theory in sociobiology is best described as which of the following?",
+            "options": [
+              "Guarded optimism",
+              "Unqualified enthusiasm",
+              "Objective indifference",
+              "Resignation",
+              "Dissatisfaction"
+            ],
+            "correctAnswer": [
+              "Guarded optimism"
+            ],
+            "explanation": "There is clearly a sense of guarded optimism. The author is not overly optimistic about the possibilities opened up by this new approach. If we look at how the passage concludes: 'From the specialist's point of view, this comparison may at first seem facile—or worse. But it is out of such deliberate oversimplification that the beginnings of a general theory are made.' It is clear that there is a sense of guarded optimism."
+          },
+          "question7": {
+            "type": "reading_comprehension_multiple",
+            "passage": "When the same parameters and quantitative theory are used to analyze both termite colonies and troops of rhesus macaques, we will have a unified science of sociobiology. Can this ever really happen? As my own studies have advanced, I have been increasingly impressed with the functional similarities between insect and vertebrate societies and less so with the structural differences that seem, at first glance, to constitute such an immense gulf between them. Consider for a moment termites and macaques. Both form cooperative groups that occupy territories. In both kinds of society there is a well-marked division of labor. Members of both groups communicate to each other hunger, alarm, hostility, caste status or rank, and reproductive status. From the specialist's point of view, this comparison may at first seem facile—or worse. But it is out of such deliberate oversimplification that the beginnings of a general theory are made.",
+            "questionText": "In discussing insect and vertebrate societies, the author suggests which of the following?",
+            "options": [
+              "A distinguishing characteristic of most insect and vertebrate societies is a well-marked division of labor.",
+              "The caste structure of insect societies is similar to that of vertebrate societies.",
+              "There are significant structural differences between insect and vertebrate societies."
+            ],
+            "correctAnswer": [
+              "A distinguishing characteristic of most insect and vertebrate societies is a well-marked division of labor.",
+              "There are significant structural differences between insect and vertebrate societies."
+            ],
+            "explanation": "There are significant structural differences as evident from the line 'I have been increasingly impressed with the functional similarities between insect and vertebrate societies and less so with the structural differences that seem, at first glance, to constitute such an immense gulf between them.' Additionally, both societies exhibit a well-marked division of labor, as mentioned in the passage."
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "A proposed change to federal income tax laws would eliminate deductions from taxable income for donations a taxpayer has made to charitable and educational institutions. If this change were adopted, wealthy individuals would no longer be permitted such deductions. Therefore, many charitable and educational institutions would have to reduce services, and some would have to close their doors.",
+            "questionText": "The argument above assumes which of the following?",
+            "options": [
+              "Without the incentives offered by federal income tax laws, at least some wealthy individuals would not donate as much money to charitable and educational institutions as they otherwise would have.",
+              "Money contributed by individuals who make their donations because of provisions in the federal tax laws provides the only source of funding for many charitable and educational institutions.",
+              "The primary reason for not adopting the proposed change in the federal income tax laws cited above is to protect wealthy individuals from having to pay higher taxes.",
+              "Wealthy individuals who donate money to charitable and educational institutions are the only individuals who donate money to such institutions.",
+              "Income tax laws should be changed to make donations to charitable and educational institutions the only permissible deductions from taxable income."
+            ],
+            "correctAnswer": [
+              "Without the incentives offered by federal income tax laws, at least some wealthy individuals would not donate as much money to charitable and educational institutions as they otherwise would have."
+            ],
+            "explanation": "The passage argues that charitable and educational institutions, part of whose income comes from donations, would be negatively affected if wealthy individuals could not count such donations as deductions from their income. The question asks you to identify an assumption of the argument—that is, something that has to be true in order for the evidence presented to establish the conclusion. Choice A is the best answer, since if this statement is false, all wealthy individuals would, even without the incentive provided by federal tax laws, donate as much money as they do now."
+          },
+          "question9": {
+            "type": "text_completion",
+            "questionText": "The National Archives contain information so ______ that researchers have been known never to publish because they cannot bear to bring their studies to an end.",
+            "options": [
+              "divisive",
+              "seductive",
+              "selective",
+              "repetitive",
+              "resourceful"
+            ],
+            "correctAnswer": [
+              "divisive"
+            ],
+            "explanation": "The key phrase 'cannot bear to bring their studies to an end' implies that we need a negative word to fill in the blank. The information in the National Archives was never known to be published. The only negative words in the given options are 'repetitive' and 'divisive.' Of these two, 'divisive' is logically correct as it suggests that something in the information is controversial, hence the reason why it was never published.",
+            "blanks": 1
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "The primary tension in the novel is between Frankenstein and his monster, a doubling of the creature and his creator, suggesting that (i) ______ and (ii) ______ may not be the binary opposition that they appear to be. Put differently the monster is made both in the laboratory as well as by the society, whose rejection makes a monster out of the creature: this theme comes out even though what permeates the novel is the theme of the dark double or the (iii) ______.",
+            "options": {
+              "blank1": [
+                "similarity",
+                "conspiracy",
+                "monstrosity"
+              ],
+              "blank2": [
+                "latency",
+                "potency",
+                "normalcy"
+              ],
+              "blank3": [
+                "doppelganger",
+                "dilettante",
+                "daguerreotype"
+              ]
+            },
+            "correctAnswer": [
+              "monstrosity",
+              "normalcy",
+              "doppelganger"
+            ],
+            "explanation": "The first part of the question deals with 'binary opposites,' hence the words that fit in the first two blanks are 'monstrosity' and 'normalcy.' In the third blank, we have to talk about the 'dark double,' hence the word 'doppelganger' fits in.",
+            "blanks": 3
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "Perhaps because scientists have been so intrigued by dogs' superior senses of smell and hearing, researchers have long ______ their eyesight, assuming that they inhabit a drab, black-and-white world, devoid of color.",
+            "options": [
+              "studied",
+              "coveted",
+              "appreciated",
+              "resented",
+              "underestimated"
+            ],
+            "correctAnswer": [
+              "underestimated"
+            ],
+            "explanation": "The second part of the sentence holds the key: 'assuming that they inhabit a drab, black-and-white world, devoid of color.' Assumption without validation is negative, which is the tone of the sentence. It implies that scientists focused on only dogs' superior senses of smell and hearing, ignoring their eyesight. The closest word for this is 'underestimated,' making it the correct answer.",
+            "blanks": 1
+          },
+          "question12": {
+            "type": "text_completion",
+            "questionText": "Though extremely (i) ______ about his own plans, the man allowed his associates no such privacy and was constantly (ii) ______ information about what they intended to do next.",
+            "options": {
+              "blank1": [
+                "fastidious",
+                "reticent",
+                "idiosyncratic"
+              ],
+              "blank2": [
+                "altering",
+                "ruining",
+                "soliciting"
+              ]
+            },
+            "correctAnswer": [
+              "reticent",
+              "soliciting"
+            ],
+            "explanation": "The answer to the first blank is solved by 'the man allowed his associates no such privacy,' implying that the man was secretive while not allowing others to be so. 'Reticent' is the closest synonym for secretive. For the second blank, since the man was not secretive about finding out others' plans, 'soliciting' is the appropriate word.",
+            "blanks": 2
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Exit poll and opinion polls have been (i) ______ by the audience. This is because of the wrong predictions made by the (ii) ______ at the show. The viewers cannot be fooled for long, indeed the chances of their loyalties remaining fixed are as (iii) ______ as the possibility of snow on a Christmas day in Chennai.",
+            "options": {
+              "blank1": [
+                "shunned",
+                "contradicted",
+                "contrasted"
+              ],
+              "blank2": [
+                "analysts",
+                "psephologists",
+                "psychologists"
+              ],
+              "blank3": [
+                "remote",
+                "controlled",
+                "spiraled"
+              ]
+            },
+            "correctAnswer": [
+              "shunned",
+              "psephologists",
+              "remote"
+            ],
+            "explanation": "The exit polls are inaccurate, therefore, they will be 'shunned' by the people. In the second blank, psephologists is the right word, as psephologists study elections. The third blank, 'remote,' is the only logically correct option as it reflects the low probability of something happening, similar to the slim chance of snow on a Christmas day in Chennai.",
+            "blanks": 3
+          },
+          "question2": {
+            "type": "text_completion",
+            "questionText": "Having sufficient income of her own constituted for Alice (i) ______ independence that made possible a degree of (ii) ______ in her emotional life as well.",
+            "options": {
+              "blank1": [
+                "a material",
+                "a financial",
+                "a psychological"
+              ],
+              "blank2": [
+                "extravagance",
+                "economy",
+                "uncertainty"
+              ]
+            },
+            "correctAnswer": [
+              "a financial",
+              "extravagance"
+            ],
+            "explanation": "The first blank is answered by 'sufficient income of her own.' Income provides financial independence, so 'a financial' is the answer. For the second blank, the word 'extravagance' is the best fit, as it is related to a degree of freedom in emotional behavior. The phrase 'independence that made possible' suggests that the missing word should relate to freedom, making 'extravagance' the most appropriate choice.",
+            "blanks": 2
+          },
+          "question3": {
+            "type": "reading_comprehension",
+            "passage": "To evaluate a plan to save money on office-space expenditures by having its employees work at home, XYZ Company asked volunteers from its staff to try the arrangement for six months. During this period, the productivity of these employees was as high as or higher than before.",
+            "questionText": "Which of the following, if true, would argue most strongly against deciding, on the basis of the trial results, to implement the company's plan?",
+            "options": [
+              "The employees who agreed to participate in the test of the plan were among the company’s most self-motivated and independent workers.",
+              "The savings that would accrue from reduced office-space expenditures alone would be sufficient to justify the arrangement for the company, apart from any productivity increase.",
+              "Other companies that have achieved successful results from work-at-home plans have work forces that are substantially larger than that of XYZ.",
+              "The volunteers who worked at home were able to communicate with other employees as necessary for performing the work.",
+              "Minor changes in the way office work is organized at XYZ would yield increases in employee productivity similar to those achieved in the trial."
+            ],
+            "correctAnswer": [
+              "The employees who agreed to participate in the test of the plan were among the company’s most self-motivated and independent workers."
+            ],
+            "explanation": "According to the passage, a limited trial of a plan had favorable results. The question asks you to identify information that indicates that those favorable results would not be reproduced if the plan were put into effect. Choice A is the best answer, since if it is true, then the employees who took part in the trial were the ones likely to do best work at home. So the trial’s results cannot be taken as representative of what would happen if the plan was extended to other employees."
+          },
+          "question4": {
+            "type": "reading_comprehension_multiple",
+            "passage": "For me, scientific knowledge is divided into mathematical sciences, natural sciences or sciences dealing with the natural world (physical and biological sciences), and sciences dealing with mankind (psychology, sociology, all the sciences of cultural achievements, every kind of historical knowledge). Apart from these sciences is philosophy. In the first place, all this is pure or theoretical knowledge, sought only for the purpose of understanding, in order to fulfill the need to understand its intrinsic and consubstantial to man. What distinguishes man from animal is that he knows and needs to know. If man did not know that the world existed, and that the world was of a certain kind, that he was in the world and that he himself was of a certain kind, he wouldn’t be man. The technical aspects of applications of knowledge are equally necessary for man and are of the greatest importance, because they also contribute to defining him as man and permit him to pursue a life increasingly more truly human. But even while enjoying the results of technical progress, he must defend the primacy and autonomy of pure knowledge. Knowledge sought directly for its practical applications will have immediate and foreseeable success, but not the kind of important result whose revolutionary scope is in large part unforeseen, except by the imagination of the Utopians. If the Greek mathematicians had not applied themselves to the investigation of conic sections, zealously and without the least suspicion that it might someday be useful, it would not have been possible centuries later to navigate far from shore. The first men to study the nature of electricity could not imagine that their experiments, carried on because of mere intellectual curiosity, would eventually lead to modern electrical technology, without which we can scarcely conceive of contemporary life. Pure knowledge is valuable for its own sake, because the human spirit cannot resign itself to ignorance. But, in addition, it is the foundation for practical results that would not have been reached if this knowledge had not been sought disinterestedly.",
+            "questionText": "The author points out that Greeks who studied conic sections",
+            "options": [
+              "invented modern mathematical applications",
+              "were forced to resign themselves to failure",
+              "were unaware of the value of their studies"
+            ],
+            "correctAnswer": [
+              "were unaware of the value of their studies"
+            ],
+            "explanation": "The answer is (C). In the second paragraph, the author mentions the Greeks. He tells us that the Greeks investigated the conic sections enthusiastically and without the least suspicion that it might someday be useful. This statement implies that the Greeks had no inkling that what they were investigating would be used by the people living in the future. Option (A) and (B) are neither stated nor implied from the passage."
+          },
+          "question5": {
+            "type": "reading_comprehension",
+            "passage": "For me, scientific knowledge is divided into mathematical sciences, natural sciences or sciences dealing with the natural world (physical and biological sciences), and sciences dealing with mankind (psychology, sociology, all the sciences of cultural achievements, every kind of historical knowledge). Apart from these sciences is philosophy. In the first place, all this is pure or theoretical knowledge, sought only for the purpose of understanding, in order to fulfill the need to understand its intrinsic and consubstantial to man. What distinguishes man from animal is that he knows and needs to know. If man did not know that the world existed, and that the world was of a certain kind, that he was in the world and that he himself was of a certain kind, he wouldn’t be man. The technical aspects of applications of knowledge are equally necessary for man and are of the greatest importance, because they also contribute to defining him as man and permit him to pursue a life increasingly more truly human. But even while enjoying the results of technical progress, he must defend the primacy and autonomy of pure knowledge. Knowledge sought directly for its practical applications will have immediate and foreseeable success, but not the kind of important result whose revolutionary scope is in large part unforeseen, except by the imagination of the Utopians. If the Greek mathematicians had not applied themselves to the investigation of conic sections, zealously and without the least suspicion that it might someday be useful, it would not have been possible centuries later to navigate far from shore. The first men to study the nature of electricity could not imagine that their experiments, carried on because of mere intellectual curiosity, would eventually lead to modern electrical technology, without which we can scarcely conceive of contemporary life. Pure knowledge is valuable for its own sake, because the human spirit cannot resign itself to ignorance. But, in addition, it is the foundation for practical results that would not have been reached if this knowledge had not been sought disinterestedly.",
+            "questionText": "The title below that best expresses the ideas of this passage is",
+            "options": [
+              "Technical Progress",
+              "A Little Learning is a Dangerous Thing",
+              "Man’s Distinguishing Characteristics",
+              "Learning for its own sake",
+              "The difference between science and philosophy"
+            ],
+            "correctAnswer": [
+              "Learning for its own sake"
+            ],
+            "explanation": "The answer is (D). This is because the passage starts with an explanation of different kinds of knowledge and then adds that humans are humans because they know and they have a desire to know more. The application of the knowledge acquired is also important. The second paragraph begins by stating that though application of knowledge is important, pure knowledge has more primacy. Knowledge that has only been gained for practical application has limited scope. The passage goes on to explain that pure knowledge is the foundation for practical results. Thus, it can be safely inferred that the author believes that learning is important for its own sake. Therefore, the suitable title of the passage would be 'Learning for its own sake.'"
+          },
+          "question6": {
+            "type": "reading_comprehension",
+            "passage": "For me, scientific knowledge is divided into mathematical sciences, natural sciences or sciences dealing with the natural world (physical and biological sciences), and sciences dealing with mankind (psychology, sociology, all the sciences of cultural achievements, every kind of historical knowledge). Apart from these sciences is philosophy. In the first place, all this is pure or theoretical knowledge, sought only for the purpose of understanding, in order to fulfill the need to understand its intrinsic and consubstantial to man. What distinguishes man from animal is that he knows and needs to know. If man did not know that the world existed, and that the world was of a certain kind, that he was in the world and that he himself was of a certain kind, he wouldn’t be man. The technical aspects of applications of knowledge are equally necessary for man and are of the greatest importance, because they also contribute to defining him as man and permit him to pursue a life increasingly more truly human. But even while enjoying the results of technical progress, he must defend the primacy and autonomy of pure knowledge. Knowledge sought directly for its practical applications will have immediate and foreseeable success, but not the kind of important result whose revolutionary scope is in large part unforeseen, except by the imagination of the Utopians. If the Greek mathematicians had not applied themselves to the investigation of conic sections, zealously and without the least suspicion that it might someday be useful, it would not have been possible centuries later to navigate far from shore. The first men to study the nature of electricity could not imagine that their experiments, carried on because of mere intellectual curiosity, would eventually lead to modern electrical technology, without which we can scarcely conceive of contemporary life. Pure knowledge is valuable for its own sake, because the human spirit cannot resign itself to ignorance. But, in addition, it is the foundation for practical results that would not have been reached if this knowledge had not been sought disinterestedly.",
+            "questionText": "It can be inferred from the passage that to the author, man's need to know is chiefly important in that it",
+            "options": [
+              "allows the human race to progress technically",
+              "encompasses both the physical and social sciences",
+              "demonstrates human vulnerability",
+              "defines man’s essential humanity",
+              "has increased as our knowledge of the world has grown"
+            ],
+            "correctAnswer": [
+              "defines man’s essential humanity"
+            ],
+            "explanation": "The answer is (D). The answer to this question is found in the first paragraph where it is stated that man would not be man had he not had the desire to know. Knowledge is what defines man. Therefore, it can be inferred from the passage that, to the author, man's need to know is chiefly important in that it defines man's essential humanity."
+          },
+          "question7": {
+            "type": "reading_comprehension_select",
+            "passage": "The emancipation of women, James Joyce told one of his friends, has caused the greatest revolution in our time in the most important relationship there is — that between men and women. Other modernists agreed: Virginia Woolf, claiming that in about 1910 human character changed, and, illustrating the new balance between the sexes, urged, Read the Agamemnon, and see whether...your sympathies are not almost entirely with Clytemnestra. D. H. Lawrence wrote, perhaps the deepest fight for 2000 years and more, has been the fight for women's independence. But if modernist writers considered women’s revolt against men’s domination one of their greatest and deepest themes, only recently – in perhaps the past 15 years – has literary criticism begun to catch up with it. Not that the images of sexual antagonism that abound in modern literature have gone unremarked; far from it. But what we are able to see in literary works depends on the perspectives we bring to them, and now that women – enough to make a difference – are reforming canons and interpreting literature, the landscapes of literary history and the features of individual books have begun to change.",
+            "questionText": "Select the sentence in the passage which implies that women are changing literary criticism by seeing literature from fresh points of view.",
+            "options": [
+              "sentence_1",
+              "sentence_2",
+              "sentence_3"
+            ],
+            "correctAnswer": [
+              "But what we are able to see in literary works depends on the perspectives we bring to them, and now that women – enough to make a difference – are reforming canons and interpreting literature, the landscapes of literary history and the features of individual books have begun to change"
+            ],
+            "explanation": "The following sentence from the second paragraph of the passage implies that women are changing literary criticism by seeing literature from fresh points of view: \"But what we are able to see in literary works depends on the perspectives we bring to them, and now that women – enough to make a difference – are reforming canons and interpreting literature, the landscapes of literary history and the features of individual books have begun to change.\" The word 'reforming' indicates that women are changing literary criticism."
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "The emancipation of women, James Joyce told one of his friends, has caused the greatest revolution in our time in the most important relationship there is — that between men and women. Other modernists agreed: Virginia Woolf, claiming that in about 1910 human character changed, and, illustrating the new balance between the sexes, urged, Read the Agamemnon, and see whether...your sympathies are not almost entirely with Clytemnestra. D. H. Lawrence wrote, perhaps the deepest fight for 2000 years and more, has been the fight for women's independence. But if modernist writers considered women’s revolt against men’s domination one of their greatest and deepest themes, only recently – in perhaps the past 15 years – has literary criticism begun to catch up with it. Not that the images of sexual antagonism that abound in modern literature have gone unremarked; far from it. But what we are able to see in literary works depends on the perspectives we bring to them, and now that women – enough to make a difference – are reforming canons and interpreting literature, the landscapes of literary history and the features of individual books have begun to change.",
+            "questionText": "The author quotes James Joyce, Virginia Woolf, and D. H. Lawrence primarily in order to show that",
+            "options": [
+              "these were feminist writers",
+              "although well-meaning, they were ineffectual",
+              "before the twentieth century, there was little interest in women’s literature",
+              "modern literature is dependent on the women’s movement",
+              "the interest in feminist issues is not new"
+            ],
+            "correctAnswer": [
+              "the interest in feminist issues is not new"
+            ],
+            "explanation": "The answer is (E). This is implied from the first line of the second paragraph wherein the author mentions that it is only now that literary criticism has begun to catch up with modernist writers. These modernist writers include James Joyce, Virginia Woolf, and D. H. Lawrence. Therefore, it is safe to say that the author mentions these writers because he wants to show that the interest in feminist issues is not new. It was also present in and around 1910."
+          },
+          "question9": {
+            "type": "text_completion",
+            "questionText": "True spirituality is beyond thought, it is (i) ________ and, therefore (ii) ________. How can you describe something that is beyond comprehension? God is both the thesis and the antithesis: a synthesis that transcends all cycles of Hegelian dialectics. Indeed, God is the subject for which there is no (iii) __________.",
+            "options": {
+              "blank1": [
+                "contestant",
+                "transcendent",
+                "evanescent"
+              ],
+              "blank2": [
+                "inevitable",
+                "incomprehensible",
+                "insatiable"
+              ],
+              "blank3": [
+                "realism",
+                "predicate",
+                "context"
+              ]
+            },
+            "correctAnswer": [
+              "transcendent",
+              "incomprehensible",
+              "predicate"
+            ],
+            "blanks": 3,
+            "explanation": "In the first blank the word is 'transcendent' as conveyed by the phrase 'beyond thought.' If something is beyond thought, it becomes 'incomprehensible,' which is the word in blank 2, and the only logical option to complete blank 3 is 'predicate.'"
+          },
+          "question10": {
+            "type": "text_completion",
+            "questionText": "Despite a string of dismal earnings reports, the two-year-old strategy to return the company to profitability is beginning to ______.",
+            "options": [
+              "falter",
+              "disappoint",
+              "compete",
+              "work",
+              "circulate"
+            ],
+            "correctAnswer": [
+              "work"
+            ],
+            "blanks": 1,
+            "explanation": "The first part holds the key - 'Despite a string of dismal earnings reports' which is a contrast sign. It implies that although it has been bad so far, it's getting better. Hence 'work' is the only logical choice as other options A & B are negative and C & E do not fit in either logically or stylistically."
+          },
+          "question11": {
+            "type": "text_completion",
+            "questionText": "Unfortunately, since courses in nutrition are often (i) ______ medical school curriculums, a family physician is (ii) ______ to be an enlightening source of general information about diet.",
+            "options": {
+              "blank1": [
+                "encountered among",
+                "neglected in",
+                "squeezed into"
+              ],
+              "blank2": [
+                "encouraged",
+                "unlikely",
+                "intended"
+              ]
+            },
+            "correctAnswer": [
+              "neglected in",
+              "unlikely"
+            ],
+            "blanks": 2,
+            "explanation": "The first blank is a negative word as supported by the phrase 'unfortunately.' Hence 'neglected' can be the only logical choice, as 'encountered among' and 'squeezed into' cannot exactly be unfortunate. Since courses in nutrition are ignored ('neglected'), the only logical option for the second blank is 'unlikely.' If they have not studied it formally, how can family physicians be expected to provide enlightening advice?"
+          },
+          "question12": {
+            "type": "text_completion",
+            "questionText": "Although the meanings of words may necessarily be liable to change, it does not follow that the lexicographer is therefore unable to render spelling, in a great measure, ______.",
+            "options": [
+              "arbitrary",
+              "superfluous",
+              "interesting",
+              "flexible",
+              "constant"
+            ],
+            "correctAnswer": [
+              "constant"
+            ],
+            "blanks": 1,
+            "explanation": "The phrase 'Although the meanings of words may necessarily be liable to change' implies that the meanings might change but 'it does not follow that the lexicographer is therefore, unable to render spelling,' implying that lexicographers are able to retain consistent spellings. The remaining part 'in a great measure' indicates that we need a word that contrasts with 'change', making 'constant' the correct answer."
+          },
+          "question13": {
+            "type": "text_completion",
+            "questionText": "The success of science is due in great part to its emphasis on (i) _______: the reliance on evidence rather than (ii) _______ and the willingness to draw conclusions even when they conflict with traditional beliefs.",
+            "options": {
+              "blank1": [
+                "causality",
+                "creativity",
+                "objectivity"
+              ],
+              "blank2": [
+                "facts",
+                "experimentation",
+                "preconceptions"
+              ]
+            },
+            "correctAnswer": [
+              "objectivity",
+              "preconceptions"
+            ],
+            "blanks": 2,
+            "explanation": "The second part 'the reliance on evidence' provides the answer to the missing word as reliance on evidence, irrespective of what one personally believes, affirms the fact that 'objectivity' is the answer. The second blank has to be a contrast to 'objectivity,' hence 'preconceptions' is the best answer."
+          },
+          "question14": {
+            "type": "text_completion",
+            "questionText": "Faith in order to be faith, as opposed to proven knowledge, cannot be (i) _______ except through questioning itself. It is the (ii) ______ mystery and majesty of faith that it cannot be measured. Shipwreck all you know on the reef of rationality, then take a leap in the dark to faith, said Kierkegaard. Faith is the leap in the dark, the ultimate (iii) ______.",
+            "options": {
+              "blank1": [
+                "validated",
+                "conjectured",
+                "delineated"
+              ],
+              "blank2": [
+                "unimaginable",
+                "unfathomable",
+                "unknown"
+              ],
+              "blank3": [
+                "crescendo",
+                "cliffhanger",
+                "consolation"
+              ]
+            },
+            "correctAnswer": [
+              "validated",
+              "unfathomable",
+              "cliffhanger"
+            ],
+            "blanks": 3,
+            "explanation": "The passage looks into the nature of faith. Proven knowledge is the key phrase in the passage. If faith is not proven, then the word has to be 'validated' in the first blank. For the second blank, the mystery of faith would be 'unfathomable' as you cannot measure faith. The third blank must have a word that means surprise or unexpected as the phrase before it is 'leap in the dark,' hence the word 'cliffhanger'."
+          },
+          "question15": {
+            "type": "reading_comprehension",
+            "passage": "Corporate officers and directors commonly buy and sell, for their own portfolios, stock in their own corporations. Generally, when the ratio of such inside sales to inside purchases falls below 2 to 1 for a given stock, a rise in stock prices is imminent. In recent days, while the price of MEGA Corporation stock has been falling, the corporation’s officers and directors have bought up to nine times as much of it as they have sold.",
+            "questionText": "The facts above best support which of the following predictions?",
+            "options": [
+              "The imbalance between inside purchases and inside sales of MEGA stock will grow even further.",
+              "Inside purchases of MEGA stock are about to cease abruptly.",
+              "The price of MEGA stock will soon begin to go up.",
+              "The price of MEGA stock will continue to drop, but less rapidly.",
+              "The majority of MEGA stock will soon be owned by MEGA’s own officers and directors."
+            ],
+            "correctAnswer": [
+              "The price of MEGA stock will soon begin to go up."
+            ],
+            "explanation": "Since MEGA’s officers and directors have bought almost nine times as much of MEGA’s stock as they have sold, the ratio of inside sales to inside purchases is roughly 1 to 9, well below 2 to 1. Hence, by the generalization stated in the passage, a rise in MEGA’s stock price is imminent, and choice C is the best answer. The prediction in choice D contradicts the passage’s generalization, and choices A, B, and E are not supported by the facts."
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "An alloy of zinc, aluminium & copper has them in ratio 1/2 : 1/3 : 1/5 respectively. What is the approximate percentage of aluminium in the alloy?",
+            "options": [
+              "20%",
+              "30%",
+              "32%",
+              "36%",
+              "40%"
+            ],
+            "correctAnswer": "32%",
+            "explanation": "Zinc : copper : aluminium = 1/2 : 1/3 : 1/5\n\nSimplifying the fractions:\n\nZinc : copper : aluminium = 30 : 30 : 30\n= 15 : 10 : 6\n\nHence, calculate and find the percentage for aluminium."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "One root of x² + Kx - 8 = 0 is the square of the other. Then the value of K is:",
+            "options": [
+              "2",
+              "8",
+              "-8",
+              "-2",
+              "-4"
+            ],
+            "correctAnswer": "-2",
+            "explanation": "The given equation is x² + Kx - 8 = 0.\n\nLet one root be x and the other root be x².\nSubstitute into the quadratic equation to find the value of K.\nAfter solving, the values of x are 4 and -2.\nThus, the value of K is -2."
+          },
+          "question3": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "quantityA": "y",
+            "quantityB": "20",
+            "imgUrl": "https://testendura.com/userfiles/image/quantative%20ability%20Q3.png",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both the quantities are equal.",
+              "The relationship cannot be determined by the information given."
+            ],
+            "correctAnswer": "Both the quantities are equal.",
+            "explanation": "In Triangle ABC:\n60° + 3y + 2x = 180°\n\nIn Triangle DBC:\n3y + x + 90° = 180°\n\nSolving both equations, we get y = 20°."
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many numbers greater than 4000 can be made, using 2, 3, 4 & 5? (Repetition allowed)",
+            "options": [
+              "120",
+              "128",
+              "138",
+              "130",
+              "125"
+            ],
+            "correctAnswer": "128",
+            "explanation": "To form numbers greater than 4000, the first digit must be 4 or 5 (2 possibilities), and the remaining three digits can be any of the four digits (2, 3, 4, 5), so:\n\n4 → 4 × 4 × 4 × 4 = 64\n\n5 → 4 × 4 × 4 × 4 = 64\n\nTotal = 64 + 64 = 128."
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "3 fair coins are tossed, What’s the probability of getting at least 2 heads?",
+            "options": [
+              "1/4",
+              "3/8",
+              "1/2",
+              "1/7",
+              "None of these"
+            ],
+            "correctAnswer": "1/2",
+            "explanation": "The total number of outcomes when tossing 3 coins is 2^3 = 8.\n\nThe favorable outcomes for at least 2 heads are: HHT, HTH, THH, HHH (4 outcomes).\n\nThus, the probability is 4/8 = 1/2."
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If a/3 = b/4 = c/7, then (a + b + c)/c is:",
+            "options": [
+              "7",
+              "2",
+              "1/2",
+              "1/7",
+              "None of these"
+            ],
+            "correctAnswer": "2",
+            "explanation": "Given a/3 = b/4 = c/7, solve for a, b, and c in terms of a common variable (k).\n\nFrom the equations, a = 3k, b = 4k, and c = 7k.\n\nSubstituting these into (a + b + c)/c:\n\n(3k + 4k + 7k)/7k = 2."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If the S.P. of an article is 4/3 times its C.P., the profit percent is:",
+            "options": [
+              "33 1/3",
+              "25 1/4",
+              "20 1/2",
+              "20 3/5",
+              "25"
+            ],
+            "correctAnswer": "33 1/3",
+            "explanation": "Let C.P. = 3 units. Then, S.P. = 4 units.\n\nProfit = S.P. - C.P. = 4 - 3 = 1 unit.\n\nProfit percent = (Profit/C.P.) × 100 = (1/3) × 100 = 33 1/3%."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Find the value of x ∠ABC = x",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%201%20q8.jpg",
+            "options": [
+              "90",
+              "85",
+              "80",
+              "75",
+              "70"
+            ],
+            "correctAnswer": "90",
+            "explanation": "In a cyclic quadrilateral, opposite angles are supplementary. Given the angle at point D as 25° and the angle at point A as 65°, their sum is 90°, so ∠ABC must be 90°."
+          },
+          "question9": {
+            "type": "numeric_entry",
+            "questionText": "What is the area of a rectangle whose area is equal to the area of a circle with perimeter 24π? (Use π = 22/7)",
+            "correctAnswer": "452.57",
+            "explanation": "The perimeter (circumference) of the circle is given by 24π, where π = 22/7. The formula for the circumference is C = 2πr. Solving for r:\n\n24π = 2πr\nr = 12\n\nNow, calculate the area of the circle using A = πr²:\n\nA = (22/7) × 12² = 452.57.\n\nThus, the area of the rectangle is also 452.57."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Which of these is exactly divisible by 99?",
+            "options": [
+              "114345",
+              "135792",
+              "3572404",
+              "913464",
+              "143098"
+            ],
+            "correctAnswer": "114345",
+            "explanation": "Among the given numbers, 114345 is exactly divisible by 99, as it satisfies the divisibility rule for 99 (which involves checking divisibility by both 9 and 11)."
+          },
+          "question11": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "The total size of market has increased from Rs.150 crore in 2002 to Rs.375 crore in 2003. What is the percentage increase in sales of the overall detergent market in 2003 over 2002?",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%201%20q11%20tp%2015.jpg",
+            "options": [
+              "100%",
+              "150%",
+              "200%",
+              "250%",
+              "None of these"
+            ],
+            "correctAnswer": "150%",
+            "explanation": "The total size of the detergent market increased from Rs.150 crore in 2002 to Rs.375 crore in 2003.\n\nThe percentage increase is calculated as:\n\n((375 - 150) / 150) × 100 = 150%."
+          },
+          "question12": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "What is the growth rate of HLL detergents in 2003?",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%201%20q11%20tp%2015.jpg",
+            "options": [
+              "133%",
+              "233%",
+              "333%",
+              "433%",
+              "None of these"
+            ],
+            "correctAnswer": "233%",
+            "explanation": "The market share of HLL in 2002 was 30%, and in 2003 it was 40%. The total size of the market increased from Rs.150 crore in 2002 to Rs.375 crore in 2003.\n\nGrowth rate is calculated as:\n\n((40/100) × 375 - (30/100) × 150) / ((30/100) × 150) × 100 = 233%."
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "quantitative_comparison",
+            "questionText": "",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%201%20q16.jpg",
+            "quantityA": "AC",
+            "quantityB": "AB",
+            "options": [
+              "Quantity A is greater.",
+              "Quantity B is greater.",
+              "Both the quantities are equal.",
+              "The relationship cannot be determined by the information given."
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "Given: ∠ACB = 80°, ∠ABC = 60°\n\nAs ∠ACB > ∠ABC, it follows that AB > AC based on the property that the side opposite the larger angle in a triangle is greater."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "An operation, *, is defined as a * b = √[a+√b]. Which of the following is an integer?",
+            "options": [
+              "11 * 5",
+              "4 * 9",
+              "4 * 16",
+              "7 * 4",
+              "9 * 9"
+            ],
+            "correctAnswer": "7 * 4",
+            "explanation": "The operation * is defined as a * b = √[a+√b].\n\nFor option 4, 7 * 4 = √[7+√4] = 3. This results in a integer value."
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The sum of the first 45 natural numbers is:",
+            "options": [
+              "1035",
+              "1280",
+              "2070",
+              "2140",
+              "990"
+            ],
+            "correctAnswer": "1035",
+            "explanation": "The formula for the sum of the first n natural numbers is given by: \n\nSum = n(n + 1) / 2\n\nFor n = 45, the sum is:\n45(45 + 1) / 2 = 45 × 46 / 2 = 1035."
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A tradesman marks his goods 30% above his C.P. If he allows a discount of 6 1/4%, then his gain percent is:",
+            "options": [
+              "22%",
+              "23 3/4%",
+              "21 7/8%",
+              "21 1/4%",
+              "None of these"
+            ],
+            "correctAnswer": "21 7/8%",
+            "explanation": "Let C.P. = 100.\nS.P. = 100(1 + 30/100)(1 - 25/4 × 1/100)\nS.P. = 121.875\nGain % = (S.P. - C.P.) / C.P. × 100 = (121.875 - 100) / 100 × 100 = 21.875% or 21 7/8%."
+          },
+          "question5": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "12 spheres of the same size are made from melting a solid cylinder of 16 cm diameter and 2 cm height. The diameter of each sphere is:",
+            "options": [
+              "√3 cm",
+              "2 cm",
+              "3 cm",
+              "8√3 cm",
+              "4 cm"
+            ],
+            "correctAnswer": "4 cm",
+            "explanation": "The volume of the cylinder is calculated as V = πr²h, where r = 8 cm and h = 2 cm. The total volume of the cylinder is melted to form 12 spheres, so the volume of each sphere is the total volume of the cylinder divided by 12. Using the formula for the volume of a sphere, solve for the radius and then find the diameter (2r). The result is 4 cm."
+          },
+          "question6": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The product of two numbers is 120 and the sum of their squares is 289. The sum of the numbers is:",
+            "options": [
+              "20",
+              "23",
+              "25",
+              "169",
+              "None of these"
+            ],
+            "correctAnswer": "23",
+            "explanation": "Given that xy = 120 and x² + y² = 289.\n\nUsing the identity: (x + y)² = x² + y² + 2xy, we substitute the values:\n\n(x + y)² = 289 + 2(120) = 529.\n\nTaking the square root, x + y = √529 = 23."
+          },
+          "question7": {
+            "type": "numeric_entry",
+            "questionText": "(243)^(n/5) × 32^(n+1) / (9^n × 3^(3n-1))",
+            "correctAnswer": "9",
+            "explanation": "Simplifying the given expression using properties of exponents, we get the final answer as 9."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If loss is 1/3 of S.P., the loss percentage is:",
+            "options": [
+              "16 2/3%",
+              "20%",
+              "25%",
+              "33 1/3%",
+              "50%"
+            ],
+            "correctAnswer": "25%",
+            "explanation": "Let S.P. = S.\nC.P. = Loss + S.P.\nC.P. = (1/3)S + S = 4/3S.\n\nLoss % = (1/3S) / (4/3S) × 100 = 25%."
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "36 men can complete a piece of work in 18 days. In how many days will 27 men complete double the work?",
+            "options": [
+              "24",
+              "36",
+              "44",
+              "48",
+              "54"
+            ],
+            "correctAnswer": "48",
+            "explanation": "1 man can do the work in 18 × 36 days.\n27 men can do the work in (18 × 36) / 27 days = 24 days.\nTo complete double the work, 27 men will take 48 days."
+          },
+          "question10": {
+            "type": "numeric_entry",
+            "questionText": "A train 360m long is running at a speed of 45 km/hr. In how many seconds will it pass a bridge 140m long?",
+            "correctAnswer": "40",
+            "explanation": "The total distance to be covered is the length of the train plus the length of the bridge: 360m + 140m = 500m.\n\nSpeed = 45 km/hr = 45,000 m / 3,600 seconds = 12.5 m/s.\n\nTime = Distance / Speed = 500m / 12.5 m/s = 40 seconds."
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Find the length of the longest rod that can be placed in a room 16 × 12 × 10 2/3 m.",
+            "options": [
+              "22 1/3 m",
+              "22 2/3 m",
+              "23 m",
+              "68 m",
+              "21 m"
+            ],
+            "correctAnswer": "22 2/3 m",
+            "explanation": "The length of the longest rod that can be placed in the room is the diagonal of the room. The formula for the diagonal of a cuboid is: \n\nLength = √(l² + w² + h²)\n\nSubstituting the dimensions: \nLength = √(16² + 12² + (10 2/3)²) = 22 2/3 m."
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A rectangular carpet has an area of 120 m² and a perimeter of 46 m. The length of its diagonal is:",
+            "options": [
+              "15 m",
+              "16 m",
+              "17 m",
+              "20 m",
+              "8 m"
+            ],
+            "correctAnswer": "17 m",
+            "explanation": "Let the length and breadth of the carpet be l and b, respectively.\n\nPerimeter = 2(l + b) = 46, so l + b = 23.\n\nArea = l × b = 120.\n\nSolving these two equations, we get l = 15 and b = 8.\n\nThe diagonal of the rectangle is √(l² + b²) = √(15² + 8²) = √(225 + 64) = √289 = 17 m."
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "One card is drawn from a pack of 52 cards. What’s the probability that it's a red card or a king?",
+            "options": [
+              "1/2",
+              "6/13",
+              "7/13",
+              "27/52",
+              "29/52"
+            ],
+            "correctAnswer": "7/13",
+            "explanation": "There are 26 red cards (13 hearts and 13 diamonds) and 2 black kings (one spade and one club) in a deck of 52 cards.\n\nThe probability of drawing either a red card or a king is calculated by adding the number of favorable outcomes:\n\nThere are 26 red cards and 2 additional kings (that are black), so there are 26 + 2 = 28 favorable outcomes.\n\nThus, the probability is 28/52 = 7/13."
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The least number of complete years in which a sum of money put out at 20% compound interest will be more than doubled is:",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "6",
+              "None of these"
+            ],
+            "correctAnswer": "4",
+            "explanation": "The formula for compound interest is A = P(1 + r)^n, where r = 20% = 0.2. We want to find the least n such that A > 2P:\n\n(1.2)^n > 2\n\nFrom calculations, we find that n = 4 is the smallest number of years where the amount will more than double."
+          },
+          "question15": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "4 men and 6 women can complete a work in 8 days, while 3 men and 7 women do it in 10 days. In how many days will 10 women complete it?",
+            "options": [
+              "35",
+              "40",
+              "45",
+              "50",
+              "60"
+            ],
+            "correctAnswer": "40",
+            "explanation": "Let the work done by 1 man in 1 day be M and the work done by 1 woman in 1 day be W.\n\nUsing the first condition: 4M + 6W = 1/8 (work done in 1 day).\n\nUsing the second condition: 3M + 7W = 1/10 (work done in 1 day).\n\nSolving these two equations gives the work done by 10 women in 1 day, which results in 10 women completing the work in 40 days."
+          }
+        }
+      }
+    },
+    {
+      "id": "test8",
+      "name": "MJ Academy Practice Test",
+      "description": "This practice test consists of five sections: an Analytical Writing section, two Quantitative sections, and two Verbal sections",
+      "timeLimits": {
+        "verbal1": 23,
+        "verbal2": 23,
+        "quantitative1": 30,
+        "quantitative2": 26,
+        "awa": 30
+      },
+      "sections": {
+        "awa": {
+          "prompt": "No field of study can advance significantly unless it incorporates knowledge and experience from outside that field.",
+          "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position."
+        },
+        "verbal1": {
+          "question1": {
+            "type": "sentence_equivalence",
+            "questionText": "Though feminist in its implications, Yvonne Rainer's 1974 film ___ the filmmaker's active involvement in feminist politics.",
+            "options": [
+              "preceded",
+              "portrayed",
+              "encouraged",
+              "renewed",
+              "antedated",
+              "preserved"
+            ],
+            "correctAnswer": [
+              "preceded",
+              "antedated"
+            ],
+            "explanation": "The presence of the word 'though' suggests that the first part of the sentence should be contrary to the second part. The sentence indicates that although Yvonne Rainer made a film with feminist implications, she was not actively involved in feminist politics at the time. The correct choices, 'preceded' and 'antedated,' show that the film came before Rainer's involvement in feminist politics."
+          },
+          "question2": {
+            "type": "sentence_equivalence",
+            "questionText": "Even though the general's carefully qualified public statement could hardly be faulted, some people took _______ it.",
+            "options": [
+              "disinterest in",
+              "umbrage at",
+              "exception to",
+              "interest in",
+              "excitement in",
+              "hatred in"
+            ],
+            "correctAnswer": [
+              "umbrage at",
+              "exception to"
+            ],
+            "explanation": "The word 'even though' suggests that the first part of the sentence is contrary to the second. The sentence indicates that although the general was very careful about his public statement, and it had no possibility of defects, in reality, the statement was taken as an offence by some people. The words closest in meaning to 'offense' are 'umbrage at' and 'exception to'."
+          },
+          "question3": {
+            "type": "sentence_equivalence",
+            "questionText": "A misconception frequently held by novice writers is that sentence structure mirrors thought; the more convoluted the structure, the more ______ the ideas.",
+            "options": [
+              "complicated",
+              "inconsequential",
+              "elementary",
+              "fanciful",
+              "blatant",
+              "involved"
+            ],
+            "correctAnswer": [
+              "complicated",
+              "involved"
+            ],
+            "explanation": "The phrase 'sentence structure mirrors thought' indicates that new (novice) writers had a wrong conception related to sentence structure. They believe that the structure of a sentence shows (mirrors) the thought or ideas of the writer. So, if a sentence is tangled (convoluted) and not simple in its structure, the ideas of the writer will also be the same—complex and difficult to understand. The words which best describe the ideas of the writer are 'complicated' and 'involved.'"
+          },
+          "question4": {
+            "type": "reading_comprehension",
+            "passage": "A recent spate of launching and operating mishaps with television satellites led to a corresponding surge in claims against companies underwriting satellite insurance. As a result, insurance premiums shot up, making satellites more expensive to launch and operate. This, in turn, has added to the pressure to squeeze more performance out of currently operating satellites.",
+            "questionText": "Which of the following, if true, taken together with the information above, best supports the conclusion that the cost of television satellites will continue to increase?",
+            "options": [
+              "Since the risk to insurers of satellites is spread over relatively few units, insurance premiums are necessarily very high.",
+              "When satellites reach orbit and then fail, the causes of failure are generally impossible to pinpoint with confidence.",
+              "The greater the performance demands placed on satellites, the more frequently those satellites break down.",
+              "Most satellites are produced in such small numbers that no economies of scale can be realized.",
+              "Since many satellites are built by unwieldy international consortia, inefficiencies are inevitable."
+            ],
+            "correctAnswer": [
+              "The greater the performance demands placed on satellites, the more frequently those satellites break down."
+            ],
+            "explanation": "The answer is C. According to the passage, satellite mishaps caused a surge in insurance claims, which, in turn, caused increased insurance premiums. Higher premiums made the satellites more costly, resulting in increased performance demands. If C is true, the greater demands on performance will lead to further increases in costs by increasing the number of mishaps, and thus pushing insurance premiums still higher. Thus, C is the best answer. A, D, and E all describe factors relevant to costs, but there is no reason to think that the situation described in the passage will cause the costs resulting from these factors to increase. Similarly, the impossibility of pinpointing the cause of failure, mentioned in B, is consistent with the cost of satellites remaining stable."
+          },
+          "question5": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The dark regions in the starry night sky are not pockets in the universe that are devoid of stars as had long been thought. Rather, they are dark because of interstellar dust that hides the stars behind it. Although its visual effect is so pronounced, dust is only a minor constituent of the material, extremely low in density, that lies between the stars. Dust accounts for about one percent of the total mass of interstellar matter. The rest is hydrogen and helium gas, with small amounts of other elements. The interstellar material, rather like terrestrial clouds, comes in all shapes and sizes. The average density of interstellar material in the vicinity of our Sun is 1,000 to 10,000 times less than the best terrestrial laboratory vacuum. It is only because of the enormous interstellar distances that so little material per unit of volume becomes so significant. Optical astronomy is most directly affected, for although interstellar gas is perfectly transparent, the dust is not.",
+            "questionText": "According to the passage, which of the following is a direct perceptual consequence of interstellar dust?",
+            "options": [
+              "Some stars are rendered invisible to observers on Earth.",
+              "Many visible stars are made to seem brighter than they really are.",
+              "The presence of hydrogen and helium gas is revealed."
+            ],
+            "correctAnswer": [
+              "Some stars are rendered invisible to observers on Earth."
+            ],
+            "explanation": "The right answer is option A, as is clear from the line: 'Rather, they are dark because of interstellar dust that hides the stars behind it.'"
+          },
+          "question6": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The dark regions in the starry night sky are not pockets in the universe that are devoid of stars as had long been thought. Rather, they are dark because of interstellar dust that hides the stars behind it. Although its visual effect is so pronounced, dust is only a minor constituent of the material, extremely low in density, that lies between the stars. Dust accounts for about one percent of the total mass of interstellar matter. The rest is hydrogen and helium gas, with small amounts of other elements. The interstellar material, rather like terrestrial clouds, comes in all shapes and sizes. The average density of interstellar material in the vicinity of our Sun is 1,000 to 10,000 times less than the best terrestrial laboratory vacuum. It is only because of the enormous interstellar distances that so little material per unit of volume becomes so significant. Optical astronomy is most directly affected, for although interstellar gas is perfectly transparent, the dust is not.",
+            "questionText": "It can be inferred from the passage that the density of interstellar material is",
+            "options": [
+              "higher where distances between the stars are shorter",
+              "equal to that of interstellar dust",
+              "not homogeneous throughout interstellar space"
+            ],
+            "correctAnswer": [
+              "not homogeneous throughout interstellar space"
+            ],
+            "explanation": "The interstellar material, rather like terrestrial clouds, comes in all shapes and sizes. On the basis of this line, it can be safely inferred that the density of interstellar material is not homogeneous throughout interstellar space."
+          },
+          "question7": {
+            "type": "reading_comprehension_multiple",
+            "passage": "The dark regions in the starry night sky are not pockets in the universe that are devoid of stars as had long been thought. Rather, they are dark because of interstellar dust that hides the stars behind it. Although its visual effect is so pronounced, dust is only a minor constituent of the material, extremely low in density, that lies between the stars. Dust accounts for about one percent of the total mass of interstellar matter. The rest is hydrogen and helium gas, with small amounts of other elements. The interstellar material, rather like terrestrial clouds, comes in all shapes and sizes. The average density of interstellar material in the vicinity of our Sun is 1,000 to 10,000 times less than the best terrestrial laboratory vacuum. It is only because of the enormous interstellar distances that so little material per unit of volume becomes so significant. Optical astronomy is most directly affected, for although interstellar gas is perfectly transparent, the dust is not.",
+            "questionText": "It can be inferred from the passage that it is because space is so vast that",
+            "options": [
+              "little of the interstellar material in it seems substantial",
+              "stars can be far enough from Earth to be obscured even by very sparsely distributed matter",
+              "interstellar gases can, for all practical purposes, be regarded as transparent"
+            ],
+            "correctAnswer": [
+              "stars can be far enough from Earth to be obscured even by very sparsely distributed matter"
+            ],
+            "explanation": "The answer is B, clear from the line 'It is only because of the enormous interstellar distances that so little material per unit of volume becomes so significant.'"
+          },
+          "question8": {
+            "type": "reading_comprehension",
+            "passage": "If the airspace around centrally located airports were restricted to commercial airliners and only those private planes equipped with radar, most of the private-plane traffic would be forced to use outlying airfields. Such a reduction in the amount of private-plane traffic would reduce the risk of midair collision around the centrally located airports.",
+            "questionText": "The conclusion drawn in the first sentence depends on which of the following assumptions?",
+            "options": [
+              "Outlying airfields would be as convenient as centrally located airports for most pilots of private planes.",
+              "Most outlying airfields are not equipped to handle commercial-airline traffic.",
+              "Most private planes that use centrally located airports are not equipped with radar.",
+              "Commercial airliners are at greater risk of becoming involved in midair collisions than are private planes.",
+              "A reduction in the risk of midair collision would eventually lead to increases in commercial-airline traffic."
+            ],
+            "correctAnswer": [
+              "Most private planes that use centrally located airports are not equipped with radar."
+            ],
+            "explanation": "The answer is (C). The first sentence concludes that prohibiting private planes that are not radar-equipped from centrally located airports would force most private planes away from those airports. This conclusion cannot be true unless it is accurate that, as C says, most private planes that use these airports are not radar-equipped. Therefore, the first sentence's conclusion assumes this choice, making it the best answer."
+          },
+          "question9": {
+            "type": "sentence_equivalence",
+            "questionText": "By idiosyncratically refusing to dismiss an insubordinate member of his staff, the manager not only ______ established policy, but he also jeopardized his heretofore good chances for promotion.",
+            "options": [
+              "instituted",
+              "violated",
+              "contravened",
+              "reiterated",
+              "delimited",
+              "recognized"
+            ],
+            "correctAnswer": [
+              "violated",
+              "contravened"
+            ],
+            "explanation": "The phrase 'idiosyncratically refusing' suggests the manager's refusal to dismiss a member of his staff who did not submit to authority was an act of abnormality. By doing so, he went against the company policy and jeopardized his chances for promotion. The words closest in meaning to 'went against' are 'violated' and 'contravened.'"
+          },
+          "question10": {
+            "type": "sentence_equivalence",
+            "questionText": "Before 1500 North America was inhabited by more than 300 cultural groups, each with different customs, social structures, world views, and languages; such diversity ______ the existence of a single Native American culture.",
+            "options": [
+              "refutes",
+              "argues against",
+              "complements",
+              "implies",
+              "reiterates",
+              "explains away"
+            ],
+            "correctAnswer": [
+              "refutes",
+              "argues against"
+            ],
+            "explanation": "The presence of the word 'diversity' suggests that a variety of customs, social structures, world views, and languages were present among a large number of cultural groups in North America before 1500. This statement proves wrong the existence of a single Native American culture as not a single but many cultural groups were present in early North America. The words which best describe 'proves wrong' are 'refutes' and 'argues against.'"
+          },
+          "question11": {
+            "type": "sentence_equivalence",
+            "questionText": "The functions of the hands, eyes, and brain are so intertwined that using the hands during early childhood helps to promote the child's entire ______ development.",
+            "options": [
+              "perceptual",
+              "cognitive",
+              "psychological",
+              "adolescent",
+              "social",
+              "physical"
+            ],
+            "correctAnswer": [
+              "perceptual",
+              "cognitive"
+            ],
+            "explanation": "The presence of the word 'intertwined' suggests that the functions of the hands, eyes, and brain are linked together and that using one of the organs definitely involves the other two. If hands are used during early childhood, a child will use their eyes to see the movements and the brain to understand them. Thus, using the hands involves the other two organs as well and helps in the understanding of the child, leading to his or her development. The words which best describe such a development are 'perceptual' and 'cognitive.'"
+          },
+          "question12": {
+            "type": "sentence_equivalence",
+            "questionText": "With its maverick approach to the subject, Shere Hite’s book has been more widely debated than most; the media throughout the country have brought the author’s ______ opinions to the public’s attention.",
+            "options": [
+              "controversial",
+              "authoritative",
+              "polemical",
+              "popular",
+              "conclusive",
+              "articulate"
+            ],
+            "correctAnswer": [
+              "controversial",
+              "polemical"
+            ],
+            "explanation": "The phrase 'maverick approach' indicates the rebellious approach of the author to the subject of his book, which has been the most debated book and the media made the public aware of such opinions of the writer that involved disputes. The opinions of the writer are best described by the words 'controversial' and 'polemical.'"
+          }
+        },
+        "verbal2": {
+          "question1": {
+            "type": "text_completion",
+            "questionText": "Though one cannot say that Michelangelo was an impractical designer, he was, of all nonprofessional architects known, the most ______ in that he was the least conserved by tradition or precedent.",
+            "options": [
+              "pragmatic",
+              "adventurous",
+              "empirical",
+              "skilled",
+              "learned"
+            ],
+            "correctAnswer": [
+              "adventurous"
+            ],
+            "blanks": 1,
+            "explanation": "The last part holds the answer 'in that he was the least conserved by tradition or precedent.' It implies that he was not restricted by conventions; he was willing to take chances. Among the options, 'adventurous' fits the context best."
+          },
+          "question2": {
+            "type": "text_completion",
+            "questionText": "High software prices are frequently said to ______ widespread illegal copying, although the opposite—that high prices are the cause of the copying—is equally plausible.",
+            "options": [
+              "contribute to",
+              "result from",
+              "correlate with",
+              "explain",
+              "precede"
+            ],
+            "correctAnswer": [
+              "result from"
+            ],
+            "blanks": 1,
+            "explanation": "The phrase 'although the opposite—that high prices are the cause of the copying—is equally plausible' indicates that the first part of the sentence should say something contrary. The second part of the sentence states that 'high price is the cause of' illegal copying. Since the first part is contrary, the answer has to be a word that means 'effect.' That phrase is 'result from.'"
+          },
+          "question3": {
+            "type": "text_completion",
+            "questionText": "However (i) ______ they might be, Roman poets were bound to have some favorite earlier author whom they would (ii) ______.",
+            "options": {
+              "blank1": [
+                "subservient",
+                "original",
+                "humble"
+              ],
+              "blank2": [
+                "emulate",
+                "inspire",
+                "neglect"
+              ]
+            },
+            "correctAnswer": [
+              "original",
+              "emulate"
+            ],
+            "blanks": 2,
+            "explanation": "The first blank is answered by 'Roman poets were bound to have some favorite earlier author.' 'Subservient' will not work stylistically; subservience denotes acceptance of someone’s power or authority over yourself whereas the word 'favorite' denotes a voluntary liking. Similarly, 'humble' denotes modesty or lack of pride which might work, but then none of the options for the second blank will fit. A contrast is being stated with 'however,' therefore implying that even their originality was inspired. Therefore, 'emulate' (to follow) is the answer."
+          },
+          "question4": {
+            "type": "text_completion",
+            "questionText": "Human nature and long distances have made exceeding the speed limit a (i) ______ tradition in the state, so the legislators surprised no one when, according to public practice, they (ii) ______ increased penalties for speeding.",
+            "options": {
+              "blank1": [
+                "cherished",
+                "controversial",
+                "disquieting"
+              ],
+              "blank2": [
+                "rejected",
+                "investigated",
+                "created"
+              ]
+            },
+            "correctAnswer": [
+              "cherished",
+              "rejected"
+            ],
+            "blanks": 2,
+            "explanation": "Look at the first blank: for something to become a tradition, it has to be accepted by the majority and seen in a positive light irrespective of our own likes or dislikes. The only positive word is 'cherished.' Therefore, it's the answer. Therefore, the second blank has to be supported by the fact that 'according to public practice,' the legislators only did what was expected by the people of the state. 'Rejected' is supported as the speed limit tradition was cherished, so rejecting increased penalties was not surprising."
+          },
+          "question5": {
+            "type": "sentence_equivalence",
+            "questionText": "Though many medieval women possessed devotional books that had belonged to their mothers, formal written evidence of women bequeathing books to their daughters is scarce, which suggests that such bequests were _____ and required no documentation.",
+            "options": [
+              "unselfish",
+              "tangential",
+              "customary",
+              "covert",
+              "spurious",
+              "routine"
+            ],
+            "correctAnswer": [
+              "customary",
+              "routine"
+            ],
+            "explanation": "The handing on (bequeathing) of their books to their daughters was present in the medieval age and was not recorded as it did not require any written proof for it being true. The non-requirement of the written proof for such bequests indicates that they were habitual and easily understandable. The words which closely describe such bequests are 'customary' and 'routine.'"
+          },
+          "question6": {
+            "type": "sentence_equivalence",
+            "questionText": "Although their initial anger had _____ somewhat, they continued to berate the careless worker who had broken the machine.",
+            "options": [
+              "subsided",
+              "blazed",
+              "waxed",
+              "abated",
+              "intensified",
+              "renewed"
+            ],
+            "correctAnswer": [
+              "subsided",
+              "abated"
+            ],
+            "explanation": "The presence of the word 'although' suggests that the first part of the sentence is contrary to the other. The sentence indicates that though their anger had reduced, they continued scolding the worker. The words closest in meaning to 'reduced' are 'subsided' and 'abated.'"
+          },
+          "question7": {
+            "type": "sentence_equivalence",
+            "questionText": "The notion that a parasite can alter the behavior of a host organism is not mere fiction; indeed, the phenomenon is not even ______.",
+            "options": [
+              "observable",
+              "real",
+              "comprehended",
+              "rare",
+              "extraordinary",
+              "imaginable"
+            ],
+            "correctAnswer": [
+              "rare",
+              "extraordinary"
+            ],
+            "explanation": "The presence of the phrase 'not even' indicates that the idea that a parasite can change (alter) the behavior of the host is not something imaginary (fiction). It is so real that it can be seen everywhere. Therefore, the idea is not something 'rare' or 'extraordinary.'"
+          },
+          "question8": {
+            "type": "sentence_equivalence",
+            "questionText": "Darwin’s method did not really require the idea of race as an important conceptual category; even the much more central idea of species was little more than a theoretical ______.",
+            "options": [
+              "convenience",
+              "expediency",
+              "measurement",
+              "practice",
+              "validation",
+              "fact"
+            ],
+            "correctAnswer": [
+              "convenience",
+              "expediency"
+            ],
+            "explanation": "The word 'even' suggests that the more central idea of species by Darwin was also considered as a category which was not important like the idea of race. The idea of species was thus not given much attention by Darwin and was considered as suitability for theory only. The words closest in meaning to 'suitability' are 'convenience' and 'expediency'."
+          },
+          "question9": {
+            "type": "reading_comprehension_select",
+            "passage": "Zooplankton, tiny animals adapted to an existence in the ocean, have evolved clever mechanisms for obtaining their food, miniscule phytoplankton (plant plankton). A very specialized feeding adaptation in zooplankton is that of the tadpolelike appendicularian who lives in a walnut-sized (or smaller) balloon of mucus equipped with filters that capture and concentrate phytoplankton. The balloon, a transparent structure that varies in design according to the type of appendicularian inhabiting it, also protects the animal and helps to keep it afloat. Water containing phytoplankton is pumped by the appendicularian’s muscular tail into the balloon’s incurrent filters, passes through the feeding filter where the appendicularian sucks the food into its mouth, and then goes through an exit passage. Found in all the oceans of the world, including the Arctic Ocean, appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest.",
+            "questionText": "Select the sentence in the passage on the basis of which it can be inferred that appendicularians can tolerate frigid water.",
+            "correctAnswer": [
+              "Found in all the oceans of the world, including the Arctic Ocean, appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest"
+            ],
+            "explanation": "The sentence mentioning that appendicularians are found in all oceans, including the Arctic Ocean, suggests that they can survive in cold, frigid waters, implying their tolerance for such conditions."
+          },
+          "question10": {
+            "type": "reading_comprehension",
+            "passage": "Zooplankton, tiny animals adapted to an existence in the ocean, have evolved clever mechanisms for obtaining their food, miniscule phytoplankton (plant plankton). A very specialized feeding adaptation in zooplankton is that of the tadpolelike appendicularian who lives in a walnut-sized (or smaller) balloon of mucus equipped with filters that capture and concentrate phytoplankton. The balloon, a transparent structure that varies in design according to the type of appendicularian inhabiting it, also protects the animal and helps to keep it afloat. Water containing phytoplankton is pumped by the appendicularian’s muscular tail into the balloon’s incurrent filters, passes through the feeding filter where the appendicularian sucks the food into its mouth, and then goes through an exit passage. Found in all the oceans of the world, including the Arctic Ocean, appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest.",
+            "questionText": "The author is primarily concerned with",
+            "options": [
+              "explaining how appendicularians obtain food",
+              "examining the flotation methods of appendicularians",
+              "mapping the distribution of appendicularians around the world",
+              "describing how appendicularians differ from other zooplankton",
+              "comparing the various types of balloons formed by appendicularians"
+            ],
+            "correctAnswer": [
+              "explaining how appendicularians obtain food"
+            ],
+            "explanation": "The passage explains in great detail how the appendicularians obtain food, making option A the best answer."
+          },
+          "question11": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Zooplankton, tiny animals adapted to an existence in the ocean, have evolved clever mechanisms for obtaining their food, miniscule phytoplankton (plant plankton). A very specialized feeding adaptation in zooplankton is that of the tadpolelike appendicularian who lives in a walnut-sized (or smaller) balloon of mucus equipped with filters that capture and concentrate phytoplankton. The balloon, a transparent structure that varies in design according to the type of appendicularian inhabiting it, also protects the animal and helps to keep it afloat. Water containing phytoplankton is pumped by the appendicularian’s muscular tail into the balloon’s incurrent filters, passes through the feeding filter where the appendicularian sucks the food into its mouth, and then goes through an exit passage. Found in all the oceans of the world, including the Arctic Ocean, appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest.",
+            "questionText": "According to the passage, which of the following are descriptive of appendicularians:",
+            "options": [
+              "tailed",
+              "vegetarian",
+              "small-sized"
+            ],
+            "correctAnswer": [
+              "tailed",
+              "vegetarian",
+              "small-sized"
+            ],
+            "explanation": "In this case, all the three options are true. The appendicularian is small as it is described as 'miniscule.' The fact that they eat phytoplankton or plant plankton suggests they are vegetarians. Similarly, the appendicularian is described as 'tadpole-like,' therefore it is tailed."
+          },
+          "question12": {
+            "type": "reading_comprehension",
+            "passage": "Zooplankton, tiny animals adapted to an existence in the ocean, have evolved clever mechanisms for obtaining their food, miniscule phytoplankton (plant plankton). A very specialized feeding adaptation in zooplankton is that of the tadpolelike appendicularian who lives in a walnut-sized (or smaller) balloon of mucus equipped with filters that capture and concentrate phytoplankton. The balloon, a transparent structure that varies in design according to the type of appendicularian inhabiting it, also protects the animal and helps to keep it afloat. Water containing phytoplankton is pumped by the appendicularian’s muscular tail into the balloon’s incurrent filters, passes through the feeding filter where the appendicularian sucks the food into its mouth, and then goes through an exit passage. Found in all the oceans of the world, including the Arctic Ocean, appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest.",
+            "questionText": "The passage suggests that appendicularians tend to remain in surface waters because they",
+            "options": [
+              "prefer the warmer water near the surface",
+              "are unable to secrete mucus at the lower levels of the ocean",
+              "use the contrast of light and shadow at the surface to hide from predators",
+              "live in balloons that cannot withstand the water pressure deeper in the ocean",
+              "eat food that grows more profusely near the surface"
+            ],
+            "correctAnswer": [
+              "eat food that grows more profusely near the surface"
+            ],
+            "explanation": "Appendicularians tend to remain on the surface as is clear from this line: 'appendicularians tend to remain near the water’s surface where the density of phytoplankton is greatest.'"
+          },
+          "question13": {
+            "type": "reading_comprehension",
+            "passage": "Theorists are divided concerning the origin of the Moon. Some hypothesize that the Moon was formed in the same way as were the planets in the inner solar system (Mercury, Venus, Mars, and Earth)—from planet-forming materials in the presolar nebula. But, unlike the cores of the inner planets, the Moon’s core contains little or no iron, while the typical planet-forming materials were quite rich in iron. Other theorists propose that the Moon was ripped out of the Earth’s rocky mantle by the Earth’s collision with another large celestial body after much of the Earth’s iron fell to its core. One problem with the collision hypothesis is the question of how a satellite formed in this way could have settled into the nearly circular orbit that the Moon has today. Fortunately, the collision hypothesis is testable. If it is true, the mantle rocks of the Moon and the Earth should be the same geochemically.",
+            "questionText": "The primary purpose of the passage is to",
+            "options": [
+              "present two hypotheses concerning the origin of the Moon",
+              "discuss the strengths and weaknesses of the collision hypothesis concerning the origin of the Moon",
+              "propose that hypotheses concerning the Moon’s origin be tested",
+              "argue that the Moon could not have been formed out of the typical planet-forming materials of the presolar nebula",
+              "describe one reason why the Moon’s geochemical makeup should resemble that of the Earth"
+            ],
+            "correctAnswer": [
+              "present two hypotheses concerning the origin of the Moon"
+            ],
+            "explanation": "Primarily the passage is about two hypotheses: the first being that the Moon was formed in the same way as were the planets in the inner solar system (Mercury, Venus, Mars, and Earth)—from planet-forming materials in the presolar nebula. The other hypothesis presented in the passage is that the Moon was ripped out of the Earth’s rocky mantle by the Earth’s collision with another large celestial body after much of the Earth’s iron fell to its core."
+          },
+          "question14": {
+            "type": "reading_comprehension_multiple",
+            "passage": "Theorists are divided concerning the origin of the Moon. Some hypothesize that the Moon was formed in the same way as were the planets in the inner solar system (Mercury, Venus, Mars, and Earth)—from planet-forming materials in the presolar nebula. But, unlike the cores of the inner planets, the Moon’s core contains little or no iron, while the typical planet-forming materials were quite rich in iron. Other theorists propose that the Moon was ripped out of the Earth’s rocky mantle by the Earth’s collision with another large celestial body after much of the Earth’s iron fell to its core. One problem with the collision hypothesis is the question of how a satellite formed in this way could have settled into the nearly circular orbit that the Moon has today. Fortunately, the collision hypothesis is testable. If it is true, the mantle rocks of the Moon and the Earth should be the same geochemically.",
+            "questionText": "According to the passage, Mars and the Earth are similar in which of the following ways?",
+            "options": [
+              "Their satellites were formed by collisions with other celestial bodies.",
+              "Their cores contain iron.",
+              "They were formed from the presolar nebula."
+            ],
+            "correctAnswer": [
+              "Their cores contain iron.",
+              "They were formed from the presolar nebula."
+            ],
+            "explanation": "It is clearly stated in the passage that: 'Moon was formed in the same way as were the planets in the inner solar system (Mercury, Venus, Mars, and Earth)—from planet-forming materials in the presolar nebula.' But, unlike the cores of the inner planets, the Moon's core contains little or no iron, while the typical planet-forming materials were quite rich in iron."
+          },
+          "question15": {
+            "type": "reading_comprehension",
+            "passage": "Theorists are divided concerning the origin of the Moon. Some hypothesize that the Moon was formed in the same way as were the planets in the inner solar system (Mercury, Venus, Mars, and Earth)—from planet-forming materials in the presolar nebula. But, unlike the cores of the inner planets, the Moon’s core contains little or no iron, while the typical planet-forming materials were quite rich in iron. Other theorists propose that the Moon was ripped out of the Earth’s rocky mantle by the Earth’s collision with another large celestial body after much of the Earth’s iron fell to its core. One problem with the collision hypothesis is the question of how a satellite formed in this way could have settled into the nearly circular orbit that the Moon has today. Fortunately, the collision hypothesis is testable. If it is true, the mantle rocks of the Moon and the Earth should be the same geochemically.",
+            "questionText": "The author implies that a nearly circular orbit is unlikely for a satellite that",
+            "options": [
+              "circles one of the inner planets",
+              "is deficient in iron",
+              "is different from its planet geochemically",
+              "was formed by a collision between two celestial bodies",
+              "was formed out of the planet-forming materials in the presolar nebula"
+            ],
+            "correctAnswer": [
+              "was formed by a collision between two celestial bodies"
+            ],
+            "explanation": "The author of the passage clearly states that: 'One problem with the collision hypothesis is the question of how a satellite formed in this way could have settled into the nearly circular orbit that the Moon has today.'"
+          }
+        },
+        "quantitative1": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The sum of four consecutive even numbers is 1284. The greatest of them is:",
+            "options": [
+              "320",
+              "322",
+              "324",
+              "326",
+              "328"
+            ],
+            "correctAnswer": "324",
+            "explanation": "Let the four consecutive even numbers be x, x+2, x+4, and x+6.\n\nThe sum of these numbers is 4x + 12 = 1284.\n\nSolving for x: 4x = 1284 - 12 = 1272, x = 1272 / 4 = 318.\n\nThe greatest number is x + 6 = 318 + 6 = 324."
+          },
+          "question2": {
+            "type": "numeric_entry",
+            "questionText": "If a ⊕ b = a(a² + √b), then 5 ⊕ (1 ⊕ 9) is:",
+            "correctAnswer": "135",
+            "explanation": "First, calculate (1 ⊕ 9):\n\n1 ⊕ 9 = 1(1² + √9) = 1(1 + 3) = 4.\n\nNow, calculate 5 ⊕ 4:\n\n5 ⊕ 4 = 5(5² + √4) = 5(25 + 2) = 5 × 27 = 135."
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "In how many ways can the letters of the word 'MATHEMATICS' be arranged so that the vowels always come together?",
+            "options": [
+              "10080",
+              "4989600",
+              "120960",
+              "50080",
+              "None of these"
+            ],
+            "correctAnswer": "120960",
+            "explanation": "The vowels in 'MATHEMATICS' are A, E, A, I. These vowels are treated as a single entity, and the remaining consonants are M, T, H, M, T, C, S. So, we need to arrange 8 characters: {A E A I} and {M, T, H, M, T, C, S}.\n\nThe total number of ways to arrange the 8 characters is 8! / (2! 2!).\n\nThe vowels can be arranged in 4! / (2!) ways because A appears twice.\n\nThus, the total number of arrangements = (8! / (2! 2!)) * (4! / 2!) = 120960."
+          },
+          "question4": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The reflex angle between the hands of a clock at 10:25 is:",
+            "options": [
+              "180",
+              "192 1/2",
+              "195",
+              "197 1/2",
+              "190"
+            ],
+            "correctAnswer": "197 1/2",
+            "explanation": "The formula to calculate the reflex angle between the hands of a clock is:\n\nReflex angle = 360 - [(10 × 30 + 12.5) - (25/60 × 360)]\n\n= 360 - (312.5 - 150)\n\n= 360 - 162.5 = 197 1/2 degrees."
+          },
+          "question5": {
+            "type": "numeric_entry",
+            "questionText": "If a - b = 3 and a³ - b³ = 117, then a + b is:",
+            "correctAnswer": "7",
+            "explanation": "Using the identity a³ - b³ = (a - b)(a² + ab + b²), we substitute a - b = 3 into the equation:\n\n117 = 3(a² + ab + b²).\n\nSolving for a² + ab + b² gives us 39.\n\nNow, solving the quadratic equation formed by (a - b)(a + b) = 117 leads to a + b = 7."
+          },
+          "question6": {
+            "type": "numeric_entry",
+            "questionText": "If 1.3 * 3² * 3³ * 3⁴ * ... * 3ˣ = 3¹⁴, then x = ?",
+            "correctAnswer": "7",
+            "explanation": "The product of powers of 3 is simplified as:\n\n1 * 3¹ * 3² * 3³ * ... * 3ˣ = 3¹⁴.\n\nUsing the sum of exponents rule, the sum of exponents from 1 to x should equal 14. Solving for x gives x = 7."
+          },
+          "question7": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The diagonal AC & BD of a parallelogram ABCD intersect at O. If ∠DAC = 30°, ∠AOB = 80°, then find ∠DBC.",
+            "options": [
+              "150",
+              "50",
+              "120",
+              "100",
+              "70"
+            ],
+            "correctAnswer": "50",
+            "explanation": "In a parallelogram, opposite angles are equal, and diagonals bisect the angles. Using the given information, we can calculate ∠DBC by recognizing that the angles around point O add up to 360°. The calculations show that ∠DBC = 50°."
+          },
+          "question8": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The perimeter of a triangle is 8 cm, and one of the sides is 3 cm. The area of the triangle is maximum. Then the other two sides are:",
+            "options": [
+              "(5/2, 5/2)",
+              "(3, 2)",
+              "(7/2, 3/2)",
+              "(3, 2)",
+              "(1, 4)"
+            ],
+            "correctAnswer": "(5/2, 5/2)",
+            "explanation": "Using Heron's formula, the area of the triangle is maximum when the triangle is an isosceles triangle. For a perimeter of 8 cm and one side being 3 cm, the other two sides must be 5/2 cm each to maximize the area."
+          },
+          "question9": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If the radius of the semi-circles A, B, and C are 1, 2, and 3 respectively, then find the area of the shaded region?",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%202%20q19.jpg",
+            "options": [
+              "10π",
+              "11π",
+              "12π",
+              "22π",
+              "20π"
+            ],
+            "correctAnswer": "11π",
+            "explanation": "The area of the shaded region is calculated by subtracting the areas of the smaller semi-circles from the larger semi-circle.\n\nThe area of the larger semi-circle (C) with radius 3 is (1/2)π * 3² = 9π/2.\n\nThe areas of the smaller semi-circles (A and B) are (1/2)π * 1² = π/2 and (1/2)π * 2² = 2π, respectively.\n\nThe total area of the shaded region = π * (3² - 1² - 2²) = 11π."
+          },
+          "question10": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "How many 4-digit numbers have only even digits?",
+            "options": [
+              "96",
+              "128",
+              "256",
+              "500",
+              "625"
+            ],
+            "correctAnswer": "500",
+            "explanation": "The available even digits are 0, 2, 4, 6, and 8.\n\nFor the first digit, you have 4 choices (it cannot be 0).\n\nFor the other three digits, you have 5 choices each (including 0).\n\nThus, the total number of 4-digit numbers with only even digits is 4 × 5 × 5 × 5 = 500."
+          },
+          "question11": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If 2 = 10^m and 3 = 10^n, then find the value of 0.15 in terms of m & n.",
+            "options": [
+              "10^(n-m-1)",
+              "10^(n-m-1)",
+              "10^(n+m-1)",
+              "10^(n-m+1)",
+              "None of these"
+            ],
+            "correctAnswer": "10^(n-m-1)",
+            "explanation": "We start with 0.15 = 3/20 = 3 / (2 × 10).\n\nUsing the values of 2 and 3 as powers of 10, we get:\n\n3 = 10^n and 2 = 10^m, thus simplifying the equation:\n\n0.15 = (3 / 2) × 10^(-1) = 10^(n - m - 1)."
+          },
+          "question12": {
+            "type": "numeric_entry",
+            "questionText": "One root of x² + Kx - 8 = 0 is the square of the other. Find K.",
+            "correctAnswer": "-2",
+            "explanation": "Given that one root is the square of the other, let the roots be x and x². Using Vieta's formulas for the sum and product of roots:\n\nSum of the roots = x + x² = -K\nProduct of the roots = x * x² = 8\nSolving for K gives K = -2."
+          }
+        },
+        "quantitative2": {
+          "question1": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Which of the following values of x don't satisfy the inequality (x² - 3x + 2 > 0) at all?",
+            "options": [
+              "1 ≤ x ≤ 2",
+              "-1 ≥ x ≥ -2",
+              "0 ≤ x ≤ 2",
+              "0 ≥ x ≥ -2",
+              "0 ≥ x ≥ 1"
+            ],
+            "correctAnswer": "1 ≤ x ≤ 2",
+            "explanation": "The inequality (x² - 3x + 2 > 0) is satisfied when x > 2 or x < 1. Therefore, values between 1 and 2 do not satisfy the inequality."
+          },
+          "question2": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "If √x - √(1 - x) = 1/5, then √x + √(1 - x) is equal to?",
+            "options": [
+              "2/5",
+              "3/5",
+              "6/5",
+              "4/5",
+              "7/5"
+            ],
+            "correctAnswer": "7/5",
+            "explanation": "By solving the given equation √x - √(1 - x) = 1/5, and using the identity (a - b)(a + b) = a² - b², we can solve for √x + √(1 - x). The result is 7/5."
+          },
+          "question3": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "The function f has the property that f(x) = f(x+1) for all numbers x. If f(4) = 17, what is the value of f(8)?",
+            "options": [
+              "17",
+              "18",
+              "19",
+              "20",
+              "21"
+            ],
+            "correctAnswer": "17",
+            "explanation": "The property f(x) = f(x+1) means that the function has the same value for all x. Since f(4) = 17, it follows that f(8) = 17 as well."
+          },
+          "question4": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "If the total expenses of A & B are doubled, the ratio of expenditure on 'light' will be:",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%203%20q6%20to%209.jpg",
+            "options": [
+              "1:1",
+              "4:5",
+              "2:3",
+              "3:4",
+              "5:6"
+            ],
+            "correctAnswer": "4:5",
+            "explanation": "The ratio of light expenses is calculated as (18/360) * 4800 : (15/360) * 7200, which simplifies to 4:5."
+          },
+          "question5": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "The miscellaneous expense of A as a percentage of those of B is:",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%203%20q6%20to%209.jpg",
+            "options": [
+              "60%",
+              "50%",
+              "75%",
+              "80%",
+              "More than 80%"
+            ],
+            "correctAnswer": "More than 80%",
+            "explanation": "Use the pie charts provided in the question to calculate the percentage. The miscellaneous expense for family A is larger compared to family B, making the percentage more than 80%."
+          },
+          "question6": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "The item showing the least difference in expenditure between A and B is:",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%203%20q6%20to%209.jpg",
+            "options": [
+              "Food",
+              "Light",
+              "Clothing",
+              "Miscellaneous",
+              "Education"
+            ],
+            "correctAnswer": "Light",
+            "explanation": "Use the pie charts to observe that the expenditure on 'Light' shows the least difference between the two families' expenses."
+          },
+          "question7": {
+            "type": "data_interpretation_single_answer",
+            "questionText": "The percentage of expenses of A & B on food are in the ratio:",
+            "imgUrl": "https://testendura.com/userfiles/image/Q_ability/Q_ability%203%20q6%20to%209.jpg",
+            "options": [
+              "55:48",
+              "4:5",
+              "5:4",
+              "48:55",
+              "None of these"
+            ],
+            "correctAnswer": "48:55",
+            "explanation": "Use the pie charts to calculate the percentage spent on food by both families and determine that the ratio is 48:55."
+          },
+          "question8": {
+            "type": "old_question_need_to_be_replaced_multiple_choice_single_answer",
+            "questionText": "If n is an odd integer, which one of the following is an even integer?",
+            "options": [
+              "(n)^3",
+              "n/4",
+              "2n+3",
+              "n(n+3)",
+              "√n"
+            ],
+            "correctAnswer": "n(n+3)",
+            "explanation": "n = odd\n\n1) (n)^3 = odd\n2) n/4 = Fraction\n3) 2n+3 = odd\n4) n(n+3) = odd * (odd + 3) = odd * even = even\n5) √n = Real number or odd\n\nHence, the answer is the 4th option."
+          },
+          "question9": {
+            "type": "quantitative_comparison",
+            "questionText": "Given |x| > 1, compare the following quantities:",
+            "quantityA": "x^3",
+            "quantityB": "x^2",
+            "options": [
+              "Quantity in A is greater",
+              "Quantity in B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined from the information given"
+            ],
+            "correctAnswer": "The relationship cannot be determined from the information given",
+            "explanation": "|x| > 1 implies x < -1 or x > 1.\n\nCase 1 (x < -1):\nx = -2\nx^2 = 4, x^3 = -8\n\nCase 2 (x > 1):\nx = 2\nx^2 = 4, x^3 = 8\n\nThus, the relationship cannot be determined."
+          },
+          "question10": {
+            "type": "quantitative_comparison",
+            "questionText": "Given 0 < x < 1, compare the following quantities:",
+            "quantityA": "∛x",
+            "quantityB": "√x",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "If 0 < x < 1:\nLet x = 1/64\n\nA = ∛(1/64) = 1/4\nB = √(1/64) = 1/8\n\nTherefore, A > B.\nAnswer = Option 1"
+          },
+          "question11": {
+            "type": "quantitative_comparison",
+            "questionText": "Line segments AB and CD are chords of circle O.",
+            "quantityA": "The circumference of circle O",
+            "quantityB": "The length of AB plus twice the length of CD",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two quantities are equal",
+              "The relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity A is greater",
+            "explanation": "As the largest chord can be the diameter:\n\nSuppose both AB & CD are diameters (d):\n\nA = Circumference = πd = 3.14d\nB = Sum = d + 2d = 3d\n\nHence, A > B.\n\nAnswer = Option 1"
+          },
+          "question12": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "A rectangular box has sides a, b, c, and its diagonal is d. If X = √(a² + b² + c²), which of the following is also equal to x?",
+            "options": [
+              "a√2",
+              "c√2",
+              "d√2",
+              "(d² - c² - b² - a²)√2",
+              "√(a² + b² + c²)"
+            ],
+            "correctAnswer": "√(a² + b² + c²)",
+            "explanation": "Length of diagonal of cuboid = √(l² + b² + h²) = √(a² + b² + c²) = X. Therefore, the answer is the 5th option."
+          },
+          "question13": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "On the xy-plane, what is the slope of a line that is perpendicular to the line defined by the equation 3y = (1/2)x + 3?",
+            "options": [
+              "-6",
+              "-2",
+              "-1",
+              "7",
+              "6"
+            ],
+            "correctAnswer": "-6",
+            "explanation": "Equation: x/2 - 3y + 3 = 0.\n\nSlope = -A/B = (-1/2) / -3 = 1/6.\n\nIf perpendicular, slope1 x slope2 = -1.\n\nTherefore, slope2 = -6.\n\nHence, the answer is option 1."
+          },
+          "question14": {
+            "type": "multiple_choice_single_answer",
+            "questionText": "Fifteen boys, numbered 1 to 15, are positioned equidistantly along a straight path for a sailboat race. The race begins at boy 1, and 3/4 hours into the race the fastest boat reaches boy 10. At the same average speed, how many minutes will it take the boat to race from boy 10 to boy 15?",
+            "options": [
+              "45",
+              "32.5",
+              "25",
+              "22.5",
+              "15"
+            ],
+            "correctAnswer": "25",
+            "explanation": "Boy 1 to boy 10 takes 3/4 hours.\nLet the distance between 2 boys be x.\nTherefore, it takes 3/4 hours for 9x.\nHence, for 5x, the time is 25/60 = 25 minutes."
+          },
+          "question15": {
+            "type": "quantitative_comparison",
+            "questionText": "Set R: {n + 1, 2n + 2, 3n + 3, ...}\nSet S: {n, 2n + 1, 3n + 2, ...} [where n=2]",
+            "quantityA": "The 25th term of Set R",
+            "quantityB": "Two times the 24th term of Set S",
+            "options": [
+              "Quantity A is greater",
+              "Quantity B is greater",
+              "The two Quantities are equal",
+              "Relationship cannot be determined by the given information"
+            ],
+            "correctAnswer": "Quantity B is greater",
+            "explanation": "A = 25n + 25\nB = (24n + 23) * 2\nHence, B > A.\nAnswer is Option 2."
+          }
+        }
+      }
     }
   ]
 }
