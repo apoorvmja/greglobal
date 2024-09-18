@@ -907,7 +907,7 @@
             "passage": "During the Second World War, about 375,000 civilians died in the United States and about 408,000 members of the United States armed forces died overseas. On the basis of those figures, it can be concluded that it was not much more dangerous to be overseas in the armed forces during the Second World War than it was to stay at home as a civilian.",
             "questionText": "Which of the following would reveal most clearly the absurdity of the conclusion drawn above?",
             "options": [
-              "Counting deaths among members of the armed forces who served in the United State in addition to deaths among members of the armed forces serving overseas",
+              "Counting deaths among members of the armed forces who served in the United States in addition to deaths among members of the armed forces serving overseas",
               "Expressing the difference between the numbers of deaths among civilians and members of the armed forces as a percentage of the total number of deaths",
               "Separating deaths caused by accidents during service in the armed forces from deaths caused by combat injuries",
               "Comparing death rates per thousand members of each group rather than comparing total numbers of deaths",
@@ -1034,7 +1034,7 @@
         "verbal2": {
           "question1": {
             "type": "reading_comprehension",
-            "passage": "Airline: Newly developed collision-avoidance systems, although not fully tested to discover potential malfunctions, must be installed immediately in passenger planes. Their mechanical warnings enable pilots to avoid crashes. Pilots: Pilots will not fly in planes with collision-avoidance systems that are not fully tested. Malfunctioning systems could mislead pilots, causing crashes.",
+            "passage": "Airline: Newly developed collision-avoidance systems, although not fully tested to discover potential malfunctions, must be installed immediately in passenger planes. Their mechanical warnings enable pilots to avoid crashes.\nPilots: Pilots will not fly in planes with collision-avoidance systems that are not fully tested. Malfunctioning systems could mislead pilots, causing crashes.",
             "questionText": "The pilots’ objection is most strengthened if which of the following is true?",
             "options": [
               "It is always possible for mechanical devices to malfunction.",
@@ -1080,7 +1080,7 @@
           },
           "question4": {
             "type": "text_completion",
-            "questionText": "Our biological uniqueness requires that the effects of substance must be verified by _______ experiments, even after thousands of tests of the effects of that substance on animals.",
+            "questionText": "Our biological uniqueness requires that the effects of on substance must be verified by _______ experiments, even after thousands of tests of the effects of that substance on animals.",
             "options": [
               "controlled",
               "random",

@@ -269,7 +269,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
 
         return (
             <div key={index} className="mb-4">
-                {question.passage && <div className="border p-4 mb-4">{question.passage}</div>}
+                {question.passage && <div className="border p-4 mb-4" dangerouslySetInnerHTML={{ __html: question.passage.replace(/\n/g, '<br />') }}></div>}
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 {(question.options as string[])?.map((option, idx) => {
                     const isChecked = selectedAnswer ? selectedAnswer.includes(option) : false;
@@ -475,7 +475,7 @@ const Verbal: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewMo
                                 <h1 className='mb-[15px]'>Verbal Section End</h1>
                                 <p className='mb-[20px]'>If you click Exit Section or Next Button, you WILL NOT be able to return to this section of the test.</p>
                                 <p className='mb-[20px]'>
-                                    If you want to double check your answers you can click REVIEW to check your reamining answers.
+                                    If you want to double check your answers you can click REVIEW to check your remaining answers.
                                     On Test Day, when you exit a section, you will be taken to a screen where you may take an optional 60-second break (just to take a sip of water or take a sigh of relief!).
                                 </p>
                                 <p className='mb-[20px]'>Click Next/Exit Section to proceed.</p>

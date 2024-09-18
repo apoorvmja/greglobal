@@ -99,7 +99,7 @@ const AWA: React.FC<Props> = ({ test, onContinue, isReviewModeResultDashboard = 
                 <div className="prompt-container border-b sm:border-r sm:border-b-0">
                     <p className='border-2 rounded-md p-2 mb-4 mt-4'>{test.sections.awa.prompt}</p>
                     <p>{test.sections.awa.instructions}</p>
-                    <p>The standard length for this section is 30 minutes.</p>
+                    <p>The standard time for this section is 30 minutes.</p>
                 </div>
                 <div className="textarea-container">
                     <div className="toolbar px-2">
