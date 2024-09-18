@@ -2676,13 +2676,14 @@
           },
           "question9": {
             "type": "reading_comprehension",
-            "paragraph": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
+            "passage": "Many philosophers disagree over the definition of morality, but most disputants fall into one of two categories: egocentrics, who define morality as the pursuit of self-fulfillment, and sociocentrics, who define morality as an individual's obligations to society. Where does the truth lie? Fortunately, the stem of the word 'morality' provides some clues. The word 'mores' originally referred to the customs of preliterate cultures. Mores, which embodied each culture's ideal principles for governing every citizen, were developed in the belief that the foundation of a community lies in the cultivation of individual powers to be placed in service to the community. These mores were concerned with such skills as food-gathering and warfare as well as an individual's relationships with others. Thus, I submit 'morality' must be concerned with what is honored by the community at large. However, self-fulfillment is important to morality because unfulfilled citizens, no matter how virtuous, cannot perform the duties morality assigns them.",
             "questionText": "With which of the following statements regarding the relationship between the individual and morality would the author be most likely to agree?",
             "options": [
               "Failure in social obligations is the price of success in individual endeavors",
               "The unfulfilled citizen cannot fulfill his moral obligations to the community.",
               "Morality is unconcerned with conflicts among citizens.",
-              "The unfulfilled citizen is without virtue."
+              "The unfulfilled citizen is without virtue.",
+              "Wealth harms a citizen's moral standing in the community."
             ],
             "correctAnswer": [
               "The unfulfilled citizen cannot fulfill his moral obligations to the community."
@@ -2745,7 +2746,7 @@
             "questionText": "Which of the following, if true, casts most doubt on the claim that most consumers get little use out of the sports equipment they purchase?",
             "options": [
               "Joggers are most susceptible to sports injuries during the first six months in which they jog.",
-              "Joggers often exaggerate the frequency with which they jog in surveys designed to elicit such information.",
+              "In surveys designed to elicit such information, joggers often exaggerate the frequency with which they jog.",
               "Many consumers purchase jogging shoes for use in activities other than jogging.",
               "Consumers who take up jogging often purchase an athletic shoe that can be used in other sports.",
               "Joggers who jog more than once a week are often active participants in other sports as well."
@@ -2759,7 +2760,7 @@
         "verbal2": {
           "question1": {
             "type": "reading_comprehension_multiple",
-            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "passage": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
             "questionText": "The passage contains information that would answer which of the following questions?",
             "options": [
               "What are odontocetes and mysticetes?",
@@ -2774,7 +2775,7 @@
           },
           "question2": {
             "type": "reading_comprehension",
-            "paragraph": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
+            "passage": "Although vocal cords are lacking in cetaceans, phonation is undoubtedly centered in the larynx. The toothed whales or odontocetes (sperm whale and porpoises) are much more vociferous than the whalebone whales, or mysticetes. In this country observers have recorded only occasional sounds from two species of mysticetes (the humpback and right whale). A Russian cetologist reports hearing sounds from at least five species of whalebone whales but gives no details of the circumstances or descriptions of the sounds themselves. Although comparison of the sound producing apparatus in the two whale groups cannot yet be made, it is interesting to note that the auditory centers of the brain are much more highly developed in the odontocetes than in the mysticetes, in fact, to a degree unsurpassed by any other mammalian group.",
             "questionText": "Q. It can be inferred from the passage that",
             "options": [
               "animals with more highly developed auditory apparatuses tend to produce more sounds",

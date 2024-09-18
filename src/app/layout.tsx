@@ -13,15 +13,14 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.APP_URL
-      ? `${process.env.APP_URL}`
-      : process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : `http://localhost:${process.env.PORT || 3000}`
+    process.env.NODE_ENV === 'production'
+      ? 'https://gregoglobal.com'
+      : `http://localhost:${process.env.PORT || 3000}`
   ),
+
   title: "GreGoGlobal -Practice Gre With full length mock tests",
   description:
-    "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness.",
+    "Prepare for the GRE with AI-powered full-length mock tests and detailed analytics on GreGoGlobal. Boost your performance with accurate scoring, test reviews, and personalized study recommendations.",
   alternates: {
     canonical: "/"
   },
@@ -29,14 +28,14 @@ export const metadata: Metadata = {
     url: "/",
     title: "GreGoGlobal -Practice Gre With full length mock tests",
     description:
-      "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness.",
+      "Prepare for the GRE with AI-powered full-length mock tests and detailed analytics on GreGoGlobal. Boost your performance with accurate scoring, test reviews, and personalized study recommendations.",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "GreGoGlobal -Practice Gre With full length mock tests",
     description:
-      "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness."
+      "Prepare for the GRE with AI-powered full-length mock tests and detailed analytics on GreGoGlobal. Boost your performance with accurate scoring, test reviews, and personalized study recommendations."
   }
 };
 
