@@ -18,6 +18,7 @@ import {
 import PlaceholderContent from '@/components/demo/placeholder-content';
 import InitialAWAInstructions from '@/components/tests/InitialAWAInstruction';
 import InitialVerbalInstructions from '@/components/tests/InitialVerbalInstruction';
+import InitialQuantInstructions from '@/components/tests/InitialQuantInstruction';
 import testQuestions from '@/components/tests/testQuestions.json'; // Import your JSON file
 import ResultDashboard from '@/components/tests/ResultDashboard';
 
@@ -75,7 +76,7 @@ export default function TagsPage() {
   const id = pathname.split('/').pop();
   const [test, setTest] = useState<Test | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [currentSection, setCurrentSection] = useState<'testDetails' | 'awaInstructions' | 'awa' | 'VerbalInstructions' | 'verbal1' | 'verbal2' | 'quantitative1' | 'quantitative2' | 'resultDashboard' | 'awareview' | 'verbal1review' | 'verbal2review' | 'quantitative1review' | 'quantitative2review'>('testDetails');
+  const [currentSection, setCurrentSection] = useState<'testDetails' | 'awaInstructions' | 'awa' | 'VerbalInstructions' | 'verbal1' | 'verbal2' | 'QuantInstructions' | 'quantitative1' | 'quantitative2' | 'resultDashboard' | 'awareview' | 'verbal1review' | 'verbal2review' | 'quantitative1review' | 'quantitative2review'>('testDetails');
   const [awaScore, setAWAScore] = useState<number>(0);
   const [verbal1Score, setVerbal1Score] = useState<number>(0);
   const [verbal2Score, setVerbal2Score] = useState<number>(0);
@@ -108,7 +109,8 @@ export default function TagsPage() {
     else if (currentSection === 'awa') setCurrentSection('VerbalInstructions');
     else if (currentSection === 'VerbalInstructions') setCurrentSection('verbal1');
     else if (currentSection === 'verbal1') { setCurrentSection('verbal2'); }
-    else if (currentSection === 'verbal2') setCurrentSection('quantitative1');
+    else if (currentSection === 'verbal2') setCurrentSection('QuantInstructions');
+    else if (currentSection === 'QuantInstructions') setCurrentSection('quantitative1');
     else if (currentSection === 'quantitative1') setCurrentSection('quantitative2');
     else if (currentSection === 'quantitative2') setCurrentSection('resultDashboard');
   };
@@ -202,6 +204,7 @@ export default function TagsPage() {
               isReviewModeResultDashboard={false}
             />
           )}
+          {currentSection === 'QuantInstructions' && <InitialQuantInstructions onContinue={handleContinue} />}
           {currentSection === 'quantitative1' &&
             <Quantitative
               onBack={() => { }}

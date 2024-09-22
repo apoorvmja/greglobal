@@ -50,7 +50,7 @@ export default function DemoLayout({
               "@context": "https://schema.org",
               "@type": "EducationalApplication",
               "name": "AI-Powered GRE Mock Tests",
-              "url": "https://yourwebsite.com",
+              "url": "https://gregoglobal.com",
               "description": "Take AI-powered full-length GRE mock tests with real-time analytics and personalized feedback.",
               "applicationCategory": "Education",
               "operatingSystem": "All",
@@ -60,7 +60,7 @@ export default function DemoLayout({
                 "priceCurrency": "USD",
                 "eligibleRegion": {
                   "@type": "Country",
-                  "name": "United States"
+                  "name": "India"
                 }
               }
             }

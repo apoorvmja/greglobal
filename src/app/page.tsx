@@ -83,14 +83,14 @@ export default function HomePage() {
               className="border border-zinc-600 rounded-xl shadow-sm hidden dark:block dark:shadow-gray-500/5"
             />
             <Image
-              src="/LandingPageMobileShow.PNG"
+              src="/LandingPageMobileShow.png"
               width={228}
               height={494}
               alt="demo-mobile"
               className="border rounded-xl absolute bottom-0 right-0 hidden lg:block dark:hidden"
             />
             <Image
-              src="/LandingPageMobileDark.PNG"
+              src="/LandingPageMobileDark.png"
               width={228}
               height={494}
               alt="demo-mobile"
