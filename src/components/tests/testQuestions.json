@@ -3449,13 +3449,13 @@
               "exploration",
               "surviving",
               "conservation",
-              "enclosure"
+              "appropriation"
             ],
             "correctAnswer": [
-              "conservation"
+              "appropriation"
             ],
             "blanks": 1,
-            "explanation": "Find the antonym to 'the concept of freedom' and you have your answer as the first part draws a contrast to the second which is reflected in 'a contrary notion.' The antonym to freedom is restriction, which in turn is a synonym for 'conservation.' So that's the answer."
+            "explanation": "'appropriation' directly opposes 'freedom of the seas' by meaning nations claiming ownership of the oceans for national security and profit."
           },
           "question4": {
             "type": "reading_comprehension",
@@ -3587,20 +3587,20 @@
           },
           "question12": {
             "type": "sentence_equivalence",
-            "questionText": "Some customs travel well; often however, behavior that is considered the epitome of _____ at home is perceived as impossibly rude or, at the least, harmlessly bizarre abroad.",
+            "questionText": "Neuroscience and artificial intelligence are _________ fields that promise immense opportunities for teaching and employment for today's graduates.",
             "options": [
-              "novelty",
-              "eccentricity",
-              "urbanity",
-              "coarseness",
-              "civility",
-              "tolerance"
+              "lucrative",
+              "profitable",
+              "burgeoning",
+              "escalating",
+              "increasing",
+              "expanding"
             ],
             "correctAnswer": [
-              "urbanity",
-              "civility"
+              "burgeoning",
+              "expanding"
             ],
-            "explanation": "The word 'however' suggests that the two parts of the sentence are in opposition to each other. The sentence indicates that behavior which is considered odd and rude out of the country (abroad) is seen as courteous and polite in one’s own country (at home), making the behaviors contrary in their consideration abroad and at home. Thus, the words which relate to the behavior at home are 'urbanity' and 'civility.'"
+            "explanation": "'burgeoning' and 'expanding' both mean rapidly growing or increasing, which aligns with fields that 'promise immense opportunities' for graduates. These words convey that neuroscience and artificial intelligence are developing areas offering abundant prospects for teaching and employment."
           }
         },
         "verbal2": {
@@ -3820,7 +3820,8 @@
               "transplantation antigens of the donor and the recipient become matched",
               "lymphocytes of the recipient are weakened by the activity of the transplanted liver",
               "subsequently transplanted organ is able to repair the damage caused by the recipient's immune-response reaction",
-              "transplanted liver continues to be the primary locus for the recipient’s immune-response reaction"
+              "transplanted liver continues to be the primary locus for the recipient’s immune-response reaction",
+              "recipient is unable to manufacture the lymphocytes necessary for the immune-response reaction"
             ],
             "correctAnswer": [
               "transplanted liver continues to be the primary locus for the recipient’s immune-response reaction"
@@ -3861,19 +3862,19 @@
           },
           "question15": {
             "type": "reading_comprehension",
-            "passage": "Two decades after the Emerald River Dam was built, none of the eight fish species native to the Emerald River was still reproducing adequately in the river below the dam. Since the dam reduced the annual range of water temperature in the river below the dam from 50 degrees to 6 degrees, scientists have hypothesized that sharply rising water temperatures must be involved in signaling the native species to begin the reproductive cycle.",
-            "questionText": "Which of the following statements, if true, would most strengthen the scientists’ hypothesis?",
+            "passage": "Observations of the Arctic reveal that the Arctic Ocean is covered by less ice each summer than the previous summer. If this warming trend continues, within 50 years the Arctic Ocean will be ice free during the summer months. This occurrence would in itself have little or no effect on global sea levels, since the melting of ice floating in water does not affect the water level. However, serious consequences to sea levels would eventually result, because _____.",
+            "questionText": "Which of the following most logically completes the passage?",
             "options": [
-              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees.",
-              "Before the dam was built, the Emerald River annually overflowed its banks, creating backwaters that were critical breeding areas for the native species of fish.",
-              "The lowest recorded temperature of the Emerald River before the dam was built was 34 degrees, whereas the lowest recorded temperature of the river after the dam was built has been 43 degrees.",
-              "Nonnative species of fish, introduced into the Emerald River after the dam was built, have begun competing with the declining native fish species for food and space.",
-              "Five of the fish species native to the Emerald River are not native to any other river in North America."
+              "Large masses of floating sea ice would continue to form in the wintertime",
+              "Significant changes in Arctic sea temperatures would be accompanied by changes in sea temperatures in more temperate parts of the world",
+              "Such a warm Arctic Ocean would trigger the melting of massive landbased glaciers in the Arctic",
+              "An ice-free Arctic Ocean would support a very different ecosystem than it does presently",
+              "In the spring, melting sea ice would cause more icebergs to be created and to drift south into shipping routes"
             ],
             "correctAnswer": [
-              "The native fish species were still able to reproduce only in side streams of the river below the dam where the annual temperature range remains approximately 50 degrees."
+              "Such a warm Arctic Ocean would trigger the melting of massive landbased glaciers in the Arctic"
             ],
-            "explanation": "For the hypothesis to be tenable it is important that the fish in streams in the Emerald River area that retain a wide temperature difference have not lost their ability to reproduce. Choice A asserts that these fish could still reproduce and is thus the best answer. Choice B undermines the hypothesis by suggesting a completely different hypothesis; choice C tends to support the claim that the temperature variation has lessened but does not show that this is the right explanation; since D relates a development after the native species began to decline, it does not bear on the hypothesis, which concerns the decline’s original cause; and choice E emphasizes the seriousness of the problem but sheds no light on what causes it."
+            "explanation": "Because the warming Arctic Ocean would accelerate the melting of massive land-based glaciers in the Arctic, adding significant amounts of water to the oceans. This influx of freshwater would raise global sea levels, leading to serious consequences."
           }
         },
         "quantitative1": {
