@@ -24,10 +24,16 @@ interface ResultDashboardProps {
 }
 
 const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Score, verbal2Score, quant1Score, quant2Score, onSectionChange }) => {
-    verbal1Score = Math.floor(verbal1Score * 1.5);
-    verbal2Score = Math.floor(verbal2Score * 1.5);
-    quant1Score = Math.floor(quant1Score * 1.5);
-    quant2Score = Math.floor(quant2Score * 1.5);
+    const searchParams = new URLSearchParams(window.location.search);
+    const resultDashboardQuery = searchParams.get('resultDashboard');
+    if (resultDashboardQuery === 'true') { }
+    else {
+        verbal1Score = Math.floor(verbal1Score * 1.5);
+        verbal2Score = Math.floor(verbal2Score * 1.5);
+        quant1Score = Math.floor(quant1Score * 1.5);
+        quant2Score = Math.floor(quant2Score * 1.5);
+    };
+
 
     const handleSectionChange = (section: string) => {
         onSectionChange(section); // Call the function passed from page.tsx
@@ -74,7 +80,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardContent>
                                     <div className="text-2xl font-bold"> {260 + verbal1Score + verbal2Score + quant1Score + quant2Score} </div>
                                     <p className="text-xs text-muted-foreground">
-                                        +100% from last attempt
+                                        {/* +100% from last attempt */}
                                     </p>
                                 </CardContent>
                             </Card>
@@ -101,7 +107,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardContent>
                                     <div className="text-2xl font-bold">{awaScore}/6</div>
                                     <p className="text-xs text-muted-foreground">
-                                        +180.1% from last month
+                                        {/* +180.1% from last month */}
                                     </p>
                                 </CardContent>
                             </Card>
@@ -125,7 +131,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardContent>
                                     <div className="text-2xl font-bold">{130 + verbal1Score + verbal2Score}</div>
                                     <p className="text-xs text-muted-foreground">
-                                        +19% from last month
+                                        {/* +19% from last month */}
                                     </p>
                                 </CardContent>
                             </Card>
@@ -150,7 +156,7 @@ const ResultDashboard: React.FC<ResultDashboardProps> = ({ awaScore, verbal1Scor
                                 <CardContent>
                                     <div className="text-2xl font-bold">{130 + quant1Score + quant2Score}</div>
                                     <p className="text-xs text-muted-foreground">
-                                        +201 since last hour
+                                        {/* +201 since last hour */}
                                     </p>
                                 </CardContent>
                             </Card>

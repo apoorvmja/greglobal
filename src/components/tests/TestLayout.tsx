@@ -93,7 +93,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
         <div className="nav-buttons">
           {(showAWAButtons && !isReviewModeResultDashboard) && (
             <>
-              <button>Quit w/Save</button>
+              {/* <button>Quit w/Save</button> */}
               <button onClick={showHelp}>Help</button>
               <button onClick={onContinue}>Continue</button>
             </>
@@ -101,7 +101,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
           {(showVerbalButtons && !isReviewModeResultDashboard) && (
             <>
               <button onClick={onExitSection}>Exit Section</button>
-              <button>Quit w/Save</button>
+              {/* <button>Quit w/Save</button> */}
               <button onClick={onMark}>Mark</button>
               <button onClick={showReview}>Review</button>
               <button onClick={showHelp}>Help</button>
@@ -120,7 +120,7 @@ const TestLayout: React.FC<TestLayoutProps> = ({ children, currentSection, onCon
           {(showQuantButtons && !isReviewModeResultDashboard) && (
             <>
               <button onClick={onExitSection}>Exit Section</button>
-              <button>Quit w/Save</button>
+              {/* <button>Quit w/Save</button> */}
               <button onClick={onMark}>Mark</button>
               <button onClick={showReview}>Review</button>
               <button onClick={OpenCloseCalculator}>{!showCalculator ? "Open Calculator" : "Close Calculator"}</button>

@@ -73,9 +73,9 @@ export function getMenuList(pathname: string): Group[] {
           submenus: []
         },
         {
-          href: "https://gre-resources.com/gre-books",
-          label: "Resources",
-          active: pathname.includes("/gre-resources"),
+          href: "/prev-results",
+          label: "Previous Results",
+          active: pathname.includes("/prev-results"),
           icon: Book,
           submenus: []
         },
@@ -85,7 +85,14 @@ export function getMenuList(pathname: string): Group[] {
           active: pathname.includes("/gre-voucher"),
           icon: Tag,
           submenus: []
-        }
+        },
+        {
+          href: "https://gre-resources.com/gre-books",
+          label: "Resources",
+          active: pathname.includes("/gre-resources"),
+          icon: Book,
+          submenus: []
+        },
       ]
     },
     {

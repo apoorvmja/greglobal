@@ -21,6 +21,9 @@ import InitialVerbalInstructions from '@/components/tests/InitialVerbalInstructi
 import InitialQuantInstructions from '@/components/tests/InitialQuantInstruction';
 import testQuestions from '@/components/tests/testQuestions.json'; // Import your JSON file
 import ResultDashboard from '@/components/tests/ResultDashboard';
+import { useUser } from '@clerk/nextjs';
+import { doc, setDoc, collection, addDoc } from "firebase/firestore"; // Import Firestore functions
+import { db } from "@/firebase.config"; // Import your Firebase configuration
 
 interface AWASection {
   prompt: string;
@@ -72,6 +75,7 @@ interface Test {
 }
 
 export default function TagsPage() {
+  const { user } = useUser(); // Clerk user data
   const pathname = usePathname();
   const id = pathname.split('/').pop();
   const [test, setTest] = useState<Test | null>(null);
@@ -101,9 +105,35 @@ export default function TagsPage() {
     } else {
       setError('No ID found in pathname');
     }
+
+    const searchParams = new URLSearchParams(window.location.search);
+    const resultDashboardQuery = searchParams.get('resultDashboard');
+    if (resultDashboardQuery) {
+      setCurrentSection('resultDashboard');
+
+      // Retrieve and parse the stored data from sessionStorage
+      const storedAttempt = sessionStorage.getItem('selectedTestAttempt');
+      if (storedAttempt) {
+        const attemptData = JSON.parse(storedAttempt);
+
+        // Now you can access individual scores and answers
+        setAWAScore(attemptData.awaScore || 0);
+        setVerbal1Score(attemptData.verbal1Score || 0);
+        setVerbal2Score(attemptData.verbal2Score || 0);
+        setQuant1Score(attemptData.quant1Score || 0);
+        setQuant2Score(attemptData.quant2Score || 0);
+
+        // Optionally, set the review answers as well
+        setVerbal1ReviewAnswers(attemptData.verbal1Answers || {});
+        setVerbal2ReviewAnswers(attemptData.verbal2Answers || {});
+        setQuant1ReviewAnswers(attemptData.quant1Answers || {});
+        setQuant2ReviewAnswers(attemptData.quant2Answers || {});
+        setAwaEssayContent(attemptData.awaEssayContent || '')
+      }
+    }
   }, [id]);
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (currentSection === 'testDetails') setCurrentSection('awaInstructions');
     else if (currentSection === 'awaInstructions') setCurrentSection('awa');
     else if (currentSection === 'awa') setCurrentSection('VerbalInstructions');
@@ -112,7 +142,63 @@ export default function TagsPage() {
     else if (currentSection === 'verbal2') setCurrentSection('QuantInstructions');
     else if (currentSection === 'QuantInstructions') setCurrentSection('quantitative1');
     else if (currentSection === 'quantitative1') setCurrentSection('quantitative2');
-    else if (currentSection === 'quantitative2') setCurrentSection('resultDashboard');
+    else if (currentSection === 'quantitative2') { setCurrentSection('resultDashboard'); };
+  };
+
+  const [hasStoredAttempt, setHasStoredAttempt] = useState(false);
+
+  useEffect(() => {
+    // Trigger storeAttemptResult only when currentSection changes to 'resultDashboard'
+    if (currentSection === 'resultDashboard') {
+      storeAttemptResult(); // Store the result when navigating to the result dashboard
+      setHasStoredAttempt(true)
+    }
+  }, [currentSection, quant2ReviewAnswers, verbal2ReviewAnswers, awaScore, verbal1Score, quant1Score]);
+
+
+  const storeAttemptResult = () => {
+    if (!user || hasStoredAttempt) return; // Exit if user is not logged in or attempt is already stored
+
+    const userID = user.id; // Get the user's ID from Clerk
+    const testID = pathname.split('/').pop(); // Extract the test ID from the URL
+
+    // Remove any undefined values from the answers
+    const sanitizedVerbal1Answers = Object.fromEntries(
+      Object.entries(verbal1ReviewAnswers).filter(([key, value]) => value !== undefined)
+    );
+    const sanitizedVerbal2Answers = Object.fromEntries(
+      Object.entries(verbal2ReviewAnswers).filter(([key, value]) => value !== undefined)
+    );
+    const sanitizedQuant1Answers = Object.fromEntries(
+      Object.entries(quant1ReviewAnswers).filter(([key, value]) => value !== undefined)
+    );
+    const sanitizedQuant2Answers = Object.fromEntries(
+      Object.entries(quant2ReviewAnswers).filter(([key, value]) => value !== undefined)
+    );
+
+    // Collect the test data with sanitized answers
+    const testAttemptData = {
+      testID: testID || 'unknown',
+      awaScore,
+      verbal1Score: Math.floor(verbal1Score * 1.5),
+      verbal2Score: Math.floor(verbal2Score * 1.5),
+      quant1Score: Math.floor(quant1Score * 1.5),
+      quant2Score: Math.floor(quant2Score * 1.5),
+      awaEssayContent,
+      verbal1Answers: sanitizedVerbal1Answers,
+      verbal2Answers: sanitizedVerbal2Answers,
+      quant1Answers: sanitizedQuant1Answers,
+      quant2Answers: sanitizedQuant2Answers,
+      completionDate: new Date(),
+    };
+
+    try {
+      // Store the test attempt in Firebase and wait for it to complete
+      addDoc(collection(db, `tests/${userID}/testAttempts`), testAttemptData);
+      console.log("Test attempt successfully stored!");
+    } catch (error) {
+      console.error("Error storing test attempt: ", error);
+    }
   };
 
   const handleSectionChangeReviewResultDashboard = (section: string) => {
@@ -135,6 +221,7 @@ export default function TagsPage() {
   };
 
   const handleGoBackToResults = (showResult: boolean) => {
+    console.log(quant2ReviewAnswers)
     setShowResultDashboard(showResult);
     if (showResult) {
       setCurrentSection('resultDashboard');
@@ -209,7 +296,7 @@ export default function TagsPage() {
             <Quantitative
               onBack={() => { }}
               test={test} section="quantitative1"
-              onContinue={(score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
+              onContinue={async (score: number, selectedAnswersReviewResultDashboard: { [key: number]: string | string[] }) => {
                 setQuant1Score(score);
                 setQuant1ReviewAnswers(selectedAnswersReviewResultDashboard);
                 handleContinue();
@@ -225,7 +312,9 @@ export default function TagsPage() {
                 setQuant2Score(score);
                 setQuant2ReviewAnswers(selectedAnswersReviewResultDashboard);
                 handleContinue();
-              }} />}
+              }}
+              isReviewModeResultDashboard={false}
+            />}
           {currentSection === 'resultDashboard' && <ResultDashboard onSectionChange={handleSectionChangeReviewResultDashboard} awaScore={awaScore} verbal1Score={verbal1Score} verbal2Score={verbal2Score} quant1Score={quant1Score} quant2Score={quant2Score} />}
           {currentSection === 'verbal1review' && <Verbal onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="verbal1" PageToVerbalForReviewAnswers={verbal1ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
           {currentSection === 'verbal2review' && <Verbal onContinue={(score) => { setQuant1Score(score); handleContinue(); }} onBack={() => { }} test={test} isReviewModeResultDashboard={true} section="verbal2" PageToVerbalForReviewAnswers={verbal2ReviewAnswers} showResult={() => handleGoBackToResults(true)} />}
