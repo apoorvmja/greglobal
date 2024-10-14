@@ -4,6 +4,7 @@ import TestLayout from './TestLayout';
 interface AWASection {
     prompt: string;
     instructions: string;
+    sample_ans: string;
 }
 
 interface Test {
@@ -66,13 +67,13 @@ const AWA: React.FC<Props> = ({ test, onContinue, isReviewModeResultDashboard = 
 
     const calculateScore = (wordCount: number): number => {
         if (wordCount > 200) {
-            return 6;
-        } else if (wordCount >= 180) {
-            return 5;
-        } else if (wordCount >= 150) {
-            return 4;
-        } else if (wordCount >= 100) {
             return 3;
+        } else if (wordCount >= 180) {
+            return 3;
+        } else if (wordCount >= 150) {
+            return 2;
+        } else if (wordCount >= 100) {
+            return 2;
         } else if (wordCount >= 50) {
             return 2;
         } else if (wordCount >= 20) {
@@ -120,6 +121,18 @@ const AWA: React.FC<Props> = ({ test, onContinue, isReviewModeResultDashboard = 
                     ></textarea>
                 </div>
             </div>
+            {isReviewModeResultDashboard && (
+                <>
+                    <div className='bg-gray-100 rounded-lg p-5 border border-gray-200 shadow-xl mt-10'>
+                        <span className='font-bold'>Sample Answer:</span><br />
+                        <div dangerouslySetInnerHTML={{
+                            __html: Array.isArray(test.sections.awa.sample_ans)
+                                ? test.sections.awa.sample_ans.join(', ').replace(/\n/g, '<br />')
+                                : test.sections.awa.sample_ans.replace(/\n/g, '<br />')
+                        }} />
+                    </div>
+                </>
+            )}
             <style jsx>{`
                 .prompt-container {
                     flex: 1;

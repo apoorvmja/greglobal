@@ -28,6 +28,7 @@ import { db } from "@/firebase.config"; // Import your Firebase configuration
 interface AWASection {
   prompt: string;
   instructions: string;
+  sample_ans: string;
 }
 
 interface VerbalQuestion {
