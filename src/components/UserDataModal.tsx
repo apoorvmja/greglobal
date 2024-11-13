@@ -45,16 +45,21 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
 
   useEffect(() => {
     if (isLoaded && user) {
-      const clerkName = user.fullName || ""
-      const clerkNumber = user.primaryPhoneNumber?.phoneNumber || ""
+      const clerkName = user.fullName || "";
+      const clerkNumber = user.primaryPhoneNumber?.phoneNumber;
+
+      const sessionData = sessionStorage.getItem("formData");
+      const parsedSessionData = sessionData ? JSON.parse(sessionData) : {};
+      const sessionNumber = parsedSessionData.number || "";
+
+      // Set formData with clerk data or sessionStorage fallback
       setFormData((prevData) => ({
         ...prevData,
         name: clerkName,
-        number: clerkNumber,
-      }))
+        number: clerkNumber || sessionNumber || "",
+      }));
     }
-  }, [isLoaded, user])
-
+  }, [isLoaded, user]);
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
@@ -170,14 +175,14 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
           Explore Our FREE Services (here) 😊
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:min-w-[60%] w-[95%] h-[80%] sm:h-auto p-0 overflow-hidden border-0">
+      <DialogContent className="sm:min-w-[60%] w-[95%] h-[80%] sm:h-auto p-0 overflow-hidden border-none bg-none">
         <div className="h-full">
           <img
             src="https://img.freepik.com/free-photo/beautiful-tourist-woman-holding-travel-suitcase-passport-with-tickets-with-smile-face-happy-positive-travel-concept-standing-blue-space_141793-22043.jpg?t=st=1731497539~exp=1731501139~hmac=41fa5cd49bb54ce024accb5fa2840fa155d92619cdcced7b79b63ab741002695&w=826"
             alt="Student With Passort"
             className="object-cover w-full h-full rounded-lg"
           />
-          <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-2 sm:w-auto sm:p-5 bg-black/30">
+          <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-2 sm:w-auto sm:p-5 bg-black/30 rounded-lg">
             <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded-lg shadow-lg">
               <div className="space-y-4 rounded-lg p-1 sm:p-4">
                 <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-black">HOLD ON</h2>
@@ -285,7 +290,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                       </p>
                       <Button
                         variant="link"
-                        onClick={() => { }}
+                        onClick={() => { window.location.href = "/mock-tests" }}
                         className="mt-6 animate-in fade-in duration-1000 delay-700"
                       >
                         Submit another response

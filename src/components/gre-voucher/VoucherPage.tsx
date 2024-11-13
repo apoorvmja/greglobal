@@ -407,7 +407,7 @@ export default function VoucherPage() {
                             className="bg-white rounded-full absolute right-5 top-5 z-[100] cursor-pointer text-gray-700 hover:text-gray-900 transition-transform transform hover:scale-110"
                             size={28}
                         />
-                        <div className="flex sm:flex-row flex-col items-center justify-center sm:justify-evenly h-full gap-4">
+                        <div className="flex md:flex-row  flex-col items-center justify-center sm:justify-evenly h-full gap-4">
                             <Link
                                 href="https://www.youtube.com/watch?v=9CBVCU2EMpY"
                                 target="_blank"
@@ -416,7 +416,7 @@ export default function VoucherPage() {
                                 <Image
                                     src="/FreeGreVoucherPopUp.png"
                                     alt="Get Code for Free"
-                                    className="min-h-full max-w-full rounded-lg object-cover shadow-md"
+                                    className="max-h-[45vh] sm:min-h-full max-w-full rounded-lg object-cover shadow-md"
                                     width={500}
                                     height={500}
                                 />
@@ -427,9 +427,9 @@ export default function VoucherPage() {
                                 className="h-full w-full flex-1 flex items-center justify-center transform transition-transform duration-300 hover:scale-105"
                             >
                                 <Image
-                                    src="/greVoucherPopUp.png"
+                                    src="/GreVoucherPopUp.png"
                                     alt="Buy Voucher"
-                                    className="min-h-full max-w-full rounded-lg object-cover shadow-md"
+                                    className="max-h-[45vh] sm:min-h-full max-w-full rounded-lg object-cover shadow-md"
                                     width={500}
                                     height={500}
                                 />
