@@ -35,7 +35,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
     "Application Material Support",
     "Application Check & Review",
     "SOP/LOR Support",
-    "Scholarship/Assistantship Support",
+    "Scholarship Support",
     "Visa Support",
     "Education Loan Support",
     // "Receive a ₹10,000 Amazon Shopping Voucher when you complete your application process with us and secure your visa 🎁 "
@@ -65,8 +65,8 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
     if (!user) {
       // If not logged in, store data in sessionStorage and redirect to login
       sessionStorage.setItem("formData", JSON.stringify(formData))
-      window.location.href = "https://coherent-killdeer-93.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fmock-tests"
-      // window.location.href = "https://accounts.gregoglobal.com/sign-in?redirect_url=https%3A%2F%2Fgregoglobal.com%2Fmock-tests"
+      // window.location.href = "https://coherent-killdeer-93.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fmock-tests"
+      window.location.href = "https://accounts.gregoglobal.com/sign-in?redirect_url=https%3A%2F%2Fgregoglobal.com%2Fmock-tests"
     }
     else {
       try {
@@ -162,7 +162,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
   return (
     <Dialog open={isOverallModalOpen} onOpenChange={setIsOverallModalOpen}>
       <DialogTrigger asChild>
-        <Button className="hover:bg-black" onClick={() => {
+        <Button className="font-bold rounded-t-none" onClick={() => {
           setIsOverallModalOpen(true)
           if (!ExtractDataFromSessionStorage) { setourFreeServicesModal(true); setgetDetailsModal(false); setsubmittedSuccesfully(false) }
           if (ExtractDataFromSessionStorage) { setgetDetailsModal(true); setourFreeServicesModal(false); setsubmittedSuccesfully(false) }
@@ -170,18 +170,18 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
           Explore Our FREE Services (here) 😊
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:min-w-[60%] w-[90%] h-[80%] sm:h-auto p-0 overflow-hidden bg-[#0085C0] border-0">
+      <DialogContent className="sm:min-w-[60%] w-[95%] h-[80%] sm:h-auto p-0 overflow-hidden border-0">
         <div className="h-full">
           <img
             src="https://img.freepik.com/free-photo/beautiful-tourist-woman-holding-travel-suitcase-passport-with-tickets-with-smile-face-happy-positive-travel-concept-standing-blue-space_141793-22043.jpg?t=st=1731497539~exp=1731501139~hmac=41fa5cd49bb54ce024accb5fa2840fa155d92619cdcced7b79b63ab741002695&w=826"
             alt="Student With Passort"
             className="object-cover w-full h-full rounded-lg"
           />
-          <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-3 sm:w-auto sm:p-5 bg-black/30">
+          <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-2 sm:w-auto sm:p-5 bg-black/30">
             <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded-lg shadow-lg">
-              <div className="space-y-4 rounded-lg p-4">
+              <div className="space-y-4 rounded-lg p-1 sm:p-4">
                 <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-black">HOLD ON</h2>
-                <p className="text-sm text-black-800">Check out our free services and enquire today.</p>
+                <p className="text-sm text-black">Check out our free services and enquire today.</p>
                 {GetDetailsModal && (
                   <div className="space-y-4">
                     <Input
@@ -191,7 +191,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                       onChange={handleChange}
                       placeholder="Enter your name"
                       required
-                      className="bg-white"
+                      className="bg-white text-black"
                     />
                     <Input
                       id="number"
@@ -200,7 +200,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                       onChange={handleChange}
                       placeholder="Enter your phone number"
                       required
-                      className="bg-white"
+                      className="bg-white text-black"
                     />
                     <Input
                       id="country"
@@ -209,7 +209,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                       onChange={handleChange}
                       placeholder="Enter your country"
                       required
-                      className="bg-white"
+                      className="bg-white text-black"
                     />
                     <Input
                       id="city"
@@ -218,13 +218,13 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                       onChange={handleChange}
                       placeholder="Enter your city"
                       required
-                      className="bg-white"
+                      className="bg-white text-black"
                     />
                     <div className="flex sm:gap-0 gap-4 justify-between">
-                      <Button type="submit">
+                      <Button type="submit" className="dark:border dark:border-black">
                         Enquire 😊
                       </Button>
-                      <Button type="button" onClick={handleLocation} className="">
+                      <Button type="button" onClick={handleLocation} className="dark:border dark:border-black">
                         Autofill Location
                       </Button>
                     </div>
@@ -232,17 +232,17 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                 )}
                 {OurFreeServicesModal && (
                   <>
-                    <div>
+                    <div className="h-48 overflow-y-scroll">
                       {services.map((service, index) => (
                         <li
                           key={index}
-                          className="opacity-0 animate-fade-in font-mono"
+                          className="opacity-0 animate-fade-in font-mono text-black"
                           style={{ animationDelay: `${index * 1.5}s`, backfaceVisibility: 'hidden' }}
                         >
                           {service.split(".").map((word, i) => (
                             <span
                               key={i}
-                              className="inline-block opacity-0 animate-fade-in text-sm sm:text-base"
+                              className="inline-block opacity-0 animate-fade-in text-xs sm:text-base"
                               style={{ animationDelay: `${index * 0.3 + i * 0.05}s`, backfaceVisibility: 'hidden' }}
                             >
                               {word}{" "}
@@ -250,8 +250,8 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
                           ))}
                         </li>
                       ))}
-                      <Button className="mt-5" onClick={() => { setourFreeServicesModal(!OurFreeServicesModal); setgetDetailsModal(!GetDetailsModal) }}>Enroll Now for FREE 😊</Button>
                     </div>
+                    <Button className="mt-5 dark:border dark:border-black" onClick={() => { setourFreeServicesModal(!OurFreeServicesModal); setgetDetailsModal(!GetDetailsModal) }}>Enroll Now for FREE 😊</Button>
                     <style jsx>{`
                       @keyframes fadeIn {
                           from {

@@ -56,8 +56,7 @@ const TotalTestDisplay: React.FC = () => {
                         </p>
                     </div>
                     <div className="sm:w-[40%] flex flex-col">
-                        <div className="p-5 bg-gray-100 rounded shadow-lg w-full flex flex-col justify-start bg-cover bg-center gap-5 h-[150px] overflow-hidden animate-zoom" style={{ backgroundImage: `url('/application-work-plane.webp')`, }}>
-                            {/* <span className="text-xl font-bold rounded-lg bg-white/60 p-2 ">Get Application Work Done For FREE</span> */}
+                        <div role="status" className="animate-pulse p-5 bg-gray-300 dark:bg-gray-700 rounded-lg rounded-b-none shadow-lg w-full flex flex-col bg-cover bg-center gap-5 h-[150px] overflow-hidden animate-zoom items-center justify-center" style={{ backgroundImage: `url('/application-work-plane.webp')`, }}>
                         </div>
                         <UserDataModal ExtractDataFromSessionStorage={SessionStorageToUserDetailsModal} />
                     </div>
