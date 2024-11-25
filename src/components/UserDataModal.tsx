@@ -172,7 +172,7 @@ export function UserDataModal({ ExtractDataFromSessionStorage }: UserDataModalPr
           if (!ExtractDataFromSessionStorage) { setourFreeServicesModal(true); setgetDetailsModal(false); setsubmittedSuccesfully(false) }
           if (ExtractDataFromSessionStorage) { setgetDetailsModal(true); setourFreeServicesModal(false); setsubmittedSuccesfully(false) }
         }}>
-          Explore Our FREE Services (here) 😊
+          Explore Our FREE Services  <span className="animate-pulse ml-1"> (Click)</span> 😊
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:min-w-[60%] w-[95%] h-[80%] sm:h-auto p-0 overflow-hidden border-none bg-none">
