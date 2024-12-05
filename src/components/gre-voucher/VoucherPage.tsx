@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { X } from "lucide-react";
+import { Info, X } from "lucide-react";
 import Image from "next/image";
 
 
@@ -40,7 +40,7 @@ export default function VoucherPage() {
                                 <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Available Discounts <span className="hidden">On</span><br /><span className="text-[#9333EA] dark:text-white">GRE Registration</span></h1>
                                 <p className="lg:w-[60%] mt-8 text-gray-700 dark:text-gray-300">Gre Voucher Code: Save @15.5%- on your ETS GRE Registration Fee! With the help of a GRE exam voucher, you can save huge money on exam fees.</p>
                                 <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                                    <Button onClick={() => { toggleModal() }}
+                                    <Button onClick={() => { window.location.href = "https://rzp.io/l/k07xk6e" }}
                                         className="bg-[#9333EA] text-white relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                     >
                                         GRE Voucher!
@@ -77,15 +77,27 @@ export default function VoucherPage() {
 
                 <div id="features" className="mt-4 mb-8">
                     <div>
-                        <div className="md:w-2/3 lg:w-1/2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-secondary">
-                                <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd" />
-                            </svg>
+                        <div className="flex flex-col md:flex-row justify-between items-center gap-5">
+                            <div className="md:w-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-secondary">
+                                    <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd" />
+                                </svg>
 
-                            <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
-                                MJ Study Abroad is a Verified ETS Partner Since 1998
-                            </h2>
-                            <p className="text-gray-600 dark:text-gray-300">As a trusted partner of ETS since 1998, MJ Study Abroad has been committed to helping students achieve their dreams of studying abroad. We offer comprehensive guidance, resources, and support tailored to each student&apos;s needs. Whether you&apos;re preparing for TOEFL, GRE, or any other standardized test, our expertise ensures you&apos;re on the right path to success. Join the thousands of students who have already benefited from our services and take the next step in your academic journey with confidence.</p>
+                                <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                                    MJ Study Abroad is a Verified ETS Partner Since 1998
+                                </h2>
+                                <p className="text-gray-600 dark:text-gray-300">As a trusted partner of ETS since 1998, MJ Study Abroad has been committed to helping students achieve their dreams of studying abroad. We offer comprehensive guidance, resources, and support tailored to each student&apos;s needs. Whether you&apos;re preparing for TOEFL, GRE, or any other standardized test, our expertise ensures you&apos;re on the right path to success. Join the thousands of students who have already benefited from our services and take the next step in your academic journey with confidence.</p>
+                            </div>
+                            <div className="md:w-[50%] items-center flex flex-col">
+                                <video className="w-full h-auto rounded-lg" controls>
+                                    <source src="/mja-getting-award.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div className="text-gray-800 font-semibold flex justify-center mt-1 gap-1 text-xs sm:text-base">
+                                    <Info />
+                                    MJ Study Abroad was awarded for the highest student registrations in all of North India by ETS for 2024–2025.
+                                </div>
+                            </div>
                         </div>
                         <div
                             className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
