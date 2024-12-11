@@ -172,7 +172,7 @@ export default function VoucherPage() {
                                         <h5
                                             className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
                                         >
-                                            24/7 Customer Support
+                                            10-6pm Customer Support
                                         </h5>
                                         <p className="text-gray-600 dark:text-gray-300">
                                             Our dedicated support team is available around the clock to assist with any queries.
