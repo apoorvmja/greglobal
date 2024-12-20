@@ -2,15 +2,38 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Info, X } from "lucide-react";
+import { CheckCircle, Info, X } from "lucide-react";
 import Image from "next/image";
+import ToeflVoucherWhyUS from "./ToeflVoucherWhyUS";
+import ToeflVoucherHero from "./ToeflVoucherHero";
+import TOEFLPricing from "./ToeflVoucherPricing";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
+import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from '@/components/ui/form'
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/components/ui/select'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import * as z from 'zod'
+import { Input } from '@/components/ui/input'
+import { db } from "@/firebase.config"; // Path to your firebase.ts
+import { collection, addDoc } from "firebase/firestore";
 
+
+
+const formSchema = z.object({
+    firstName: z.string().min(2, 'First name must be at least 2 characters'),
+    lastName: z.string().min(2, 'Last name must be at least 2 characters'),
+    email: z.string().email('Invalid email address'),
+    contactNumber: z.string().regex(/^\d{10}$/, 'Contact number must be 10 digits'),
+    voucher: z.enum(['1000', '1500'], {
+        required_error: 'Please select a voucher option',
+    }),
+})
 
 export default function VoucherPage() {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const toggleModal = () => {
-        setModalOpen(!isModalOpen);
-    };
+    // const [isModalOpen, setModalOpen] = useState(false);
+    // const toggleModal = () => {
+    //     setModalOpen(!isModalOpen);
+    // };
     const primaryColor = "#9333EA";
     const secondaryColor = "#ff7e33";
     const infoColor = "#0C63E7";
@@ -26,9 +49,58 @@ export default function VoucherPage() {
         800: "#293041",
         900: "#0f172a"
     };
+    const discountPercentage = "6.7%"
+    const discountValue = "21000"
+    const [openEnquiryModal, setOpenEnquiryModal] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
+
+    const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            contactNumber: '',
+            voucher: undefined,
+        },
+    })
+
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        // console.log(values)
+        // Handle form submission here
+        const formData = {
+            firstName: values.firstName,
+            lastName: values.lastName,
+            email: values.email,
+            contactNumber: values.contactNumber,
+            voucher: values.voucher,
+            submittedAt: new Date().toISOString(), // Optional timestamp
+        };
+
+        try {
+            // Add the document to the "voucher" collection, letting Firebase generate the ID
+            const docRef = await addDoc(collection(db, "GRE_Voucher_Purchase"), formData);
+            console.log("Form details saved successfully with ID: ", docRef.id);
+            setIsSubmitted(true);
+            form.reset();
+
+            setTimeout(() => {
+                setIsSubmitted(false);
+                setOpenEnquiryModal(false);
+            }, 10000);
+        } catch (error) {
+            console.error("Error saving form details: ", error);
+        }
+    }
     return (
         <>
             <div className="px-10">
+
+                <ToeflVoucherHero onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
+                <TOEFLPricing onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
+                <ToeflVoucherWhyUS />
+
                 <div className="relative" id="home">
                     <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
                         <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
@@ -38,9 +110,12 @@ export default function VoucherPage() {
                         <div className="relative pt-20 sm:pt-36 ml-auto">
                             <div className="text-center mx-auto flex flex-col items-center justify-center">
                                 <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Available Discounts <span className="hidden">On</span><br /><span className="text-[#9333EA] dark:text-white">GRE Registration</span></h1>
-                                <p className="lg:w-[60%] mt-8 text-gray-700 dark:text-gray-300">Gre Voucher Code: Save @15.5%- on your ETS GRE Registration Fee! With the help of a GRE exam voucher, you can save huge money on exam fees.</p>
+                                <p className="lg:w-[60%] mt-8 text-gray-700 dark:text-gray-300">Gre Voucher Code: Save @{discountPercentage}- on your ETS GRE Registration Fee! With the help of a GRE exam voucher, you can save money on exam fees.</p>
                                 <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                                    <Button onClick={() => { window.location.href = "https://rzp.io/l/k07xk6e" }}
+                                    <Button onClick={() => {
+                                        // window.location.href = "https://rzp.io/l/k07xk6e"
+                                        window.location.href = "/gre-voucher"
+                                    }}
                                         className="bg-[#9333EA] text-white relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                     >
                                         GRE Voucher!
@@ -59,7 +134,7 @@ export default function VoucherPage() {
                                 <div className="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 w-full sm:flex justify-evenly">
                                     <div className="text-left">
                                         <h6 className="text-lg font-semibold text-gray-700 dark:text-white">The lowest price</h6>
-                                        <p className="mt-2 text-gray-500">Original Price: 22,500<br />Our Price: 19,000</p>
+                                        <p className="mt-2 text-gray-500">Original Price: 22,500<br />Our Price: {discountValue}</p>
                                     </div>
                                     <div className="text-left">
                                         <h6 className="text-lg font-semibold text-gray-700 dark:text-white">The fastest on the market</h6>
@@ -147,7 +222,7 @@ export default function VoucherPage() {
                                             Significant Savings
                                         </h5>
                                         <p className="text-gray-600 dark:text-gray-300">
-                                            Save 15.5% on your GRE exam fees with our exclusive discount vouchers.
+                                            Save {discountPercentage} on your GRE exam fees with our exclusive discount vouchers.
                                         </p>
                                     </div>
                                     {/* <a href="#" className="flex items-center justify-between group-hover:text-secondary">
@@ -242,10 +317,10 @@ export default function VoucherPage() {
                             </div>
                             <div className="md:7/12 lg:w-1/2">
                                 <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-                                    Get GRE Vouchers at 15.5% Off!
+                                    Get GRE Vouchers at {discountPercentage} Off!
                                 </h2>
                                 <p className="my-8 text-gray-600 dark:text-gray-300">
-                                    Save big on your GRE preparation with our exclusive discount codes! Purchase a GRE voucher from us and enjoy a 15.5% discount on the official exam fee. This is a limited-time offer, so grab your voucher now and take the next step toward achieving your academic goals without breaking the bank. <br /> <br /> Our vouchers are verified and easy to use, ensuring a hassle-free experience when you register for the GRE. Plus, with 24/7 customer support, we&apos;re here to help you every step of the way.
+                                    Save big on your GRE preparation with our exclusive discount codes! Purchase a GRE voucher from us and enjoy a {discountPercentage} discount on the official exam fee. This is a limited-time offer, so grab your voucher now and take the next step toward achieving your academic goals without breaking the bank. <br /> <br /> Our vouchers are verified and easy to use, ensuring a hassle-free experience when you register for the GRE. Plus, with 24/7 customer support, we&apos;re here to help you every step of the way.
                                 </p>
                                 <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
                                     <div className="mt-8 flex gap-4 md:items-center">
@@ -352,7 +427,7 @@ export default function VoucherPage() {
                                         <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                         How do I use the GRE discount voucher?
                                     </h3>
-                                    <p className="text-gray-500 dark:text-gray-400">Once you purchase a GRE discount voucher from us, you&apos;ll receive a unique code via email. During the GRE registration process on the ETS website, you can apply this code at checkout to receive a 15.5% discount on your exam fee.</p>
+                                    <p className="text-gray-500 dark:text-gray-400">Once you purchase a GRE discount voucher from us, you&apos;ll receive a unique code via email. During the GRE registration process on the ETS website, you can apply this code at checkout to receive a {discountPercentage} discount on your exam fee.</p>
                                 </div>
                                 <div className="mb-10">
                                     <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -409,9 +484,135 @@ export default function VoucherPage() {
                         </div>
                     </div>
                 </section>
+
+                <Dialog open={openEnquiryModal} onOpenChange={setOpenEnquiryModal}>
+                    <DialogContent className="sm:max-w-[425px]">
+                        {isSubmitted ? (
+                            <>
+                                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                                <DialogTitle className="text-2xl font-bold mb-2">Thank You!</DialogTitle>
+                                <DialogDescription>
+                                    Your enquiry has been submitted successfully. We'll get back to you soon.
+                                </DialogDescription>
+                                <Button onClick={() => {
+                                    // window.location.href = "https://wa.me/918802880181?text=Hi%2C%20I%E2%80%99m%20interested%20in%20purchasing%20a%20TOEFL%20voucher.%20Could%20you%20share%20the%20details%3F"
+                                    window.location.href = "https://chat.whatsapp.com/CHwPiz6xEpHC0WSivb2UN7"
+                                }}
+                                    className="gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="green"
+                                        className="bi bi-whatsapp"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                    </svg>
+                                    Join MS in US Community
+                                </Button>
+                            </>
+                        ) : (
+                            <>
+                                <DialogHeader>
+                                    <DialogTitle>Enquiry Form</DialogTitle>
+                                    <DialogDescription>
+                                        Please fill out the form below to enquire about our GRE exam discounts.
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <Form {...form}>
+                                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                                        <FormField
+                                            control={form.control}
+                                            name="firstName"
+                                            render={({ field }) => (
+                                                <FormItem>
+                                                    <FormLabel>First Name</FormLabel>
+                                                    <FormControl>
+                                                        <Input placeholder="" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                        />
+                                        <FormField
+                                            control={form.control}
+                                            name="lastName"
+                                            render={({ field }) => (
+                                                <FormItem>
+                                                    <FormLabel>Last Name</FormLabel>
+                                                    <FormControl>
+                                                        <Input placeholder="" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                        />
+                                        <FormField
+                                            control={form.control}
+                                            name="email"
+                                            render={({ field }) => (
+                                                <FormItem>
+                                                    <FormLabel>Email</FormLabel>
+                                                    <FormControl>
+                                                        <Input placeholder="" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                        />
+                                        <FormField
+                                            control={form.control}
+                                            name="contactNumber"
+                                            render={({ field }) => (
+                                                <FormItem>
+                                                    <FormLabel>Contact Number</FormLabel>
+                                                    <FormControl>
+                                                        <Input placeholder="" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                        />
+                                        <FormField
+                                            control={form.control}
+                                            name="voucher"
+                                            render={({ field }) => (
+                                                <FormItem className='overflow-hidden'>
+                                                    <FormLabel>Select your voucher</FormLabel>
+                                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                                        <FormControl>
+                                                            <SelectTrigger>
+                                                                <SelectValue placeholder="Select a voucher option" />
+                                                            </SelectTrigger>
+                                                        </FormControl>
+                                                        <SelectContent >
+                                                            <SelectItem value="1000">
+                                                                INR 1,000
+                                                                {/* (You will get the voucher code on your registered Email ID) */}
+                                                            </SelectItem>
+                                                            <SelectItem value="1500">
+                                                                INR 1,500
+                                                                {/* (We will book the exam slot for you, you will not get the voucher code) */}
+                                                            </SelectItem>
+                                                        </SelectContent>
+                                                    </Select>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                        />
+                                        <DialogFooter>
+                                            <Button type="submit" className="w-full">Submit Enquiry</Button>
+                                        </DialogFooter>
+                                    </form>
+                                </Form>
+                            </>
+                        )}
+                    </DialogContent>
+                </Dialog>
             </div >
 
-            {isModalOpen && (
+            {/* {isModalOpen && (
                 <div className="z-[100] fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
                     <div className="backdrop-blur-sm rounded-lg h-[90vh] sm:h-[80vh] sm:w-auto w-[90%]  flex flex-col relative shadow-lg">
                         <X
@@ -449,8 +650,7 @@ export default function VoucherPage() {
                         </div>
                     </div>
                 </div>
-            )
-            }
+            )} */}
         </>
     )
 }
