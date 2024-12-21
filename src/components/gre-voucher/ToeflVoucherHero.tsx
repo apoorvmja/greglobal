@@ -9,6 +9,11 @@ import { useState } from 'react'
 
 
 export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButtonClick: () => void }) {
+    const offers = [
+        { amount: 1500, type: "Exam Booking", Avaiable: "Available" },
+        { amount: 1000, type: "Voucher", Avaiable: "Available" },
+        { amount: 5600, type: "Discount Code", Avaiable: "Not Available" },
+    ];
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
             <Card className="mx-auto max-w-5xl overflow-hidden">
@@ -23,26 +28,50 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
 
                 <CardContent className="grid gap-8 p-6 md:p-8 lg:grid-cols-2">
                     <div className="space-y-6">
-                        {[
-                            { amount: 1500, type: 'Exam Booking', Avaiable: "Available" },
-                            { amount: 1000, type: 'Voucher', Avaiable: "Available" },
-                            { amount: 5600, type: 'Discount Code', Avaiable: "Not Available" },
-                        ].map((offer, index) => (
-                            <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
-                                <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
-                                    <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
-                                </div>
-                                <div className="flex-1 space-y-1">
-                                    <p className="font-medium">Save on GRE {offer.type}</p>
-                                    <div className="flex items-center space-x-2 gap-2">
-                                        <Badge variant="secondary" className="text-lg">
-                                            INR {offer.amount.toLocaleString()}
-                                        </Badge>
-                                        ({offer.Avaiable})
-                                    </div>
+
+                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                            <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
+                                <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
+                            </div>
+                            <div className="flex-1 space-y-1">
+                                <p className="font-medium">Save on GRE Discount Code</p>
+                                <div className="flex items-center space-x-2 gap-2">
+                                    <Badge variant="secondary" className="text-lg">
+                                        INR 5,600
+                                    </Badge>
+                                    Not Available
                                 </div>
                             </div>
-                        ))}
+                        </div>
+                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                            <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
+                                <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
+                            </div>
+                            <div className="flex-1 space-y-1">
+                                <p className="font-medium">Save on GRE Voucher</p>
+                                <div className="flex items-center space-x-2 gap-2">
+                                    <Badge variant="secondary" className="text-lg">
+                                        INR 1,000
+                                    </Badge>
+                                    Available
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                            <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
+                                <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
+                            </div>
+                            <div className="flex-1 space-y-1">
+                                <p className="font-medium">Save on GRE Exam Booking</p>
+                                <div className="flex items-center space-x-2 gap-2">
+                                    <Badge variant="secondary" className="text-lg">
+                                        INR 1,500
+                                    </Badge>
+                                    Available
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div className="relative overflow-hidden rounded-2xl">

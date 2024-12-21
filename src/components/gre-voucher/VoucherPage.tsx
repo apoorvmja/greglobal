@@ -112,14 +112,16 @@ export default function VoucherPage() {
                                 <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Available Discounts <span className="hidden">On</span><br /><span className="text-[#9333EA] dark:text-white">GRE Registration</span></h1>
                                 <p className="lg:w-[60%] mt-8 text-gray-700 dark:text-gray-300">Gre Voucher Code: Save @{discountPercentage}- on your ETS GRE Registration Fee! With the help of a GRE exam voucher, you can save money on exam fees.</p>
                                 <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                                    <Button onClick={() => {
-                                        // window.location.href = "https://rzp.io/l/k07xk6e"
-                                        window.location.href = "/gre-voucher"
-                                    }}
-                                        className="bg-[#9333EA] text-white relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                    >
-                                        GRE Voucher!
-                                    </Button>
+                                    <Link href="/gre-voucher">
+                                        <Button onClick={() => {
+                                            // window.location.href = "https://rzp.io/l/k07xk6e"
+                                            // window.location.href = "/gre-voucher"
+                                        }}
+                                            className="bg-[#9333EA] text-white relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                                        >
+                                            GRE Voucher!
+                                        </Button>
+                                    </Link>
                                     <a
                                         href="https://www.toeflgoglobal.com/toefl-voucher"
                                         target="_blank"
@@ -492,7 +494,7 @@ export default function VoucherPage() {
                                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                                 <DialogTitle className="text-2xl font-bold mb-2">Thank You!</DialogTitle>
                                 <DialogDescription>
-                                    Your enquiry has been submitted successfully. We'll get back to you soon.
+                                    Your enquiry has been submitted successfully. We&apos;ll get back to you soon.
                                 </DialogDescription>
                                 <Button onClick={() => {
                                     // window.location.href = "https://wa.me/918802880181?text=Hi%2C%20I%E2%80%99m%20interested%20in%20purchasing%20a%20TOEFL%20voucher.%20Could%20you%20share%20the%20details%3F"
