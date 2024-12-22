@@ -171,7 +171,7 @@ export default function VoucherPage() {
                                     <source src="/mja-getting-award.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
-                                <div className="text-gray-800 font-semibold flex justify-center mt-1 gap-1 text-xs sm:text-base">
+                                <div className="text-gray-800 font-semibold flex justify-center mt-1 gap-1 text-xs sm:text-base dark:text-white">
                                     <Info />
                                     MJ Study Abroad was awarded for the highest student registrations in all of North India by ETS for 2024–2025.
                                 </div>

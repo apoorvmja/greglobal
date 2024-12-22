@@ -10,7 +10,7 @@ export default function ToeflVoucherWhyUS() {
         <div className="container mx-auto py-16 px-4">
             <h2 className="text-4xl font-bold text-center mb-12">Why Choose Us?</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
                     <CardHeader className="bg-primary text-primary-foreground p-6 bg-gray-50">
                         <CardTitle className="flex items-center gap-3 text-2xl text-black/90">
                             <TooltipProvider>
@@ -48,9 +48,9 @@ export default function ToeflVoucherWhyUS() {
                     </CardFooter>
                 </Card>
 
-                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
                     <CardHeader className="bg-secondary text-secondary-foreground p-6 bg-gray-50">
-                        <CardTitle className="flex items-center gap-3 text-2xl">
+                        <CardTitle className="flex items-center gap-3 text-2xl text-black/90">
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger>
@@ -86,9 +86,9 @@ export default function ToeflVoucherWhyUS() {
                     </CardFooter>
                 </Card>
 
-                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
                     <CardHeader className="bg-accent text-accent-foreground p-6 bg-gray-50">
-                        <CardTitle className="flex items-center gap-3 text-2xl">
+                        <CardTitle className="flex items-center gap-3 text-2xl text-black/90">
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger>

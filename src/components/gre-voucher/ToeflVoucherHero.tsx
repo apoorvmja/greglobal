@@ -15,7 +15,7 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
         { amount: 5600, type: "Discount Code", Avaiable: "Not Available" },
     ];
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+        <div className="min-h-screen dark:bg-none bg-gradient-to-b from-slate-50 to-slate-100">
             <Card className="mx-auto max-w-5xl overflow-hidden">
                 <CardHeader className="space-y-4 p-6 md:p-8 text-center">
                     <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
