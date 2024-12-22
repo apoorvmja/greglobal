@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CheckCircle, Info, X } from "lucide-react";
+import { CheckCircle, Info, Loader, X } from "lucide-react";
 import Image from "next/image";
 import ToeflVoucherWhyUS from "./ToeflVoucherWhyUS";
 import ToeflVoucherHero from "./ToeflVoucherHero";
@@ -53,7 +53,7 @@ export default function VoucherPage() {
     const discountValue = "21000"
     const [openEnquiryModal, setOpenEnquiryModal] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false)
-
+    const [loading, setLoading] = useState(false)
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -80,6 +80,7 @@ export default function VoucherPage() {
 
         try {
             // Add the document to the "voucher" collection, letting Firebase generate the ID
+            setLoading(true)
             const docRef = await addDoc(collection(db, "GRE_Voucher_Purchase"), formData);
             console.log("Form details saved successfully with ID: ", docRef.id);
             setIsSubmitted(true);
@@ -92,11 +93,11 @@ export default function VoucherPage() {
         } catch (error) {
             console.error("Error saving form details: ", error);
         }
+        setLoading(false)
     }
     return (
         <>
-            <div className="px-10">
-
+            <div className="sm:px-10">
                 <ToeflVoucherHero onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
                 <TOEFLPricing onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
                 <ToeflVoucherWhyUS />
@@ -115,7 +116,7 @@ export default function VoucherPage() {
                                     <Link href="/gre-voucher">
                                         <Button onClick={() => {
                                             // window.location.href = "https://rzp.io/l/k07xk6e"
-                                            // window.location.href = "/gre-voucher"
+                                            // window.location.href = "/gre-svoucher"
                                         }}
                                             className="bg-[#9333EA] text-white relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                         >
@@ -152,7 +153,7 @@ export default function VoucherPage() {
                     </div>
                 </div>
 
-                <div id="features" className="mt-4 mb-8">
+                <div id="features" className="mt-4 mb-8 px-3">
                     <div>
                         <div className="flex flex-col md:flex-row justify-between items-center gap-5">
                             <div className="md:w-[50%]">
@@ -299,7 +300,7 @@ export default function VoucherPage() {
                     </div>
                 </div>
 
-                <div id="solution" className="mb-5">
+                <div id="solution" className="mb-5 px-3">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-sky-500">
                             <path fill-rule="evenodd" d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z" clip-rule="evenodd" />
@@ -604,7 +605,9 @@ export default function VoucherPage() {
                                             )}
                                         />
                                         <DialogFooter>
-                                            <Button type="submit" className="w-full">Submit Enquiry</Button>
+                                            <Button type="submit" className="w-full">
+                                                {loading ? (<Loader />) : "Submit Enquiry"}
+                                            </Button>
                                         </DialogFooter>
                                     </form>
                                 </Form>
