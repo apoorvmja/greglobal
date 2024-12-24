@@ -34,7 +34,7 @@ const pricingOptions = [
 export default function TOEFLPricing({ onEnquiryButtonClick }: { onEnquiryButtonClick: () => void }) {
     return (
         <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">TOEFL Exam Booking Options</h1>
+            <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">GRE Exam Booking Options</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {pricingOptions.map((option, index) => (
                     <Card key={index} className={`flex flex-col ${option.popular ? 'border-gray-800' : ''}`}>
