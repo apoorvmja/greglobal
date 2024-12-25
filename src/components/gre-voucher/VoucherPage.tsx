@@ -102,7 +102,7 @@ export default function VoucherPage() {
                 <TOEFLPricing onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
                 <ToeflVoucherWhyUS />
 
-                <div className="relative" id="home">
+                {/* <div className="relative" id="home">
                     <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
                         <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
                         <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
@@ -151,7 +151,7 @@ export default function VoucherPage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div id="features" className="mt-4 mb-8 px-3">
                     <div>
@@ -354,7 +354,7 @@ export default function VoucherPage() {
                     </div>
                 </div>
 
-                <div className="text-gray-600 dark:text-gray-300" id="reviews">
+                <div className="text-gray-600 dark:text-gray-300 mt-20" id="reviews">
                     <div>
                         <div className="mb-20 space-y-4 px-6 md:px-0">
                             <h2 className="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
@@ -518,9 +518,10 @@ export default function VoucherPage() {
                         ) : (
                             <>
                                 <DialogHeader>
-                                    <DialogTitle>Enquiry Form</DialogTitle>
+                                    <DialogTitle>Request a call</DialogTitle>
                                     <DialogDescription>
-                                        Please fill out the form below to enquire about our GRE exam discounts.
+                                        Bussiness Timings 10am - 6pm
+                                        {/* Please fill out the form below to enquire about our GRE exam discounts. */}
                                     </DialogDescription>
                                 </DialogHeader>
                                 <Form {...form}>
@@ -590,12 +591,12 @@ export default function VoucherPage() {
                                                             </SelectTrigger>
                                                         </FormControl>
                                                         <SelectContent >
-                                                            <SelectItem value="1000">
-                                                                INR 1,000
+                                                            <SelectItem value="Voucher_Purchase">
+                                                                Voucher Purchase
                                                                 {/* (You will get the voucher code on your registered Email ID) */}
                                                             </SelectItem>
-                                                            <SelectItem value="1500">
-                                                                INR 1,500
+                                                            <SelectItem value="Exam_Booking">
+                                                                Exam Booking
                                                                 {/* (We will book the exam slot for you, you will not get the voucher code) */}
                                                             </SelectItem>
                                                         </SelectContent>

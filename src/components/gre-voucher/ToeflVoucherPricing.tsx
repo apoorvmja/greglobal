@@ -86,7 +86,8 @@ export default function TOEFLPricing({ onEnquiryButtonClick }: { onEnquiryButton
                                                 }
                                                 if (option.bookingMethod === 'buy_voucher') {
                                                     // window.location.href = "https://wa.me/918802880181?text=Hi%2C%20I%E2%80%99m%20interested%20in%20purchasing%20a%20TOEFL%20voucher.%20Could%20you%20share%20the%20details%3F";
-                                                    onEnquiryButtonClick()
+                                                    window.location.href = "https://rzp.io/l/k07xk6e";
+                                                    // onEnquiryButtonClick()
                                                 }
                                                 if (option.bookingMethod === 'slot_booking') {
                                                     // window.location.href = "https://wa.me/918802880181?text=Hi%2C%20I%E2%80%99m%20interested%20in%20purchasing%20a%20TOEFL%20voucher.%20Could%20you%20share%20the%20details%3F";
@@ -94,7 +95,7 @@ export default function TOEFLPricing({ onEnquiryButtonClick }: { onEnquiryButton
                                                 }
                                             }}
                                         >
-                                            <BookOpen className="mr-2 h-4 w-4" /> Know How!
+                                            <BookOpen className="mr-2 h-4 w-4" /> {option.bookingMethod === 'youtube_code' && "Watch Now!"} {option.bookingMethod === 'buy_voucher' && " Purchase Now!"} {option.bookingMethod === 'slot_booking' && "Schedule Call!"}
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
