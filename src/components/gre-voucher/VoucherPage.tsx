@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CheckCircle, Info, Loader, X } from "lucide-react";
@@ -16,7 +16,6 @@ import * as z from 'zod'
 import { Input } from '@/components/ui/input'
 import { db } from "@/firebase.config"; // Path to your firebase.ts
 import { collection, addDoc } from "firebase/firestore";
-
 
 
 const formSchema = z.object({
@@ -95,6 +94,15 @@ export default function VoucherPage() {
         }
         setLoading(false)
     }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setOpenEnquiryModal(true);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
             <div className="sm:px-10">

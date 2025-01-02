@@ -82,11 +82,11 @@ export default function TOEFLPricing({ onEnquiryButtonClick }: { onEnquiryButton
                                             className="w-full bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-3 text-white"
                                             onClick={() => {
                                                 if (option.bookingMethod === 'youtube_code') {
-                                                    window.location.href = "https://www.youtube.com/watch?v=9CBVCU2EMpY"
+                                                    window.open("https://www.youtube.com/watch?v=9CBVCU2EMpY", "_blank", "noopener noreferrer");
                                                 }
                                                 if (option.bookingMethod === 'buy_voucher') {
                                                     // window.location.href = "https://wa.me/918802880181?text=Hi%2C%20I%E2%80%99m%20interested%20in%20purchasing%20a%20TOEFL%20voucher.%20Could%20you%20share%20the%20details%3F";
-                                                    window.location.href = "https://rzp.io/l/k07xk6e";
+                                                    window.open("https://rzp.io/l/k07xk6e", "_blank", "noopener noreferrer");
                                                     // onEnquiryButtonClick()
                                                 }
                                                 if (option.bookingMethod === 'slot_booking') {
