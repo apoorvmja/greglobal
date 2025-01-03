@@ -23,7 +23,7 @@ const formSchema = z.object({
     lastName: z.string().min(2, 'Last name must be at least 2 characters'),
     email: z.string().email('Invalid email address'),
     contactNumber: z.string().regex(/^\d{10}$/, 'Contact number must be 10 digits'),
-    voucher: z.enum(['1000', '1500'], {
+    voucher: z.enum(['Voucher_Purchase', 'Exam_Booking'], {
         required_error: 'Please select a voucher option',
     }),
 })
