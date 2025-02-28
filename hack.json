@@ -1,0 +1,316 @@
+{
+    "cards": {
+        "list": [],
+        "collected": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ]
+    },
+    "currentUpgrade": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        9,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        6,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "options": {
+        "playsCount": 1,
+        "speedMulClicked": true,
+        "lang": 1,
+        "music": true,
+        "sound": true,
+        "speedMul": 5
+    },
+    "money": [
+        0,
+        150000
+    ],
+    "research": [
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "inProgress": true,
+            "progressLeftTime": 364.41098944098
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "inProgress": true,
+            "progressLeftTime": 365.54398949724
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": true
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        },
+        {
+            "researched": false
+        }
+    ],
+    "saveVersion": "0.08.32",
+    "boosts": [],
+    "startUpgrade": [
+        41,
+        0,
+        0,
+        4,
+        0,
+        16,
+        20,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        12,
+        0,
+        10,
+        0,
+        16,
+        14,
+        9,
+        0,
+        0,
+        0,
+        26,
+        13,
+        27,
+        0,
+        0,
+        0,
+        0
+    ],
+    "ads": {
+        "rewardedCount": 0
+    },
+    "counters": {
+        "cardshop_counter": 10,
+        "cardshop_index": 2
+    },
+    "misc": {
+        "current_wave": 1
+    },
+    "tutor": {
+        "state": 7,
+        "maxWave": 0,
+        "maxUpgrade": 16,
+        "first_time": {
+            "boss": true,
+            "armored": true,
+            "card": true
+        },
+        "runs_count": 0
+    },
+    "stats": {
+        "tries": 5,
+        "kills": 1131,
+        "recordKills": 436,
+        "currentKills": 0
+    }
+}
