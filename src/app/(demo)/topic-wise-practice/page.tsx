@@ -232,7 +232,7 @@ export default function StudyDashboard() {
                                             <CardDescription>Master sentence completion</CardDescription>
                                         </CardHeader>
                                         <CardContent>
-                                            <div className="space-y-4">
+                                            <div className="space-y-4 flex flex-col">
                                                 <div className="space-y-2">
                                                     <div className="flex items-center justify-between text-sm">
                                                         <span>Progress</span>
@@ -240,7 +240,9 @@ export default function StudyDashboard() {
                                                     </div>
                                                     <Progress value={75} />
                                                 </div>
-                                                <Button className="w-full">Start Test</Button>
+                                                <Link href="/topic-wise-practice/gre-text-completion">
+                                                    <Button className="w-full">Start Test</Button>
+                                                </Link>
                                             </div>
                                         </CardContent>
                                     </Card>
