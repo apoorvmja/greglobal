@@ -75,7 +75,7 @@ export function SentenceEquivalenceQuizDisplay({ questions, backToDashboardAfter
         style: { backgroundColor: "#ff4d4f", color: "white" }
       })
     }
-  }, [timeRemaining, isAnswerRevealed, toast])
+  }, [timeRemaining, isAnswerRevealed])
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)

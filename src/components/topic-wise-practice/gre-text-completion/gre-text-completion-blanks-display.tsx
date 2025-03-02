@@ -51,36 +51,6 @@ interface Question {
     timeLimit: number // in seconds
 }
 
-// const sampleQuestion: Question = {
-//     id: "q1",
-//     text: [
-//         "Despite their reputation for being ",
-//         " , the team's methods were actually quite ",
-//         " , following established protocols with ",
-//         " precision.",
-//     ],
-//     blanks: [
-//         { id: "b1", correctAnswerId: "a1" },
-//         { id: "b2", correctAnswerId: "a4" },
-//         { id: "b3", correctAnswerId: "a6" },
-//     ],
-//     answers: [
-//         { id: "a1", text: "unorthodox", isCorrect: true },
-//         { id: "a2", text: "conventional", isCorrect: false },
-//         { id: "a3", text: "innovative", isCorrect: false },
-//         { id: "a4", text: "methodical", isCorrect: true },
-//         { id: "a5", text: "haphazard", isCorrect: false },
-//         { id: "a6", text: "meticulous", isCorrect: true },
-//         { id: "a7", text: "casual", isCorrect: false },
-//         { id: "a8", text: "sporadic", isCorrect: false },
-//         { id: "a9", text: "arbitrary", isCorrect: false },
-//     ],
-//     difficulty: "medium",
-//     explanation:
-//         "The passage describes a contrast between perception and reality. The team's reputation suggests they were 'unorthodox', but their actual methods were 'methodical' and executed with 'meticulous' precision, emphasizing their careful and systematic approach.",
-//     timeLimit: 180,
-// }
-
 interface ExamQuestionWithOptions {
     questionid: string;
     question_text: string;
@@ -279,7 +249,7 @@ export function GRETextCompletionBlankDisplay({ questions, backToDashboardAfterR
                                     <DialogHeader>
                                         <DialogTitle>Need a hint?</DialogTitle>
                                         <DialogDescription>
-                                            Look for context clues that suggest a contrast between the team's reputation and their actual
+                                            Look for context clues that suggest a contrast between the team&apos;s reputation and their actual
                                             methods.
                                         </DialogDescription>
                                     </DialogHeader>
