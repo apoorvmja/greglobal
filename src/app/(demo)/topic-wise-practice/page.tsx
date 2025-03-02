@@ -14,10 +14,66 @@ import { ContentLayout } from "@/components/admin-panel/content-layout";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useUser } from "@clerk/nextjs";
 import PlaceholderContent from "@/components/demo/placeholder-content"
+import { description } from "@/components/charts/bar-graph"
 
 export default function StudyDashboard() {
     const [searchQuery, setSearchQuery] = React.useState("")
     const [progress, setProgress] = React.useState(45)
+    const vocabularyTests = [
+        { id: "vocabulary-sentence-completion", title: "Sentence Completion" },
+        { id: "vocabulary-similar-meaning", title: "Similar Meaning" },
+        { id: "apna-sapna-money-money", title: "Apna Sapna Money-Money" },
+        { id: "beautiful-mind-part-1", title: "Beautiful Mind Part -1" },
+        { id: "beautiful-mind-part-2", title: "Beautiful Mind Part -2" },
+        { id: "body-&-disease-part-1", title: "Body & Disease Part 1" },
+        { id: "body-&-disease-part-2", title: "Body & Disease Part 2" },
+        { id: "break-and-brake", title: "Break and Brake" },
+        { id: "crime-&-punishment", title: "Crime & Punishment" },
+        { id: "criticism-&-praise", title: "Criticism & Praise" },
+        { id: "fifty-shades-of-joy", title: "Fifty Shades of Joy" },
+        { id: "genesis-&-apocalypse", title: "Genesis & Apocalypse" },
+        { id: "krodh---anger-kills", title: "Krodh - Anger Kills" },
+        { id: "lsd-1", title: "LSD 1" },
+        { id: "lsd-2", title: "LSD 2" },
+        { id: "office-office-part-1", title: "Office-Office Part 1" },
+        { id: "office-office-part-2", title: "Office-Office Part 2" },
+        { id: "rajneeti-1", title: "Rajneeti 1" },
+        { id: "rajneeti-2", title: "Rajneeti 2" },
+        { id: "religion", title: "Religion" },
+        { id: "roti-kapda-aur-makaan", title: "Roti Kapda Aur Makaan" },
+        { id: "shabd-part-1", title: "Shabd Part -1" },
+        { id: "shabd-part-2", title: "Shabd Part -2" },
+        { id: "size-matters", title: "Size Matters" },
+        { id: "time-flies", title: "Time Flies" },
+        { id: "walk-in-the-park", title: "Walk in the Park" },
+    ];
+    const GREVerbalTests = [
+        { id: "gre-reading-comprehension", title: "GRE Reading Comprehension", description: "Enhance your reading and analysis skills", numberOfTests: 10 },
+        { id: "gre-sentence-equivalance", title: "GRE Sentence Equivalence", description: "Master sentence completion", numberOfTests: 10 },
+        { id: "gre-text-completion", title: "GRE Text Completion", description: "Improve your vocabulary and sentence structure", numberOfTests: 15 },
+    ];
+    const GREQuantTests = [
+        { id: "algebra-test-1", title: "Algebra Test 1", description: "Strengthen your algebraic problem-solving skills", numberOfTests: 1 },
+        { id: "algebra-test-2", title: "Algebra Test 2", description: "Practice advanced algebraic equations", numberOfTests: 1 },
+        { id: "algebra-test-3", title: "Algebra Test 3", description: "Enhance algebraic reasoning and manipulation", numberOfTests: 1 },
+        { id: "coordinate-3d-geometry-test-1", title: "Coordinate & 3D Geometry Test 1", description: "Understand coordinate planes and 3D space", numberOfTests: 1 },
+        { id: "coordinate-3d-geometry-test-2", title: "Coordinate & 3D Geometry Test 2", description: "Solve advanced geometry problems in 3D", numberOfTests: 1 },
+        { id: "data-interpretation-test-1", title: "Data Interpretation Test 1", description: "Analyze graphs and interpret quantitative data", numberOfTests: 1 },
+        { id: "geometry-test-1", title: "Geometry Test 1", description: "Review fundamental geometric principles", numberOfTests: 1 },
+        { id: "geometry-test-2", title: "Geometry Test 2", description: "Master advanced geometry problems", numberOfTests: 1 },
+        { id: "number-system-test-1", title: "Number System Test 1", description: "Deep dive into numerical operations", numberOfTests: 1 },
+        { id: "number-system-test-2", title: "Number System Test 2", description: "Advance your understanding of numbers", numberOfTests: 1 },
+        { id: "percentage-1", title: "Percentage 1", description: "Solve percentage-based problems effectively", numberOfTests: 1 },
+        { id: "percentage-2", title: "Percentage 2", description: "Advance your percentage calculations", numberOfTests: 1 },
+        { id: "permutation-combination-probability-1", title: "Permutation & Combination and Probability 1", description: "Learn counting principles and probability", numberOfTests: 1 },
+        { id: "probability-test-1", title: "Probability Test 1", description: "Master probability concepts", numberOfTests: 1 },
+        { id: "rate-time-test-1", title: "Rate & Time Test 1", description: "Solve problems related to rates and time", numberOfTests: 1 },
+        { id: "ratio-proportion-1", title: "Ratio & Proportion 1", description: "Understand proportional relationships", numberOfTests: 1 },
+        { id: "roots-exponent-test-1", title: "Roots & Exponent Test 1", description: "Simplify and manipulate roots and exponents", numberOfTests: 1 },
+        { id: "sequence-set-theory-1", title: "Sequence and Set Theory 1", description: "Explore sequences and set relations", numberOfTests: 1 },
+        { id: "speed-time-distance", title: "Speed, Time, and Distance", description: "Work with motion problems", numberOfTests: 1 },
+        { id: "statistics-test-1", title: "Statistics Test 1", description: "Analyze statistical data effectively", numberOfTests: 1 },
+    ];
 
     return (
         <ContentLayout title="Previous Results">
@@ -66,18 +122,18 @@ export default function StudyDashboard() {
                                         <SelectItem value="all">All Tests</SelectItem>
                                         <SelectItem value="quant">Quantitative</SelectItem>
                                         <SelectItem value="verbal">Verbal</SelectItem>
-                                        <SelectItem value="reading">Reading</SelectItem>
+                                        <SelectItem value="vocabulary">Vocabulary (new)✨</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
                         </div>
 
                         <Tabs defaultValue="all" className="space-y-6">
-                            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
+                            <TabsList className=" h-auto flex flex-wrap sm:grid w-full grid-cols-2 lg:grid-cols-4">
                                 <TabsTrigger value="all">All Sections</TabsTrigger>
                                 <TabsTrigger value="quant">Quantitative</TabsTrigger>
                                 <TabsTrigger value="verbal">Verbal</TabsTrigger>
-                                <TabsTrigger value="reading">Reading</TabsTrigger>
+                                <TabsTrigger value="vocabulary">Vocabulary (new)✨</TabsTrigger>
                             </TabsList>
 
                             <TabsContent value="all" className="space-y-6">
@@ -318,9 +374,94 @@ export default function StudyDashboard() {
                                 </div>
                             </TabsContent>
 
-                            {/* Other tab contents would follow the same pattern */}
                             <TabsContent value="quant">
-                                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{/* Quantitative specific content */}</div>
+                                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                    {GREQuantTests.map((test) => (
+                                        <Card key={test.id}>
+                                            <CardHeader>
+                                                <CardTitle className="flex items-center justify-between">
+                                                    {test.title}
+                                                    <Badge variant="secondary">{test.numberOfTests} Test</Badge>
+                                                </CardTitle>
+                                                <CardDescription>{test.description}</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="space-y-4 flex flex-col">
+                                                    <div className="space-y-2">
+                                                        <div className="flex items-center justify-between text-sm">
+                                                            <span>Progress</span>
+                                                            <span className="text-muted-foreground">75%</span>
+                                                        </div>
+                                                        <Progress value={75} />
+                                                    </div>
+                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                        <Button className="w-full">Start Test</Button>
+                                                    </Link>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
+                                </div>
+                            </TabsContent>
+
+                            <TabsContent value="verbal">
+                                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                    {GREVerbalTests.map((test) => (
+                                        <Card key={test.id}>
+                                            <CardHeader>
+                                                <CardTitle className="flex items-center justify-between">
+                                                    {test.title}
+                                                    <Badge variant="secondary">{test.numberOfTests} Test</Badge>
+                                                </CardTitle>
+                                                <CardDescription>{test.description}</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="space-y-4 flex flex-col">
+                                                    <div className="space-y-2">
+                                                        <div className="flex items-center justify-between text-sm">
+                                                            <span>Progress</span>
+                                                            <span className="text-muted-foreground">75%</span>
+                                                        </div>
+                                                        <Progress value={75} />
+                                                    </div>
+                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                        <Button className="w-full">Start Test</Button>
+                                                    </Link>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
+                                </div>
+                            </TabsContent>
+
+                            <TabsContent value="vocabulary">
+                                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                    {vocabularyTests.map((test) => (
+                                        <Card key={test.id}>
+                                            <CardHeader>
+                                                <CardTitle className="flex items-center justify-between">
+                                                    {test.title}
+                                                    <Badge variant="secondary">2 Test</Badge>
+                                                </CardTitle>
+                                                <CardDescription>Enhance your vocabulary skills</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="space-y-4 flex flex-col">
+                                                    <div className="space-y-2">
+                                                        <div className="flex items-center justify-between text-sm">
+                                                            <span>Progress</span>
+                                                            <span className="text-muted-foreground">75%</span>
+                                                        </div>
+                                                        <Progress value={75} />
+                                                    </div>
+                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                        <Button className="w-full">Start Test</Button>
+                                                    </Link>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
+                                </div>
                             </TabsContent>
                         </Tabs>
                     </div>
