@@ -55,28 +55,27 @@ export default function ReadingAssessmentPassageQuestionDisplay({ questions, bac
             setCurrentIndex(currentIndex + 1);
         } else {
             setShowResults(true);
+            setCurrentIndex(0)
         }
-        console.log(selectedAnswers)
     };
 
     const handleAnswerSelect = (value: string) => {
-        setSelectedAnswers((prev) => ({
-            ...prev,
-            [questions[currentIndex].questionid]: value,
-        }));
+        if (!showResults) {
+            setSelectedAnswers((prev) => ({
+                ...prev,
+                [questions[currentIndex].questionid]: value,
+            }));
+        }
     };
-
-
 
     return (
         <div className="container mx-auto p-4 md:p-8">
             <div className="mb-8 flex items-center justify-between">
-                <h1 className="text-2xl font-bold">Reading Assessment</h1>
+                <h1 className="text-2xl font-bold">{showResults ? "Review Your Answers" : "Reading Assessment"}</h1>
                 <Progress value={(currentIndex / questions.length) * 100} className="w-[100px]" />
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
-                {/* Reading Passage Section */}
                 <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0">
                         <CardTitle>Reading Passage</CardTitle>
@@ -117,10 +116,11 @@ export default function ReadingAssessmentPassageQuestionDisplay({ questions, bac
                                     <RadioGroup
                                         value={selectedAnswers[questions[currentIndex].questionid] || ""}
                                         onValueChange={handleAnswerSelect}
-                                    >                                        <div className="space-y-3">
+                                    >
+                                        <div className="space-y-3">
                                             {questions[currentIndex].options.map((option, idx) => (
                                                 <div key={idx} className="flex items-center space-x-2">
-                                                    <RadioGroupItem value={`option${idx + 1}`} id={`option${idx + 1}`} />
+                                                    <RadioGroupItem value={option.text} id={`option${idx + 1}`} />
                                                     <Label htmlFor={`option${idx + 1}`} className="leading-relaxed">
                                                         <span dangerouslySetInnerHTML={{ __html: option.text }}></span>
                                                     </Label>
@@ -133,62 +133,75 @@ export default function ReadingAssessmentPassageQuestionDisplay({ questions, bac
                         </Card>
                     )}
 
-                    {/* Next Button */}
+                    {showResults && (() => {
+                        const userAnswer = selectedAnswers[questions[currentIndex].questionid] || "Not Answered";
+                        const correctAnswer = questions[currentIndex].options.find((option) => option.isCorrect)?.text || "Not Provided";
+
+                        return (
+                            <div className="space-y-6">
+
+                                <Card key={questions[currentIndex].questionid}>
+                                    <CardContent>
+                                        <div className="mt-4">
+                                            <p className="font-semibold">Your Answer:</p>
+                                            <p
+                                                className={`p-2 rounded-md ${userAnswer === correctAnswer ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
+                                                dangerouslySetInnerHTML={{ __html: userAnswer }}
+                                            />
+                                        </div>
+
+                                        <div className="mt-2">
+                                            <p className="font-semibold">Correct Answer:</p>
+                                            <p className="p-2 rounded-md bg-blue-100 text-blue-700"
+                                                dangerouslySetInnerHTML={{ __html: correctAnswer }}>
+                                            </p>
+                                        </div>
+
+                                        <div className="mt-2">
+                                            <p className="font-semibold">Explanation:</p>
+                                            <p className="p-2 rounded-md bg-gray-100"
+                                                dangerouslySetInnerHTML={{ __html: questions[currentIndex].question_solution }}>
+                                            </p>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        );
+                    })()}
+
                     <Button onClick={handleNextQuestion} className="w-full">
                         {currentIndex < questions.length - 1 ? "Next Question" : "Finish"}
                     </Button>
-
                     {showResults && (
-                        <div className="space-y-6">
-                            <h1 className="text-2xl font-bold text-center mb-6">Review Your Answers</h1>
-
-                            {questions.map((question, index) => {
-                                const userAnswer = selectedAnswers[question.questionid] || "Not Answered";
-                                const correctAnswer = question.options.find((option) => option.isCorrect)?.text || "Not Provided";
-
-                                return (
-                                    <Card key={question.questionid}>
-                                        <CardHeader>
-                                            <CardTitle>Question {index + 1}</CardTitle>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <p className="text-lg font-medium" dangerouslySetInnerHTML={{ __html: question.question_text }}></p>
-
-                                            <div className="mt-4">
-                                                <p className="font-semibold">Your Answer:</p>
-                                                <p
-                                                    className={`p-2 rounded-md ${userAnswer === correctAnswer ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
-                                                        }`}
-                                                    dangerouslySetInnerHTML={{ __html: userAnswer }}
-                                                ></p>
-                                            </div>
-
-                                            <div className="mt-2">
-                                                <p className="font-semibold">Correct Answer:</p>
-                                                <p className="p-2 rounded-md bg-blue-100 text-blue-700"
-                                                    dangerouslySetInnerHTML={{ __html: correctAnswer }}>
-                                                </p>
-                                            </div>
-
-                                            <div className="mt-2">
-                                                <p className="font-semibold">Explanation:</p>
-                                                <p className="p-2 rounded-md bg-gray-100"
-                                                    dangerouslySetInnerHTML={{ __html: question.question_solution }}>
-                                                </p>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                );
-                            })}
-
-                            <Button onClick={backToDashboardAfterResults} className="w-full mt-6">
-                                Back To Dashboard
-                            </Button>
-                        </div>
+                        <Button onClick={backToDashboardAfterResults} className="w-full mt-6">
+                            Back To Dashboard
+                        </Button>
                     )}
-
                 </div>
+
             </div>
+
+            {showResults && (
+                <div className="mt-6 flex items-center justify-center space-x-2">
+                    <div className="bg-gray-100 p-3 rounded-lg shadow-md flex items-center gap-2">
+                        {questions.map((_, i) => {
+                            const isCorrect = selectedAnswers[questions[i].questionid] === questions[i].options.find((option) => option.isCorrect)?.text;
+
+                            return (
+                                <button
+                                    key={i}
+                                    className={`w-10 h-10 flex items-center justify-center rounded-lg font-semibold text-lg transition-all
+                                    ${currentIndex === i ? "text-white scale-110 shadow-md" : "bg-white  hover:text-white"}
+                                    ${showResults ? (isCorrect ? "border-2 bg-green-500 border-green-500 hover:bg-green-400 text-green-700" : "border-2 bg-red-500 border-red-500 hover:bg-red-400 hover:text-white text-red-400") : ""}`}
+                                    onClick={() => setCurrentIndex(i)}
+                                >
+                                    {i + 1}
+                                </button>
+                            );
+                        })}
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

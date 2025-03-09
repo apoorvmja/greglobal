@@ -20,32 +20,32 @@ export default function StudyDashboard() {
     const [searchQuery, setSearchQuery] = React.useState("")
     const [progress, setProgress] = React.useState(45)
     const vocabularyTests = [
-        { id: "vocabulary-sentence-completion", title: "Sentence Completion" },
-        { id: "vocabulary-similar-meaning", title: "Similar Meaning" },
-        { id: "apna-sapna-money-money", title: "Apna Sapna Money-Money" },
-        { id: "beautiful-mind-part-1", title: "Beautiful Mind Part -1" },
-        { id: "beautiful-mind-part-2", title: "Beautiful Mind Part -2" },
-        { id: "body-&-disease-part-1", title: "Body & Disease Part 1" },
-        { id: "body-&-disease-part-2", title: "Body & Disease Part 2" },
-        { id: "break-and-brake", title: "Break and Brake" },
-        { id: "crime-&-punishment", title: "Crime & Punishment" },
-        { id: "criticism-&-praise", title: "Criticism & Praise" },
-        { id: "fifty-shades-of-joy", title: "Fifty Shades of Joy" },
-        { id: "genesis-&-apocalypse", title: "Genesis & Apocalypse" },
-        { id: "krodh---anger-kills", title: "Krodh - Anger Kills" },
-        { id: "lsd-1", title: "LSD 1" },
-        { id: "lsd-2", title: "LSD 2" },
-        { id: "office-office-part-1", title: "Office-Office Part 1" },
-        { id: "office-office-part-2", title: "Office-Office Part 2" },
-        { id: "rajneeti-1", title: "Rajneeti 1" },
-        { id: "rajneeti-2", title: "Rajneeti 2" },
-        { id: "religion", title: "Religion" },
-        { id: "roti-kapda-aur-makaan", title: "Roti Kapda Aur Makaan" },
-        { id: "shabd-part-1", title: "Shabd Part -1" },
-        { id: "shabd-part-2", title: "Shabd Part -2" },
-        { id: "size-matters", title: "Size Matters" },
-        { id: "time-flies", title: "Time Flies" },
-        { id: "walk-in-the-park", title: "Walk in the Park" },
+        { id: "vocabulary-sentence-completion", title: "Sentence Completion", numberOfTests: 10 },
+        { id: "vocabulary-similar-meaning", title: "Similar Meaning", numberOfTests: 10 },
+        { id: "apna-sapna-money-money", title: "Apna Sapna Money-Money", numberOfTests: 1 },
+        { id: "beautiful-mind-part-1", title: "Beautiful Mind Part -1", numberOfTests: 1 },
+        { id: "beautiful-mind-part-2", title: "Beautiful Mind Part -2", numberOfTests: 1 },
+        { id: "body-&-disease-part-1", title: "Body & Disease Part 1", numberOfTests: 1 },
+        { id: "body-&-disease-part-2", title: "Body & Disease Part 2", numberOfTests: 1 },
+        { id: "break-and-brake", title: "Break and Brake", numberOfTests: 1 },
+        { id: "crime-&-punishment", title: "Crime & Punishment", numberOfTests: 1 },
+        { id: "criticism-&-praise", title: "Criticism & Praise", numberOfTests: 1 },
+        { id: "fifty-shades-of-joy", title: "Fifty Shades of Joy", numberOfTests: 1 },
+        { id: "genesis-&-apocalypse", title: "Genesis & Apocalypse", numberOfTests: 1 },
+        { id: "krodh---anger-kills", title: "Krodh - Anger Kills", numberOfTests: 1 },
+        { id: "lsd-1", title: "LSD 1", numberOfTests: 1 },
+        { id: "lsd-2", title: "LSD 2", numberOfTests: 1 },
+        { id: "office-office-part-1", title: "Office-Office Part 1", numberOfTests: 1 },
+        { id: "office-office-part-2", title: "Office-Office Part 2", numberOfTests: 1 },
+        { id: "rajneeti-1", title: "Rajneeti 1", numberOfTests: 1 },
+        { id: "rajneeti-2", title: "Rajneeti 2", numberOfTests: 1 },
+        { id: "religion", title: "Religion", numberOfTests: 1 },
+        { id: "roti-kapda-aur-makaan", title: "Roti Kapda Aur Makaan", numberOfTests: 1 },
+        { id: "shabd-part-1", title: "Shabd Part -1", numberOfTests: 1 },
+        { id: "shabd-part-2", title: "Shabd Part -2", numberOfTests: 1 },
+        { id: "size-matters", title: "Size Matters", numberOfTests: 1 },
+        { id: "time-flies", title: "Time Flies", numberOfTests: 1 },
+        { id: "walk-in-the-park", title: "Walk in the Park", numberOfTests: 1 },
     ];
     const GREVerbalTests = [
         { id: "gre-reading-comprehension", title: "GRE Reading Comprehension", description: "Enhance your reading and analysis skills", numberOfTests: 10 },
@@ -53,26 +53,20 @@ export default function StudyDashboard() {
         { id: "gre-text-completion", title: "GRE Text Completion", description: "Improve your vocabulary and sentence structure", numberOfTests: 15 },
     ];
     const GREQuantTests = [
-        { id: "algebra-test-1", title: "Algebra Test 1", description: "Strengthen your algebraic problem-solving skills", numberOfTests: 1 },
-        { id: "algebra-test-2", title: "Algebra Test 2", description: "Practice advanced algebraic equations", numberOfTests: 1 },
-        { id: "algebra-test-3", title: "Algebra Test 3", description: "Enhance algebraic reasoning and manipulation", numberOfTests: 1 },
-        { id: "coordinate-3d-geometry-test-1", title: "Coordinate & 3D Geometry Test 1", description: "Understand coordinate planes and 3D space", numberOfTests: 1 },
-        { id: "coordinate-3d-geometry-test-2", title: "Coordinate & 3D Geometry Test 2", description: "Solve advanced geometry problems in 3D", numberOfTests: 1 },
-        { id: "data-interpretation-test-1", title: "Data Interpretation Test 1", description: "Analyze graphs and interpret quantitative data", numberOfTests: 1 },
-        { id: "geometry-test-1", title: "Geometry Test 1", description: "Review fundamental geometric principles", numberOfTests: 1 },
-        { id: "geometry-test-2", title: "Geometry Test 2", description: "Master advanced geometry problems", numberOfTests: 1 },
-        { id: "number-system-test-1", title: "Number System Test 1", description: "Deep dive into numerical operations", numberOfTests: 1 },
-        { id: "number-system-test-2", title: "Number System Test 2", description: "Advance your understanding of numbers", numberOfTests: 1 },
-        { id: "percentage-1", title: "Percentage 1", description: "Solve percentage-based problems effectively", numberOfTests: 1 },
-        { id: "percentage-2", title: "Percentage 2", description: "Advance your percentage calculations", numberOfTests: 1 },
-        { id: "permutation-combination-probability-1", title: "Permutation & Combination and Probability 1", description: "Learn counting principles and probability", numberOfTests: 1 },
-        { id: "probability-test-1", title: "Probability Test 1", description: "Master probability concepts", numberOfTests: 1 },
-        { id: "rate-time-test-1", title: "Rate & Time Test 1", description: "Solve problems related to rates and time", numberOfTests: 1 },
-        { id: "ratio-proportion-1", title: "Ratio & Proportion 1", description: "Understand proportional relationships", numberOfTests: 1 },
-        { id: "roots-exponent-test-1", title: "Roots & Exponent Test 1", description: "Simplify and manipulate roots and exponents", numberOfTests: 1 },
-        { id: "sequence-set-theory-1", title: "Sequence and Set Theory 1", description: "Explore sequences and set relations", numberOfTests: 1 },
+        { id: "algebra", title: "Algebra", description: "Strengthen your algebraic problem-solving skills", numberOfTests: 1 },
+        { id: "coordinate-3d-geometry", title: "Coordinate & 3D Geometry", description: "Understand coordinate planes and 3D space", numberOfTests: 1 },
+        { id: "data-interpretation", title: "Data Interpretation", description: "Analyze graphs and interpret quantitative data", numberOfTests: 1 },
+        { id: "geometry", title: "Geometry", description: "Review fundamental geometric principles", numberOfTests: 1 },
+        { id: "number-system", title: "Number System", description: "Deep dive into numerical operations", numberOfTests: 1 },
+        { id: "percentage", title: "Percentage", description: "Solve percentage-based problems effectively", numberOfTests: 1 },
+        { id: "permutation-combination-probability", title: "Permutation & Combination and Probability 1", description: "Learn counting principles and probability", numberOfTests: 1 },
+        { id: "probability", title: "Probability", description: "Master probability concepts", numberOfTests: 1 },
+        { id: "rate-time", title: "Rate & Time", description: "Solve problems related to rates and time", numberOfTests: 1 },
+        { id: "ratio-proportion", title: "Ratio & Proportion", description: "Understand proportional relationships", numberOfTests: 1 },
+        { id: "roots-exponent", title: "Roots & Exponent", description: "Simplify and manipulate roots and exponents", numberOfTests: 1 },
+        { id: "sequence-set-theory", title: "Sequence and Set Theory", description: "Explore sequences and set relations", numberOfTests: 1 },
         { id: "speed-time-distance", title: "Speed, Time, and Distance", description: "Work with motion problems", numberOfTests: 1 },
-        { id: "statistics-test-1", title: "Statistics Test 1", description: "Analyze statistical data effectively", numberOfTests: 1 },
+        { id: "statistics", title: "Statistics", description: "Analyze statistical data effectively", numberOfTests: 1 },
     ];
 
     return (
@@ -394,7 +388,7 @@ export default function StudyDashboard() {
                                                         </div>
                                                         <Progress value={75} />
                                                     </div>
-                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                    <Link href={`/topic-wise-practice/gre-quantitative/${test.id}`}>
                                                         <Button className="w-full">Start Test</Button>
                                                     </Link>
                                                 </div>
@@ -424,7 +418,7 @@ export default function StudyDashboard() {
                                                         </div>
                                                         <Progress value={75} />
                                                     </div>
-                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                    <Link href={`/topic-wise-practice/${test.id}`}>
                                                         <Button className="w-full">Start Test</Button>
                                                     </Link>
                                                 </div>
@@ -441,7 +435,7 @@ export default function StudyDashboard() {
                                             <CardHeader>
                                                 <CardTitle className="flex items-center justify-between">
                                                     {test.title}
-                                                    <Badge variant="secondary">2 Test</Badge>
+                                                    <Badge variant="secondary">{test.numberOfTests} Test</Badge>
                                                 </CardTitle>
                                                 <CardDescription>Enhance your vocabulary skills</CardDescription>
                                             </CardHeader>

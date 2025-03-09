@@ -10,7 +10,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
-import VocabularySCQuestionSetDisplay from "@/components/topic-wise-practice/vocabulary-practice-questions/vocabulary-select-set-display";
+import VocabularyQuestionSetDisplay from "@/components/topic-wise-practice/vocabulary-practice-questions/vocabulary-select-set-display";
 import { usePathname } from "next/navigation";
 
 type TestStatus = "not-started" | "in-progress" | "completed";
@@ -86,7 +86,7 @@ export default function DashboardPage() {
             </Breadcrumb>
             <PlaceholderContent>
                 <>
-                    <VocabularySCQuestionSetDisplay
+                    <VocabularyQuestionSetDisplay
                         topic_name={topic_name}
                         displayOptions={VocabularyQuestionsTests}
                     // numberofQuestions = {10}

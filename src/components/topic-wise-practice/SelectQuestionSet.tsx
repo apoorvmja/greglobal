@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import { StringValidation } from "zod"
+import Link from "next/link"
 
 type TestStatus = "not-started" | "in-progress" | "completed"
 
@@ -56,9 +57,11 @@ const SelectQuestionSet: React.FC<TestSelectionProps> = ({ tests, title, descrip
     return (
         <div className="container mx-auto p-6 space-y-8">
             <div className="flex items-center gap-4 mb-8">
-                <Button variant="ghost" size="icon" className="rounded-full">
-                    <ArrowLeft className="h-4 w-4" />
-                </Button>
+                <Link href="/topic-wise-practice">
+                    <Button variant="ghost" size="icon" className="rounded-full">
+                        <ArrowLeft className="h-4 w-4" />
+                    </Button>
+                </Link>
                 <div>
                     <h1 className="text-3xl font-bold tracking-tight">{title}</h1>
                     <p className="text-muted-foreground">{description}</p>
