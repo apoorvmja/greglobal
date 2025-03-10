@@ -50,10 +50,10 @@ export default function DashboardPage() {
     const id = pathname.split("/").pop();
     const topic_name = topicMapping[id || ""] || "Unknown Topic";
 
-    const VocabularyQuestionsTests: Test[] = [
+    const QuantitativeQuestionsTests: Test[] = [
         {
             id: 1,
-            title: "Similar Meaning Test 1",
+            title: `${topic_name} Test 1`,
             description: "Identify words with closely related meanings",
             estimatedTime: 30,
             status: "not-started",
@@ -61,7 +61,7 @@ export default function DashboardPage() {
         },
         {
             id: 2,
-            title: "Similar Meaning Test 2",
+            title: `${topic_name} Test 2`,
             description: "Strengthen your understanding of word relationships",
             estimatedTime: 35,
             status: "in-progress",
@@ -69,7 +69,7 @@ export default function DashboardPage() {
         },
         {
             id: 3,
-            title: "Similar Meaning Test 3",
+            title: `${topic_name} Test 3`,
             description: "Distinguish between near-synonyms in different contexts",
             estimatedTime: 40,
             status: "completed",
@@ -79,7 +79,7 @@ export default function DashboardPage() {
         },
         {
             id: 4,
-            title: "Similar Meaning Test 4",
+            title: `${topic_name} Test 4`,
             description: "Enhance synonym recognition and precision",
             estimatedTime: 30,
             status: "not-started",
@@ -87,7 +87,7 @@ export default function DashboardPage() {
         },
         {
             id: 5,
-            title: "Similar Meaning Test 5",
+            title: `${topic_name} Test 5`,
             description: "Develop vocabulary flexibility with synonym matching",
             estimatedTime: 35,
             status: "in-progress",
@@ -95,7 +95,7 @@ export default function DashboardPage() {
         },
         {
             id: 6,
-            title: "Similar Meaning Test 6",
+            title: `${topic_name} Test 6`,
             description: "Identify subtle differences in meaning among synonyms",
             estimatedTime: 40,
             status: "completed",
@@ -105,15 +105,15 @@ export default function DashboardPage() {
         },
         {
             id: 7,
-            title: "Similar Meaning Test 7",
-            description: "Improve contextual usage of words with similar meanings",
+            title: `${topic_name} Test 7`,
+            description: "Improve contextual usage of words with similar meaning",
             estimatedTime: 30,
             status: "not-started",
             progress: 0,
         },
         {
             id: 8,
-            title: "Similar Meaning Test 8",
+            title: `${topic_name} Test 8`,
             description: "Master word nuances through synonym practice",
             estimatedTime: 35,
             status: "in-progress",
@@ -121,7 +121,7 @@ export default function DashboardPage() {
         },
         {
             id: 9,
-            title: "Similar Meaning Test 9",
+            title: `${topic_name} Test 9`,
             description: "Refine analytical skills in differentiating word meanings",
             estimatedTime: 40,
             status: "completed",
@@ -131,7 +131,7 @@ export default function DashboardPage() {
         },
         {
             id: 10,
-            title: "Similar Meaning Test 10",
+            title: `${topic_name} Test 10`,
             description: "Tackle challenging synonym-based questions",
             estimatedTime: 30,
             status: "not-started",
@@ -157,7 +157,7 @@ export default function DashboardPage() {
 
             <PlaceholderContent>
                 <>
-                    <QuantitativeQuestionSetDisplay topic_name={topic_name} displayOptions={VocabularyQuestionsTests} />
+                    <QuantitativeQuestionSetDisplay topic_name={topic_name} displayOptions={QuantitativeQuestionsTests} />
                 </>
             </PlaceholderContent>
         </ContentLayout>

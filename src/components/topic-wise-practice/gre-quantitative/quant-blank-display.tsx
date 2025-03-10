@@ -36,6 +36,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { toast } from "sonner";
+import Draggable from "react-draggable";
 
 interface Formula {
     name: string
@@ -187,7 +188,7 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
     return (
         <div className="container mx-auto p-4 md:p-8">
             <Card className="relative">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0">
+                <CardHeader className="flex flex-row flex-wrap items-center justify-between space-y-0">
                     <div className="flex items-center gap-4">
                         <CardTitle>Quantitative Reasoning</CardTitle>
                         <Badge variant="secondary" className="gap-1">
@@ -303,7 +304,7 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
                             </Dialog>
                         </div>
 
-                        <div className="flex gap-2">
+                        <div className="flex flex-wrap gap-2">
                             <Button variant="outline" onClick={handleReset}>
                                 <RefreshCw className="mr-2 h-4 w-4" />
                                 Reset
@@ -357,27 +358,32 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
                                 animate={{ opacity: 1, height: "auto" }}
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 0.2 }}
+                                className="absolute z-[21]"
                             >
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="text-lg">Calculator</CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="flex flex-col items-center">
-                                            <div className="mb-4 w-full rounded-md border p-2 text-right text-xl">0</div>
-                                            <div className="grid grid-cols-4 gap-2">
-                                                {["7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "-", "0", ".", "=", "+"].map((key) => (
-                                                    <Button key={key} variant="outline" className="h-12 w-12 text-lg">
-                                                        {key}
-                                                    </Button>
-                                                ))}
-                                            </div>
+                                <Draggable handle=".drag-handle">
+                                    <div className="fixed bottom-10 right-10 w-[280px] h-[500px] bg-white border rounded-lg shadow-lg">
+                                        <div className="drag-handle cursor-move bg-gray-200 p-2 text-center text-sm font-bold">
+                                            Drag Me 🖱️
                                         </div>
-                                    </CardContent>
-                                </Card>
+                                        <iframe
+                                            src="https://tonypottera24.github.io/gre_calculator/web/index.html#/"
+                                            width="100%"
+                                            height="100%"
+                                            className="rounded-b-md"
+                                            title="GRE Calculator"
+                                        />
+                                        <button
+                                            onClick={() => setShowCalculator(false)}
+                                            className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-md text-xs"
+                                        >
+                                            ✖ Close
+                                        </button>
+                                    </div>
+                                </Draggable>
                             </motion.div>
                         )}
                     </AnimatePresence>
+
 
                     {/* Solution */}
                     <AnimatePresence>
