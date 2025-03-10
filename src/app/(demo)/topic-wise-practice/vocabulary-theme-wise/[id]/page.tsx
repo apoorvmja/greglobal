@@ -89,7 +89,7 @@ export default function DashboardPage() {
                     <VocabularyQuestionSetDisplay
                         topic_name={topic_name}
                         displayOptions={VocabularyQuestionsTests}
-                    // numberofQuestions = {10}
+                        numberofQuestions={10}
                     />
                 </>
             </PlaceholderContent>

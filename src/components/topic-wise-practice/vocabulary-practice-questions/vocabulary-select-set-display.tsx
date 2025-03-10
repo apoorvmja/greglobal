@@ -38,7 +38,7 @@ interface ExamQuestionWithOptions extends ExamQuestion {
     options: { text: string; isCorrect: boolean }[];
 }
 
-export default function VocabularyQuestionSetDisplay({ topic_name, displayOptions = [] }: { topic_name: string, displayOptions: Test[] }) {
+export default function VocabularyQuestionSetDisplay({ topic_name, displayOptions = [], numberofQuestions }: { topic_name: string, displayOptions: Test[], numberofQuestions: number }) {
     const [VocabQuestionsAfterSlicingAndAddingOptionsNAnwers, setVocabQuestionsAfterSlicingAndAddingOptionsNAnwers] =
         React.useState<ExamQuestionWithOptions[]>([]);
 
@@ -46,7 +46,7 @@ export default function VocabularyQuestionSetDisplay({ topic_name, displayOption
         const questions: ExamQuestionWithOptions[] = getSlicedQuestionsWithOptionAndAnswer(
             topic_name,
             test.id,
-            15
+            numberofQuestions
         );
         setVocabQuestionsAfterSlicingAndAddingOptionsNAnwers(questions);
         console.log("finalarray", VocabQuestionsAfterSlicingAndAddingOptionsNAnwers)

@@ -21,6 +21,7 @@ import {
     Volume2,
     Zap,
     Loader,
+    CheckCheck,
 } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
@@ -107,10 +108,13 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
     const [activeTab, setActiveTab] = React.useState("question")
 
     const [currentIndex, setCurrentIndex] = React.useState(0);
-    const [selectedAnswer, setSelectedAnswer] = React.useState<string | null>(null);
+    // const [selectedAnswer, setSelectedAnswer] = React.useState<string | null>(null);
     const currentQuestion = questions[currentIndex];
     const [loadingPronounciation, setLoadingPronounciation] = React.useState(false)
     const [loadingPronunciationFor, setLoadingPronunciationFor] = React.useState<string | null>(null);
+
+    const isMultiSelect = currentQuestion.question_text.includes("THREE");
+    const [selectedAnswers, setSelectedAnswers] = React.useState<string[]>([]);
 
     // Timer
     React.useEffect(() => {
@@ -135,37 +139,73 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
     }
 
     const handleAnswerSelect = (answerId: string) => {
-        if (!isAnswerRevealed) {
-            setSelectedAnswer(answerId)
-        }
-    }
-
-    const handleCheckAnswer = () => {
-        if (!selectedAnswer) {
-            toast.warning("Select an answer", {
-                description: "Please choose an answer before checking.",
-            });
-            return
-        }
-
-        setIsAnswerRevealed(true)
-        const isCorrect = currentQuestion.options.find((opt) => opt.text === selectedAnswer)?.isCorrect;
-
-        if (isCorrect) {
-            setStreak((prev) => prev + 1)
-            toast.success("Correct!", {
-                description: `Streak: ${streak + 1}`,
+        if (isMultiSelect) {
+            setSelectedAnswers((prev) => {
+                if (prev.includes(answerId)) {
+                    return prev.filter((id) => id !== answerId); // Deselect if already selected
+                }
+                if (prev.length < 3) {
+                    return [...prev, answerId]; // Select up to 3 answers
+                }
+                return prev; // Prevent selecting more than 3
             });
         } else {
-            setStreak(0)
-            toast.error("Incorrect", {
-                description: "Review the explanation to understand why.",
-            });
+            setSelectedAnswers([answerId]); // Single selection mode
         }
-    }
+    };
+
+    const handleCheckAnswer = () => {
+        if (isMultiSelect) {
+            if (selectedAnswers.length !== 3) {
+                toast.warning("Select exactly three answers", {
+                    description: "You must select three choices before checking.",
+                });
+                return;
+            }
+
+            setIsAnswerRevealed(true);
+            const correctAnswers = currentQuestion.options.filter((opt) => opt.isCorrect).map((opt) => opt.text);
+            const isCorrect = selectedAnswers.every((ans) => correctAnswers.includes(ans)) && selectedAnswers.length === correctAnswers.length;
+
+            if (isCorrect) {
+                setStreak((prev) => prev + 1);
+                toast.success("Correct!", {
+                    description: `Streak: ${streak + 1}`,
+                });
+            } else {
+                setStreak(0);
+                toast.error("Incorrect", {
+                    description: "Review the explanation to understand why.",
+                });
+            }
+        } else {
+            if (!selectedAnswers.length) {
+                toast.warning("Select an answer", {
+                    description: "Please choose an answer before checking.",
+                });
+                return;
+            }
+
+            setIsAnswerRevealed(true);
+            const isCorrect = currentQuestion.options.find((opt) => opt.text === selectedAnswers[0])?.isCorrect;
+
+            if (isCorrect) {
+                setStreak((prev) => prev + 1);
+                toast.success("Correct!", {
+                    description: `Streak: ${streak + 1}`,
+                });
+            } else {
+                setStreak(0);
+                toast.error("Incorrect", {
+                    description: "Review the explanation to understand why.",
+                });
+            }
+        }
+    };
+
 
     const handleReset = () => {
-        setSelectedAnswer("")
+        setSelectedAnswers([])
         setTimeRemaining(120)
         setIsAnswerRevealed(false)
         setShowEtymology(false)
@@ -194,7 +234,7 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
     const handleNextQuestion = () => {
         if (currentIndex < questions.length - 1) {
             setCurrentIndex(currentIndex + 1);
-            setSelectedAnswer(null);
+            setSelectedAnswers([]);
             setIsAnswerRevealed(false);
         } else {
             backToDashboardAfterResults();
@@ -262,7 +302,7 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
                             </div>
 
                             {/* Answer Options */}
-                            <RadioGroup value={selectedAnswer || ""} onValueChange={handleAnswerSelect}>
+                            <RadioGroup value={isMultiSelect ? "" : selectedAnswers[0] || ""} onValueChange={handleAnswerSelect}>
                                 <div className="grid gap-4 md:grid-cols-2">
                                     {currentQuestion.options.map((option, index) => (
                                         <div key={index}>
@@ -270,18 +310,21 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
                                                 <HoverCardTrigger asChild>
                                                     <div
                                                         className={`relative flex items-center rounded-lg border p-4 transition-colors cursor-pointer
-                                                            ${selectedAnswer === option.text ? "border-primary bg-primary/5" : "hover:bg-accent"}
+                                                            ${selectedAnswers.includes(option.text) ? "border-primary bg-primary/5" : "hover:bg-accent"}
                                                             ${isAnswerRevealed && option.isCorrect ? "border-green-500 bg-green-50 dark:bg-green-950" : ""}
                                                         `}
                                                         onClick={() => handleAnswerSelect(option.text)}
                                                     >
                                                         <RadioGroupItem value={option.text} id={option.text} className="mr-4" />
                                                         <div className="flex flex-1 items-center justify-between">
-                                                            <Label
-                                                                htmlFor={option.text}
-                                                                className="text-base"
-                                                                dangerouslySetInnerHTML={{ __html: option.text }}
-                                                            />
+                                                            <div className="flex gap-2">
+                                                                <Label
+                                                                    htmlFor={option.text}
+                                                                    className="text-base"
+                                                                    dangerouslySetInnerHTML={{ __html: option.text }}
+                                                                />
+                                                                {isMultiSelect && isAnswerRevealed && option.isCorrect && (<CheckCheck className="animate-pulse" />)}
+                                                            </div>
                                                             <Button
                                                                 variant="ghost"
                                                                 size="icon"
@@ -343,7 +386,7 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
                                         <RefreshCw className="mr-2 h-4 w-4" />
                                         Reset
                                     </Button>
-                                    <Button onClick={handleCheckAnswer} disabled={isAnswerRevealed || !selectedAnswer}>
+                                    <Button onClick={handleCheckAnswer} disabled={isAnswerRevealed || !selectedAnswers}>
                                         <Lightning className="mr-2 h-4 w-4" />
                                         Check Answer
                                     </Button>

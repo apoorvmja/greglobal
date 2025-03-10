@@ -20,8 +20,8 @@ export default function StudyDashboard() {
     const [searchQuery, setSearchQuery] = React.useState("")
     const [progress, setProgress] = React.useState(45)
     const vocabularyTests = [
-        { id: "vocabulary-sentence-completion", title: "Sentence Completion", numberOfTests: 10 },
-        { id: "vocabulary-similar-meaning", title: "Similar Meaning", numberOfTests: 10 },
+        { id: "vocabulary-sentence-completion", title: "Sentence Completion", numberOfTests: 10, notThemeWise: true },
+        { id: "vocabulary-similar-meaning", title: "Similar Meaning", numberOfTests: 10, notThemeWise: true },
         { id: "apna-sapna-money-money", title: "Apna Sapna Money-Money", numberOfTests: 1 },
         { id: "beautiful-mind-part-1", title: "Beautiful Mind Part -1", numberOfTests: 1 },
         { id: "beautiful-mind-part-2", title: "Beautiful Mind Part -2", numberOfTests: 1 },
@@ -448,7 +448,7 @@ export default function StudyDashboard() {
                                                         </div>
                                                         <Progress value={75} />
                                                     </div>
-                                                    <Link href={`/topic-wise-practice/vocabulary-theme-wise/${test.id}`}>
+                                                    <Link href={`${test.notThemeWise ? `/topic-wise-practice/${test.id}` : `/topic-wise-practice/vocabulary-theme-wise/${test.id}`}`}>
                                                         <Button className="w-full">Start Test</Button>
                                                     </Link>
                                                 </div>

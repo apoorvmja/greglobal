@@ -133,7 +133,7 @@ export default function DashboardPage() {
             </Breadcrumb>
             <PlaceholderContent>
                 <>
-                    <VocabularySCQuestionSetDisplay topic_name="Similar meaning" displayOptions={VocabularyQuestionsTests} />
+                    <VocabularySCQuestionSetDisplay topic_name="Similar Meaning" displayOptions={VocabularyQuestionsTests} numberofQuestions={10} />
                 </>
             </PlaceholderContent>
         </ContentLayout>
