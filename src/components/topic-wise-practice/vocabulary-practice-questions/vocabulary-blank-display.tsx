@@ -113,8 +113,9 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
     const [loadingPronounciation, setLoadingPronounciation] = React.useState(false)
     const [loadingPronunciationFor, setLoadingPronunciationFor] = React.useState<string | null>(null);
 
-    const isMultiSelect = currentQuestion.question_text.includes("THREE");
+    const isMultiSelect = currentQuestion.question_text.includes("THREE") || currentQuestion.question_text.toLowerCase().includes("similar meaning");
     const [selectedAnswers, setSelectedAnswers] = React.useState<string[]>([]);
+
 
     // Timer
     React.useEffect(() => {
@@ -241,6 +242,7 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
         }
     };
 
+
     return (
         <div className="container mx-auto p-4 md:p-8">
             <Card className="relative">
@@ -315,7 +317,9 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
                                                         `}
                                                         onClick={() => handleAnswerSelect(option.text)}
                                                     >
-                                                        <RadioGroupItem value={option.text} id={option.text} className="mr-4" />
+                                                        {!isMultiSelect && (
+                                                            <RadioGroupItem value={option.text} id={option.text} className="mr-4" />
+                                                        )}
                                                         <div className="flex flex-1 items-center justify-between">
                                                             <div className="flex gap-2">
                                                                 <Label
@@ -519,11 +523,11 @@ export function VocabularyBlankDisplay({ questions, backToDashboardAfterResults 
                                         </CardTitle>
                                     </CardHeader>
                                     <CardContent className="space-y-4">
-                                        <p className="text-sm text-muted-foreground">
-                                            {currentQuestion.question_solution
-                                                ? currentQuestion.question_solution
-                                                : "No explanation available for this question."}
-                                        </p>
+                                        <p
+                                            className="text-sm text-muted-foreground"
+                                            dangerouslySetInnerHTML={{ __html: currentQuestion.question_solution || "No explanation available for this question." }}
+                                        />
+
                                         <Collapsible>
                                             <CollapsibleTrigger asChild>
                                                 <Button variant="ghost" className="flex w-full justify-between p-4 mb-2">
