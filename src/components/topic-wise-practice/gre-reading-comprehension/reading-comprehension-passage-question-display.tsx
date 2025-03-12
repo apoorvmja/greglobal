@@ -93,7 +93,9 @@ export default function ReadingAssessmentPassageQuestionDisplay({ questions, bac
                         <ScrollArea className="h-[600px] rounded-md border p-4">
                             <div style={{ fontSize: `${fontSize}px` }} className="space-y-4">
                                 {questions.length > 0 ? (
-                                    <p dangerouslySetInnerHTML={{ __html: questions[currentIndex].question_RC_text }}></p>
+                                    <>
+                                        {questions[currentIndex].question_RC_text.trim().length > 0 ? (<p dangerouslySetInnerHTML={{ __html: questions[currentIndex].question_RC_text }}></p>) : (<p dangerouslySetInnerHTML={{ __html: questions[currentIndex - 1].question_RC_text }}></p>)}
+                                    </>
                                 ) : (
                                     <p>No passage available.</p>
                                 )}

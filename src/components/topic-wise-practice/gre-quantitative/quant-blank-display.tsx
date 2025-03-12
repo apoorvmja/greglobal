@@ -37,6 +37,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { toast } from "sonner";
 import Draggable from "react-draggable";
+import { usePathname } from "next/navigation"
 
 interface Formula {
     name: string
@@ -105,10 +106,10 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
     const [showFormulas, setShowFormulas] = React.useState(false)
     const [scratchPad, setScratchPad] = React.useState("")
     const [showCalculator, setShowCalculator] = React.useState(false)
-
     const [currentIndex, setCurrentIndex] = React.useState(0);
-
     const question = questions[currentIndex];
+    const pathname = usePathname();
+    const id = pathname.split("/").pop();
 
     React.useEffect(() => {
         if (timeRemaining > 0 && !isAnswerRevealed) {
@@ -193,11 +194,10 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
                         <CardTitle>Quantitative Reasoning</CardTitle>
                         <Badge variant="secondary" className="gap-1">
                             <Star className="h-3 w-3" />
-                            {/* {question.difficulty.charAt(0).toUpperCase() + question.difficulty.slice(1)} */}
                         </Badge>
                         <Badge variant="outline" className="gap-1">
                             <Function className="h-3 w-3" />
-                            {/* {question.topic} */}
+                            {id}
                         </Badge>
                     </div>
                     <div className="flex items-center gap-4">
@@ -479,12 +479,12 @@ export function QuantitativeBlankDisplay({ questions, backToDashboardAfterResult
                     <div className="flex items-center gap-2">
                         <Compass className="h-4 w-4 text-muted-foreground" />
                         <span className="text-sm text-muted-foreground">
-                            Topic:
+                            Topic: {id}
                         </span>
                     </div>
                     <div className="flex items-center gap-2">
                         <FileText className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm text-muted-foreground">Question Type: </span>
+                        <span className="text-sm text-muted-foreground">Question Type: {question.question_type === "4" ? "Entre Numeric Value" : "MCQ"}</span>
                     </div>
                 </CardFooter>
             </Card >

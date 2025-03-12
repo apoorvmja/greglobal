@@ -45,7 +45,7 @@ export default function QuantitativeQuestionSetDisplay({ topic_name, displayOpti
         const questions: ExamQuestionWithOptions[] = getSlicedQuestionsWithOptionAndAnswer(
             topic_name,
             test.id,
-            15
+            10
         );
         setQuantQuestionsAfterSlicingAndAddingOptionsNAnwers(questions);
         console.log("finalarray", QuantQuestionsAfterSlicingAndAddingOptionsNAnwers)

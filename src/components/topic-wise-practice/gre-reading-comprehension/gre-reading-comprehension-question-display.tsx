@@ -22,7 +22,7 @@ const readingComprehensionTests: Test[] = [
     {
         id: 1,
         title: "Reading Comprehension Test 1",
-        description: "Analyze complex passages and answer inference-based questions",
+        description: "Analyze complex passages and answer inference-based questions.",
         estimatedTime: 40,
         status: "not-started",
         progress: 0,
@@ -30,7 +30,7 @@ const readingComprehensionTests: Test[] = [
     {
         id: 2,
         title: "Reading Comprehension Test 2",
-        description: "Practice comprehension skills with various question types",
+        description: "Practice comprehension skills with various question types.",
         estimatedTime: 45,
         status: "in-progress",
         progress: 50,
@@ -38,7 +38,7 @@ const readingComprehensionTests: Test[] = [
     {
         id: 3,
         title: "Reading Comprehension Test 3",
-        description: "Understand logical flow and structure of passages",
+        description: "Understand logical flow and structure of passages.",
         estimatedTime: 50,
         status: "completed",
         score: 85,
@@ -48,12 +48,65 @@ const readingComprehensionTests: Test[] = [
     {
         id: 4,
         title: "Reading Comprehension Test 4",
-        description: "Interpret critical arguments and author perspectives",
+        description: "Interpret critical arguments and author perspectives.",
         estimatedTime: 50,
         status: "not-started",
         progress: 0,
     },
+    {
+        id: 5,
+        title: "Reading Comprehension Test 5",
+        description: "Identify main ideas and supporting details effectively.",
+        estimatedTime: 45,
+        status: "in-progress",
+        progress: 30,
+    },
+    {
+        id: 6,
+        title: "Reading Comprehension Test 6",
+        description: "Evaluate tone, purpose, and rhetorical strategies.",
+        estimatedTime: 50,
+        status: "completed",
+        score: 90,
+        lastAttempted: "2024-02-18",
+        progress: 100,
+    },
+    {
+        id: 7,
+        title: "Reading Comprehension Test 7",
+        description: "Improve critical reading and logical reasoning skills.",
+        estimatedTime: 40,
+        status: "not-started",
+        progress: 0,
+    },
+    {
+        id: 8,
+        title: "Reading Comprehension Test 8",
+        description: "Master handling dense academic and scientific passages.",
+        estimatedTime: 50,
+        status: "in-progress",
+        progress: 60,
+    },
+    {
+        id: 9,
+        title: "Reading Comprehension Test 9",
+        description: "Distinguish between facts, opinions, and assumptions.",
+        estimatedTime: 50,
+        status: "completed",
+        score: 88,
+        lastAttempted: "2024-02-15",
+        progress: 100,
+    },
+    {
+        id: 10,
+        title: "Reading Comprehension Test 10",
+        description: "Develop strategies for time-efficient passage reading.",
+        estimatedTime: 40,
+        status: "not-started",
+        progress: 0,
+    },
 ];
+
 
 interface ExamQuestion {
     questionid: string;

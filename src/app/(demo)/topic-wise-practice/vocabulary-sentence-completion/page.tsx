@@ -131,7 +131,7 @@ export default function DashboardPage() {
             </Breadcrumb>
             <PlaceholderContent>
                 <>
-                    <VocabularySCQuestionSetDisplay topic_name="sentence completion" displayOptions={VocabularyQuestionsTests} />
+                    <VocabularySCQuestionSetDisplay topic_name="sentence completion" displayOptions={VocabularyQuestionsTests} numberofQuestions={10} />
                 </>
             </PlaceholderContent>
         </ContentLayout>

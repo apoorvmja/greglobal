@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import QuantitativeQuestionSetDisplay from "@/components/topic-wise-practice/gre-quantitative/quant-select-set-display";
 import { usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 
 type TestStatus = "not-started" | "in-progress" | "completed";
@@ -30,17 +31,17 @@ interface Test {
 
 const topicMapping: Record<string, string> = {
     "algebra": "Algebra",
-    "coordinate-3d-geometry": "Coordinate & 3D Geometry",
+    "coordinate-3d-geometry": "Coordinate geometry",
     "data-interpretation": "Data Interpretation",
     "geometry": "Geometry",
     "number-system": "Number system",
     "percentage": "Percentage",
     "permutation-combination-probability": "Permutation & Combination and Probability",
-    "probability": "Probability",
+    "probability": "probability",
     "rate-time": "Rate & Time",
     "ratio-proportion": "Ratio & Proportion",
-    "roots-exponent": "Roots & Exponent",
-    "sequence-set-theory": "Sequence and Set Theory",
+    "roots-exponent": "Roots & Exponents",
+    "sequence-set-theory": "Sequences & set theory",
     "speed-time-distance": "Speed, Time, and Distance",
     "statistics": "Statistics",
 };
@@ -49,12 +50,14 @@ export default function DashboardPage() {
     const pathname = usePathname();
     const id = pathname.split("/").pop();
     const topic_name = topicMapping[id || ""] || "Unknown Topic";
+    const searchParams = useSearchParams();
+    const NumberOfAvailableTests = Number(searchParams.get("tests"));
 
     const QuantitativeQuestionsTests: Test[] = [
         {
             id: 1,
             title: `${topic_name} Test 1`,
-            description: "Identify words with closely related meanings",
+            description: "Practice fundamental concepts and problem-solving techniques.",
             estimatedTime: 30,
             status: "not-started",
             progress: 0,
@@ -62,7 +65,7 @@ export default function DashboardPage() {
         {
             id: 2,
             title: `${topic_name} Test 2`,
-            description: "Strengthen your understanding of word relationships",
+            description: "Apply logical reasoning and quantitative strategies.",
             estimatedTime: 35,
             status: "in-progress",
             progress: 40,
@@ -70,7 +73,7 @@ export default function DashboardPage() {
         {
             id: 3,
             title: `${topic_name} Test 3`,
-            description: "Distinguish between near-synonyms in different contexts",
+            description: "Analyze data and interpret numerical relationships.",
             estimatedTime: 40,
             status: "completed",
             score: 90,
@@ -80,7 +83,7 @@ export default function DashboardPage() {
         {
             id: 4,
             title: `${topic_name} Test 4`,
-            description: "Enhance synonym recognition and precision",
+            description: "Enhance problem-solving speed and accuracy.",
             estimatedTime: 30,
             status: "not-started",
             progress: 0,
@@ -88,7 +91,7 @@ export default function DashboardPage() {
         {
             id: 5,
             title: `${topic_name} Test 5`,
-            description: "Develop vocabulary flexibility with synonym matching",
+            description: "Strengthen numerical computation and estimation skills.",
             estimatedTime: 35,
             status: "in-progress",
             progress: 25,
@@ -96,7 +99,7 @@ export default function DashboardPage() {
         {
             id: 6,
             title: `${topic_name} Test 6`,
-            description: "Identify subtle differences in meaning among synonyms",
+            description: "Solve complex word problems with multiple steps.",
             estimatedTime: 40,
             status: "completed",
             score: 88,
@@ -106,7 +109,7 @@ export default function DashboardPage() {
         {
             id: 7,
             title: `${topic_name} Test 7`,
-            description: "Improve contextual usage of words with similar meaning",
+            description: "Master various GRE question types through practice.",
             estimatedTime: 30,
             status: "not-started",
             progress: 0,
@@ -114,7 +117,7 @@ export default function DashboardPage() {
         {
             id: 8,
             title: `${topic_name} Test 8`,
-            description: "Master word nuances through synonym practice",
+            description: "Develop efficient strategies for GRE quantitative questions.",
             estimatedTime: 35,
             status: "in-progress",
             progress: 60,
@@ -122,7 +125,7 @@ export default function DashboardPage() {
         {
             id: 9,
             title: `${topic_name} Test 9`,
-            description: "Refine analytical skills in differentiating word meanings",
+            description: "Work on time management for solving complex problems.",
             estimatedTime: 40,
             status: "completed",
             score: 92,
@@ -132,7 +135,7 @@ export default function DashboardPage() {
         {
             id: 10,
             title: `${topic_name} Test 10`,
-            description: "Tackle challenging synonym-based questions",
+            description: "Tackle challenging GRE quantitative reasoning problems.",
             estimatedTime: 30,
             status: "not-started",
             progress: 0,
@@ -157,7 +160,7 @@ export default function DashboardPage() {
 
             <PlaceholderContent>
                 <>
-                    <QuantitativeQuestionSetDisplay topic_name={topic_name} displayOptions={QuantitativeQuestionsTests} />
+                    <QuantitativeQuestionSetDisplay topic_name={topic_name} displayOptions={QuantitativeQuestionsTests.slice(0, NumberOfAvailableTests)} />
                 </>
             </PlaceholderContent>
         </ContentLayout>

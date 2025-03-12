@@ -12,9 +12,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import Link from "next/link";
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useUser } from "@clerk/nextjs";
-import PlaceholderContent from "@/components/demo/placeholder-content"
-import { description } from "@/components/charts/bar-graph"
 
 export default function StudyDashboard() {
     const [searchQuery, setSearchQuery] = React.useState("")
@@ -52,23 +49,23 @@ export default function StudyDashboard() {
     const GREVerbalTests = [
         { id: "gre-reading-comprehension", title: "GRE Reading Comprehension", description: "Enhance your reading and analysis skills", numberOfTests: 10 },
         { id: "gre-sentence-equivalance", title: "GRE Sentence Equivalence", description: "Master sentence completion", numberOfTests: 10 },
-        { id: "gre-text-completion", title: "GRE Text Completion", description: "Improve your vocabulary and sentence structure", numberOfTests: 15 },
+        { id: "gre-text-completion", title: "GRE Text Completion", description: "Improve your vocabulary and sentence structure", numberOfTests: 9 },
     ];
     const GREQuantTests = [
-        { id: "algebra", title: "Algebra", description: "Strengthen your algebraic problem-solving skills", numberOfTests: 1 },
-        { id: "coordinate-3d-geometry", title: "Coordinate & 3D Geometry", description: "Understand coordinate planes and 3D space", numberOfTests: 1 },
-        { id: "data-interpretation", title: "Data Interpretation", description: "Analyze graphs and interpret quantitative data", numberOfTests: 1 },
-        { id: "geometry", title: "Geometry", description: "Review fundamental geometric principles", numberOfTests: 1 },
-        { id: "number-system", title: "Number System", description: "Deep dive into numerical operations", numberOfTests: 1 },
-        { id: "percentage", title: "Percentage", description: "Solve percentage-based problems effectively", numberOfTests: 1 },
-        { id: "permutation-combination-probability", title: "Permutation & Combination and Probability 1", description: "Learn counting principles and probability", numberOfTests: 1 },
-        { id: "probability", title: "Probability", description: "Master probability concepts", numberOfTests: 1 },
-        { id: "rate-time", title: "Rate & Time", description: "Solve problems related to rates and time", numberOfTests: 1 },
-        { id: "ratio-proportion", title: "Ratio & Proportion", description: "Understand proportional relationships", numberOfTests: 1 },
-        { id: "roots-exponent", title: "Roots & Exponent", description: "Simplify and manipulate roots and exponents", numberOfTests: 1 },
-        { id: "sequence-set-theory", title: "Sequence and Set Theory", description: "Explore sequences and set relations", numberOfTests: 1 },
-        { id: "speed-time-distance", title: "Speed, Time, and Distance", description: "Work with motion problems", numberOfTests: 1 },
-        { id: "statistics", title: "Statistics", description: "Analyze statistical data effectively", numberOfTests: 1 },
+        { id: "algebra", title: "Algebra", description: "Strengthen your algebraic problem-solving skills", numberOfTests: 10 },
+        { id: "coordinate-3d-geometry", title: "Coordinate & 3D Geometry", description: "Understand coordinate planes and 3D space", numberOfTests: 4 },
+        { id: "data-interpretation", title: "Data Interpretation", description: "Analyze graphs and interpret quantitative data", numberOfTests: 6 },
+        { id: "geometry", title: "Geometry", description: "Review fundamental geometric principles", numberOfTests: 9 },
+        { id: "number-system", title: "Number System", description: "Deep dive into numerical operations", numberOfTests: 8 },
+        { id: "percentage", title: "Percentage", description: "Solve percentage-based problems effectively", numberOfTests: 5 },
+        { id: "permutation-combination-probability", title: "Permutation & Combination and Probability 1", description: "Learn counting principles and probability", numberOfTests: 3 },
+        { id: "probability", title: "Probability", description: "Master probability concepts", numberOfTests: 3 },
+        { id: "rate-time", title: "Rate & Time", description: "Solve problems related to rates and time", numberOfTests: 2 },
+        { id: "ratio-proportion", title: "Ratio & Proportion", description: "Understand proportional relationships", numberOfTests: 3 },
+        { id: "roots-exponent", title: "Roots & Exponent", description: "Simplify and manipulate roots and exponents", numberOfTests: 2 },
+        { id: "sequence-set-theory", title: "Sequence and Set Theory", description: "Explore sequences and set relations", numberOfTests: 2 },
+        { id: "speed-time-distance", title: "Speed, Time, and Distance", description: "Work with motion problems", numberOfTests: 3 },
+        { id: "statistics", title: "Statistics", description: "Analyze statistical data effectively", numberOfTests: 2 },
     ];
 
     return (
@@ -88,7 +85,7 @@ export default function StudyDashboard() {
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                        <BreadcrumbPage>Results</BreadcrumbPage>
+                        <BreadcrumbPage>Practice</BreadcrumbPage>
                     </BreadcrumbItem>
                 </BreadcrumbList>
             </Breadcrumb>
@@ -109,12 +106,12 @@ export default function StudyDashboard() {
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                 />
                             </div>
-                            <Select defaultValue="all">
+                            <Select defaultValue="FLTs">
                                 <SelectTrigger className="w-[140px]">
                                     <SelectValue placeholder="Filter by type" />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem value="all">All Tests</SelectItem>
+                                    <SelectItem value="FLTs">Shorter FLTs</SelectItem>
                                     <SelectItem value="quant">Quantitative</SelectItem>
                                     <SelectItem value="verbal">Verbal</SelectItem>
                                     <SelectItem value="vocabulary">Vocabulary (new)✨</SelectItem>
@@ -123,249 +120,41 @@ export default function StudyDashboard() {
                         </div>
                     </div>
 
-                    <Tabs defaultValue="all" className="space-y-6">
+                    <Tabs defaultValue="FLTs" className="space-y-6">
                         <TabsList className=" h-auto flex flex-wrap sm:grid w-full grid-cols-2 lg:grid-cols-4">
-                            <TabsTrigger value="all">All Sections</TabsTrigger>
+                            <TabsTrigger value="FLTs">Shorter GRE FLT</TabsTrigger>
                             <TabsTrigger value="quant">Quantitative</TabsTrigger>
                             <TabsTrigger value="verbal">Verbal</TabsTrigger>
                             <TabsTrigger value="vocabulary">Vocabulary (new)✨</TabsTrigger>
                         </TabsList>
 
-                        <TabsContent value="all" className="space-y-6">
+                        <TabsContent value="FLTs" className="space-y-6">
                             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                                {/* Advanced Quant Section */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            Advanced Quantitative
-                                            <Badge variant="secondary">12 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Master mathematical concepts</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
+                                {Array.from({ length: 6 }).map((_, index) => (
+                                    <Card key={index}>
+                                        <CardHeader>
+                                            <CardTitle className="flex items-center justify-between">
+                                                Shorter GRE FLT {index + 1}
+                                                <Badge variant="secondary">1 Tests</Badge>
+                                            </CardTitle>
+                                            <CardDescription>Practice shorter GRE full-length tests</CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <div className="space-y-4 flex flex-col">
+                                                <div className="space-y-2">
+                                                    <div className="flex items-center justify-between text-sm">
+                                                        <span>Progress</span>
+                                                        <span className="text-muted-foreground">75%</span>
+                                                    </div>
+                                                    <Progress value={75} />
                                                 </div>
-                                                <Progress value={75} />
+                                                <Link href="/mock-tests">
+                                                    <Button className="w-full">Goto Tests</Button>
+                                                </Link>
                                             </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* Advanced Verbal Section */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            Advanced Verbal
-                                            <Badge variant="secondary">10 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Enhance your verbal reasoning skills</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE FLT Section */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE FLT
-                                            <Badge variant="secondary">6 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Full-length GRE practice tests</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE Quant Section Tests */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE Quant Sectional Test
-                                            <Badge variant="secondary">10 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>This Improve your problem-solving skills</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE Reading Comprehension */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE Reading Comprehension
-                                            <Badge variant="secondary">10 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Enhance your reading and analysis skills</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4 flex flex-col">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Link href="/topic-wise-practice/gre-reading-comprehension">
-                                                <Button className="w-full">Start Test</Button>
-                                            </Link>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE Sentence Equivalence */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE Sentence Equivalence
-                                            <Badge variant="secondary">8 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Improve your vocabulary and sentence structure</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE Text Completion */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE Text Completion
-                                            <Badge variant="secondary">15 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Master sentence completion</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4 flex flex-col">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Link href="/topic-wise-practice/gre-text-completion">
-                                                <Button className="w-full">Start Test</Button>
-                                            </Link>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* GRE Verbal Section Test */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            GRE Verbal Section Test
-                                            <Badge variant="secondary">10 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Practice complete verbal sections</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* Quant Topic Test */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            Quant Topic Test
-                                            <Badge variant="secondary">12 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Focus on individual quant topics</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* Shorter GRE FLT */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center justify-between">
-                                            Shorter GRE FLT
-                                            <Badge variant="secondary">5 Tests</Badge>
-                                        </CardTitle>
-                                        <CardDescription>Practice shorter GRE full-length tests</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="space-y-4">
-                                            <div className="space-y-2">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span>Progress</span>
-                                                    <span className="text-muted-foreground">75%</span>
-                                                </div>
-                                                <Progress value={75} />
-                                            </div>
-                                            <Button className="w-full">Start Test</Button>
-                                        </div>
-                                    </CardContent>
-                                </Card>
+                                        </CardContent>
+                                    </Card>
+                                ))}
                             </div>
                         </TabsContent>
 
@@ -389,7 +178,7 @@ export default function StudyDashboard() {
                                                     </div>
                                                     <Progress value={75} />
                                                 </div>
-                                                <Link href={`/topic-wise-practice/gre-quantitative/${test.id}`}>
+                                                <Link href={`/topic-wise-practice/gre-quantitative/${test.id}?tests=${test.numberOfTests}`}>
                                                     <Button className="w-full">Start Test</Button>
                                                 </Link>
                                             </div>
