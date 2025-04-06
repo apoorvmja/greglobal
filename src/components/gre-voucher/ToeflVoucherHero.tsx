@@ -106,7 +106,7 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                                         <div className="space-y-1">
                                             <p className="text-lg font-semibold">Check Reliability</p>
                                             <p className="text-sm text-muted-foreground">
-                                                Verified by 1,000+ students who booked TOEFL at the lowest price.
+                                                Verified by 450+ students who booked GRE at the lowest price.
                                             </p>
                                         </div>
                                     </CardHeader>
