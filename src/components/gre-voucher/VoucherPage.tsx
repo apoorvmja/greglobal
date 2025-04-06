@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CheckCircle, Info, Loader, X } from "lucide-react";
+import { Calendar, CheckCircle, ExternalLink, Info, Loader, Star, Target, Video, X } from "lucide-react";
 import Image from "next/image";
 import ToeflVoucherWhyUS from "./ToeflVoucherWhyUS";
 import ToeflVoucherHero from "./ToeflVoucherHero";
@@ -16,6 +16,12 @@ import * as z from 'zod'
 import { Input } from '@/components/ui/input'
 import { db } from "@/firebase.config"; // Path to your firebase.ts
 import { collection, addDoc } from "firebase/firestore";
+import { DialogTrigger } from "@radix-ui/react-dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Avatar, AvatarFallback } from "../ui/avatar";
+import { motion } from "framer-motion"
 
 
 const formSchema = z.object({
@@ -53,6 +59,7 @@ export default function VoucherPage() {
     const [openEnquiryModal, setOpenEnquiryModal] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [openCheckReliabilityModal, setOpenCheckReliabilityModal] = useState(false);
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -107,7 +114,7 @@ export default function VoucherPage() {
         <>
             <div className="sm:px-10">
                 <ToeflVoucherHero onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
-                <TOEFLPricing onEnquiryButtonClick={() => setOpenEnquiryModal(true)} />
+                <TOEFLPricing onEnquiryButtonClick={() => setOpenEnquiryModal(true)} openCheckReliabilityModal={() => { setOpenCheckReliabilityModal(true) }} />
                 <ToeflVoucherWhyUS />
 
                 {/* <div className="relative" id="home">
@@ -624,6 +631,128 @@ export default function VoucherPage() {
                         )}
                     </DialogContent>
                 </Dialog>
+
+                <Dialog open={openCheckReliabilityModal} onOpenChange={setOpenCheckReliabilityModal}>
+                    <DialogContent className="sm:max-w-[700px]">
+                        <DialogHeader>
+                            <DialogTitle>Verify Before You Decide</DialogTitle>
+                            <DialogDescription>
+                                Check our credibility through these verification options before making your decision.
+                            </DialogDescription>
+                        </DialogHeader>
+                        <Tabs defaultValue="video" className="w-full">
+                            <TabsList className="grid w-full grid-cols-3 h-auto">
+                                <TabsTrigger value="video" className="flex items-center gap-2">
+                                    <Video className="h-4 w-4 hidden sm:block" />
+                                    Watch <br />Video
+                                </TabsTrigger>
+                                <TabsTrigger value="reviews" className="flex items-center gap-2">
+                                    <Star className="h-4 w-4 hidden sm:block" />
+                                    Google  <br />Reviews
+                                </TabsTrigger>
+                                <Button onClick={() => { setOpenCheckReliabilityModal(false); setOpenEnquiryModal(true) }} className="flex items-center gap-2 mx-3">
+                                    <Calendar className="h-4 w-4 hidden sm:block" />
+                                    Book Call
+                                </Button>
+                            </TabsList>
+
+                            <TabsContent value="video" className="pt-4">
+                                <Card>
+                                    <CardHeader>
+                                        <CardDescription>MJ Study Abroad is an authorized ETS agent with ETS Agent-ID IND00031, ensuring a 100% safe and authentic purchase.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div className="aspect-video bg-muted rounded-md overflow-hidden">
+                                            <video className="w-full h-full object-cover" autoPlay controls poster="/placeholder.svg?height=400&width=600">
+                                                <source src="https://www.dropbox.com/scl/fi/fscuxeo74nnqh5oyyu8yn/gre-check-reliability.mp4?rlkey=2djbzji5kye42jyijrrwvb8pk&st=oxaijw9y&raw=1" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </TabsContent>
+
+                            <TabsContent value="reviews" className="pt-4">
+                                <Card>
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            Google Reviews
+                                            <Badge variant="outline" className="ml-2 bg-green-50">
+                                                4.8 <Star className="h-3 w-3 fill-yellow-400 ml-1" />
+                                            </Badge>
+                                        </CardTitle>
+                                        <CardDescription>See what our students are saying about us</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div className="space-y-4 max-h-[30vh] overflow-y-scroll">
+                                            {[
+                                                {
+                                                    name: "Niranjala Mohad",
+                                                    date: "10 hours ago",
+                                                    rating: 5,
+                                                    comment: "Very good website. Authentic site. Saved me money on my TOEFL booking. Prompt reply from the staff on email and Wasapp.",
+                                                },
+                                                {
+                                                    name: "Vishnu Vardhan",
+                                                    date: "11 hours ago",
+                                                    rating: 5,
+                                                    comment: "⭐⭐⭐⭐⭐ Good service. Helped with TOEFL voucher booking quickly and smoothly.",
+                                                },
+                                                {
+                                                    name: "Akshay",
+                                                    date: "1 day ago",
+                                                    rating: 5,
+                                                    comment: "Good experience with booking of TOEFL.",
+                                                }
+                                            ].map((review, index) => (
+                                                <div key={index} className="flex gap-4 pb-4 border-b">
+                                                    <Avatar>
+                                                        <AvatarFallback>
+                                                            {review.name
+                                                                .split(" ")
+                                                                .map((n) => n[0])
+                                                                .join("")}
+                                                        </AvatarFallback>
+                                                    </Avatar>
+                                                    <div className="space-y-1">
+                                                        <div className="flex items-center">
+                                                            <h4 className="font-semibold">{review.name}</h4>
+                                                            {/* <span className="text-xs text-muted-foreground ml-2">{review.date}</span> */}
+                                                        </div>
+                                                        <div className="flex">
+                                                            {Array(5)
+                                                                .fill(0)
+                                                                .map((_, i) => (
+                                                                    <Star
+                                                                        key={i}
+                                                                        className={`h-4 w-4 ${i < review.rating ? "fill-yellow-400" : "fill-muted stroke-muted-foreground"}`}
+                                                                    />
+                                                                ))}
+                                                        </div>
+                                                        <p className="text-sm">{review.comment}</p>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                    <CardFooter>
+                                        <a
+                                            href="https://g.co/kgs/kE459mz"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-full"
+                                        >
+                                            <Button variant="outline" className="w-full" size="sm">
+                                                <ExternalLink className="h-4 w-4 mr-2" />
+                                                View All Reviews on Google
+                                            </Button>
+                                        </a>
+                                    </CardFooter>
+                                </Card>
+                            </TabsContent>
+                        </Tabs>
+                    </DialogContent>
+                </Dialog >
             </div >
 
             {/* {isModalOpen && (

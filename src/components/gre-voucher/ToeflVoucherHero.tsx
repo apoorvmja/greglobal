@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import { useState } from 'react'
-
+import { motion } from "framer-motion"
 
 
 export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButtonClick: () => void }) {
@@ -29,7 +29,13 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                 <CardContent className="grid gap-8 p-6 md:p-8 lg:grid-cols-2">
                     <div className="space-y-6">
 
-                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                        <div
+                            onClick={() => {
+                                const target = document.getElementById('pricing-section');
+                                target?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent"
+                        >
                             <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
                                 <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
                             </div>
@@ -43,7 +49,16 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                        <div
+                            onClick={() => {
+                                const target = document.getElementById('voucher-purchase');
+                                if (target) {
+                                    const topOffset = target.getBoundingClientRect().top + window.scrollY - 100 // adjust -100 as needed
+                                    window.scrollTo({ top: topOffset, behavior: 'smooth' })
+                                }
+                            }}
+                            className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent"
+                        >
                             <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
                                 <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
                             </div>
@@ -51,13 +66,13 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                                 <p className="font-medium">Save on GRE Voucher</p>
                                 <div className="flex items-center space-x-2 gap-2">
                                     <Badge variant="secondary" className="text-lg">
-                                        INR 1,000
+                                        INR 2,500
                                     </Badge>
                                     Available
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
+                        {/* <div className="flex items-center space-x-4 rounded-lg border p-4 transition-colors hover:bg-accent">
                             <div className="rounded-full bg-purple-100 p-2.5 dark:bg-purple-900">
                                 <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-300" />
                             </div>
@@ -70,7 +85,38 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                                     Available
                                 </div>
                             </div>
-                        </div>
+                        </div> */
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6 }}
+                                onClick={() => {
+                                    const target = document.getElementById('reliability-section')
+                                    if (target) {
+                                        const topOffset = target.getBoundingClientRect().top + window.scrollY - 100 // adjust -100 as needed
+                                        window.scrollTo({ top: topOffset, behavior: 'smooth' })
+                                    }
+                                }}
+                            >
+                                <Card className="group transition-shadow hover:shadow-lg border-green-200 dark:border-green-800 cursor-pointer">
+                                    <CardHeader className="flex flex-row items-center space-x-4 p-4">
+                                        <div className="rounded-full bg-green-100 dark:bg-green-900 p-2.5 transition-transform duration-300 group-hover:scale-105">
+                                            <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-300" />
+                                        </div>
+                                        <div className="space-y-1">
+                                            <p className="text-lg font-semibold">Check Reliability</p>
+                                            <p className="text-sm text-muted-foreground">
+                                                Verified by 1,000+ students who booked TOEFL at the lowest price.
+                                            </p>
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div className="text-xs text-green-700 dark:text-green-300 italic">
+                                            Trusted by top scorers across India.
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </motion.div>}
 
                     </div>
 
