@@ -16,8 +16,8 @@ const pricingOptions = [
     },
     {
         price: 20000,
-        actualPrice: 22500,
-        savings: 2500,
+        actualPrice: 23452,
+        savings: 23452 - 20000,
         description: "You will get the voucher code on your registered Email ID",
         bookingMethod: "buy_voucher",
         popular: true,
