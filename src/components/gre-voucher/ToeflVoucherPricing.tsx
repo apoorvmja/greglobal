@@ -9,15 +9,15 @@ import { BookOpen, Info, Mail, Calendar, Video, FormInputIcon, CheckCircle } fro
 const pricingOptions = [
     {
         price: 16900,
-        actualPrice: 22500,
+        actualPrice: 23452,
         savings: 5600,
         // description: "You will get the code through watching the youtube video. (Out-dated)",
         description: `Old ETS scheme – valid till 30th Sep 24. New ETS scheme – will update you soon.`, bookingMethod: "youtube_code",
     },
     {
-        price: 20000,
+        price: 21500,
         actualPrice: 23452,
-        savings: 23452 - 20000,
+        savings: 23452 - 21500,
         description: "You will get the voucher code on your registered Email ID",
         bookingMethod: "buy_voucher",
         popular: true,

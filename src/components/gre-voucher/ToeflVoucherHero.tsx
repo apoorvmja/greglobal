@@ -66,7 +66,7 @@ export default function GREVoucherHero({ onEnquiryButtonClick }: { onEnquiryButt
                                 <p className="font-medium">Save on GRE Voucher</p>
                                 <div className="flex items-center space-x-2 gap-2">
                                     <Badge variant="secondary" className="text-lg">
-                                        INR 3,450
+                                        INR 1,952
                                     </Badge>
                                     Available
                                 </div>
