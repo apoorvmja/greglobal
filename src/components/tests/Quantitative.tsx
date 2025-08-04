@@ -30,6 +30,25 @@ interface Props {
     showResult?: (showResult: boolean) => void;
 }
 
+
+function SanitizeImageUrl({ url, index }: { url: string, index: number }) {
+    if (!url) return null;
+
+    const matchSubstring = 'testendura.com';
+    const replacementBase = 'testendura-image-hosting.netlify.app/public';
+
+    const sanitizedUrl = url.includes(matchSubstring)
+        ? url.replace(matchSubstring, replacementBase)
+        : url;
+
+
+    return (
+        <div className="mb-4">
+            <img src={sanitizedUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
+        </div>
+    )
+}
+
 const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isReviewModeResultDashboard, PageToQuantForReviewAnswers, showResult }) => {
     const questions = Object.values(test.sections[section]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -193,9 +212,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
         return (
             <div key={index} className="mb-4">
                 {question.imgUrl && (
-                    <div className="mb-4">
-                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
-                    </div>
+                    <SanitizeImageUrl url={question.imgUrl} index={index} />
                 )}
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 <div className="flex flex-col mt-4">
@@ -279,9 +296,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
         return (
             <div key={index} className="mb-4">
                 {question.imgUrl && (
-                    <div className="mb-4">
-                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
-                    </div>
+                    <SanitizeImageUrl url={question.imgUrl} index={index} />
                 )}
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 <div className="flex flex-col mt-4">
@@ -308,9 +323,7 @@ const Quantitative: React.FC<Props> = ({ test, section, onContinue, onBack, isRe
         return (
             <div key={index} className="mb-4">
                 {question.imgUrl && (
-                    <div className="mb-4">
-                        <img src={question.imgUrl} alt={`Question ${index + 1} illustration`} className="max-w-full max-h-[50vh]" />
-                    </div>
+                    <SanitizeImageUrl url={question.imgUrl} index={index} />
                 )}
                 <p className="font-bold">{`Question ${index + 1}: ${question.questionText}`}</p>
                 <div className="flex flex-col mt-4">
